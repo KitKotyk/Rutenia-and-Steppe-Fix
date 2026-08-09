@@ -36,7 +36,7 @@ flavor_zaz.1 = { #Rise of Zaporozhie
 		tag = NVS
 		tag = POD
 		tag = PRS	
-		from = 1400.1.1
+		from = 1450.1.1
 		to = 1650.1.1
 		monthly_chance = 3
 	}
@@ -129,7 +129,12 @@ flavor_zaz.1 = { #Rise of Zaporozhie
 
 				change_religion = religion:orthodox
 
-				capital ?= { create_sub_unit_of_category = sub_unit_category:army_heavy_infantry }
+				capital ?= {
+					create_sub_unit_of_category = sub_unit_category:army_heavy_infantry
+					create_sub_unit_of_category = sub_unit_category:army_light_infantry
+					create_sub_unit_of_category = sub_unit_category:army_light_cavalry
+					create_sub_unit_of_category = sub_unit_category:army_auxiliary
+				}
 
 				change_country_type = army
 			}
