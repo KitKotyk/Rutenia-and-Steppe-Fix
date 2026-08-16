@@ -11,7 +11,7 @@ collapsing_armies.1 = { # Golden Horde Collapse
 
 	dynamic_historical_event = {
 		tag = GLH
-		from = 1385.1.1
+		from = 1400.1.1
 		to = 1537.1.1
 		monthly_chance = 25
 	}
@@ -39,7 +39,7 @@ collapsing_armies.1 = { # Golden Horde Collapse
 			has_ruler = no
 			has_regent = yes
 			stability <= -20
-			government_power <= 10
+			government_power <= 15
 		}
 	}
 

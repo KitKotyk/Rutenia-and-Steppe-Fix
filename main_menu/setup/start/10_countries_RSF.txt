@@ -80,7 +80,7 @@ countries = {
 		}
 		
 		currency_data = {
-			gold = 410
+			gold = 1110
 		}
 	}
 
@@ -112,7 +112,7 @@ countries = {
 		}
 		
 		currency_data = {
-			gold = 200
+			gold = 700
 		}
 	}
 
@@ -182,7 +182,7 @@ countries = {
 		}
 		
 		currency_data = {
-			gold = 450
+			gold = 1450
 		}
 	}
 
@@ -190,7 +190,8 @@ countries = {
 		own_control_core = {
 			qirq_yer
 		}
-
+		include = "expl_western_europe"
+		include = "eastern_european_monarchy"
 		starting_technology_level = 3
 		government = {
 			type = monarchy
@@ -212,9 +213,10 @@ countries = {
 			pontic_greek_culture
 			crimean
 		}
-
-		include = "expl_western_europe"
-		include = "eastern_european_monarchy"
+		
+		currency_data = {
+			gold = 330
+		}		
 	}
 
 # Dobruja and the Balkans
@@ -228,6 +230,8 @@ countries = {
 		include = "expl_eastern_europe"
 		include = "eurasian_muslim_tribe"
 		religious_school = hanafi_school
+
+		capital = isaccea
 		
 		government = {
 			ruler = random
@@ -240,35 +244,10 @@ countries = {
 			wallachian
 		}
 		
-		capital = isaccea
+		currency_data = {
+			gold = 330
+		}		
 	}
-
-	# SMC = { #Strumica - Hrelja's domain
- 	# 	own_control_core = {
-	# 		kocani strumica shtip krupnik
-	# 	}
-
-	# 	include = "expl_mediterranean"
-	# 	include = "eastern_european_monarchy"
-	# 	country_rank = rank_county
-
-	# 	government = {
-	# 		type = monarchy
-	# 		heir_selection = cognatic_primogeniture
-
-	# 		ruler = ser_hrelja
-	# 	}
-
-	# 	tolerated_cultures = {
-	# 		serbian
-	# 	}
-
-		
-	# 	liturgical_language = church_slavonic_language
-
-	# 	capital = strumica
-	# 	dynasty = ohmucevic_dynasty
-	# }
 
 # Principalities
 	
@@ -297,7 +276,7 @@ countries = {
 		include = "ruthenian_principality_no_coast_not_present"
 		
 		currency_data = {
-			gold = 250
+			gold = 950
 		}
 	}
 
@@ -330,7 +309,7 @@ countries = {
 		include = "ruthenian_principality_no_coast_not_present"
 		
 		currency_data = {
-			gold = 250
+			gold = 750
 		}
 	}
 
@@ -346,7 +325,6 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-
 		}
 
 		liturgical_language = church_slavonic_language
@@ -357,7 +335,7 @@ countries = {
 		include = "ruthenian_principality_no_coast_not_present"
 		
 		currency_data = {
-			gold = 250
+			gold = 950
 		}
 	}
 

@@ -1,0 +1,12 @@
+﻿
+# Ottomans push to the Steppes was too excessive
+TRY_REPLACE:ottoman_expansion_pontic = {
+	preference_type = conquest
+	modifier = 0.1
+
+	#area = crimea_area
+	#area = azov_area
+	area = yedisan_area
+	area = pryazovia_area
+	area = matrega_area
+}

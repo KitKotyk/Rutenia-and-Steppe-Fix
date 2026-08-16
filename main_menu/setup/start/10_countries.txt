@@ -4150,8 +4150,8 @@ countries = {
 			mokhcha
 		}
 		own_control_integrated = {
-			#mokhcha
-			orhei
+			#mokhcha			
+			orhei palada
 			okhtyrka krasnopillia khotmyzh
 
 			anna_russia semidesyatnoye zemlyansk borisoglebsk sadovoye bolshaya_gribanovka balashov turki
@@ -4349,7 +4349,7 @@ countries = {
 		}
 		
 		currency_data = {
-			gold = 420
+			gold = 1420
 		}
 	}
 
@@ -4412,7 +4412,7 @@ countries = {
 		}
 		
 		currency_data = {
-			gold = 390
+			gold = 1100
 		}		
 		
 	}
@@ -4484,7 +4484,7 @@ countries = {
 				heir_religion_law = heir_same_religion
 			}
 		}
-		accepted_cultures = {			
+		accepted_cultures = {	
 			astrakhani
 			moksha_culture
 			crimean
@@ -4498,7 +4498,7 @@ countries = {
 		}
 		
 		currency_data = {
-			gold = 630
+			gold = 1330
 		}
 	}
 
@@ -18927,7 +18927,8 @@ countries = {
 
 	BLD = {	#Bârlad
 		own_control_core = {
-			barlad cahul cudalbi galati oancea palada reni targul_saratii tecuci
+			# palada
+			barlad cahul cudalbi galati oancea reni targul_saratii tecuci
 		}
 		starting_technology_level = 3
 		include = "expl_eastern_europe"
@@ -43329,22 +43330,24 @@ countries = {
 		type = army
 		starting_technology_level = 3
 		include = "expl_eastern_europe"
-		include = "eurasian_horde_not_present"
+		include = "cossack_republic_no_coast_not_present"
 		court_language = ukrainian_dialect
 
 		government = {
-			type = steppe_horde
-			heir_selection = tribal_oldest_male
+			# type = steppe_horde
+			# heir_selection = tribal_oldest_male
 			ruler = random
-			reforms = {
-				cossacks_reform
-			}
+			# reforms = {
+				# cossacks_reform
+			# }
 
-			laws = {
-				marriage_law = monogamous_marriage
-				heir_religion_law = heir_same_religion
-			}
+			# laws = {
+				# marriage_law = monogamous_marriage
+				# heir_religion_law = heir_same_religion
+			# }
 		}
+
+		liturgical_language = church_slavonic_language
 		
 		accepted_cultures = {		
 			ruthenian

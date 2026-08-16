@@ -44,6 +44,7 @@ government = {
 		#Burghers
 		market_fairs
 		building_roads_rights
+		building_rights
 
 		#Commoners
 		allow_hunting

@@ -14,48 +14,57 @@ location_suffix = "location_suffix_kipchak"
 character_name_order = "CHARACTER_NAME_ORDER_KIPCHAK"
 
 male_names = {
-	Adil Aibek Alikhan Almaz Amir Amirkhan Anvar Aslan Ayrat Azamat Azat Aziz
-	Baqtiyar Bakyt Bekjan Bekzat Bilal Bolat
+	Adil Aibek Alikhan Alim Almaz Amir Amirkhan Anvar Aslan Ayder Ayrat Azamat Azat Aziz
+	Baqtiyar Bakyt Bekjan Bekzat Berke Bilal Bolat
 	Chingiz
-	Ermek
+	Emin Ermek
 	Farit
-	Hamza Hasan
-	Ibrahim Ilnur Ilshat Ilyas
-	Mambet Marat Mirbek Muhtar Musa
+	Gazi
+	Halim Hamza Hasan
+	Ibrahim Ilnur Ilshat Ilyas Ismail 
+	Mambet Marat Mehmed Mirbek Muhtar Musa Mustafay
 	Nail Nurbek Nurlan Nurzat
 	Oljas Omar
+	Qasim Qurban
 	Ramil Rashit Rostam
 	Salamat Samat Serik Suleimen
-	Talgat Temir
-	Ulan Umar
+	Talgat Temir Toqta 
+	Ulan Umar Usein
+	Yusuf
 	Zamir
 }	
 female_names = {
 	Aidana Aigul Aima Aisha Aiza Alfiya Aliya Amina Anargul Asel Aygerim Ayna
 	Baljan Bibigul
 	Dilnaz
+	Emine Esma
 	Farida Fatima
 	Golshat Guldana Gulnara Gulnaz Gulzat Guzal
+	Halime
 	Janar Jazira Juldyz
-	Madina Mirgul
+	Madina Meryem Mirgul
 	Nazgul Nazira
 	Safiya Saliha Saltanat Saule
-	Zifa Zuhra Zulfiya
+	Zeyneb Zifa Zuhra Zulfiya
 }
 
 dynasty_names = {
-	Alban Arabshah Argyn Ashtarhan Atygai
+	Alban Aratuq Arabat Arabshah Argyn Ashtarhan Atygai
+	Badraq Barin
 	Chelubey
-	Dulat
+	Dayir Dulat
+	Geray
 	Janibek
 	Kerei Kuchum
 	Manggyt Mansur
 	Naiman Nogaybek
-	Qanly Qarluq Qoja Qonyrat Qypshaq
-	Shaibani Shiban Sunaq Suindik
-	Tabyn Tobyqty Tore Tuqay_Timur
+	Orbey
+	Qanly Qarluq Qipchaq Qoja Qonyrat Qypshaq
+	Saruhan Serasker Shaibani Shiban Sunaq Suindik
+	Tabyn Tobyqty Tore Tugay Tuqay_Timur
 	Uisin Urys
 }
+
 lowborn = {
 }
 
@@ -69,10 +78,11 @@ dialects = {
 			Ermek
 			Farit
 			Hamza Hasan
-			Ibrahim Ilnur Ilshat Ilyas
+			Ibrahim Ilnur Ilshat Ilyas Ismail
 			Mambet Marat Mirbek Muhtar Musa
 			Nail Nurbek Nurlan Nurzat
 			Oljas Omar
+			Qasim Qurban
 			Ramil Rashit Rostam
 			Salamat Samat Serik Suleimen
 			Talgat Temir
@@ -105,9 +115,10 @@ dialects = {
 			Naiman Nogaybek
 			Qanly Qarluq Qoja Qonyrat Qypshaq
 			Shaibani Shiban Sunaq Suindik
-			Tabyn Tobyqty Tore Tuqay_Timur
+			Tabyn Taybuga Tobyqty Tore Tuqay_Timur
 			Uisin Urys
 		}
+		
 		lowborn = {
 		}
 	}
@@ -129,7 +140,7 @@ dialects = {
 			Qamal Qasim Qurban
 			Redvan Refat Reshid Rustem
 			Saadet Sahib Selamet Selim Seyran Seit Shahin
-			Teyfuq Toqta Tugay Tuman
+			Teyfuq Toqta Tuman
 			Umer Usein Uzeir
 			Yagya Yavuz Yusuf				
 		}

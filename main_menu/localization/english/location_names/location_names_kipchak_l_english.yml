@@ -32,7 +32,7 @@
  # Dobruja and Moldova
  isaccea.kipchak_language: "Saqçi"
  tulcea.kipchak_language: "Tulça"
- chilia.kipchak_language: "Kiliya" 
+ chilia.kipchak_language: "Kiliya"
  tighina.kipchak_language: "Tigin"
  cahul.kipchak_language: "Qağul"
  iasi.kipchak_language: "Yassi"
@@ -410,7 +410,7 @@
  chishmy.kipchak_language: "Çişmı"
  tabynsky.kipchak_language: "Tabın"
  ishimbay.kipchak_language: "İşimbay"
- beloretsk.kipchak_language: "Beloret"
+ beloretsk.kipchak_language: "Aqre"
  kapova_pesera.kipchak_language: "Şulgantaş"
  ust_katav.kipchak_language: "Qıtau-Tamak"
  krasnaya_gorka.kipchak_language: "Aşa"
@@ -425,7 +425,7 @@
  alapayevsk.kipchak_language: "Alapay"
  verkhnyaya_sinyachikha.kipchak_language: "Mygay"
  baykalovo.kipchak_language: "Sarabay"
- kamyshlov.kipchak_language: "Pyşma"
+ kamyshlov.kipchak_language: "Pışma"
  yegorshin_povytok.kipchak_language: "Bulanaş"
  kamensky_zavod.kipchak_language: "Iset"
  kataysky.kipchak_language: "Qatay"
@@ -561,6 +561,8 @@
  oktyabr_skii.kipchak_language: "Qarımay"
  kamenskoie.kipchak_language: "Penzhina"
  tumanskaya.kipchak_language: "Tuman"
+ balagansk.kipchak_language: "Balagan"
+
 
  # Central Asia 
  zhanybek.kipchak_language: "Jänıbek"

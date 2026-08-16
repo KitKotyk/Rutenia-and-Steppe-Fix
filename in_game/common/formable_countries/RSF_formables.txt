@@ -61,13 +61,14 @@ TRY_REPLACE:UKR_f = { #Ruthenia
 	regions = {
 		ruthenia_region
 	}
+
 	form_effect = {
 	}
 }
 
 TRY_REPLACE:CIR_f = { # Circassia
 	level = 1
-	required_locations_fraction = 0.50
+	required_locations_fraction = 0.5
 	rule = historical
 
 	potential = {
@@ -88,5 +89,62 @@ TRY_REPLACE:CIR_f = { # Circassia
 	}
 
 	form_effect = {
+	}
+}
+
+TRY_REPLACE:KAZ_f = {
+	level = 1
+	required_locations_fraction = 0.5
+	rule = historical
+
+	potential = {
+		culture.language = language:kipchak_language
+	}
+	allow = {
+		
+	}
+
+	name = KAZ
+	flag = KAZ	
+	adjective = KAZ_ADJ
+	tag = KAZ
+	color = map_KAZ
+
+	areas = {
+		desht_kipchak_area
+		zhetysu_area
+	}
+
+	form_effect = {
+	}
+}
+
+TRY_REPLACE:RMN_f = {
+	level = 3
+	required_locations_fraction = 0.75
+	rule = plausible
+
+	potential = {
+		culture = { has_culture_group = culture_group:romanian_group }
+	}
+	allow = {
+		owns = location:bucharest
+		owns = location:iasi
+	}
+
+	name = RMN
+	flag = RMN	
+	adjective = RMN_ADJ
+	tag = RMN
+	color = map_RMN
+
+	areas = {
+		wallachia_area
+		#transylvania_area
+		moldavia_area
+	}
+
+	form_effect = {
+		set_country_rank_effect = { rank = country_rank:rank_kingdom }
 	}
 }

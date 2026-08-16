@@ -4,21 +4,22 @@ locations={
 	stanimaka = { rank = town 		town_setup = balkan_town }
 	
 	# Poland
-	warsaw = 	{ rank = town	town_setup = polish_town }
-	wroclaw = { rank = city 	town_setup = polish_town }
+	warsaw = 	{ rank = town		town_setup = polish_town }
+	wroclaw = { rank = city 		town_setup = polish_town }
 
 	# Ruthenia
-	sanok = { rank = town 		town_setup = ruthenian_town }
-	volodymyr = { rank = town 	town_setup = ruthenian_town }
-	chelm = { rank = town 		town_setup = ruthenian_town }	
-	novogrudok = { rank = town 	town_setup = ruthenian_town }
+	sanok = { rank = town 			town_setup = ruthenian_town }
+	volodymyr = { rank = town 		town_setup = ruthenian_town }
+	chelm = { rank = town 			town_setup = ruthenian_town }	
+	novogrudok = { rank = town 		town_setup = ruthenian_town }
 
 	# Russia
 	bryansk = { rank = town 		town_setup = russian_town }
 
 	# Golden Horde
 	astrakhan = { rank = city		town_setup = central_asian_city }
-	kazan = { rank = town 			town_setup = central_asian_town }
+	kazan = { rank = city 			town_setup = central_asian_city }
+	bolghar = { rank = city 		town_setup = central_asian_city }
 	mokhcha = { rank = town 		town_setup = russian_town }
 	beljamen = { rank = town		town_setup = central_asian_town }
 	srednyaya_akhtuba = { rank = town		town_setup = central_asian_town }
@@ -55,20 +56,20 @@ locations={
 	andkhoy = { rank = town 		town_setup = central_asian_town }
 
 	#Levant, Caucasus and Persia	
-	kutaisi = { rank = town 	town_setup = christian_anatolian_town }
-	sukhumi = { rank = town 	town_setup = christian_anatolian_town }
-	yerevan = { rank = town 	town_setup = christian_anatolian_town }
+	kutaisi = { rank = town 		town_setup = christian_anatolian_town }
+	sukhumi = { rank = town 		town_setup = christian_anatolian_town }
+	yerevan = { rank = town 		town_setup = christian_anatolian_town }
 	
-	deh_kundi = { rank = town 	town_setup = levant_town }
-	darab = { rank = town 		town_setup = levant_town }
-	qatruyeh = { rank = town 	town_setup = levant_town }
+	deh_kundi = { rank = town 		town_setup = levant_town }
+	darab = { rank = town 			town_setup = levant_town }
+	qatruyeh = { rank = town 		town_setup = levant_town }
 
 	# Crescent and Arabia	
-	gorgan = { rank = town 	town_setup = levant_town }
-	samarra = { rank = town 	town_setup = levant_town }
+	gorgan = { rank = town 			town_setup = levant_town }
+	samarra = { rank = town 		town_setup = levant_town }
 
 	# Crimea and Pont
-	cetatea_alba = { rank = town town_setup = italian_town }
+	cetatea_alba = { rank = town 	town_setup = carpathian_town }
 }
 
 # for the unique and special buildings
@@ -86,6 +87,7 @@ building_manager = {
 	kurultai = { tag = GLH level = 1 location = astrakhan }
 	kurultai = { tag = GLH level = 1 location = chimgi_tura }
 	kurultai = { tag = GLH level = 1 location = kazan }
+	kurultai = { tag = GLH level = 1 location = bolghar }
 	kurultai = { tag = GLH level = 1 location = majar }
 	kurultai = { tag = GLH level = 1 location = sarayjuk }
 	
@@ -151,7 +153,6 @@ building_manager = {
 	
 	market_village = { tag = GLH level = 1 location = dashev }
 	market_village = { tag = GLH level = 1 location = bilyar }
-	market_village = { tag = GLH level = 1 location = bolghar }
 	market_village = { tag = GLH level = 1 location = tatartup }
 	market_village = { tag = GLH level = 1 location = kichkas }
 	market_village = { tag = GLH level = 1 location = donets_kharkiv }

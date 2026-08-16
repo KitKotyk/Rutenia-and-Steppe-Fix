@@ -12101,7 +12101,7 @@ yendra = { topography = lakes climate = arctic}
 belogorye = { topography = wetlands vegetation = forest climate = arctic religion = shamanism culture = khanty_culture raw_material = fur}
 karymkary = { topography = flatland vegetation = forest climate = arctic religion = shamanism culture = khanty_culture raw_material = fur}
 nazym = { topography = flatland vegetation = forest climate = arctic religion = shamanism culture = khanty_culture raw_material = fish}
-sukhorukova = { topography = wetlands vegetation = forest climate = arctic religion = shamanism culture = khanty_culture raw_material = fur}
+sukhorukova = { topography = wetlands vegetation = forest climate = arctic religion = shamanism culture = khanty_culture raw_material = wild_game}
 landytuv = { topography = lakes climate = arctic}
 un_zhallor = { topography = lakes climate = arctic}
 kazym = { topography = wetlands vegetation = forest climate = arctic religion = shamanism culture = nenets_culture raw_material = wild_game}
@@ -12120,7 +12120,7 @@ irkutsk_kazachinskoye = { topography = plateau vegetation = forest climate = arc
 zhigalovo = { topography = hills vegetation = woods climate = continental religion = tengri culture = buryat_culture raw_material = lumber}
 bayanday = { topography = plateau vegetation = woods climate = continental religion = tengri culture = buryat_culture raw_material = fish}
 kachug = { topography = plateau vegetation = woods climate = continental religion = tengri culture = buryat_culture raw_material = fur}
-balagansk = { topography = plateau vegetation = woods climate = continental religion = tengri culture = buryat_culture raw_material = wild_game}
+balagansk = { topography = plateau vegetation = woods climate = continental religion = tengri culture = buryat_culture raw_material = fiber_crops}
 baikal = { topography = lakes climate = continental}
 osinsky = { topography = plateau vegetation = woods climate = continental religion = tengri culture = buryat_culture raw_material = fur}
 surgut = { topography = wetlands vegetation = forest climate = arctic religion = tengri culture = khanty_culture raw_material = fish}
@@ -12153,7 +12153,7 @@ synya_lake = { topography = lakes climate = arctic}
 shuryshkar = { topography = wetlands vegetation = sparse climate = arctic religion = shamanism culture = nenets_culture raw_material = fish}
 shuryshkarskiy_sor = { topography = lakes climate = arctic}
 varchaty = { topography = lakes climate = arctic}
-obdorsk = { topography = wetlands vegetation = sparse climate = arctic religion = shamanism culture = selkup_culture raw_material = fur}
+obdorsk = { topography = wetlands vegetation = sparse climate = arctic religion = shamanism culture = selkup_culture raw_material = wild_game}
 ob = { topography = wetlands vegetation = sparse climate = arctic religion = shamanism culture = nenets_culture raw_material = fish}
 shchuchya = { topography = flatland vegetation = sparse climate = arctic religion = shamanism culture = nenets_culture raw_material = fur}
 yamal = { topography = flatland vegetation = sparse climate = arctic}
@@ -12333,7 +12333,7 @@ altay_forest_wasteland_2 = { topography = flatland_wasteland vegetation = forest
 kansk = { topography = flatland vegetation = forest climate = arctic religion = tengri culture = buryat_culture raw_material = iron}
 ilansky = { topography = flatland vegetation = forest climate = arctic religion = tengri culture = buryat_culture raw_material = fur}
 krasnoyarsk = { topography = hills vegetation = forest climate = arctic religion = tengri culture = khakas_culture raw_material = iron}
-yemelyanovo = { topography = flatland vegetation = forest climate = arctic religion = tengri culture = ket_culture raw_material = lumber}
+yemelyanovo = { topography = flatland vegetation = forest climate = arctic religion = tengri culture = ket_culture raw_material = fiber_crops}
 dzerzhinskoye = { topography = plateau vegetation = forest climate = arctic religion = shamanism culture = evenk_culture raw_material = fur}
 biryusa = { topography = flatland vegetation = forest climate = arctic religion = tengri culture = buryat_culture raw_material = iron}
 altay_forest_wasteland_3 = { topography = flatland_wasteland vegetation = forest climate = arctic}

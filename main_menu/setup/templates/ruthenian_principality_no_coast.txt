@@ -44,6 +44,7 @@ government = {
         market_fairs
         formal_guilds
         building_roads_rights
+        building_rights
 
         #Commoners
         allow_hunting

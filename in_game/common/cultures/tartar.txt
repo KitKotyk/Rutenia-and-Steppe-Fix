@@ -22,6 +22,8 @@
 		muscovite = negative
 		verkhovian = enemy
 		mongolian_culture = kindred
+		turkish_culture = positive
+		turkoman_culture = positive
 	}
 	culture_groups = {
 		tatar_group

@@ -8,7 +8,8 @@ turkish_culture = { #https://en.wikipedia.org/wiki/Turkish_people
 	tags = { turkish_gfx turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx }
 
 	opinions = {
-		turkoman_culture = positive
+		turkoman_culture = kindred
+		crimean = kindred
 		greek_culture = negative
 		armenian_culture = negative
 		cappadocian_greek_culture = negative
@@ -41,7 +42,8 @@ turkoman_culture = {
 	tags = { turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx }
 
 	opinions = {
-		turkish_culture = positive
+		turkish_culture = kindred
+		crimean = positive
 		armenian_culture = negative
 		greek_culture = negative
 		cappadocian_greek_culture = negative

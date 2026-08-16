@@ -1,0 +1,96 @@
+﻿starting_technology_level = 3
+government = {
+	type = republic # IMPORTANT
+	heir_selection = republic_4_year_terms
+	
+	centralization_vs_decentralization = 60
+	aristocracy_vs_plutocracy = 35
+	serfdom_vs_free_subjects = 50
+	traditionalist_vs_innovative = -45
+	spiritualist_vs_humanist = -15
+	mercantilism_vs_free_trade = 20
+	offensive_vs_defensive = 30
+	land_vs_naval = -80
+	quality_vs_quantity = -20
+	belligerent_vs_conciliatory = -50
+	capital_economy_vs_traditional_economy = 65
+	individualism_vs_communalism = 80
+	outward_vs_inward = 40
+	
+	parliament = {
+		parliament_type = assembly
+	}
+
+	reforms = {
+		cossacks_reform
+		agricultural_cultivation
+		local_army_organization
+	}
+			
+	privilege = {
+		#Nobles				
+		nobles_offensive_military_doctrine		
+		noble_fortification_licenses
+
+		#Clergy
+		clergy_enforced_unity
+		reduced_from_military_obligations
+		clergy_powerful_dioceses
+		clergy_strengthen_faith
+		clergy_literacy_rights
+
+		#Burghers
+		market_fairs
+		building_roads_rights
+		building_rights
+
+		#Commoners
+		peasants_autonomous_villages
+		peasants_in_administration
+		peasant_owns_their_food
+		peasants_free_peasantry
+		allow_hunting
+		communal_lands
+		no_labor_sunday		
+		
+		#Tribesmen
+		tribes_allow_gatherings
+		tribes_land_rights
+		tribes_pasture_access
+		tribes_tribal_levies
+		tribes_tribal_registry
+
+		#Cossacks
+		cossacks_government_positions
+		cossacks_sanctioned_atamans
+		cossacks_register
+		cossacks_rada_autonomy
+		cossacks_land_rights
+		cossacks_allowed_free_roaming
+		cossacks_military_service
+	}
+	
+	laws = { # WORKS FOR THE REPUBLICAN SICH !!!
+
+		# Administrative laws
+		administrative_system = autonomous_councils
+		republican_foundation_law = republicanism_policy
+		legal_code_law = ordinances_of_justice
+		
+		# Estate laws
+		distribution_of_power_law = dop_favor_the_commoners
+
+		# Religious laws
+		censorship = limited_censorship
+		heir_religion_law = heir_same_religion
+		marriage_law = monogamous_marriage
+		patriarchate_law = separated_patriarchate_policy
+
+		# Socioeconomic laws
+		immigration_law = open_borders_law
+		coin_laws = gold_and_silver_coins
+		cultural_traditions_law = martial_society
+		mining_law = peasants_mining_law
+	}
+}
+
