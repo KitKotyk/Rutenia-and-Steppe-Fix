@@ -92,33 +92,6 @@ TRY_REPLACE:CIR_f = { # Circassia
 	}
 }
 
-TRY_REPLACE:KAZ_f = {
-	level = 1
-	required_locations_fraction = 0.5
-	rule = historical
-
-	potential = {
-		culture.language = language:kipchak_language
-	}
-	allow = {
-		
-	}
-
-	name = KAZ
-	flag = KAZ	
-	adjective = KAZ_ADJ
-	tag = KAZ
-	color = map_KAZ
-
-	areas = {
-		desht_kipchak_area
-		zhetysu_area
-	}
-
-	form_effect = {
-	}
-}
-
 TRY_REPLACE:RMN_f = {
 	level = 3
 	required_locations_fraction = 0.75
