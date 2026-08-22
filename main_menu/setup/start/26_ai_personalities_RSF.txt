@@ -1,9 +1,3 @@
-# Changed Hungary, Naples to cautious
-# Changed Lithuania to expansionist
-# Added Georgia defensive
-# Added Novgorod opprotunistic
-# Added Kazan, Uzbek, Great Hordes aggressive
-
 
 countries = {
 	countries = {
@@ -30,6 +24,7 @@ countries = {
 		HUN = { ai_personality = ai_cautious }  # Hungary 			- Kotyk
 		NAP = { ai_personality = ai_cautious }  # Naples 			- Kotyk
 		MLO = { ai_personality = ai_cautious }  # Milan 			- Kotyk
+		WAL = { ai_personality = ai_cautious }  # Wallachia			- Kotyk
 
 		# Opportunistic: exploit others' weaknesses; trade-focused
 		NOV = { ai_personality = ai_opportunistic }  # Novgorod 	- Kotyk

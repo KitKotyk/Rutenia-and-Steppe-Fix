@@ -69,7 +69,22 @@ road_network = {
 	mikhaylovka_pontic = bolkhuny
 	bolkhuny = pologoye_zaymishche
 	pologoye_zaymishche = srednyaya_akhtuba
-	srednyaya_akhtuba = beljamen	
+	srednyaya_akhtuba = beljamen
+
+	# Another Silk Road branch to Jand
+	zomin = chach
+	chach = altyntobe
+	altyntobe = shymkent
+	shymkent = arsubaniket
+	arsubaniket = otrar
+	otrar = turkestan
+	turkestan = karnak
+	karnak = sawran
+	sawran = aktas_kystagy
+	aktas_kystagy = sighnaq
+	sighnaq = asanas
+	asanas = jand
+	sawran = sozak
 
 	# Road to Kazan along the Volga
 	beljamen = zenzevatka

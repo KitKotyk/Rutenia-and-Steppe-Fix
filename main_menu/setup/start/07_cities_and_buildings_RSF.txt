@@ -18,20 +18,28 @@ locations={
 
 	# Golden Horde
 	astrakhan = { rank = city		town_setup = central_asian_city }
-	kazan = { rank = city 			town_setup = central_asian_city }
-	bolghar = { rank = city 		town_setup = central_asian_city }
-	mokhcha = { rank = town 		town_setup = russian_town }
-	beljamen = { rank = town		town_setup = central_asian_town }
-	srednyaya_akhtuba = { rank = town		town_setup = central_asian_town }
-	rechnoye = { rank = city		town_setup = central_asian_city }
-	solkhat = { rank = city			town_setup = central_asian_city }
-	ukek = { rank = town			town_setup = central_asian_town }
-	azok = { rank = city			town_setup = central_asian_city }
-	majar = { rank = town			town_setup = central_asian_town }
-	dzhulat = { rank = town			town_setup = central_asian_town }
 	krasny_yar = { rank = town		town_setup = central_asian_town }
 	ganyushkino = { rank = town		town_setup = central_asian_town }
 	zamyany = { rank = town			town_setup = central_asian_town }
+	rechnoye = { rank = city		town_setup = central_asian_city }
+	srednyaya_akhtuba = { rank = town	town_setup = central_asian_town }
+	beljamen = { rank = town		town_setup = central_asian_town }
+	ukek = { rank = town			town_setup = central_asian_town }
+	kazan = { rank = city 			town_setup = central_asian_city }
+	bolghar = { rank = city 		town_setup = central_asian_city }
+	mokhcha = { rank = town 		town_setup = russian_town }
+	majar = { rank = town			town_setup = central_asian_town }
+	dzhulat = { rank = town			town_setup = central_asian_town }
+	azok = { rank = city			town_setup = central_asian_city }
+	solkhat = { rank = city			town_setup = central_asian_city }
+	sighnaq = { rank = city			town_setup = central_asian_city }
+	sozak = { rank = town			town_setup = central_asian_town }
+	bozok_astana = { rank = town	town_setup = central_asian_town }
+
+	# Chagatai
+	sawran = { rank = town			town_setup = central_asian_town }
+	otrar = { rank = town			town_setup = central_asian_town }
+	shymkent = { rank = town		town_setup = central_asian_town }
 	
 	# Carpathia
 	orhei = { rank = town 			town_setup = carpathian_town }
@@ -75,25 +83,29 @@ locations={
 # for the unique and special buildings
 building_manager = {
 
-	# Steppes 
+	# Steppes
 	kurultai = { tag = GLH level = 1 location = rechnoye }
+	kurultai = { tag = GLH level = 1 location = astrakhan }
 	kurultai = { tag = GLH level = 1 location = beljamen }
 	kurultai = { tag = GLH level = 1 location = ukek }
-	kurultai = { tag = GLH level = 1 location = azok }
-	kurultai = { tag = GLH level = 1 location = solkhat }
-	kurultai = { tag = GLH level = 1 location = mokhcha }
-	kurultai = { tag = GLH level = 1 location = urgench }
-	
-	kurultai = { tag = GLH level = 1 location = astrakhan }
-	kurultai = { tag = GLH level = 1 location = chimgi_tura }
 	kurultai = { tag = GLH level = 1 location = kazan }
 	kurultai = { tag = GLH level = 1 location = bolghar }
+	kurultai = { tag = GLH level = 1 location = mokhcha }
 	kurultai = { tag = GLH level = 1 location = majar }
+	kurultai = { tag = GLH level = 1 location = azok }
+	kurultai = { tag = GLH level = 1 location = solkhat }
 	kurultai = { tag = GLH level = 1 location = sarayjuk }
+	kurultai = { tag = GLH level = 1 location = urgench }
+	kurultai = { tag = GLH level = 1 location = sighnaq }
+	kurultai = { tag = GLH level = 1 location = bozok_astana }
+	kurultai = { tag = GLH level = 1 location = chimgi_tura }
 	
 	kurultai = { tag = CHG level = 1 location = almaliq }
 	kurultai = { tag = CHG level = 1 location = almaty }
 	kurultai = { tag = CHG level = 1 location = balasagun }
+	kurultai = { tag = CHG level = 1 location = otrar }
+	kurultai = { tag = CHG level = 1 location = chach }
+	kurultai = { tag = CHG level = 1 location = sawran }
 	
 	kurultai = { tag = GRG level = 1 location = gorgan }
 	kurultai = { tag = JKR level = 1 location = nishapur }
@@ -120,11 +132,9 @@ building_manager = {
 	kurultai = { tag = KHD level = 1 location = zavkhan }
 	kurultai = { tag = TRH level = 1 location = bulgan }
 	kurultai = { tag = BGT level = 1 location = balj }
-	#market_village = { tag = BGT level = 1 location = balj } #To get market access for the kurultai to work
 	kurultai = { tag = HCN level = 1 location = qingzhou_mongol }
 	kurultai = { tag = OTC level = 1 location = taizhou_jurchen }
 	kurultai = { tag = QAS level = 1 location = boorj }
-	#market_village = { tag = QAS level = 1 location = boorj } #To get market access for the kurultai to work
 	kurultai = { tag = OGE level = 1 location = kurchum }
 	
 	caravanserai = { tag = GLH level = 1 location = rechnoye }
@@ -137,6 +147,11 @@ building_manager = {
 	caravanserai = { tag = GLH level = 1 location = beljamen }
 	caravanserai = { tag = GLH level = 1 location = srednyaya_akhtuba }
 	caravanserai = { tag = GLH level = 1 location = dzhulat }
+	caravanserai = { tag = GLH level = 1 location = sighnaq }
+
+	caravanserai = { tag = CHG level = 1 location = almaliq }
+	caravanserai = { tag = CHG level = 1 location = otrar }
+	caravanserai = { tag = CHG level = 1 location = chach }
 	
 	stockade = { tag = GLH level = 1 location = or_qapi }
 	stockade = { tag = GLH level = 1 location = tavan }	
@@ -160,15 +175,26 @@ building_manager = {
 	market_village = { tag = GLH level = 1 location = kupiansk }
 	market_village = { tag = GLH level = 1 location = ismail }
 	market_village = { tag = GLH level = 1 location = simbirsk }
-	market_village = { tag = GLH level = 1 location = balikley }	
+	market_village = { tag = GLH level = 1 location = balikley }
+	market_village = { tag = GLH level = 1 location = jand }
+	
+	market_village = { tag = CHG level = 1 location = turkestan }
+	
+	lumber_mill = { tag = GLH level = 1 location = valuyki }
+	lumber_mill = { tag = GLH level = 1 location = tatartup }
+	lumber_mill = { tag = GLH level = 1 location = bogoroditsk }
+	lumber_mill = { tag = GLH level = 1 location = morsha }
+	lumber_mill = { tag = GLH level = 1 location = nizhny_lomov }
+	lumber_mill = { tag = GLH level = 1 location = staraya_kulatka }
 	
 	lumber_mill = { tag = QQY level = 1 location = qirq_yer }
 	lumber_mill = { tag = FEO level = 1 location = theodoro }
 	lumber_mill = { tag = GAZ level = 1 location = lusta }
-	lumber_mill = { tag = GLH level = 1 location = tatartup }
-	lumber_mill = { tag = GLH level = 1 location = bogoroditsk }
 
 	tar_kiln = { tag = GLH level = 1 location = qarasuvbazar }
+	tar_kiln = { tag = GLH level = 1 location = chamzinka }
+	tar_kiln = { tag = GLH level = 1 location = sasovo }
+	tar_kiln = { tag = GLH level = 1 location = melekess }
 	
 	madrasa = { tag = GLH level = 1 location = solkhat }
 

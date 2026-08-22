@@ -4271,6 +4271,7 @@ countries = {
 			erzya_culture
 			chuvash_culture
 			ryazanian
+			moldovan
 		}
 		
 		currency_data = { complacency = 25 }
