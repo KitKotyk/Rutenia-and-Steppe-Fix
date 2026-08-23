@@ -1,4 +1,5 @@
 ﻿l_english:
+ # Copied from the Kipchak language
  aslan_horod.karluk_language: "İslam-Kermen"
  berestyn.karluk_language: "Parhom-Bayraq"
  cheboksary.karluk_language: "Çabaqsar"
@@ -15,8 +16,7 @@
  sarai_al_jadid.karluk_language: "Bexima"
  tavan.karluk_language: "Qızı-Kermen"
  torhovytsia.karluk_language: "Yabgu"
-
- # Added by Kotyk
+ 
  # Crimea
  solkhat.karluk_language: "Solhat"
  kalay.karluk_language: "Qalay"

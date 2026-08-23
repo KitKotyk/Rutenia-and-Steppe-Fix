@@ -1,0 +1,5 @@
+diplomacy_manager = {
+	# Golden Horde vs Lithuania rivalry
+	rival = { first = LIT second = GLH }
+	rival = { first = GLH second = LIT }
+}

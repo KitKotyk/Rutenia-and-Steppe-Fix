@@ -16,12 +16,12 @@ road_network = {
 	dubno = lutsk
 	ostroh = dubno
 	iziaslav = ostroh
-	polonne = iziaslav
-	polonne = chudniv
-	zhytomyr = chudniv
+	novohrad_volynskyi = iziaslav
+	novohrad_volynskyi = chortolisy
+	zhytomyr = chortolisy
 	zhytomyr = korostyshiv
-	zdvizhen = korostyshiv
-	kyiv = zdvizhen
+	fastiv = korostyshiv
+	kyiv = fastiv
 	
 	# Barlad Road
 	lviv = zhydachiv

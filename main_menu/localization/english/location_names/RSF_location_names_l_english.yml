@@ -1,0 +1,40 @@
+﻿l_english:
+ # Overwrite balkan changes
+ plovdiv: "Alexiopol"
+ stanimaka: "Plovdiv"
+ 
+ # Georgian default correct
+ sukhumi: "Tskhumi"
+ batumi: "Batomi"
+
+ # Ruthenia. More important historical locations or correct historical name
+ glushkovo: "Khotin" # Хотінь – way older, 14th century
+ iziaslav: "Zaslav" # Historical name
+ petrove: "Zhovti Vody" # Way more important, battle of 1648
+ pavlohrad: "Matviiv Khutir" # Historical name
+ horoshino: "Horoshyn" # Historical name
+ znobov: "Znoba" # Historical name
+ opishnya: "Hlynske" # More known – seat of Hlynskyi/Glinski princes
+ ternivka: "Lozova" # More known, less generic
+
+ # Ruthenia. Spelling corrections
+ bereschany: "Berezhany" # Was in German 
+ bielska_sloboda: "Bilska Sloboda" # Was in Polish, but it's in the Eastern Ukraine 
+ ugrovesk: "Uhrovesk" # g -> h
+ zdvizhen: "Zdvyzhen" # i -> y
+ tykhomel: "Tykhomel" # l' -> l
+ turiisk: "Turiysk" # ii -> iy
+ desnyanskyi_horodok: "Desnianskyi Horodok" # ya -> ia
+ novohrad_volynskyi: "Zviahel" # ya -> ia
+ peresopnytsya: "Peresopnytsia" # ya -> ia
+ chernyany: "Cherniany" # ya -> ia
+ melnytsya: "Melnytsia" # ya -> ia
+ melnya: "Melnia" # ya -> ia
+
+ # Steppes
+ sarai_al_jadid: "Bexima" # Mod uses another capital location. Bexima is from historic maps
+ aqmecit_prybuzhzhya: "Rozdol" # There is another one Aqmecit nearby in the Crimea
+ rohat_kermen: "Rohat-Kermen" # Dash for consistency
+ velyka_oleksandrivka: "Dudchany" # Shorter, simpler
+ velyka_lepetykha: "Lepetykha" # Shorter, simpler 
+ nyzhnia_duvanka: "Duvanka" # Shorter, simpler

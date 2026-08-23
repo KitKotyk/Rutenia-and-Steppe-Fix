@@ -1,4 +1,5 @@
-﻿l_english:
+﻿ # Copied from Kipchak for the respective regions
+l_english:
  aslan_horod.alanic_language: "İslam-Kermen"
  berestyn.alanic_language: "Parhom-Bayraq"
  cheboksary.alanic_language: "Çabaqsar"
@@ -16,7 +17,6 @@
  tavan.alanic_language: "Qızı-Kermen"
  torhovytsia.alanic_language: "Yabgu"
 
- # Added by Kotyk
  # Crimea
  solkhat.alanic_language: "Solhat"
  kalay.alanic_language: "Qalay"

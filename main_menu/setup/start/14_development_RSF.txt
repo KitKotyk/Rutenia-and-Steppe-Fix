@@ -25,12 +25,12 @@ development = {
 	baltic_area = -1
 	samogitia_area = -3
 	
-	#Russia areas
+	# Russia areas
 	oka_area = -4
 	kursk_area = -3
 	nizhny_novgorod_area = -5
 	
-	#Ruthenia areas
+	# Ruthenia areas
 	left_bank_ukraine_area = -7
 	sloboda_ukraine_area = -2
 	podolia_area = -9
@@ -38,14 +38,14 @@ development = {
 	polesia_area = 3
 	black_ruthenia_area = 3
 	
-	#Horde areas
+	# Horde areas
 	chervleny_yar_area = -4
 	mordva_area = -9
 	bolghar_area = -5
 	desht_kipchak_area = -4
 	crimea_area = 5
 
-	#Ruthenian provinces
+	# Ruthenian provinces
 	cherkasy_province = -7
 	porossia_province = -4
 	zhytomyr_province = -2
@@ -63,7 +63,7 @@ development = {
 	pronsk_province = -2
 	ryazan_province = -1
 
-	#Horde provinces
+	# Hordes provinces
 	astrakhan_province = 10
 	zamyany_province = 5
 	bolkhuny_province = 5
@@ -76,6 +76,13 @@ development = {
 	tula_province = -12
 	yelets_province = -7
 	kasimov_province = -3
+	yangikent_province = 5
+	sighnaq_province = 7
+	turkestan_province = 5
+	otrar_province = 5
+	amol_province = 5
+	kath_province = 7
+	khiva_province = 7
 
 	# Balkans
 	rhodopes_province = -5
@@ -83,6 +90,7 @@ development = {
 	# Locations
 	wroclaw = 6
 	plock = 5
+
 	ukek = 10
 	majar = 13
 	azok = 3
@@ -95,7 +103,10 @@ development = {
 	sarayjuk = 15
 	kazan = 4
 	kurkino = -4
+	sozak = 10
+
 	stanimaka = 7
+
 	kyiv = -4
 	chernihiv = -3
 	lutava = 5

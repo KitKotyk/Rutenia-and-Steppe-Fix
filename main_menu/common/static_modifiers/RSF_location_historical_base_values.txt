@@ -1,0 +1,7 @@
+﻿# Easter Egg on Chornobyl
+chornobyl_forest = {
+	game_data = {
+		category = location
+	}
+	local_wild_game_output_modifier = 1
+}

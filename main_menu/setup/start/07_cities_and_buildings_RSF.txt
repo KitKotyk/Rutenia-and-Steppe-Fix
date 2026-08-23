@@ -34,6 +34,7 @@ locations={
 	solkhat = { rank = city			town_setup = central_asian_city }
 	sighnaq = { rank = city			town_setup = central_asian_city }
 	sozak = { rank = town			town_setup = central_asian_town }
+	jand = { rank = town			town_setup = central_asian_town }
 	bozok_astana = { rank = town	town_setup = central_asian_town }
 
 	# Chagatai
@@ -176,7 +177,6 @@ building_manager = {
 	market_village = { tag = GLH level = 1 location = ismail }
 	market_village = { tag = GLH level = 1 location = simbirsk }
 	market_village = { tag = GLH level = 1 location = balikley }
-	market_village = { tag = GLH level = 1 location = jand }
 	
 	market_village = { tag = CHG level = 1 location = turkestan }
 	

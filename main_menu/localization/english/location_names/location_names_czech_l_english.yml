@@ -1,4 +1,5 @@
-﻿l_english:
+﻿ # Added genitive case to the vanilla file
+l_english:
  bludenz.czech_dialect: "Bludenec"
  bludenz.czech_dialect.genitive: "Bludence"
  braunau.czech_dialect: "Brunov"
@@ -46,7 +47,8 @@
  zwettl.czech_dialect: "Světlá"
  zwettl.czech_dialect.genitive: "Světlé"
  
- #Chech with genitive
+ # Added in RSF with the genitive case
+ # Czech with genitive
  prague.czech_dialect: "Praha"
  prague.czech_dialect.genitive: "Prahy"
  slany.czech_dialect: "Slaný"
