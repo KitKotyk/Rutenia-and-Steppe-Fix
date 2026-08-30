@@ -1,0 +1,127 @@
+﻿#            | existing country | releasing a country | country formation |
+# |==========|==================|=====================|===================|
+# |root      | definition       | definition          | definition        |
+# |----------|------------------|---------------------|-------------------|
+# |target    | country          | N/A                 | N/A               |
+# |----------|------------------|---------------------|-------------------|
+# |initiator | N/A              | player              | player            |
+# |----------|------------------|---------------------|-------------------|
+# |actor     | country          | player              | player            |
+# |----------|------------------|---------------------|-------------------|
+# |          | country's        |                     | player's          |
+# |overlord  | direct overlord  | player              | direct overlord   |
+# |          | if it exists     |                     | if it exists      |
+# |----------|------------------|---------------------|-------------------|
+
+# Country ###
+
+# Ruthenia UKR – Cultures
+
+coa_def_UKR_kyivan_trigger = { # Kyivan Ruthenia
+	scope:actor ?= {
+		exists = culture
+		culture = culture:ruthenian
+	}
+}
+
+coa_def_UKR_severian_trigger = { # Severian Ruthenia
+	scope:actor ?= {
+		exists = culture
+		culture = culture:severian
+	}
+}
+
+coa_def_UKR_halician_trigger = { # Halician Ruthenia
+	scope:actor ?= {
+		OR = {
+			AND = {
+				exists = culture
+				culture = culture:halychian_culture			
+			}
+			AND = {
+				exists = culture
+				culture = culture:rusyn_culture			
+			}
+		}
+	}
+}
+
+coa_def_UKR_volhynian_trigger = { # Volhynian Ruthenia
+	scope:actor ?= {		
+		exists = culture
+		culture = culture:volhynian_culture	
+	}
+}
+
+coa_def_UKR_polesian_trigger = { # Polesian Ruthenia
+	scope:actor ?= {
+		exists = culture
+		culture = culture:polesian_culture
+	}
+}
+
+coa_def_UKR_belarusian_trigger = { # Belarus Ruthenia
+	scope:actor ?= {
+		OR = {
+			AND = {
+				exists = culture
+				culture = culture:polatskian_culture			
+			}
+			AND = {
+				exists = culture
+				culture = culture:smolenskian_culture			
+			}
+		}
+	}
+}
+
+
+# Historical principalities ownership (Kyiv, Chenihiv, Halicia, Volhynia)
+# Two main locations from each
+
+coa_def_kyiv_ownership_trigger = {
+	scope:actor ?= {
+		owns = location:kyiv
+		owns = location:pereiaslav
+	}
+}
+
+coa_def_severia_ownership_trigger = {
+	scope:actor ?= {
+		owns = location:chernihiv
+		owns = location:novhorod_siverskyi
+	}
+}
+
+coa_def_halicia_ownership_trigger = {
+	scope:actor ?= {
+		owns = location:lviv
+		owns = location:halych		
+	}
+}
+
+coa_def_volynia_ownership_trigger = {
+	scope:actor ?= {
+		owns = location:volodymyr
+		owns = location:lutsk
+	}
+}
+
+coa_def_belarus_ownership_trigger = {
+	scope:actor ?= {
+		owns = location:polotsk
+	}
+}
+
+coa_def_blackrus_ownership_trigger = {
+	scope:actor ?= {
+		owns = location:novogrudok
+	}
+}
+
+coa_def_polesia_ownership_trigger = {
+	scope:actor ?= {
+		owns = location:turov
+		owns = location:pinsk
+	}
+}

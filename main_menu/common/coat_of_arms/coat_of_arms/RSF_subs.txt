@@ -1,0 +1,290 @@
+
+@semy = 0.27
+@semysh = 0.27
+
+# Added by Kotyk for dynamic Ruthenian flags
+# Volhynia is in the vanilla, but adjusted here
+
+sub_KYI = { # Kyiv original
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+
+	textured_emblem = {
+		texture = "te_kiev_archangel.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.85 0.85 } }
+	}
+}
+
+sub_KYI_inverted = { # Kyiv original
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+
+	textured_emblem = {
+		texture = "te_archangel.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+	}
+}
+
+sub_KYI_top = { # Kyiv on top in the shield for 5 flags	
+	colored_emblem = {
+		texture = "ce_shield_frame_thin.dds"
+		color1 = "blue"
+		color2 = "yellow_mid"
+		instance = { position = { 0.5 0.52 } scale = { 0.7 0.7 } }
+	}
+
+	textured_emblem = {
+		texture = "te_kiev_archangel.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.45 0.45 } }
+	}
+}
+
+sub_CHR = { # Chernihiv used correct Chernihiv eagle
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+	color3 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_eagle_crowned_chernigov_shield.dds"
+		color1 = color2
+		color2 = hsv360 	{	42	80	80	}	
+		color3 = color1
+		instance = { position = { 0.5 0.5 } scale = { 0.7 0.7 } }
+	}
+}
+
+sub_CHR_inverted = { # Chernihiv inverted for contrast
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+	color3 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_eagle_crowned_chernigov_shield.dds"
+		color1 = color2
+		color2 = hsv360 	{	42	80	80	}	
+		color3 = color1
+		instance = { position = { 0.5 0.5 } scale = { 0.7 0.7 } }
+	}
+}
+
+sub_CHR_top = { # Kyiv on top in the shield for 5 flags	
+	colored_emblem = {
+		texture = "ce_shield_frame_thin.dds"
+		color1 = "white"
+		color2 = "yellow_mid"
+		instance = { position = { 0.5 0.52 } scale = { 0.7 0.7 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_eagle_crowned_chernigov_shield.dds"
+		color1 = "black"
+		color2 = hsv360 	{	42	80	80	}	
+		color3 = "white"
+		instance = { position = { 0.5 0.5 } scale = { 0.45 0.45 } }
+	}
+}
+
+sub_HAL = { # Halych new default
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black_secondary"
+	color3 = "yellow_mid"
+
+	colored_emblem = {
+		texture = "ce_raven_halych.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.5 0.52 } scale = { 0.85 0.75 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_crown.dds"
+		color1 = color3
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.47 0.17 } rotation = 8 scale = { 0.18 0.18 } }	
+	}
+}
+
+sub_HAL_inverted = { # Halych inverted for contrast
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+	color3 = "yellow_mid"
+
+	colored_emblem = {
+		texture = "ce_raven_halych.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.5 0.52 } scale = { 0.85 0.75 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_crown.dds"
+		color1 = color3
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.47 0.17 } rotation = 8 scale = { 0.18 0.18 } }	
+	}
+}
+
+sub_HAL_VOL = { # Halych-Volhynia combined, historical lion
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+	color3 = "white_secondary"
+
+	colored_emblem = {
+		texture = "ce_lion_rampant_crowned_shield.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color3
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }		
+	}	
+}
+
+sub_HAL_VOL_both = { # Halych-Volhynia, the lion and the cross
+	pattern = "pattern_per_bend_sinister_shield.dds"
+	color1 = "blue"
+	color2 = "red_dark"
+	color3 = "yellow"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_lion_rampant_crowned_shield.dds"
+		color1 = color3
+		color2 = color4
+		color3 = color4
+		instance = { position = { 0.25 0.4 } scale = { 0.5 0.5 } }		
+	}
+
+	colored_emblem = {
+		texture = "ce_cross_patty_cossack.dds"
+		color1 = color4
+		instance = { position = { 0.75 0.6 } scale = { 0.5 0.5 } }		
+	}	
+}
+
+sub_VOL = { # Volhynia smaller Cossack cross
+	pattern = "pattern_solid.dds"
+	color1 = "red_dark"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_cross_patty_cossack.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }		
+	}
+}
+
+sub_VOL_top = { # Kyiv on top in the shield for 5 flags	
+	colored_emblem = {
+		texture = "ce_shield_frame_thin.dds"
+		color1 = "red_dark"
+		color2 = "yellow_mid"
+		instance = { position = { 0.5 0.52 } scale = { 0.7 0.7 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_cross_patty_cossack.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.5 0.5 } scale = { 0.4 0.4 } }		
+	}
+}
+
+sub_BLR = { # Belarus knight
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_knight_jagiellon_shield.dds"
+		instance = { position = { 0.5 0.52 } scale = { 0.85 0.85 } }				
+	}
+
+	textured_emblem = {
+		texture = "te_knight_shield_overlay_belarusian_1.dds"
+		instance = { position = { 0.535 0.46 } scale = { 0.85 0.85 } }
+	}
+}
+
+sub_POK = { # Polotsk, pahonia with a cross
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+	color3 = "yellow"
+	color4 = "red"
+
+	textured_emblem = {
+		texture = "te_knight_polotsk.dds"
+		instance = { position = { 0.51 0.5 } scale = { 0.85 0.85 } }
+	}
+	textured_emblem = {
+		texture = "te_knight_shield_overlay_belarusian.dds"
+		instance = { position = { 0.51 0.5 } scale = { 0.85 0.85 } }
+	}
+} 
+
+sub_NRK = { # Novogrudok
+	pattern = "pattern_solid.dds"
+	color1 = "red_light"
+	color2 = "black"
+
+	textured_emblem = {
+		texture = "te_novogrudok_archangel.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.85 0.8 } }				
+	}
+}
+
+sub_TUV = { # Turov for Polesia
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+	color3 = "yellow_mid"
+
+	colored_emblem = {
+		texture = "ce_bow_arrow_pale.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.5 0.48 } scale = { 0.8 0.8 } }
+	}
+}
+
+sub_TUV_inverted = { # Turov for Polesia
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_bow_arrow_pale.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.5 0.48 } scale = { 0.8 0.8 } }
+	}
+}
+
+sub_quartered_superbold = { # Quartering outline superbold
+	# pattern = "pattern_checkers_diagonal_01.dds"
+	color1 = "white"
+	color2 = "black"
+
+	colored_emblem = {
+		texture = "ce_divider_quartered_flag_plc.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1.5 1.5 } }
+	}
+	# colored_emblem = {
+	# 	texture = "ce_divider_quartered_flag_02.dds"
+	# 	color1 = color2
+	# 	color2 = color2
+	# }	
+}

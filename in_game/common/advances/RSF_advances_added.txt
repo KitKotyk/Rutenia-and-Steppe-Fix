@@ -2,7 +2,7 @@
 
 # ----- KYIV -----
 
-mother_of_russian_cities = { 			# Mother of Rus cities – historical
+mother_of_russian_cities = { 			# Mother of Rus cities – historical, moved from RUthenian culture
 	age = age_1_traditions	
 	icon = cultural_acceptance_advance
 
@@ -35,6 +35,7 @@ high_castle = { 						# Halych-Volhynian defence, High Castle in Lviv
 
 	potential = {
 		has_or_had_tag = HAL
+		has_or_had_tag = VOL
 	}	
 	global_defensive = 0.1
 
@@ -46,6 +47,7 @@ between_four_fires = { 					# Halych-Volhynian diplomacy games between Poland, L
 	icon = utr_skilled_diplomats
 
 	potential = {
+		has_or_had_tag = HAL
 		has_or_had_tag = VOL
 	}	
 	monthly_diplomats = 0.1
@@ -62,6 +64,7 @@ olgovych_realm = { 						# Ancient realm of Olgovychi branch of the Rurikids
 
 	potential = {
 		has_or_had_tag = CHR
+		has_or_had_tag = NVS
 	}	
 	monthly_prestige = 0.05
 
@@ -73,6 +76,7 @@ legacy_of_prince_igor = { 				# 'Tale of Igor's Campaign', he was a N.-S. prince
 	icon = land_of_the_rus
 
 	potential = {
+		has_or_had_tag = CHR
 		has_or_had_tag = NVS
 	}	
 	army_initiative = 0.1

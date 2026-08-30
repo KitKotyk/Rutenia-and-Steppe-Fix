@@ -1,0 +1,1510 @@
+# Added by Kotyk
+# Dynamic flags for Ruthenia, Kyiv, Chernihiv, Halych, Volhynia
+
+# ------- Ruthenia -------
+
+UKR = { # Ruthenia Kyivan default, Yaroslav trident
+	pattern = "pattern_solid.dds" 
+	color1 = "blue_secondary"
+	color2 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_border_nakh.dds"
+		color1 = color2
+		color2 = color1
+		instance = { position = { 0.5 0.5 } scale = { 1.02 1.02 } }		
+	}
+	
+	colored_emblem = {
+		texture = "ce_tryzub_yaroslav_extra_thick_smaller_dots.dds"
+		color1 = color2
+		color2 = color1
+		instance = { position = { 0.5 0.53 } scale = { 0.8 0.72 } }		
+	}
+	
+	colored_emblem = {
+		texture = "ce_cross_latin.dds"
+		color1 = color2
+		color2 = color1
+		instance = { position = { 0.5 0.18 } scale = { 0.1 0.1 } }			
+	}
+	
+	colored_emblem = {
+		texture = "ce_cross_patty_cossack.dds"
+		color1 = color2
+		color2 = color1
+		instance = { position = { 0.2 0.5 } scale = { 0.25 0.25 } }
+		instance = { position = { 0.8 0.5 } scale = { 0.25 0.25 } }
+	}
+}
+
+UKR_severian = { # Ruthenia Severian, Olgovychis of Chernihiv trident
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+	
+	colored_emblem = {
+		texture = "ce_border_ornament_mongol.dds"
+		color1 = color2
+		color2 = color1
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }		
+	}
+	
+	colored_emblem = {
+		texture = "ce_tryzub_chernihiv.dds"
+		color1 = color2
+		color2 = color1
+		instance = { position = { 0.5 0.53 } scale = { 1. 0.85 } }			
+	}	
+}
+
+UKR_halician = { # Ruthenia Halician, Ruthenian Kingdom golden lion climbing
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+	color3 = "white_secondary"
+	color4 = "white"
+
+	colored_emblem = {
+		texture = "ce_bend_large_offset.dds"
+		color1 = color4
+		instance = { position = { -0.2 0.5 } rotation = 0 scale = { 1.8 1.5 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_bend_undy_shield.dds"
+		color1 = color4
+		instance = { position = { 0.05 0.5 } rotation = -4 scale = { 1.8 1.68 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_lion_rampant_crowned_q3_shield.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color3
+		instance = { position = { 0.48 0.5 } scale = { 0.85 0.85 } }
+	}	
+}
+
+UKR_volhynian = { # Ruthenia Volhynian, Volhynian CoA from 1313
+	pattern = "pattern_solid.dds"
+	color1 = "red_dark"
+	color2 = "white"
+	color3 = "yellow_mid"
+	
+	textured_emblem = {
+		texture = "te_knight_banner_disentis.dds"
+		instance = { position = { 0.53 0.5 } scale = { 0.8 0.8 } }				
+	}
+
+	colored_emblem = {
+		texture = "ce_cross_patty_cossack.dds"
+		color1 = color2
+		instance = { position = { 0.17 0.22 } scale = { 0.3 0.3 } }
+	}	
+}
+
+UKR_polesian = { # Ruthenia Polesian, Berestia Voievodship CoA + Bow (CoAs of Pinsk, Turov, Berestia)
+	pattern = "pattern_solid.dds"
+	color1 = "blue_light"
+	color2 = "white"
+	color3 = "yellow_mid"
+	
+	textured_emblem = {
+		texture = "te_knight_minsk.dds"
+		instance = { position = { 0.52 0.51 } scale = { 0.8 0.8 } }				
+	}
+
+	colored_emblem = {
+		texture = "ce_bow_arrow_pale.dds"
+		color1 = color2
+		color2 = color3
+		instance = { position = { 0.16 0.24 } scale = { 0.35 0.35 } }
+		instance = { position = { 0.84 0.24 } scale = { 0.35 0.35 } }
+	}	
+}
+
+UKR_belarusian = { # Ruthenia Belarusian, Pahonia
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+	color3 = "yellow"
+	color4 = "black"
+	
+	colored_emblem = {
+		texture = "ce_border.dds"
+		color1 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1 1 } }				
+	}
+	
+	colored_emblem = {
+		texture = "ce_border_shield_double.dds"
+		color1 = color4
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1 0.93 } }				
+	}
+	
+	textured_emblem = {
+		texture = "te_knight_polotsk.dds"
+		instance = { position = { 0.5 0.45 } scale = { 0.55 0.55 } }				
+	}
+
+	textured_emblem = {
+		texture = "te_knight_shield_overlay_belarusian.dds"
+		instance = { position = { 0.5 0.45 } scale = { 0.55 0.55 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_cross_pahonia_bold.dds"
+		color1 = color1
+		instance = { position = { 0.125 0.25 } scale = { 0.3 0.3 } }	
+	}	
+}
+
+
+# ------- Kyiv -------
+
+KIE_volhynia = { # Kyiv owns Volhynia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_KYI" # Q1 & Q4 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_VOL" # Q2 & Q3 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+KIE_halicia = { # Kyiv owns Halicia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_KYI" # Q1 & Q4 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_HAL" # Q2 & Q3 Halych
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+KIE_severia = { # Kyiv owns Severia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_KYI" # Q1 & Q4 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_CHR" # Q2 & Q3 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+KIE_halicia_volhynia = { # Kyiv owns Halicia and Volhynia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_KYI" # Q1 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }	
+    }	
+    sub = {
+        parent = "sub_HAL" # Q2 & Q3 Halych
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }	
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }			
+    }	
+    sub = {
+        parent = "sub_VOL" # Q4 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+KIE_severia_volhynia = { # Kyiv owns Severia and Volhynia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_KYI" # Q1 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }	
+    }	
+    sub = {
+        parent = "sub_CHR" # Q2 & Q3 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }	
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }			
+    }	
+    sub = {
+        parent = "sub_VOL" # Q4 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+KIE_severia_halicia = { # Kyiv owns Severia and Halicia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_KYI" # Q1 & Q4 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }
+    }	
+    sub = {
+        parent = "sub_CHR" # Q2 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_HAL" # Q3 Halych
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+KIE_severia_halicia_volhynia = { # Kyiv owns Severia, Halicia and Volhynia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_KYI" # Q1 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }	
+    }	
+    sub = {
+        parent = "sub_CHR" # Q2 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_HAL" # Q3 Halych
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_VOL" # Q4 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+KIE_all_ruthenia = { # Kyiv owns Severia, Halicia, Volhynia, Belarus
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_BLR" # Q1 Belarus
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }	
+    }	
+    sub = {
+        parent = "sub_CHR" # Q2 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_HAL" # Q3 Halych
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_VOL" # Q4 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }
+    sub = {
+        parent = "sub_KYI_top" # Top Kyiv
+		instance = { scale = { 1 1 } offset = { 0.0 0.0 } }		
+    }
+}
+
+
+# ------- Chernihiv -------
+
+CHR = { # Chernihiv used correct Chernihiv eagle
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+	color3 = "yellow"
+	
+	colored_emblem = {
+		texture = "ce_eagle_crowned_chernigov_shield.dds"
+		color1 = color2
+		color2 = hsv360 	{	42	80	80	}	
+		color3 = color1
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }
+	}
+}
+
+CHR_volhynia = { # Chernihiv owns Volhynia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_CHR" # Q1 & Q4 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_VOL" # Q2 & Q3 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+CHR_halicia = { # Chernihiv owns Halicia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "yellow_mid"
+	color2 = "white"
+	color3 = "yellow_mid"
+	color4 = "black"
+	color5 = "black_secondary"
+
+	colored_emblem = {
+		texture = "ce_overall_quarterly_cross.dds"
+		color1 = color4	
+		instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+	}
+
+    sub = {
+        parent = "sub_CHR_inverted" # Q1 & Q4 Chernihiv inverted
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_HAL" # Q2 & Q3 Halych
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }		
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }	
+}
+
+CHR_kyiv = { # Chernihiv owns Kyiv
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_CHR" # Q1 & Q4 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_KYI" # Q2 & Q3 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+CHR_halicia_volhynia = { # Chernihiv owns Halicia and Volhynia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_CHR" # Q1 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }	
+    }	
+    sub = {
+        parent = "sub_VOL" # Q2 & Q3 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }	
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }			
+    }	
+    sub = {
+        parent = "sub_HAL" # Q4 Halych
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+CHR_kyiv_volhynia = { # Chernihiv owns Kyiv and Volhynia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_CHR" # Q1 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }	
+    }	
+    sub = {
+        parent = "sub_KYI" # Q2 & Q3 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }	
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }			
+    }	
+    sub = {
+        parent = "sub_VOL" # Q4 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+CHR_kyiv_halicia = { # Chernihiv owns Kyiv and Halicia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_CHR" # Q1 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+    }	
+    sub = {
+        parent = "sub_KYI" # Q2 & Q3 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }	
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }			
+    }	
+    sub = {
+        parent = "sub_HAL" # Q4 Halych
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }	
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+CHR_kyiv_halicia_volhynia = { # Chernihiv owns Kyiv, Halicia and Volhynia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_CHR" # Q1 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }	
+    }	
+    sub = {
+        parent = "sub_KYI" # Q2 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_VOL" # Q3 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_HAL" # Q4 Halych
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+CHR_all_ruthenia = { # Chernihiv owns Kyiv, Halicia, Volhynia, Belarus
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_KYI" # Q1 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }	
+    }	
+    sub = {
+        parent = "sub_HAL" # Q2 Halych
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_VOL" # Q3 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_BLR" # Q4 Belarus
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }
+    sub = {
+        parent = "sub_CHR_top" # Top Chernihiv
+		instance = { scale = { 1 1 } offset = { 0.0 0.0 } }		
+    }	
+}
+
+
+# ------- Halych -------
+
+HAL = { # Halych new default, historic
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black_secondary"
+	color3 = "yellow_mid"
+
+	colored_emblem = {
+		texture = "ce_raven_halych.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.5 0.52 } scale = { 0.85 0.75 } }	
+	}
+
+	colored_emblem = {
+		texture = "ce_crown.dds"
+		color1 = color3
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.47 0.17 } rotation = 8 scale = { 0.18 0.18 } }	
+	}	
+}
+
+
+HAL_volhynia = { # Halych-Volhynia gets historical lion! Not quartered
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+	color3 = "white_secondary"
+
+	sub = {
+        parent = "sub_HAL_VOL" # Full Ruthenian lion
+		instance = { scale = { 1 1 } offset = { 0.0 0.0 } }	
+    }	
+}
+
+HAL_severia = { # Halych owns Severia, inverted for contrast
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "white"
+	color2 = "white"
+	color3 = "yellow_mid"
+	color4 = "black"
+	color5 = "black_secondary"
+
+    sub = {
+        parent = "sub_HAL_inverted" # Q1 & Q4 Halych inverted
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_CHR" # Q2 & Q3 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }		
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }	
+}	
+
+HAL_kyiv = { # Halych owns Kyiv
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_HAL" # Q1 & Q4 Halych
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_KYI" # Q2 & Q3 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+HAL_severia_volhynia = { # Halych owns Severia and Volhynia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_HAL_VOL" # Q1 & Q4 Halych-Volhynian lion
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_CHR" # Q2 & Q3 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }	
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }			
+    }
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+HAL_kyiv_volhynia = { # Halych owns Kyiv and Volhynia, inverted Kyiv for symmetry
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_HAL_VOL" # Q1 & Q4 Halych-Volhynian lion
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }	
+    }	
+    sub = {
+        parent = "sub_KYI_inverted" # Q2 & Q3 Kyiv inverted
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }	
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }			
+    }
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+HAL_kyiv_severia = { # Halych owns Kyiv and Severia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_HAL" # Q1 Halych
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+    }	
+    sub = {
+        parent = "sub_KYI" # Q2 & Q3 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }	
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }			
+    }	
+    sub = {
+        parent = "sub_CHR" # Q4 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }	
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+HAL_kyiv_severia_volhynia = { # Halych owns Kyiv, Severia and Volhynia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_HAL_VOL" # Q1 & Q4 Halych-Volhynian lion
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }
+    }	
+    sub = {
+        parent = "sub_KYI_inverted" # Q2 Kyiv inverted for symmetry  
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_CHR" # Q3 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }		
+    }
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+HAL_all_ruthenia = { # Halych owns Kyiv, Severia, Volhynia, Belarus
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_HAL_VOL" # Q1 Halych-Volhynian lion
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+    }	
+    sub = {
+        parent = "sub_KYI_inverted" # Q2 Kyiv inverted for symmetry  
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_CHR" # Q3 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }		
+    }
+    sub = {
+        parent = "sub_BLR" # Q4 Belarus
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+
+# ------- Volhynia -------
+
+VOL = { # Volhynia new default, Cossack cross, a bit smaller
+	pattern = "pattern_solid.dds"
+	color1 = "red_dark"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_cross_patty_cossack.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }		
+	}
+}
+
+VOL_halicia = { # Volhynia-Halych gets historical lion AND VOlhynian cross!
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red_dark"
+	color3 = "white_secondary"
+
+    sub = {
+        parent = "sub_VOL" # Q1 & Q4 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }	
+    }	
+    sub = {
+        parent = "sub_HAL_VOL" # Q2 & Q3 Halych-Volhynian lion
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }		
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }	
+}
+
+VOL_severia = { # Volhynia owns Severia, inverted for contrast
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "white"
+	color2 = "white"
+	color3 = "yellow_mid"
+	color4 = "black"
+	color5 = "black_secondary"
+
+    sub = {
+        parent = "sub_VOL" # Q1 & Q4 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_CHR" # Q2 & Q3 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }		
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }	
+}	
+
+VOL_kyiv = { # Volhynia owns Kyiv
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_VOL" # Q1 & Q4 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_KYI" # Q2 & Q3 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+VOL_severia_halicia = { # Volhynia owns Severia and Halicia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_VOL" # Q1 & Q4 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_HAL_VOL" # Q2 Halych-Volhynian lion
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }	
+    sub = {
+        parent = "sub_CHR" # Q3 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }			
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+VOL_kyiv_halicia = { # Volhynia owns Kyiv and Halicia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_VOL" # Q1 & Q4 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_HAL_VOL" # Q2 Halych-Volhynian lion
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }	
+    sub = {
+        parent = "sub_KYI" # Q3 Kyiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }			
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+VOL_kyiv_severia = { # Volhynia owns Kyiv and Severia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_VOL" # Q1 & Q4 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_KYI_inverted" # Q2 Kyiv inverted
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }	
+    sub = {
+        parent = "sub_CHR" # Q3 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }			
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }		
+}
+
+VOL_kyiv_severia_halicia = { # Volhynia owns Kyiv, Severia and Halicia
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_VOL" # Q1 Volhynia
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }	
+    }	
+    sub = {
+        parent = "sub_KYI_inverted" # Q2 Kyiv inverted
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_CHR" # Q3 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_HAL_VOL" # Q4 Halych-Volhynian lion
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }
+}
+
+VOL_all_ruthenia = { # Volhynia owns Kyiv, Severia, Halicia, Belarus
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "yellow"
+	color4 = "white"
+	color5 = "purple_mid"
+
+    sub = {
+        parent = "sub_HAL_VOL" # Q1 Halych-Volhynian lion
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }	
+    }	
+    sub = {
+        parent = "sub_KYI_inverted" # Q2 Kyiv inverted
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }			
+    }	
+    sub = {
+        parent = "sub_CHR" # Q3 Chernihiv
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_BLR" # Q4 Belarus
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }
+    sub = {
+        parent = "sub_VOL_top" # Top Volhynia
+		instance = { scale = { 1 1 } offset = { 0.0 0.0 } }		
+    }		
+}
+
+
+# ------- Polotsk -------
+
+POK_blackrus = { # Owns Navahrudak
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red_dark"
+	color3 = "white_secondary"
+
+    sub = {
+        parent = "sub_POK" # Q1 & Q4 Polotsk
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }	
+    }	
+    sub = {
+        parent = "sub_NRK" # Q2 & Q3 Novogrudok
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }		
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }	
+}
+
+POK_polesia = { # Owns Turov, Pinsk
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "white"
+	color2 = "white"
+	color3 = "yellow_mid"
+	color4 = "black"
+	color5 = "black_secondary"
+
+    sub = {
+        parent = "sub_POK" # Q1 & Q4 Polotsk
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_TUV" # Q2 & Q3 Turov
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }		
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }	
+}
+
+POK_blackrus_polesia = { # Owns Novogrudok, Turov, Pinsk
+	pattern = "pattern_solid.dds"
+	color1 = "red_light"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_bow_arrow_pale.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.5 0.73 } scale = { 0.5 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_novogrudok_archangel.dds"
+		instance = { position = { 0.20 0.36 } scale = { 0.53 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_knight_polotsk.dds"
+		instance = { position = { 0.805 0.38 } scale = { 0.58 0.58 } }
+	}
+	textured_emblem = {
+		texture = "te_knight_shield_overlay_belarusian.dds"
+		instance = { position = { 0.805 0.38 } scale = { 0.58 0.58 } }
+	}
+	colored_emblem = {
+		texture = "ce_divider_plc_embowed.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.485 } scale = { 1.0 1.0 } }
+	}
+}
+
+
+# ------- Novogrudok -------
+
+NRK_belarus = { # Owns Polotsk
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red_dark"
+	color3 = "white_secondary"
+
+    sub = {
+        parent = "sub_NRK" # Q1 & Q4 Novogrudok
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }	
+    }	
+    sub = {
+        parent = "sub_POK" # Q2 & Q3 Polotsk
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }		
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }	
+}
+
+NRK_polesia = { # Owns Turov, Pinsk
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "white"
+	color2 = "white"
+	color3 = "yellow_mid"
+	color4 = "black"
+	color5 = "black_secondary"
+
+    sub = {
+        parent = "sub_NRK" # Q1 & Q4 Novogrudok
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }
+    }	
+    sub = {
+        parent = "sub_TUV_inverted" # Q2 & Q3 Turov inverted
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }		
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }	
+}
+
+NRK_belarus_polesia = { # Owns Polotsk, Turov, Pinsk
+	pattern = "pattern_solid.dds"
+	color1 = "red_light"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_bow_arrow_pale.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.5 0.73 } scale = { 0.5 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_novogrudok_archangel.dds"
+		instance = { position = { 0.20 0.36 } scale = { 0.53 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_knight_polotsk.dds"
+		instance = { position = { 0.805 0.38 } scale = { 0.58 0.58 } }
+	}
+	textured_emblem = {
+		texture = "te_knight_shield_overlay_belarusian.dds"
+		instance = { position = { 0.805 0.38 } scale = { 0.58 0.58 } }
+	}
+	colored_emblem = {
+		texture = "ce_divider_plc_embowed.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.485 } scale = { 1.0 1.0 } }
+	}
+}
+
+
+# ------- Turov and Pinsk -------
+
+TUV_pinsk = { # For Turov and Pinsk only. The one who controls both Turov and Pinsk gets the second bow
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_bow_arrow_pale.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.25 0.48 } scale = { 0.6 0.6 } }
+		instance = { position = { 0.75 0.48 } scale = { 0.6 0.6 } }
+	}
+}
+
+TUV_belarus = { # Owns Polotsk
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "white"
+	color2 = "white"
+	color3 = "yellow_mid"
+	color4 = "black"
+	color5 = "black_secondary"
+
+    sub = {
+        parent = "sub_TUV" # Q1 & Q4 Turov
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_POK" # Q2 & Q3 Polotsk
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }		
+    sub = {
+        parent = "sub_quartered"
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }	
+}
+
+TUV_blackrus = { # Owns Novogrudok
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "white"
+	color2 = "white"
+	color3 = "yellow_mid"
+	color4 = "black"
+	color5 = "black_secondary"
+
+    sub = {
+        parent = "sub_TUV_inverted" # Q1 & Q4 Turov inverted
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_NRK" # Q2 & Q3 Novogrudok
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }		
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }	
+}
+
+TUV_belarus_blackrus = { # Owns Polotsk, Novogrudok
+	pattern = "pattern_solid.dds"
+	color1 = "red_light"
+	color2 = "white"
+	color3 = "yellow_mid"
+
+	colored_emblem = {
+		texture = "ce_bow_arrow_pale.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.5 0.73 } scale = { 0.5 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_novogrudok_archangel.dds"
+		instance = { position = { 0.20 0.36 } scale = { 0.53 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_knight_polotsk.dds"
+		instance = { position = { 0.805 0.38 } scale = { 0.58 0.58 } }
+	}
+	textured_emblem = {
+		texture = "te_knight_shield_overlay_belarusian.dds"
+		instance = { position = { 0.805 0.38 } scale = { 0.58 0.58 } }
+	}
+	colored_emblem = {
+		texture = "ce_divider_plc_embowed.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.485 } scale = { 1.0 1.0 } }
+	}
+}
+
+
+# ------- Pinsk -------
+# Same as Turov
+
+PNK_turov = { # For Turov and Pinsk only. The one who controls both Turov and Pinsk gets the second bow
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_bow_arrow_pale.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.25 0.48 } scale = { 0.6 0.6 } }
+		instance = { position = { 0.75 0.48 } scale = { 0.6 0.6 } }
+	}
+}
+
+PNK_belarus = { # Owns Polotsk
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "white"
+	color2 = "white"
+	color3 = "yellow_mid"
+	color4 = "black"
+	color5 = "black_secondary"
+
+    sub = {
+        parent = "sub_TUV" # Q1 & Q4 Turov
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_POK" # Q2 & Q3 Polotsk
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }		
+    sub = {
+        parent = "sub_quartered"
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }	
+}
+
+PNK_blackrus = { # Owns Novogrudok
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "white"
+	color2 = "white"
+	color3 = "yellow_mid"
+	color4 = "black"
+	color5 = "black_secondary"
+
+    sub = {
+        parent = "sub_TUV_inverted" # Q1 & Q4 Turov inverted
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.0 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.5 } }		
+    }	
+    sub = {
+        parent = "sub_NRK" # Q2 & Q3 Novogrudok
+		instance = { scale = { 0.5 0.5 } offset = { 0.0 0.5 } }
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.0 } }		
+    }			
+    sub = {
+        parent = "sub_quartered" 
+		color1 = "white"
+		color2 = "black_secondary"	
+		instance = { scale = { 1.0 1.0 } offset = { 0.0 0.0 } }
+    }	
+}
+
+PNK_belarus_blackrus = { # Owns Polotsk, Novogrudok
+	pattern = "pattern_solid.dds"
+	color1 = "red_light"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_bow_arrow_pale.dds"
+		color1 = color3
+		color2 = color2
+		instance = { position = { 0.5 0.73 } scale = { 0.5 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_novogrudok_archangel.dds"
+		instance = { position = { 0.20 0.36 } scale = { 0.53 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_knight_polotsk.dds"
+		instance = { position = { 0.805 0.38 } scale = { 0.58 0.58 } }
+	}
+	textured_emblem = {
+		texture = "te_knight_shield_overlay_belarusian.dds"
+		instance = { position = { 0.805 0.38 } scale = { 0.58 0.58 } }
+	}
+	colored_emblem = {
+		texture = "ce_divider_plc_embowed.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.485 } scale = { 1.0 1.0 } }
+	}
+}

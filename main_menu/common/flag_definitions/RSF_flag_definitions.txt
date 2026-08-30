@@ -1,0 +1,607 @@
+﻿# FLAG_DEFINITION_LIST = {		# countries search for a list with the same name as their tag, the DEFAULT list is always included, if no flag definition is applicable for a country then its tag is used a COA_KEY
+# 	includes = ANOTHER_LIST		# includes another list in this list, can be repeated
+#
+# 	flag_definition = {			# the flag definitions that make up this list, can be repeated
+# 		coa = [list] COA_KEY	# main flag, optional list keyword denotes a coa template
+# 		allow_overlord_canton = yes				# default no
+# 		coa_with_overlord_canton = <[list] coa>	# flag where a canton can be placed, optional list keyword same as above, defaults to coa
+# 		overlord_canton_offset = { x y }		# canton placement offset, default { 0 0 }
+# 		overlord_canton_scale = { x y }			# canton placement scale, default { 0.5 0.5 }
+# 		subject_canton = [list] COA_KEY	# canton applied to subjects by this country, optional list keyword same as above
+#
+# 		priority = value		# valid flag definition with the highest priority applies
+# 		trigger = {}			# a trigger that determines if this flag definition is valid, see below for scope
+#       allow_revolutionary_indicator = no      # Default = yes. If yes, a temporary revolutionary indicator will appear while the country is revolutionary
+#       revolutionary_canton = [list] COA_KEY   # Optional. Default = default_revolutionary_canton. Defines which flag should be used as canton while this country is revolutionary
+# 	}
+# }
+# revolutionary is not in use for the moment.
+
+#            | existing country | releasing a country | country formation |
+# |==========|==================|=====================|===================|
+# |root      | definition       | definition          | definition        |
+# |----------|------------------|---------------------|-------------------|
+# |target    | country          | N/A                 | N/A               |
+# |----------|------------------|---------------------|-------------------|
+# |initiator | N/A              | player              | player            |
+# |----------|------------------|---------------------|-------------------|
+# |actor     | country          | player              | player            |
+# |----------|------------------|---------------------|-------------------|
+# |          | country's        |                     | player's          |
+# |overlord  | direct overlord  | player              | direct overlord   |
+# |          | if it exists     |                     | if it exists      |
+# |----------|------------------|---------------------|-------------------|
+
+# common variables
+# @coa_width = 768
+# @coa_height = 512
+# @canton_scale_cross_x = @[ ( 333 / coa_width ) + 0.001 ]
+# @canton_scale_cross_y = @[ ( 205 / coa_height ) + 0.001 ]
+# @canton_scale_sweden_x = @[ ( 255 / coa_width ) + 0.001 ]
+# @canton_scale_sweden_y = @[ ( 204 / coa_height ) + 0.001 ]
+# @canton_scale_norway_x = @[ ( 192 / coa_width ) + 0.001 ]
+# @canton_scale_norway_y = @[ ( 192 / coa_height ) + 0.001 ]
+# @canton_scale_denmark_x = @[ ( 220 / coa_width ) + 0.001 ]
+# @canton_scale_denmark_y = @[ ( 220 / coa_height ) + 0.001 ]
+# @third = @[1/3]
+# @usa_canton_width = 0.5
+# @usa_canton_height = @[ 1 / 13 * 7 ]
+
+# Age triggers :
+# 1342 - coa_def_renaissance_age_2_trigger
+# 1437 - coa_def_discovery_age_3_trigger
+# 1537 - coa_def_reformation_age_4_trigger
+# 1637 - coa_def_absolutism_age_5_trigger
+# 1737 - coa_def_revolutions_age_6_trigger
+
+# Colour codes for tinctures in summary :
+# A - Argent (White)
+# O - Or (Yellow)
+# B - Azure (Blue)
+# G - Gules (Red)
+# S - Sable (Black)
+# V - Vert/Sinople (Green)
+# P - Purple/Pourpre
+# M - Brown/Maroon
+# Z - Vair
+# E - Ermine
+# N - Orange
+
+UKR = { # Ruthenia
+	flag_definition = {
+		coa = UKR
+		priority = 1
+	}
+	flag_definition = {
+		coa = UKR_severian
+		priority = 2
+		trigger = {
+			coa_def_UKR_severian_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = UKR_halician
+		priority = 3
+		trigger = {
+			coa_def_UKR_halician_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = UKR_volhynian
+		priority = 4
+		trigger = {
+			coa_def_UKR_volhynian_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = UKR_polesian
+		priority = 5
+		trigger = {
+			coa_def_UKR_polesian_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = UKR_belarusian
+		priority = 6
+		trigger = {
+			coa_def_UKR_belarusian_trigger = yes
+		}		
+	}
+}
+
+
+KIE = { # Kyiv
+	flag_definition = {
+		coa = KIE
+		priority = 1
+	}
+
+	flag_definition = { # Owns Volhynia
+		coa = KIE_volhynia
+		priority = 2
+		trigger = {
+			coa_def_volynia_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns Halicia
+		coa = KIE_halicia
+		priority = 3
+		trigger = {
+			coa_def_halicia_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns Severia
+		coa = KIE_severia
+		priority = 4
+		trigger = {
+			coa_def_severia_ownership_trigger = yes
+		}
+	}
+	
+	flag_definition = { # Owns Halicia and Volhynia
+		coa = KIE_halicia_volhynia
+		priority = 5
+		trigger = {
+			coa_def_halicia_ownership_trigger = yes
+			coa_def_volynia_ownership_trigger = yes	
+		}
+	}
+	
+	flag_definition = { # Owns Severia  and Volhynia
+		coa = KIE_severia_volhynia
+		priority = 6
+		trigger = {
+			coa_def_severia_ownership_trigger = yes
+			coa_def_volynia_ownership_trigger = yes	
+		}
+	}
+	
+	flag_definition = { # Owns Severia and Halicia
+		coa = KIE_severia_halicia
+		priority = 7
+		trigger = {
+			coa_def_severia_ownership_trigger = yes
+			coa_def_halicia_ownership_trigger = yes
+		}
+	}
+	
+	flag_definition = { # Owns Severia, Halicia and Volhynia
+		coa = KIE_severia_halicia_volhynia
+		priority = 8
+		trigger = {
+			coa_def_severia_ownership_trigger = yes
+			coa_def_halicia_ownership_trigger = yes
+			coa_def_volynia_ownership_trigger = yes	
+		}
+	}
+	
+	flag_definition = { # Owns Severia, Halicia, Volhynia, Belarus
+		coa = KIE_all_ruthenia
+		priority = 9
+		trigger = {
+			coa_def_severia_ownership_trigger = yes
+			coa_def_halicia_ownership_trigger = yes
+			coa_def_volynia_ownership_trigger = yes
+			coa_def_belarus_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Copied from Vanilla
+		coa = KIE_PLC
+		priority = 2
+		trigger = {
+			OR = {
+				coa_def_LIT_ensign_trigger = yes
+				coa_def_POL_ensign_trigger = yes
+				coa_def_PLC_ensign_trigger = yes
+			}
+		}
+	}		
+}
+
+
+CHR = { # Chernihiv
+	flag_definition = { # Default
+		coa = CHR
+		priority = 1
+	}
+
+	flag_definition = { # Owns Volhynia
+		coa = CHR_volhynia
+		priority = 2
+		trigger = {
+			coa_def_volynia_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns Halicia
+		coa = CHR_halicia
+		priority = 3
+		trigger = {
+			coa_def_halicia_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns Kyiv
+		coa = CHR_kyiv
+		priority = 4
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+		}
+	}
+	
+	flag_definition = { # Owns Halicia and Volhynia
+		coa = CHR_halicia_volhynia
+		priority = 5
+		trigger = {
+			coa_def_halicia_ownership_trigger = yes
+			coa_def_volynia_ownership_trigger = yes	
+		}
+	}
+	
+	flag_definition = { # Owns Kyiv  and Volhynia
+		coa = CHR_kyiv_volhynia
+		priority = 6
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+			coa_def_volynia_ownership_trigger = yes	
+		}
+	}
+	
+	flag_definition = { # Owns Kyiv and Halicia
+		coa = CHR_kyiv_halicia
+		priority = 7
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+			coa_def_halicia_ownership_trigger = yes
+		}
+	}
+	
+	flag_definition = { # Owns Kyiv, Halicia and Volhynia
+		coa = CHR_kyiv_halicia_volhynia
+		priority = 8
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+			coa_def_halicia_ownership_trigger = yes
+			coa_def_volynia_ownership_trigger = yes	
+		}
+	}
+	
+	flag_definition = { # Owns Kyiv, Halicia, Volhynia, Belarus
+		coa = CHR_all_ruthenia
+		priority = 9
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+			coa_def_halicia_ownership_trigger = yes
+			coa_def_volynia_ownership_trigger = yes
+			coa_def_belarus_ownership_trigger = yes
+		}
+	}
+}
+
+
+HAL = { # Halych
+	flag_definition = { # Default
+		coa = HAL
+		priority = 1
+	}
+
+	flag_definition = { # Owns Volhynia
+		coa = HAL_volhynia
+		priority = 2
+		trigger = {
+			coa_def_volynia_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns Severia
+		coa = HAL_severia
+		priority = 3
+		trigger = {
+			coa_def_severia_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns Kyiv
+		coa = HAL_kyiv
+		priority = 4
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+		}
+	}
+	
+	flag_definition = { # Owns Severia and Volhynia
+		coa = HAL_severia_volhynia
+		priority = 5
+		trigger = {
+			coa_def_severia_ownership_trigger = yes
+			coa_def_volynia_ownership_trigger = yes	
+		}
+	}
+	
+	flag_definition = { # Owns Kyiv  and Volhynia
+		coa = HAL_kyiv_volhynia
+		priority = 6
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+			coa_def_volynia_ownership_trigger = yes	
+		}
+	}
+	
+	flag_definition = { # Owns Kyiv and Severia
+		coa = HAL_kyiv_severia
+		priority = 7
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+			coa_def_severia_ownership_trigger = yes
+		}
+	}
+	
+	flag_definition = { # Owns Kyiv, Severia and Volhynia
+		coa = HAL_kyiv_severia_volhynia
+		priority = 8
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+			coa_def_severia_ownership_trigger = yes
+			coa_def_volynia_ownership_trigger = yes	
+		}
+	}
+	
+	flag_definition = { # Owns Kyiv, Halicia, Volhynia, Belarus
+		coa = HAL_all_ruthenia
+		priority = 9
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+			coa_def_severia_ownership_trigger = yes
+			coa_def_volynia_ownership_trigger = yes
+			coa_def_belarus_ownership_trigger = yes
+		}
+	}
+}
+
+
+VOL = { # Volhynia
+	flag_definition = { # Default
+		coa = VOL
+		priority = 1
+	}
+
+	flag_definition = { # Owns Halicia
+		coa = VOL_halicia
+		priority = 2
+		trigger = {
+			coa_def_halicia_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns Severia
+		coa = VOL_severia
+		priority = 3
+		trigger = {
+			coa_def_severia_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns Kyiv
+		coa = VOL_kyiv
+		priority = 4
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+		}
+	}
+	
+	flag_definition = { # Owns Severia and Halicia
+		coa = VOL_severia_halicia
+		priority = 5
+		trigger = {
+			coa_def_severia_ownership_trigger = yes
+			coa_def_halicia_ownership_trigger = yes	
+		}
+	}
+	
+	flag_definition = { # Owns Kyiv  and Halicia
+		coa = VOL_kyiv_halicia
+		priority = 6
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+			coa_def_halicia_ownership_trigger = yes	
+		}
+	}
+	
+	flag_definition = { # Owns Kyiv and Severia
+		coa = VOL_kyiv_severia
+		priority = 7
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+			coa_def_severia_ownership_trigger = yes
+		}
+	}
+	
+	flag_definition = { # Owns Kyiv, Severia and Halicia
+		coa = VOL_kyiv_severia_halicia
+		priority = 8
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+			coa_def_severia_ownership_trigger = yes
+			coa_def_halicia_ownership_trigger = yes	
+		}
+	}
+	
+	flag_definition = { # Owns Kyiv, Halicia, Volhynia, Belarus
+		coa = VOL_all_ruthenia
+		priority = 9
+		trigger = {
+			coa_def_kyiv_ownership_trigger = yes
+			coa_def_severia_ownership_trigger = yes
+			coa_def_halicia_ownership_trigger = yes
+			coa_def_belarus_ownership_trigger = yes
+		}
+	}
+}
+
+POK = { # Polotsk
+	flag_definition = {
+		coa = POK
+		priority = 1
+	}
+	
+	flag_definition = { # Copied from vanilla
+		coa = POK_lithuanian
+		priority = 2
+		trigger = {
+			OR = {
+				coa_def_gediminid_dynasty_trigger = yes
+				coa_def_LIT_ensign_trigger = yes
+				coa_def_PLC_ensign_trigger = yes
+			}
+		}
+	}
+
+	flag_definition = { # Copied from vanilla
+		coa = POK_jagiellon
+		priority = 3
+		trigger = {
+			coa_def_christian_trigger = yes
+			coa_def_jagiellon_dynasty_trigger = yes
+		}
+	}	
+
+	flag_definition = { # Owns Black Ruthenia
+		coa = POK_blackrus
+		priority = 4
+		trigger = {
+			coa_def_blackrus_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns Polesia
+		coa = POK_polesia
+		priority = 5
+		trigger = {
+			coa_def_polesia_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns Black Ruthenia and Polesia
+		coa = POK_blackrus_polesia
+		priority = 6
+		trigger = {
+			coa_def_blackrus_ownership_trigger = yes
+			coa_def_polesia_ownership_trigger = yes
+		}
+	}
+}
+
+NRK = { # Novogrudok
+	flag_definition = { # Default
+		coa = NRK
+		priority = 1
+	}
+
+	flag_definition = { # Owns White Ruthenia
+		coa = NRK_belarus
+		priority = 2
+		trigger = {
+			coa_def_belarus_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns Polesia
+		coa = NRK_polesia
+		priority = 3
+		trigger = {
+			coa_def_polesia_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns White Ruthenia and Polesia
+		coa = NRK_belarus_polesia
+		priority = 4
+		trigger = {
+			coa_def_belarus_ownership_trigger = yes
+			coa_def_polesia_ownership_trigger = yes
+		}
+	}
+}
+
+TUV = { # Turov
+	flag_definition = { # Default
+		coa = TUV
+		priority = 1
+	}
+
+	flag_definition = { # If Turov owns Pinsk, it gets the second bow
+		coa = TUV_pinsk
+		priority = 2
+		trigger = {
+			coa_def_polesia_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns White Ruthenia
+		coa = TUV_belarus
+		priority = 3
+		trigger = {
+			coa_def_belarus_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns Black Ruthenia
+		coa = TUV_blackrus
+		priority = 4
+		trigger = {
+			coa_def_blackrus_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns White and Black Ruthenia
+		coa = TUV_belarus_blackrus
+		priority = 5
+		trigger = {
+			coa_def_blackrus_ownership_trigger = yes
+			coa_def_belarus_ownership_trigger = yes
+		}
+	}
+}
+
+PNK = { # Pinsk
+	flag_definition = { # Default
+		coa = PNK
+		priority = 1
+	}
+
+	flag_definition = { # If Pinsk owns Turov, it gets the second bow
+		coa = PNK_turov
+		priority = 2
+		trigger = {
+			coa_def_polesia_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns White Ruthenia
+		coa = PNK_belarus
+		priority = 3
+		trigger = {
+			coa_def_belarus_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns Black Ruthenia
+		coa = PNK_blackrus
+		priority = 4
+		trigger = {
+			coa_def_blackrus_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = { # Owns White and Black Ruthenia
+		coa = PNK_belarus_blackrus
+		priority = 5
+		trigger = {
+			coa_def_blackrus_ownership_trigger = yes
+			coa_def_belarus_ownership_trigger = yes
+		}
+	}
+}

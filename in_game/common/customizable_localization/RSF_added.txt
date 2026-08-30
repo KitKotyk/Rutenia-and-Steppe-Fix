@@ -12,7 +12,7 @@ UkrGenderSuffixAdj = {
 	text = {
 		localization_key = ukr_suffix_yi_male
 		trigger = { is_female = no }
-		#fallback = yes
+		fallback = yes
 	}
 }
 
@@ -29,7 +29,7 @@ BelGenderSuffixAdj = {
 	text = {
 		localization_key = bel_suffix_i_male
 		trigger = { is_female = no }
-		#fallback = yes
+		fallback = yes
 	}
 }
 
@@ -46,7 +46,7 @@ PolGenderSuffixAdj = {
 	text = {
 		localization_key = pol_suffix_i_male
 		trigger = { is_female = no }
-		#fallback = yes
+		fallback = yes
 	}
 }
 
@@ -63,7 +63,7 @@ CzeSvkGenderSuffixAdj = {
 	text = {
 		localization_key = cze_svk_suffix_y_male
 		trigger = { is_female = no }
-		#fallback = yes
+		fallback = yes
 	}
 }
 
@@ -80,7 +80,7 @@ CzeSvkGenderSuffix1 = {
 	text = {
 		localization_key = cze_svk_suffix_no_male
 		trigger = { is_female = no }
-		#fallback = yes
+		fallback = yes
 	}
 }
 
@@ -97,7 +97,7 @@ CzeSvkGenderSuffix2 = {
 	text = {
 		localization_key = cze_svk_suffix_a_male
 		trigger = { is_female = no }
-		#fallback = yes
+		fallback = yes
 	}
 }
 
@@ -114,7 +114,7 @@ RusGenderSuffixAdj = {
 	text = {
 		localization_key = rus_suffix_iy_male
 		trigger = { is_female = no }
-		#fallback = yes
+		fallback = yes
 	}
 }
 
@@ -131,13 +131,14 @@ BulRusGenderSuffix = {
 	text = {
 		localization_key = bul_rus_suffix_no_male
 		trigger = { is_female = no }
-		#fallback = yes
+		fallback = yes
 	}
 }
 
 # ----- POLICIES -----
 GetRusJustice = {
 	type = country
+	log_loc_errors = no
 	
 	text = {
 		localization_key = russkaya_pravda_policy_russian
@@ -156,7 +157,7 @@ GetRusJustice = {
 	
 	text = {
 		fallback = yes
-		localization_key = the_rus_justice_policy		
+		localization_key = the_rus_justice_policy
 	}
 }
 

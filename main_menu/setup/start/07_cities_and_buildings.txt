@@ -2259,16 +2259,16 @@ building_manager = {
 	#Ruthenia
 	# castle = { tag = KIE level = 1 location = myrhorod }
 	castle = { tag = HAL level = 1 location = lviv }
-	castle = { tag = HAL level = 1 location = sanok }
+	# castle = { tag = HAL level = 1 location = sanok }
 	castle = { tag = VOL level = 1 location = volodymyr }
 
 	market_village = { tag = HAL level = 1 location = sanok }
-	market_village = { tag = VOL level = 1 location = volodymyr }
+	# market_village = { tag = VOL level = 1 location = volodymyr }
 	market_village = { tag = GLH level = 2 location = bratslav }
 	market_village = { tag = KIE level = 1 location = sherbiv }
 
 	charcoal_maker = { tag = HAL level = 1 location = khmilnyk }
-	# charcoal_maker = { tag = HAL level = 1 location = mezhybozhe }
+	charcoal_maker = { tag = HAL level = 1 location = mezhybozhe }
 
 	cathedral 	= { tag = KIE level = 1 location = kyiv } #Saint Sophia Cathedral, established in 1012
 	cathedral 	= { tag = POK level = 1 location = polotsk } #Saint Sophia Cathedral, established in 992

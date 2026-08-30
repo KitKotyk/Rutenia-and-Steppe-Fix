@@ -7974,19 +7974,19 @@ CHP = { # Champagne - Using the ancient design for difference with Sancerre
 	}	
 }
 
-CHR = { # Chernigov
-	pattern = "pattern_solid.dds"
-	color1 = "white"
-	color2 = "black"
-	color3 = "yellow"
+# CHR = { # Uses a wrong eagle
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "white"
+# 	color2 = "black"
+# 	color3 = "yellow"
 	
-	colored_emblem = {
-		texture = "ce_eagle_doubleheaded_wide.dds"
-		color1 = color2
-		color2 = hsv360 	{	42	80	80	}	
-		color3 = color1
-	}
-}
+# 	colored_emblem = {
+# 		texture = "ce_eagle_doubleheaded_wide.dds"
+# 		color1 = color2
+# 		color2 = hsv360 	{	42	80	80	}	
+# 		color3 = color1
+# 	}
+# }
 
 CHV = { # Chiavenna
 	pattern = "pattern_solid.dds"
@@ -15731,51 +15731,21 @@ HAI_ancient = { # Hainaut - Ancient/Proper
 	}
 }
 
-HAL = { # Halych
-	# pattern = "pattern_solid.dds"
-	# color1 = "white_secondary"
-	# color2 = "black_secondary"
-	# color3 = "yellow_mid"
+# HAL = { # Halych
 
-	# colored_emblem = {
-	# 	texture = "ce_raven_halych.dds"
-	# 	color1 = color2
-	# 	color2 = color2
-	# 	color3 = color1
-	# 	instance = { position = { 0.5 0.52 } scale = { 0.85 0.75 } }	
-	# }
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "blue"
+# 	color2 = "yellow"
+# 	color3 = "white_secondary"
 
-	# colored_emblem = {
-	# 	texture = "ce_crown.dds"
-	# 	color1 = color3
-	# 	color2 = color2
-	# 	color3 = color1
-	# 	instance = { position = { 0.47 0.165 } rotation = 5 scale = { 0.18 0.18 } }	
-	# }
-
-	# -------
-
-	pattern = "pattern_solid.dds"
-	color1 = "blue"
-	color2 = "yellow"
-	color3 = "white_secondary"
-
-	# colored_emblem = {
-	# 	texture = "ce_mount_03_in_base.dds"
-	# 	color1 = color3
-	# 	color2 = color3
-	# 	color3 = color3
-	# 	instance = { position = { 0.2 0.25 } rotation = 40 scale = { 0.55 2 } }
-	# }
-
-	colored_emblem = {
-		texture = "ce_lion_wide.dds"
-		color1 = color2
-		color2 = color3
-		color3 = color1
-		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
-	}
-}
+# 	colored_emblem = {
+# 		texture = "ce_lion_wide.dds"
+# 		color1 = color2
+# 		color2 = color3
+# 		color3 = color1
+# 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+# 	}
+# }
 
 HAM = { # Hamburg
 	pattern = "pattern_solid.dds"
@@ -41795,36 +41765,18 @@ UGW = { # Ungwana
 	}		
 }
 
-UKR = { # Ukraine
-	pattern = "pattern_solid.dds"
-	color1 = "blue"
-	color2 = "yellow"
-	
-	colored_emblem = {
-		texture = "ce_tryzub.dds"
-		color1 = color2
-		color2 = color2
-		instance = { position = { 0.5 0.51 } scale = { 0.95 0.95 } }		
-	}
-
-	# pattern = "pattern_solid.dds" 
-	# color1 = "blue_secondary"
+# UKR = { # Ukraine
+	# pattern = "pattern_solid.dds"
+	# color1 = "blue"
 	# color2 = "yellow"
 	
 	# colored_emblem = {
-	# 	texture = "ce_frame_circle_border_indented.dds"
-	# 	color1 = color1
-	# 	color2 = color2
-	# 	instance = { position = { 0.5 0.49 } scale = { 0.9 0.9 } }				
-	# }
-	
-	# colored_emblem = {
-	# 	texture = "ce_tryzub_yaroslav.dds"
+	# 	texture = "ce_tryzub.dds"
 	# 	color1 = color2
-	# 	color2 = color1
-	# 	instance = { position = { 0.5 0.51 } scale = { 0.7 0.6 } }			
+	# 	color2 = color2
+	# 	instance = { position = { 0.5 0.51 } scale = { 0.95 0.95 } }		
 	# }	
-}
+# }
 
 ULA = { # Nara Ula
 	pattern = "pattern_solid.dds"
@@ -42750,18 +42702,18 @@ VNT = { # Ventadour
 	}	
 }
 
-VOL = { # Volhynia
-	pattern = "pattern_solid.dds"
-	color1 = "red"
-	color2 = "white"
+# VOL = { # Volhynia another cross
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "red"
+# 	color2 = "white"
 
-	colored_emblem = {
-		texture = "ce_cross_patty_wide.dds"
-		color1 = color2
-		color2 = color2
-		instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
-	}
-}
+# 	colored_emblem = {
+# 		texture = "ce_cross_patty_wide.dds"
+# 		color1 = color2
+# 		color2 = color2
+# 		instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+# 	}
+# }
 
 VRC = { # Vercelli
 	pattern = "pattern_solid.dds"

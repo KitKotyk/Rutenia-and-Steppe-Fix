@@ -8,9 +8,11 @@ locations={
 	wroclaw = { rank = city 		town_setup = polish_town }
 
 	# Ruthenia
-	sanok = { rank = town 			town_setup = ruthenian_town }
+	halych = { rank = town 			town_setup = ruthenian_town }
+	przemysl = { rank = town 		town_setup = ruthenian_town }
 	volodymyr = { rank = town 		town_setup = ruthenian_town }
-	chelm = { rank = town 			town_setup = ruthenian_town }	
+	chelm = { rank = town 			town_setup = ruthenian_town }
+	lutsk = { rank = town 			town_setup = ruthenian_town }
 	novogrudok = { rank = town 		town_setup = ruthenian_town }
 
 	# Russia
@@ -220,18 +222,12 @@ building_manager = {
 	
 	marketplace = { tag = LIT level = 1 location = vilnius }
 	marketplace = { tag = LIT level = 1 location = kaunas }
-	marketplace = { tag = PLK level = 1 location = plock }
 	marketplace = { tag = POL level = 1 location = poznan }
-	marketplace = { tag = WRC level = 1 location = wroclaw }
 
 	#Ruthenia
-	castle = { tag = VOL level = 1 location = chelm }
-	castle = { tag = NRK level = 1 location = novogrudok }
-	castle = { tag = BRY level = 1 location = bryansk }
+	castle = { tag = VOL level = 1 location = belz }
 
 	market_village = { tag = KIE level = 1 location = putyvl }
-	market_village = { tag = HAL level = 1 location = halych }
-	market_village = { tag = VOL level = 1 location = lutsk }
 	market_village = { tag = VOL level = 1 location = ostroh }
 	market_village	= { tag = TUV level = 1	location = turov }
 	market_village 	= { tag = PNK level = 1 location = pinsk }	
@@ -242,15 +238,20 @@ building_manager = {
 
 	marketplace	= { tag = KIE level = 1 location = kyiv }
 	marketplace	= { tag = HAL level = 1 location = lviv }
-	marketplace	= { tag = BRY level = 1 location = bryansk }
-	marketplace	= { tag = POK level = 1 location = polotsk }
+	marketplace	= { tag = POK level = 1 location = smolensk }
 
 	charcoal_maker = { tag = VOL level = 1 location = iziaslav }
+	charcoal_maker = { tag = VOL level = 1 location = kovel }
+	charcoal_maker = { tag = HAL level = 1 location = sambir }
 	charcoal_maker = { tag = KIE level = 1 location = olevsk }
 	
 	tar_kiln = { tag = KIE level = 1 location = mazyr }
 	tar_kiln = { tag = CHR level = 1 location = snovsk } 
+	tar_kiln = { tag = NVS level = 1 location = verba } 
 	tar_kiln = { tag = VOL level = 1 location = korets } 
+	tar_kiln = { tag = VOL level = 1 location = kamin }
+	tar_kiln = { tag = HAL level = 1 location = khorostkiv } 
+	tar_kiln = { tag = HAL level = 1 location = krosno } 
 	tar_kiln = { tag = NRK level = 1 location = slonim }
 	tar_kiln = { tag = PNK level = 1 location = nobel } 
 	tar_kiln = { tag = POK level = 1 location = dzisna }
@@ -270,10 +271,7 @@ building_manager = {
 	stockade = { tag = HTN level = 1 location = hotin }
 	stockade = { tag = HAL level = 1 location = kamianets_podilskyi }	
 	stockade = { tag = HAL level = 1 location = halych }
-	stockade = { tag = HAL level = 1 location = przemysl }
 	stockade = { tag = VOL level = 1 location = kremenets }
-	stockade = { tag = VOL level = 1 location = lutsk }
-	stockade = { tag = VOL level = 1 location = belz }
 	stockade = { tag = KIE level = 1 location = ovruch }
 	stockade = { tag = KIE level = 1 location = putyvl }
 	stockade = { tag = KIE level = 1 location = pereiaslav }	

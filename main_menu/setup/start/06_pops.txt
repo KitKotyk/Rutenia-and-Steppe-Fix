@@ -18712,8 +18712,8 @@ rylsk = {
 	define_pop = {	type = peasants	size = 10.545	culture = severian	religion = orthodox }
 }
 sevsk = {
-	define_pop = {	type = peasants	size = 3.600	culture = verkhovian	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.006	culture = severian	religion = orthodox }
+	define_pop = {	type = peasants	size = 3.600	culture = severian	religion = orthodox }
+	define_pop = {	type = peasants	size = 2.006	culture = verkhovian	religion = orthodox }
 }
 chelm = {
 	define_pop = {	type = nobles	size = 0.043	culture = volhynian_culture	religion = orthodox }
