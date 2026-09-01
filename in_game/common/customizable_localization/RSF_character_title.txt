@@ -3,6 +3,7 @@
 
 TRY_REPLACE:character_title_prefix = {
 	type = character
+	log_loc_errors = no
 
 	text = {
 		localization_key = character_title_guru
