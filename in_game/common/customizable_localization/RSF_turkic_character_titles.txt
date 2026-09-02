@@ -1,0 +1,92 @@
+﻿# Added Bey, Aga, Hanim titles for Western Kipchaks
+# Added Bek, Aga titles for Eastern Kipchaks
+
+TRY_INJECT:character_title_prefix = {
+
+	log_loc_errors = no
+
+	text = {
+		localization_key = character_title_nobility_bey
+
+		trigger = {
+			is_adult = yes
+			is_ruler = no
+			has_dynasty = yes
+			total_abilities >= 170
+			
+			has_estate = estate_type:nobles_estate
+
+			exists = culture
+			exists = culture.dialect
+			culture.dialect = dialect:western_kipchak_dialect
+		}
+	}
+
+	text = {
+		localization_key = character_title_nobility_mirza
+
+		trigger = {
+			is_adult = yes
+			is_ruler = no
+			has_dynasty = yes
+			total_abilities >= 100
+			
+			has_estate = estate_type:crown_estate
+
+			exists = culture
+			exists = culture.dialect
+			culture.dialect = dialect:western_kipchak_dialect
+		}
+	}
+
+	text = {
+		localization_key = character_title_nobility_bek
+
+		trigger = {
+			is_adult = yes
+			is_ruler = no
+			has_dynasty = yes
+			total_abilities >= 170
+			
+			has_estate = estate_type:nobles_estate
+
+			exists = culture
+			exists = culture.dialect
+			culture.dialect = dialect:eastern_kipchak_dialect
+		}
+	}
+
+	text = {
+		localization_key = character_title_nobility_murza
+
+		trigger = {
+			is_adult = yes
+			is_ruler = no
+			has_dynasty = yes
+			total_abilities >= 100
+			
+			has_estate = estate_type:crown_estate
+
+			exists = culture
+			exists = culture.dialect
+			culture.dialect = dialect:eastern_kipchak_dialect
+		}
+	}
+
+	text = {
+		localization_key = character_title_nobility_aga
+
+		trigger = {
+			is_adult = yes
+			is_ruler = no
+			has_dynasty = yes
+			total_abilities < 175
+			
+			has_estate = estate_type:nobles_estate
+
+			exists = culture
+			exists = culture.language
+			culture.language = language:kipchak_language
+		}
+	}
+}

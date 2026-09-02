@@ -1,0 +1,90 @@
+﻿
+# ----- POLICIES -----
+GetRusJustice = {		# Localised to Ukrainian and Belarusian
+	type = country
+	log_loc_errors = no
+	
+	text = {
+		localization_key = russkaya_pravda_policy_russian
+		trigger = { culture.language = language:east_slavic_language }
+	}
+	
+	text = {
+		localization_key = russkaya_pravda_policy_ukrainian
+		trigger = { culture.dialect = dialect:ukrainian_dialect }
+	}
+	
+	text = {
+		localization_key = russkaya_pravda_policy_belarusian
+		trigger = { culture.dialect = dialect:belarusian_dialect }
+	}
+	
+	text = {
+		fallback = yes
+		localization_key = the_rus_justice_policy
+	}
+}
+
+# ----- ESTATE PRIVILEGES -----
+GetKormlenije = {		# Localised to Ukrainian and Belarusian
+	type = country
+	log_loc_errors = no
+	
+	text = {
+		localization_key = kormlenije_russian
+		trigger = { culture.language = language:east_slavic_language }
+	}
+	
+	text = {
+		localization_key = kormlenije_ukrainian
+		trigger = { culture.dialect = dialect:ukrainian_dialect }
+	}
+	
+	text = {
+		localization_key = kormlenije_belarusian
+		trigger = { culture.dialect = dialect:belarusian_dialect }
+	}
+	
+	text = {
+		fallback = yes
+		localization_key = kormlenije_english
+	}
+}
+
+
+# ----- BUILDINGS -----
+GetSettlement = {		# For future
+	type = country
+	
+	text = {
+		localization_key = cossack_sloboda
+		trigger = {
+			culture.dialect = dialect:ukrainian_dialect
+		}
+	}
+	
+	text = {
+		localization_key = settlement_standard
+		fallback = yes
+	}
+}
+
+
+# ----- COUNTRIES -----
+# Great Horde
+ATR = {
+	type = country
+
+	text = {
+		localization_key = ATR_horde
+		trigger = {
+			government_type = government_type:steppe_horde
+		}
+	}
+	
+	text = {
+		localization_key = ATR
+		fallback = yes
+	}
+}
+ATR_ADJ = { parent = ATR suffix = "_ADJ" }

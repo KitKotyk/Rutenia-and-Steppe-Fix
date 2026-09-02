@@ -9,6 +9,7 @@
  # ----- UKRAINIAN -----
  ukr_suffix_a_female: "a"
  ukr_suffix_yi_male: "yi"
+ 
 
  # Ukrainian nobility kniaz title gendered
  Chartoryiskyi: "Chartoryisk[Character.Custom('UkrGenderSuffixAdj')]"

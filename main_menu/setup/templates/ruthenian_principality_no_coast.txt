@@ -33,6 +33,7 @@ government = {
 		noble_serfdom_rights
         noble_marriage_rights
         noble_fortification_licenses
+        kormlenije
 
         #clergy
         reduced_from_military_obligations

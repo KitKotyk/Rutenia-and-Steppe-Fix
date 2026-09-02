@@ -1,0 +1,8 @@
+﻿l_english:
+
+ kormlenije_russian: "Kormlenye"
+ kormlenije_belarusian: "Karmleńnie"
+ kormlenije_ukrainian: "Kormlinnia"
+ kormlenije_english: "Boyar Feeding" 
+ kormlenije: "[Custom('GetKormlenije')]"
+
