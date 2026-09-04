@@ -1,0 +1,43 @@
+﻿# Allow Cossacks belong to all relevant pop types
+
+TRY_INJECT:nobles = {
+	cossacks_estate = { is_cossacks = yes }
+	dhimmi_estate = { is_dhimmi = yes }
+	tribes_estate = { is_gaelic_clans = yes }
+	nobles_estate = {}
+}
+
+TRY_INJECT:clergy = {
+	cossacks_estate = { is_cossacks = yes }
+	dhimmi_estate = { is_dhimmi = yes }
+	tribes_estate = { is_gaelic_clans = yes }
+	clergy_estate = {}
+}
+
+TRY_INJECT:burghers = {
+	cossacks_estate = { is_cossacks = yes }
+	dhimmi_estate = { is_dhimmi = yes }
+	tribes_estate = { is_gaelic_clans = yes }
+	burghers_estate = {}
+}
+
+TRY_INJECT:laborers = {
+	cossacks_estate = { is_cossacks = yes }
+	dhimmi_estate = { is_dhimmi = yes }
+	tribes_estate = { is_gaelic_clans = yes }
+	peasants_estate = {}
+}
+
+TRY_INJECT:soldiers = {
+	cossacks_estate = { is_cossacks = yes }
+	dhimmi_estate = { is_dhimmi = yes }
+	tribes_estate = { is_gaelic_clans = yes }
+	peasants_estate = {}
+}
+
+TRY_INJECT:peasants = {
+	cossacks_estate = { is_cossacks = yes }
+	dhimmi_estate = { is_dhimmi = yes }
+	tribes_estate = { is_gaelic_clans = yes }
+	peasants_estate = {}
+}

@@ -2,11 +2,18 @@
 # Ottomans push to the Steppes was too excessive
 TRY_REPLACE:ottoman_expansion_pontic = {
 	preference_type = conquest
-	modifier = 0.1
+	modifier = 0.01
 
 	#area = crimea_area
 	#area = azov_area
 	area = yedisan_area
 	area = pryazovia_area
 	area = matrega_area
+}
+
+kyiv_conquer_zaporizhia = {
+	preference_type = conquest
+	modifier = 10.0
+
+	area = zaporizhzhia_area
 }

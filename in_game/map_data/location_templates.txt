@@ -6115,12 +6115,12 @@ darzanji = { topography = flatland vegetation = sparse climate = cold_arid relig
 denov = { topography = plateau vegetation = sparse climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = stone}
 qubodijon = { topography = hills vegetation = sparse climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = horses}
 shuman = { topography = plateau vegetation = sparse climate = continental religion = sunni culture = khorezmian_culture raw_material = livestock}
-termez = { topography = flatland vegetation = desert climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = wheat}
+termez = { topography = flatland vegetation = desert climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = millet}
 kulob = { topography = mountains vegetation = sparse climate = continental religion = sunni culture = khorezmian_culture raw_material = livestock}
 farkhor = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = legumes}
 hulbuk = { topography = hills vegetation = grasslands climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = horses}
 munk = { topography = mountains vegetation = sparse climate = continental religion = sunni culture = khorezmian_culture raw_material = livestock}
-vakhs = { topography = flatland vegetation = grasslands climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = wheat}
+vakhs = { topography = flatland vegetation = grasslands climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = millet}
 wesgird = { topography = mountains vegetation = sparse climate = continental religion = sunni culture = khorezmian_culture raw_material = wild_game}
 gharm = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = livestock}
 daroot_korgon = { topography = plateau vegetation = sparse climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = wool}
@@ -6240,7 +6240,7 @@ kyzylsay = { topography = flatland vegetation = sparse climate = cold_arid relig
 moiynty = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = uzbek_culture raw_material = beeswax}
 mukur = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = uzbek_culture raw_material = fish}
 marv_al_rudh = { topography = mountains vegetation = sparse climate = mediterranean religion = sunni culture = hazara_culture raw_material = livestock}
-ghormach = { topography = hills vegetation = grasslands climate = mediterranean religion = sunni culture = tajik_culture raw_material = wheat}
+ghormach = { topography = hills vegetation = grasslands climate = mediterranean religion = sunni culture = tajik_culture raw_material = horses}
 jawand = { topography = mountains vegetation = sparse climate = continental religion = sunni culture = hazara_culture raw_material = wool}
 kusk = { topography = plateau vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = wool}
 kusk_kohneh = { topography = plateau vegetation = grasslands climate = mediterranean religion = sunni culture = tajik_culture raw_material = livestock}
@@ -6253,13 +6253,13 @@ boyena_qara = { topography = hills vegetation = sparse climate = cold_arid relig
 khamyab = { topography = flatland vegetation = desert climate = arid religion = sunni culture = tajik_culture raw_material = cotton}
 khulm = { topography = flatland vegetation = sparse climate = arid religion = sunni culture = tajik_culture raw_material = horses}
 mazar_i_sharif = { topography = hills vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = wool}
-samangan = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = wheat}
+samangan = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = millet}
 zadian = { topography = flatland vegetation = desert climate = arid religion = sunni culture = tajik_culture raw_material = fruit}
 bamyan = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = hazara_culture raw_material = iron}
-andarab = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = wheat}
+andarab = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = millet}
 bagram = { modifier = panjshir_valley_silver_mines_base topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = silver}
 charikar = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = tin}
-istalif = { topography = plateau vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = wheat}
+istalif = { topography = plateau vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = millet}
 kahmard = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = hazara_culture raw_material = stone}
 panjshir = { topography = mountains vegetation = sparse climate = continental religion = sunni culture = tajik_culture raw_material = gems}
 yakawlang = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = hazara_culture raw_material = copper}
@@ -6277,10 +6277,10 @@ kunduz = { topography = flatland vegetation = grasslands climate = cold_arid rel
 arkhan = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = livestock}
 ashkamesh = { topography = mountains vegetation = grasslands climate = cold_arid religion = sunni culture = tajik_culture raw_material = beeswax}
 baghlan = { topography = hills vegetation = grasslands climate = cold_arid religion = sunni culture = tajik_culture raw_material = wool}
-kishim = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = wheat}
+kishim = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = millet}
 taleqan = { topography = mountains vegetation = grasslands climate = cold_arid religion = sunni culture = tajik_culture raw_material = salt}
 maymana = { topography = hills vegetation = grasslands climate = mediterranean religion = sunni culture = tajik_culture raw_material = wheat}
-andkhoy = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = wheat}
+andkhoy = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = millet}
 chiras = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = livestock}
 dawlat_abad = { topography = hills vegetation = grasslands climate = cold_arid religion = sunni culture = tajik_culture raw_material = wool}
 qaisar = { topography = hills vegetation = grasslands climate = mediterranean religion = sunni culture = tajik_culture raw_material = livestock}
@@ -6290,7 +6290,7 @@ sheberghan = { topography = flatland vegetation = sparse climate = cold_arid rel
 paropamisus_mountains1 = { topography = mountain_wasteland vegetation = sparse climate = continental}
 merv = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = silk}
 barkdiz = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = fruit}
-pandjih = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = wheat}
+pandjih = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = tajik_culture raw_material = millet}
 karakum_desert3 = { topography = dune_wasteland vegetation = desert climate = cold_arid}
 karakum_desert4 = { topography = dune_wasteland vegetation = desert climate = cold_arid}
 karakum_desert5 = { topography = dune_wasteland vegetation = desert climate = cold_arid}
@@ -6334,7 +6334,7 @@ sarygamysh_lake = { topography = lakes climate = cold_arid}
 ust_yurt_lakes = { topography = lakes climate = cold_arid}
 ust_yurt_plateau1 = { topography = dune_wasteland vegetation = desert climate = cold_arid}
 ust_yurt_plateau2 = { topography = dune_wasteland vegetation = desert climate = cold_arid}
-orta_kuyu = { topography = flatland vegetation = desert climate = cold_arid religion = sunni culture = turkmen_culture raw_material = wheat}
+orta_kuyu = { topography = flatland vegetation = desert climate = cold_arid religion = sunni culture = turkmen_culture raw_material = horses}
 talaikhan_ata = { topography = flatland vegetation = desert climate = cold_arid religion = sunni culture = turkmen_culture raw_material = livestock}
 uzboy = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = turkmen_culture raw_material = sand}
 big_balkhan = { topography = dune_wasteland vegetation = desert climate = cold_arid}
@@ -6455,7 +6455,7 @@ qamystybas_lake = { topography = lakes climate = cold_arid}
 bojnord = { topography = hills vegetation = grasslands climate = cold_arid religion = shia culture = khorasani_culture raw_material = wool}
 khabushan = { topography = plateau vegetation = grasslands climate = cold_arid religion = shia culture = khorasani_culture raw_material = livestock}
 quchan = { topography = plateau vegetation = grasslands climate = cold_arid religion = shia culture = khorasani_culture raw_material = fruit}
-raz = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = turkmen_culture raw_material = livestock}
+raz = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = turkmen_culture raw_material = horses}
 samalqan = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = turkmen_culture raw_material = stone}
 shirvan_iran = { topography = plateau vegetation = grasslands climate = cold_arid religion = shia culture = khorasani_culture raw_material = legumes}
 esfarayen = { topography = mountains vegetation = sparse climate = cold_arid religion = shia culture = khorasani_culture raw_material = livestock}
@@ -6470,21 +6470,21 @@ dehistan = { topography = flatland vegetation = desert climate = cold_arid relig
 ganlygala = { topography = hills vegetation = sparse climate = cold_arid religion = sunni culture = turkmen_culture raw_material = livestock}
 gazanjyk = { topography = flatland vegetation = desert climate = cold_arid religion = sunni culture = turkmen_culture raw_material = livestock}
 jargalan = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = turkmen_culture raw_material = livestock}
-maraveh = { topography = flatland vegetation = grasslands climate = cold_arid religion = sunni culture = turkmen_culture raw_material = wheat}
+maraveh = { topography = flatland vegetation = grasslands climate = cold_arid religion = sunni culture = turkmen_culture raw_material = millet}
 sarlawuk = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = turkmen_culture raw_material = wool}
 small_balkhan = { topography = dune_wasteland vegetation = desert climate = cold_arid}
-konjikala = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = turkmen_culture raw_material = wheat}
+konjikala = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = turkmen_culture raw_material = millet}
 anew = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = turkmen_culture raw_material = fruit}
 dargaz = { topography = mountains vegetation = sparse climate = cold_arid religion = sunni culture = turkmen_culture raw_material = livestock}
 durun = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = turkmen_culture raw_material = fruit}
 karakum_desert2 = { topography = dune_wasteland vegetation = desert climate = cold_arid}
 mashhad = { topography = plateau vegetation = sparse climate = cold_arid religion = shia culture = khorasani_culture raw_material = fruit}
-farhadgerd = { topography = plateau vegetation = sparse climate = cold_arid religion = shia culture = khorasani_culture raw_material = wheat}
+farhadgerd = { topography = plateau vegetation = sparse climate = cold_arid religion = shia culture = khorasani_culture raw_material = horses}
 mazdaran = { topography = mountains vegetation = sparse climate = cold_arid religion = shia culture = khorasani_culture raw_material = copper}
-radkan = { topography = plateau vegetation = sparse climate = cold_arid religion = shia culture = khorasani_culture raw_material = wheat}
+radkan = { topography = plateau vegetation = sparse climate = cold_arid religion = shia culture = khorasani_culture raw_material = millet}
 tus = { topography = mountains vegetation = sparse climate = cold_arid religion = shia culture = khorasani_culture raw_material = cotton}
 nishapur = { modifier = nishapur_gems_mines_base topography = plateau vegetation = sparse climate = cold_arid religion = shia culture = khorasani_culture raw_material = gems}
-fadisheh = { topography = plateau vegetation = desert climate = cold_arid religion = shia culture = khorasani_culture raw_material = wheat}
+fadisheh = { topography = plateau vegetation = desert climate = cold_arid religion = shia culture = khorasani_culture raw_material = horses}
 kadkan = { topography = mountains vegetation = sparse climate = cold_arid religion = shia culture = khorasani_culture raw_material = wool}
 pivehzhan = { topography = mountains vegetation = sparse climate = cold_arid religion = shia culture = khorasani_culture raw_material = fiber_crops}
 khorasan_mountains1 = { topography = mountain_wasteland vegetation = sparse climate = continental}
@@ -6517,7 +6517,7 @@ almaliq = { topography = flatland vegetation = grasslands climate = cold_arid re
 gulja = { topography = mountains vegetation = grasslands climate = cold_arid religion = tengri culture = oirat_culture raw_material = millet}
 narat = { topography = plateau vegetation = sparse climate = cold_arid religion = tengri culture = oirat_culture raw_material = horses}
 nilka = { topography = mountains vegetation = sparse climate = cold_arid religion = tengri culture = oirat_culture raw_material = stone}
-tokkuztara = { topography = plateau vegetation = grasslands climate = cold_arid religion = tengri culture = oirat_culture raw_material = legumes}
+tokkuztara = { topography = plateau vegetation = grasslands climate = cold_arid religion = tengri culture = oirat_culture raw_material = wool}
 borohoro2 = { topography = mountain_wasteland vegetation = sparse climate = continental}
 tian_shan6 = { topography = mountain_wasteland vegetation = sparse climate = continental}
 wusun = { topography = mountain_wasteland vegetation = woods climate = continental}
@@ -6568,7 +6568,7 @@ kayalyk = { topography = plateau vegetation = grasslands climate = cold_arid rel
 ayagoz = { topography = plateau vegetation = grasslands climate = continental religion = tengri culture = oirat_culture raw_material = livestock}
 dungene = { topography = hills vegetation = grasslands climate = cold_arid religion = tengri culture = kyrgyz_culture raw_material = salt}
 lepsy = { topography = flatland vegetation = grasslands climate = cold_arid religion = tengri culture = kyrgyz_culture raw_material = sand}
-sagabuyen = { topography = flatland vegetation = grasslands climate = cold_arid religion = tengri culture = kyrgyz_culture raw_material = livestock}
+sagabuyen = { topography = flatland vegetation = grasslands climate = cold_arid religion = tengri culture = kyrgyz_culture raw_material = horses}
 tansyk = { topography = flatland vegetation = grasslands climate = cold_arid religion = tengri culture = oirat_culture raw_material = medicaments}
 tekeli = { topography = plateau vegetation = woods climate = cold_arid religion = tengri culture = kyrgyz_culture raw_material = fur}
 merki = { topography = flatland vegetation = grasslands climate = cold_arid religion = sunni culture = uzbek_culture raw_material = millet}
@@ -8140,7 +8140,7 @@ dasht_lut3 = { topography = dune_wasteland vegetation = desert climate = cold_ar
 gonabad = { topography = plateau vegetation = desert climate = cold_arid religion = shia culture = khorasani_culture raw_material = silk}
 azghand = { topography = mountains vegetation = desert climate = cold_arid religion = shia culture = khorasani_culture raw_material = sugar}
 mahvelat = { topography = plateau vegetation = desert climate = cold_arid religion = shia culture = khorasani_culture raw_material = livestock}
-roshtkhar = { topography = plateau vegetation = desert climate = cold_arid religion = shia culture = khorasani_culture raw_material = wheat}
+roshtkhar = { topography = plateau vegetation = desert climate = cold_arid religion = shia culture = khorasani_culture raw_material = millet}
 salameh = { topography = plateau vegetation = desert climate = cold_arid religion = sunni culture = farsi_culture raw_material = wool}
 zaveh = { topography = plateau vegetation = desert climate = cold_arid religion = shia culture = khorasani_culture raw_material = saffron}
 qaen = { topography = hills vegetation = desert climate = cold_arid religion = sunni culture = farsi_culture raw_material = saffron}
@@ -11413,11 +11413,11 @@ toling = { topography = hills vegetation = desert climate = continental religion
 dungkar = { topography = hills vegetation = desert climate = continental religion = tibetan_buddhism culture = utsang_culture raw_material = livestock}
 tsaparang = { topography = mountains vegetation = desert climate = continental religion = tibetan_buddhism culture = utsang_culture raw_material = wheat}
 himalaya7 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
-leh = { topography = mountains vegetation = desert climate = cold_arid religion = tibetan_buddhism culture = ladakh_culture raw_material = wheat}
+leh = { topography = mountains vegetation = desert climate = cold_arid religion = tibetan_buddhism culture = ladakh_culture raw_material = horses}
 charasa = { topography = mountains vegetation = desert climate = cold_arid religion = tibetan_buddhism culture = ladakh_culture raw_material = wild_game}
 kargil = { topography = mountains vegetation = sparse climate = cold_arid religion = tibetan_buddhism culture = ladakh_culture raw_material = wool}
 karpokhar = { topography = mountains vegetation = sparse climate = cold_arid religion = tibetan_buddhism culture = ladakh_culture raw_material = wheat}
-lamayuru = { topography = mountains vegetation = desert climate = cold_arid religion = tibetan_buddhism culture = ladakh_culture raw_material = wheat}
+lamayuru = { topography = mountains vegetation = desert climate = cold_arid religion = tibetan_buddhism culture = ladakh_culture raw_material = millet}
 shey = { topography = mountains vegetation = desert climate = cold_arid religion = tibetan_buddhism culture = ladakh_culture raw_material = wool}
 himalaya1 = { topography = mountain_wasteland vegetation = desert climate = arctic}
 himalaya2 = { topography = mountain_wasteland vegetation = desert climate = arctic}
@@ -11960,12 +11960,12 @@ qocho = { topography = flatland vegetation = desert climate = cold_arid religion
 toksun = { topography = hills vegetation = desert climate = cold_arid religion = mahayana culture = uyghur_culture raw_material = millet}
 yangjibaliq = { topography = flatland vegetation = sparse climate = cold_arid religion = tengri culture = oirat_culture raw_material = fruit}
 kutubi = { topography = flatland vegetation = sparse climate = cold_arid religion = tengri culture = oirat_culture raw_material = millet}
-ulan_us = { topography = flatland vegetation = sparse climate = cold_arid religion = tengri culture = oirat_culture raw_material = wheat}
+ulan_us = { topography = flatland vegetation = sparse climate = cold_arid religion = tengri culture = oirat_culture raw_material = millet}
 qanbalik = { topography = flatland vegetation = sparse climate = cold_arid religion = tengri culture = oirat_culture raw_material = wool}
 urumqi = { topography = plateau vegetation = sparse climate = cold_arid religion = mahayana culture = uyghur_culture raw_material = livestock}
 borohoro3 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
 aksu = { topography = plateau vegetation = farmland climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = cotton}
-bai_xinjiang = { topography = plateau vegetation = desert climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = wool}
+bai_xinjiang = { topography = plateau vegetation = desert climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = horses}
 kumtura = { topography = plateau vegetation = desert climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = beeswax}
 kucha = { topography = plateau vegetation = desert climate = cold_arid religion = sunni culture = uyghur_culture raw_material = wool}
 qumbash = { topography = plateau vegetation = desert climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = rice}
@@ -12001,7 +12001,7 @@ kuruktag = { topography = hills vegetation = desert climate = cold_arid}
 tian_shan4 = { topography = mountain_wasteland vegetation = sparse climate = continental}
 tian_shan5 = { topography = mountain_wasteland vegetation = sparse climate = arctic}
 lake_wuzongbulake = { topography = high_lakes climate = cold_arid}
-kashgar = { topography = hills vegetation = farmland climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = wheat}
+kashgar = { topography = hills vegetation = farmland climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = millet}
 artush = { topography = hills vegetation = desert climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = cotton}
 barchuk = { topography = hills vegetation = desert climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = horses}
 maralbexi = { topography = plateau vegetation = desert climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = fruit}
@@ -12027,7 +12027,7 @@ kunlun3 = { topography = mountain_wasteland vegetation = desert climate = arctic
 kunlun8 = { topography = mountain_wasteland vegetation = desert climate = arctic}
 kunlun10 = { topography = mountain_wasteland vegetation = desert climate = arctic}
 kurla = { topography = plateau vegetation = desert climate = cold_arid religion = mahayana culture = uyghur_culture raw_material = rice}
-bugur = { topography = plateau vegetation = desert climate = cold_arid religion = mahayana culture = uyghur_culture raw_material = wheat}
+bugur = { topography = plateau vegetation = desert climate = cold_arid religion = mahayana culture = uyghur_culture raw_material = wild_game}
 kuerchu = { topography = plateau vegetation = desert climate = cold_arid religion = mahayana culture = uyghur_culture raw_material = livestock}
 dashahai = { topography = plateau vegetation = desert climate = cold_arid religion = mahayana culture = uyghur_culture raw_material = fruit}
 bailongdui = { topography = plateau vegetation = desert climate = cold_arid religion = mahayana culture = uyghur_culture raw_material = wild_game}
@@ -12051,7 +12051,7 @@ pamir2 = { topography = mountain_wasteland vegetation = desert climate = contine
 yarkand = { topography = plateau vegetation = farmland climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = cotton}
 guma = { topography = plateau vegetation = desert climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = rice}
 kargilik = { topography = plateau vegetation = desert climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = wool}
-poskam = { topography = plateau vegetation = desert climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = wheat}
+poskam = { topography = plateau vegetation = desert climate = cold_arid religion = sunni culture = khorezmian_culture raw_material = millet}
 chimgi_tura = { topography = flatland vegetation = forest climate = continental religion = sunni culture = yerle_qaliq_culture raw_material = fur}
 tugulym = { topography = flatland vegetation = forest climate = continental religion = sunni culture = yerle_qaliq_culture raw_material = fruit}
 yalutorovsk = { topography = flatland vegetation = forest climate = continental religion = sunni culture = yerle_qaliq_culture raw_material = fish}
@@ -13461,7 +13461,7 @@ suleiman_range_6 = { topography = mountain_wasteland vegetation = desert climate
 suleiman_range_7 = { topography = mountains vegetation = desert climate = cold_arid}
 suleiman_range_8 = { topography = mountain_wasteland vegetation = desert climate = cold_arid}
 suleiman_range_9 = { topography = mountain_wasteland vegetation = desert climate = arid}
-chitral = { topography = mountains vegetation = grasslands climate = continental religion = hindu culture = chitrali raw_material = wheat}
+chitral = { topography = mountains vegetation = grasslands climate = continental religion = hindu culture = chitrali raw_material = horses}
 mulkhow = { topography = mountains vegetation = sparse climate = continental religion = hindu culture = chitrali raw_material = wool}
 mastuj = { topography = mountains vegetation = sparse climate = continental religion = hindu culture = chitrali raw_material = millet}
 yarkhun = { topography = mountains vegetation = sparse climate = continental religion = hindu culture = chitrali raw_material = wild_game}
@@ -13486,7 +13486,7 @@ gilgit = { topography = mountains vegetation = grasslands climate = cold_arid re
 astore = { topography = mountains vegetation = sparse climate = cold_arid religion = hindu culture = shina_culture raw_material = livestock}
 bunji = { topography = mountains vegetation = sparse climate = cold_arid religion = hindu culture = shina_culture raw_material = wool}
 chilas = { topography = mountains vegetation = sparse climate = cold_arid religion = hindu culture = kohistani raw_material = millet}
-punial = { topography = mountains vegetation = sparse climate = cold_arid religion = hindu culture = shina_culture raw_material = wheat}
+punial = { topography = mountains vegetation = woods climate = cold_arid religion = hindu culture = shina_culture raw_material = lumber}
 ishkoman = { topography = mountains vegetation = sparse climate = cold_arid religion = shia culture = shina_culture raw_material = fur}
 phander = { topography = mountains vegetation = sparse climate = continental religion = hindu culture = shina_culture raw_material = livestock}
 yasin = { topography = mountains vegetation = sparse climate = continental religion = hindu culture = shina_culture raw_material = wool}

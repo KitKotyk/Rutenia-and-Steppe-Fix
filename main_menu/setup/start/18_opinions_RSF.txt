@@ -1,0 +1,9 @@
+diplomacy_manager = {	
+
+	# Historical Friends	
+	opinion = { first = LIV second = TEU type = opinion_historical_friend_TEU_LIV } # Add vice versa
+
+	# Ottoman - Crimean friendship
+	opinion = { first = TUR second = CRI type = opinion_good_relations }
+	opinion = { first = CRI second = TUR type = opinion_good_relations }
+}

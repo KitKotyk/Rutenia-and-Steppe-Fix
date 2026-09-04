@@ -1,0 +1,10 @@
+
+countries = {
+	countries = {
+		KIE = {
+			area_preferences = {
+				kyiv_conquer_zaporizhia
+			}
+		}		
+	}
+}

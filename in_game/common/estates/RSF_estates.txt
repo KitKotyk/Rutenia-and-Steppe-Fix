@@ -1,0 +1,5 @@
+﻿# Cossacks can have dynasties and they did have
+
+TRY_INJECT:cossacks_estate = {
+	characters_have_dynasty = sometimes # new characters may spawn with a dynasty	
+}
