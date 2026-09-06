@@ -1,4 +1,48 @@
-﻿# Poland Ruthenia Circassia changed
+﻿# Cossack Hetmanate added
+# Poland Ruthenia Circassia Romania changed
+
+# Added
+
+HTM_f = { # Cossack Hetmanate
+
+	level = 3
+	required_locations_fraction = 0.8
+	rule = historical
+	potential = {
+		OR = {
+			culture = culture:ruthenian
+			culture = culture:severian
+			culture = culture:cossack_culture
+		}
+	}
+	allow = {
+		owns = location:kyiv
+		owns = location:chyhyryn
+		owns = location:hadiach
+		owns = location:melnya
+		owns = location:hlukhiv
+		government_type = government_type:republic
+		current_age_or_later = { age = age_4_reformation }
+	}
+	
+	name = HTM
+	flag = HTM
+	adjective = HTM_ADJ
+	tag = HTM
+	color = map_UKR
+	
+	areas = {
+		right_bank_ukraine_area
+		left_bank_ukraine_area
+		severia_area
+	}
+
+	form_effect = {
+	}
+}
+
+
+# Changed
 
 TRY_REPLACE:POL_f = { # Poland
 

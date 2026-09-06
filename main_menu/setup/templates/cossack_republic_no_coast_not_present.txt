@@ -51,7 +51,7 @@ government = {
 		peasants_free_peasantry
 		allow_hunting
 		communal_lands
-		no_labor_sunday		
+		no_labor_sunday
 		
 		#Tribesmen
 		tribes_allow_gatherings

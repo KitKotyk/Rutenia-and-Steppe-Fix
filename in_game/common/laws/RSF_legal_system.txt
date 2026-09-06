@@ -1,0 +1,26 @@
+﻿# Cossack customary law policy
+TRY_INJECT:legal_code_law = {
+	
+	cossack_traditions_policy = {
+		unique = yes
+		potential = {
+			culture = { has_culture_group = culture_group:ukrainian_group }
+		}
+		allow = {
+			has_embraced_institution = institution:pike_and_shot
+		}
+		country_modifier = {
+			monthly_towards_communalism = societal_value_monthly_move
+			monthly_towards_free_subjects = societal_value_monthly_move
+			global_nobles_estate_power = -0.2
+			cossacks_estate_target_satisfaction = medium_permanent_target_satisfaction
+			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction
+		}
+		estate_preferences = {
+			burghers_estate
+			peasants_estate
+			cossacks_estate
+		}
+		years = 2
+	}
+}

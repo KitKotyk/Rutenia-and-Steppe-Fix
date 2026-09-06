@@ -1,5 +1,15 @@
 ﻿l_english:
 
- #Golden Horde
+ # Hordes
  nomadic_societies_reform: "Nomadic Societies"
  nomadic_societies_reform_desc: "In the aftermath of Mongol fragmentation, nomadic polities increasingly prioritize internal organization over external diplomacy, consolidating authority within tribal and noble hierarchies. This shift strengthens the mobilization capacity of both tribal and aristocratic levies, reflecting a more structured distribution of obligations within the steppe."
+
+ # Cossacks & Ukraine
+ cossack_hetmanate_reform: "Cossack Hetmanate"
+ cossack_hetmanate_reform_desc: "The Cossack Hetmanate emerged during the Khmelnytsky Uprising as a Cossack state governed by the Hetman, the General Military Council, and a hierarchy of regimental and company officers. Its political order combined military organization with the traditional liberties of the Cossack Host."
+
+ regimental_administration_reform: "Regimental Administration"
+ regimental_administration_reform_desc: "The Hetmanate is divided into regimental districts, each commanded by a colonel elected by the Cossack officer corps. Regiments serve as both military formations and territorial administrations, with their colonels overseeing justice, taxation, local government, and the mobilization of Cossack troops through the subordinate sotnias."
+
+ frontier_liberties: "Frontier Liberties"
+ frontier_liberties_desc: "The people who settle the exposed frontier are granted broad freedoms in return for defending their homes. Accustomed to bearing arms and governing their own communities, these settlers grow prosperous and independent, gradually giving the free towns and frontier communities a greater voice in the affairs of the realm."

@@ -49,9 +49,9 @@ government = {
 
         #Commoners
         allow_hunting
-        communal_lands
 		no_labor_sunday
 		peasants_fewer_levies
+        ruthenian_starostas
 		
 		#Tribesmen
 		tribes_allow_gatherings

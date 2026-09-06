@@ -1,0 +1,95 @@
+﻿############################
+# age_1_traditions
+############################
+
+
+############################
+# age_2_renaissance
+############################
+
+
+############################
+# age_3_discovery
+############################
+
+
+############################
+# age_4_reformation
+############################
+ambush_tactics_advance = {
+	age = age_4_reformation
+	icon = ruthenian_state_advance
+	potential = {
+		has_or_had_tag = HTM
+		has_or_had_tag = ZAZ
+	}
+	army_initiative = 0.2
+
+	requires = confessional_court
+}
+
+cossacks_serf_autonomy = {
+	age = age_4_reformation
+	potential = {
+		has_or_had_tag = HTM
+		has_or_had_tag = ZAZ
+	}
+	global_separatism = -0.1
+	monthly_republican_tradition = 0.1
+
+	requires = pop_promotion_speed_age_4
+}
+
+
+############################
+# age_5_absolutism
+############################
+dnieper_secured_advance = {
+	age = age_5_absolutism
+	icon = river_trade
+	potential = {
+		has_or_had_tag = HTM
+		has_or_had_tag = ZAZ
+	}
+	merchant_maintenance_efficiency = 0.2
+
+	requires = the_constitution
+}
+
+cossacks_escaped_serfs = {
+	age = age_5_absolutism
+	potential = {
+		has_or_had_tag = HTM
+		has_or_had_tag = ZAZ
+	}
+	army_reinforce_efficiency = 0.1
+
+	requires = army_doctrine_law_advance
+}
+
+############################
+# age_6_revolutions
+############################
+de_libertate_advance = {
+	age = age_6_revolutions
+	icon = global_clergy_max_literacy_advance
+	potential = {
+		has_or_had_tag = HTM
+		has_or_had_tag = ZAZ
+	}
+	global_estate_target_satisfaction = small_permanent_target_satisfaction
+
+	requires = enlightened_court
+}
+
+zaporozhian_army_advance = {
+	age = age_6_revolutions
+	icon = cossacks_recruitment
+	potential = {
+		has_or_had_tag = HTM
+		has_or_had_tag = ZAZ
+	}	
+	army_maintenance_efficiency = 0.1
+
+	requires = enlightened_court
+}

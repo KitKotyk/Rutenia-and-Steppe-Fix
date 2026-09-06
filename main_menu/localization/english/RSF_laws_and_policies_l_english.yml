@@ -5,3 +5,6 @@
  russkaya_pravda_policy_ukrainian: "Pravda Ruska"
  the_rus_justice_policy: "The Rus Justice" 
  russkaya_pravda_policy: "[Custom('GetRusJustice')]"
+
+ cossack_traditions_policy: "Cossack Customary Law"
+ cossack_traditions_policy_desc: "The Cossack Host governs itself according to ancient customs, communal traditions, and the unwritten law of the steppe. Justice is exercised through Cossack councils and courts, where the rights and liberties of the Host are upheld by custom rather than the statutes of distant rulers."

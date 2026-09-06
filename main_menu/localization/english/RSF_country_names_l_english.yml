@@ -5,25 +5,39 @@
  ATR_THE: "$common_string_prefix_article$"
  ATR_horde: "Great Horde"
  ATR_horde_ADJ: "Great"
+
  KZN: "Qazan"
  KZN_ADJ: "Qazani"
+
  KSM: "Qasim"
  KSM_ADJ: "Qasimi"
+
  UZB: "Uzbeq"
  UZB_ADJ: "Uzbeq"
+
  POD: "Podolia"
  POD_ADJ: "Podolian"
+
  URS: "Kursk"
  URS_ADJ: "Kurian"
+
  PRS: "Pereiaslav"
  PRS_ADJ: "Pereiaslavan"
+
  QQY: "Qirq Yer"
  QQY_ADJ: "Qirq Yer"
+
  SSO: "Sobay"
  SSO_ADJ: "Sobay"
+
  MLR: "Malkar"
  MLR_ADJ: "Malkar"
+
  ISC: "Saqçi"
  ISC_ADJ: "Saqçi"
+
  ZAZ: "Zaporizhian Sich"
  ZAZ_ADJ: "Zaporizhian"
+ 
+ HTM: "Hetmanate"
+ HTM_ADJ: "Cossack"

@@ -43293,6 +43293,10 @@ countries = {
 			ruler_term = { character = kie_algimantas start_date = 1324.1.1 end_date = 1331.1.1 regnal_number = 1	}
 			ruler_term = { character = kie_teodoras_ivanovich_rurikovich start_date = 1331.1.1 regnal_number = 1	}
 
+			reforms = {
+				
+			}
+
 			privilege = {
 				#Cossacks
 				cossack_identity

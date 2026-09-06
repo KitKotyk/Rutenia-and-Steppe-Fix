@@ -49,16 +49,6 @@ cossacks_recruitment = {
 	requires = correct_box_advance_reformation
 }
 
-cossacks_serf_autonomy = {
-	age = age_4_reformation
-	potential = {
-		country_has_estate = estate_type:cossacks_estate
-	}
-	global_separatism = -0.05
-
-	requires = pop_promotion_speed_age_4
-}
-
 cossack_administration = {
 	age = age_4_reformation
 	potential = {
@@ -109,16 +99,6 @@ cossacks_hetmanate = {
 	unlock_estate_privilege = cossacks_rada_autonomy
 
 	requires = absolute_rulership
-}
-
-cossacks_escaped_serfs = {
-	age = age_5_absolutism
-	potential = {
-		country_has_estate = estate_type:cossacks_estate
-	}
-	army_reinforce_efficiency = 0.10
-
-	requires = army_doctrine_law_advance
 }
 
 

@@ -51,10 +51,7 @@ reuniting_rus = {
 	}
 	global_separatism = -0.1
 	monthly_legitimacy = 0.05
-	monthly_republican_tradition = 0.05
 	monthly_devotion = 0.05
-	monthly_horde_unity = 0.05
-	monthly_tribal_cohesion = 0.05
 
 	requires = confessional_court
 }

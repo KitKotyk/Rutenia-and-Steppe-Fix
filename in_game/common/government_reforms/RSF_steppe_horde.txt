@@ -28,14 +28,13 @@ TRY_REPLACE:legacy_of_genghis = {	# Reworked for the Tatars and added control
 			has_or_had_tag = OIR
 		}
 		country_type = army
-		current_year < 1450
+		current_year < 1550
 	}
-
 	
 	country_modifier = {
 		army_light_cavalry_maintenance_cost_modifier = -0.25
 		court_spending_efficiency = 0.4
-		global_max_control = 0.1
+		global_max_control = 0.15
 		monthly_towards_aristocracy = societal_value_monthly_move
 	}
 
@@ -71,25 +70,14 @@ nomadic_societies_reform = {	# Higher CC, lowed DC
 			ruler ?= { dynasty ?= dynasty:borjigin_dynasty }
 		}
 		country_type = army
-		current_year < 1450
+		current_year < 1500
 	}
 	
 	country_modifier = {
 		cultures_capacity_modifier = 0.3
 		diplomatic_capacity_modifier = -0.3
-		nobles_estate_levy_size = 0.2
-		tribes_estate_levy_size = 0.2
+		global_levy_size_modifier = 0.2
 	}
 
 	years = 2
 }
-
-#			culture = culture:crimean
-#			culture = culture:mishar
-#			culture = culture:astrakhani
-#			culture = culture:bolghar_culture
-#			culture = culture:kazani
-#			culture = culture:nogai
-#			culture = culture:uzbek_culture
-#			culture = culture:khorasani_culture
-#			culture = culture:turkmen_culture

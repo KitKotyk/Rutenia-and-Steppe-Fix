@@ -37,7 +37,7 @@ high_castle = { 						# Halych-Volhynian defence, High Castle in Lviv
 		has_or_had_tag = HAL
 		has_or_had_tag = VOL
 	}	
-	global_defensive = 0.1
+	global_defensive = 0.2
 
 	requires = feudalism_advance
 }

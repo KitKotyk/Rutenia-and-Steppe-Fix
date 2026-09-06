@@ -1,0 +1,20 @@
+﻿# Updated is_steppe_location trigger to be less sophisticated and include more relevant areas
+
+namespace = cossack_estate_events
+
+scripted_trigger is_steppe_location = {
+	is_ownable = yes	
+	location_rank = location_rank:rural_settlement
+	OR = {
+		topography = flatland
+		topography = wetlands
+		topography = hills
+		topography = plateau
+	}
+	OR = {
+		region = region:steppes_region
+		region = region:mongolia_region
+		area = area:left_bank_ukraine_area
+		area = area:podolia_area
+	}
+}

@@ -1,43 +1,144 @@
 ﻿# Allow Cossacks belong to all relevant pop types
 
-TRY_INJECT:nobles = {
+TRY_REPLACE:nobles = {
+	color = pop_nobles	
+	editor = 0.05	
+	assimilation_conversion_factor = 0.05
+	pop_food_consumption = 20.0
+	city_graphics = 1.0
+	grow = yes
+	promotion_factor = 0.1	
+	upper = yes
+	has_cap = yes
+	
 	cossacks_estate = { is_cossacks = yes }
 	dhimmi_estate = { is_dhimmi = yes }
 	tribes_estate = { is_gaelic_clans = yes }
-	nobles_estate = {}
+	nobles_estate = {}	
+	
+	literacy_impact = {
+		local_cultural_tradition = 0.2
+		local_monthly_control = 0.01
+	}
 }
 
-TRY_INJECT:clergy = {
+TRY_REPLACE:clergy = {
+	color = pop_clergy	
+	editor = 0.05	
+	assimilation_conversion_factor = 0.05	
+	pop_food_consumption = 5.0
+	city_graphics = 1.0
+	grow = yes	
+	promotion_factor = 0.1
+	upper = yes
+	has_cap = yes
+	
 	cossacks_estate = { is_cossacks = yes }
 	dhimmi_estate = { is_dhimmi = yes }
 	tribes_estate = { is_gaelic_clans = yes }
-	clergy_estate = {}
+	clergy_estate = {}	
+	
+	literacy_impact = {
+		local_pop_conversion_speed_modifier = 0.25
+		local_pop_assimilation_speed_modifier = 0.25
+	}
 }
 
-TRY_INJECT:burghers = {
+TRY_REPLACE:burghers = {
+	color = pop_burghers	
+	editor = 0.1	
+	assimilation_conversion_factor = 0.1	
+	pop_food_consumption = 4.0
+	city_graphics = 1.0
+	grow = yes
+	promotion_factor = 0.5	
+	migration_factor = 0.5	
+	upper = yes
+	has_cap = yes
+
+	counts_towards_market_language = yes
+	
 	cossacks_estate = { is_cossacks = yes }
 	dhimmi_estate = { is_dhimmi = yes }
 	tribes_estate = { is_gaelic_clans = yes }
-	burghers_estate = {}
+	burghers_estate = {}	
+	
+	literacy_impact = {
+		local_monthly_development_modifier = 0.25
+		local_trades_per_burgher = 0.5
+		local_building_establishment_speed = 0.25
+	}
 }
 
-TRY_INJECT:laborers = {
+TRY_REPLACE:laborers = {
+	color = pop_laborers	
+	editor = 1.0	
+	assimilation_conversion_factor = 0.5	
+	pop_food_consumption = 1.0
+	city_graphics = 0.05
+	grow = yes
+	promotion_factor = 1.5
+	migration_factor = 0.1
+	has_cap = yes
+	
+	promote_to = soldiers
+	promote_to = burghers
+	
+	cossacks_estate = { is_cossacks = yes }
+	dhimmi_estate = { is_dhimmi = yes }
+	tribes_estate = { is_gaelic_clans = yes }
+	peasants_estate = {}	
+	
+	literacy_impact = {
+		local_production_efficiency = medium_production_efficiency_bonus
+		local_max_rgo_size_modifier = 0.1
+	}
+}
+
+TRY_REPLACE:soldiers = {
+	color = pop_soldiers	
+	editor = 1.0	
+	assimilation_conversion_factor = 0.5	
+	pop_food_consumption = 5.0
+	city_graphics = 0.05
+	grow = yes	
+	promotion_factor = 1.0	
+	migration_factor = 0.05	
+	has_cap = yes
+	
+	cossacks_estate = { is_cossacks = yes }
+	dhimmi_estate = { is_dhimmi = yes }
+	tribes_estate = { is_gaelic_clans = yes }
+	peasants_estate = {}	
+	
+	literacy_impact = {
+		local_defensive = 0.1
+		local_manpower_modifier = 0.1
+	}
+}
+
+TRY_REPLACE:peasants = {
+	color = pop_peasants	
+	assimilation_conversion_factor = 1.0	
+	pop_food_consumption = 1.0
+	city_graphics = 0.01
+	grow = yes	
+	promotion_factor = 0.5	
+	migration_factor = 0.1
+
+	promote_to = burghers
+	promote_to = clergy
+	promote_to = nobles
+	promote_to = laborers
+	promote_to = soldiers
+
 	cossacks_estate = { is_cossacks = yes }
 	dhimmi_estate = { is_dhimmi = yes }
 	tribes_estate = { is_gaelic_clans = yes }
 	peasants_estate = {}
-}
-
-TRY_INJECT:soldiers = {
-	cossacks_estate = { is_cossacks = yes }
-	dhimmi_estate = { is_dhimmi = yes }
-	tribes_estate = { is_gaelic_clans = yes }
-	peasants_estate = {}
-}
-
-TRY_INJECT:peasants = {
-	cossacks_estate = { is_cossacks = yes }
-	dhimmi_estate = { is_dhimmi = yes }
-	tribes_estate = { is_gaelic_clans = yes }
-	peasants_estate = {}
+	
+	literacy_impact = {
+		local_pop_promotion_speed_modifier = 2.0
+		local_levy_recruitment_speed_modifier = 0.2
+	}
 }

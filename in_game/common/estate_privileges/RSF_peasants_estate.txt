@@ -1,0 +1,23 @@
+﻿# Ruthenian Starostas (local rural governors)
+
+ruthenian_starostas = {
+	estate = peasants_estate
+
+	potential = {
+		culture ?= { has_culture_group = culture_group:ruthene_group }
+	}
+
+	allow = {
+	}
+
+	can_revoke = {
+	}
+	
+	country_modifier = {
+		peasants_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_peasants_estate_power = 1
+		expand_rgo_farming_cost_modifier = -0.1
+		rural_migration_attraction = 0.25
+		monthly_towards_plutocracy = societal_value_minor_monthly_move
+	}
+}
