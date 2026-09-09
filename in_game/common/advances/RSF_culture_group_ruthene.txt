@@ -19,6 +19,7 @@ varangians_greeks = {
 ruthenian_cochineal = {
 	age = age_2_renaissance
 	icon = a_dynamic_society
+	content_priority = 500
 	potential = {
 		culture = { has_culture_group = culture_group:ruthene_group }
 	}
@@ -33,6 +34,7 @@ ruthenian_cochineal = {
 ############################
 heritage_of_the_rus = {
 	age = age_3_discovery
+	content_priority = 500
 	potential = {
 		culture = { has_culture_group = culture_group:ruthene_group }
 	}
@@ -48,6 +50,7 @@ heritage_of_the_rus = {
 cyrillic_printing = {
 	age = age_4_reformation
 	icon = chacery_slavonic
+	content_priority = 300
 	potential = {
 		culture = { has_culture_group = culture_group:ruthene_group }
 	}
@@ -60,6 +63,18 @@ cyrillic_printing = {
 ############################
 # age_5_absolutism
 ############################
+ruthenian_awakening = {
+	age = age_5_absolutism
+	icon = international_influences
+	content_priority = 1000
+	potential = {
+		culture = { has_culture_group = culture_group:ruthene_group }
+	}
+	land_morale_modifier = 0.1
+	ai_weight = { add = 100 }
+	requires = integrate_area_advance
+}
+
 
 ############################
 # age_6_revolutions

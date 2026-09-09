@@ -1,11 +1,9 @@
-﻿# ----- ADDED by Kotyk -----
-
+﻿
 # ----- KYIV -----
 
 mother_of_russian_cities = { 			# Mother of Rus cities – historical, moved from RUthenian culture
 	age = age_1_traditions	
 	icon = cultural_acceptance_advance
-
 	potential = {
 		has_or_had_tag = KIE
 	}	
@@ -17,7 +15,6 @@ mother_of_russian_cities = { 			# Mother of Rus cities – historical, moved fro
 northern_jerusalem = { 					# Rus baptism and Orthodox centre
 	age = age_1_traditions	
 	icon = city_of_churches
-
 	potential = {
 		has_or_had_tag = KIE
 	}	
@@ -26,16 +23,41 @@ northern_jerusalem = { 					# Rus baptism and Orthodox centre
 	requires = feudalism_advance
 }
 
+from_the_ashes = { 					# Rebuilding after the Mongol invasion
+	age = age_2_renaissance	
+	icon = city_building_advance
+	content_priority = 800
+	potential = {
+		has_or_had_tag = KIE
+	}	
+	global_build_buildings_efficiency = 0.1
+
+	requires = renaissance_urbanisation
+}
+
+rich_soil = { 						# Rich soil, effective expand farming
+	age = age_3_discovery	
+	icon = agriculture_advance
+	content_priority = 800
+	potential = {
+		has_or_had_tag = KIE
+	}	
+	expand_rgo_farming_cost_modifier = -0.1
+
+	requires = crown_power_advance_discovery
+}
+
 
 # ----- HALYCH, VOLHYNIA -----
 
 high_castle = { 						# Halych-Volhynian defence, High Castle in Lviv
 	age = age_1_traditions	
 	icon = lux_fortress_europe
-
 	potential = {
-		has_or_had_tag = HAL
-		has_or_had_tag = VOL
+		OR = {
+			has_or_had_tag = HAL 
+			has_or_had_tag = VOL
+		} 
 	}	
 	global_defensive = 0.2
 
@@ -45,26 +67,44 @@ high_castle = { 						# Halych-Volhynian defence, High Castle in Lviv
 between_four_fires = { 					# Halych-Volhynian diplomacy games between Poland, Lithuania, Hungary and the Horde
 	age = age_1_traditions	
 	icon = utr_skilled_diplomats
-
 	potential = {
-		has_or_had_tag = HAL
-		has_or_had_tag = VOL
+		OR = {
+			has_or_had_tag = HAL 
+			has_or_had_tag = VOL
+		} 
 	}	
 	monthly_diplomats = 0.1
 
 	requires = feudalism_advance
 }
 
+# Also added folwark_system to Halych and Volhynia for age_2_renaissance
+
+ruthenian_forests = { 						# Rich soil, effective expand farming
+	age = age_3_discovery	
+	icon = medicinal_infusions
+	content_priority = 800
+	potential = {
+		OR = {
+			has_or_had_tag = HAL 
+			has_or_had_tag = VOL
+		} 
+	}	
+	expand_rgo_gathering_cost_modifier = -0.1
+
+	requires = crown_power_advance_discovery
+}
 
 # ----- CHERNIHIV, NOVHOROD-SIVERSKYI -----
 
 olgovych_realm = { 						# Ancient realm of Olgovychi branch of the Rurikids
 	age = age_1_traditions	
 	icon = russian_resiliance
-
 	potential = {
-		has_or_had_tag = CHR
-		has_or_had_tag = NVS
+		OR = {
+			has_or_had_tag = CHR 
+			has_or_had_tag = NVS
+		} 
 	}	
 	monthly_prestige = 0.05
 
@@ -76,8 +116,10 @@ legacy_of_prince_igor = { 				# 'Tale of Igor's Campaign', he was a N.-S. prince
 	icon = land_of_the_rus
 
 	potential = {
-		has_or_had_tag = CHR
-		has_or_had_tag = NVS
+		OR = {
+			has_or_had_tag = CHR 
+			has_or_had_tag = NVS
+		} 
 	}	
 	army_initiative = 0.1
 
@@ -90,7 +132,6 @@ legacy_of_prince_igor = { 				# 'Tale of Igor's Campaign', he was a N.-S. prince
 tolerant_rule_advance = { 				# Lithuanian culture capacity
 	age = age_1_traditions	
 	icon = cultural_acceptance_advance
-
 	potential = {
 		has_or_had_tag = LIT
 	}	
@@ -99,16 +140,14 @@ tolerant_rule_advance = { 				# Lithuanian culture capacity
 	requires = feudalism_advance
 }
 
-lith_wilderness = { 					# Attrition in forests and marshes
-	
+lith_wilderness = { 					# Attrition in forests and marshes	
 	age = age_1_traditions
 	icon = alchemy_advance
 	content_priority = 950
 	ai_weight = { add = 20 }
 	potential = {
 		has_or_had_tag = LIT
-	}	
-
+	}
 	global_hostile_attrition = 1
 
 	requires = feudalism_advance	
@@ -120,6 +159,7 @@ lith_wilderness = { 					# Attrition in forests and marshes
 syvash_salt = {
 	age = age_2_renaissance
 	icon = markets_for_salt
+	content_priority = 700
 	potential = {
 		has_or_had_tag = CRI
 	}

@@ -1,6 +1,28 @@
 ﻿
+# ----- ADVANCES -----
+# Folwark
+GetFolwark = {		# Localised to Ukrainian and Belarusian
+	type = country
+	log_loc_errors = no
+		
+	text = {
+		localization_key = filvarok_system
+		trigger = { culture.dialect = dialect:ukrainian_dialect }
+	}
+	
+	text = {
+		localization_key = falvarak_system
+		trigger = { culture.dialect = dialect:belarusian_dialect }
+	}
+	
+	text = {
+		fallback = yes
+		localization_key = folwark_system
+	}
+}
 # ----- POLICIES -----
-GetRusJustice = {		# Localised to Ukrainian and Belarusian
+# Russkaya Pravda
+GetRusJustice = {		# Localised to English, Ukrainian and Belarusian
 	type = country
 	log_loc_errors = no
 	
@@ -26,6 +48,7 @@ GetRusJustice = {		# Localised to Ukrainian and Belarusian
 }
 
 # ----- ESTATE PRIVILEGES -----
+# Kormlenije
 GetKormlenije = {		# Localised to Ukrainian and Belarusian
 	type = country
 	log_loc_errors = no

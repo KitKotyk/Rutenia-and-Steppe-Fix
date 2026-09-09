@@ -6,6 +6,7 @@
 ############################
 cossacks_exploration_advance = {
 	age = age_3_discovery
+	content_priority = 100
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
@@ -16,6 +17,7 @@ cossacks_exploration_advance = {
 
 cossacks_colonization_advance = {
 	age = age_3_discovery
+	content_priority = 200
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
@@ -26,6 +28,7 @@ cossacks_colonization_advance = {
 
 cossacks_military_society = {
 	age = age_3_discovery
+	content_priority = 500
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
@@ -40,6 +43,7 @@ cossacks_military_society = {
 ############################
 cossacks_recruitment = {
 	age = age_4_reformation
+	content_priority = 1000
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
@@ -51,6 +55,7 @@ cossacks_recruitment = {
 
 cossack_administration = {
 	age = age_4_reformation
+	content_priority = 1100
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
@@ -63,6 +68,7 @@ cossack_administration = {
 
 cossack_raids = {
 	age = age_4_reformation
+	content_priority = 400
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
@@ -78,6 +84,7 @@ cossack_raids = {
 ############################
 cossacks_registered = {
 	age = age_5_absolutism
+	content_priority = 500
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
@@ -88,6 +95,7 @@ cossacks_registered = {
 
 cossacks_hetmanate = {
 	age = age_5_absolutism
+	content_priority = 300
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
@@ -107,6 +115,7 @@ cossacks_hetmanate = {
 ############################
 cossack_reputation = {
 	age = age_6_revolutions
+	content_priority = 700
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
@@ -117,6 +126,7 @@ cossack_reputation = {
 
 steppe_riders = {
 	age = age_6_revolutions
+	content_priority = 600
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}

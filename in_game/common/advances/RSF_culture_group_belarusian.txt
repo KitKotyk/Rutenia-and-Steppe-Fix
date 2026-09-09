@@ -19,6 +19,7 @@ ruthenian_law_tradition = {
 hardened_cavalry = {
 	age = age_2_renaissance
 	icon = army_country_looting_advance
+	content_priority = 900
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}
@@ -30,6 +31,7 @@ hardened_cavalry = {
 polesian_lumber = {
 	age = age_2_renaissance
 	icon = lumber_improvements_discovery
+	content_priority = 500
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}
@@ -45,6 +47,7 @@ polesian_lumber = {
 skaryna_printing = {
 	age = age_3_discovery
 	icon = printing_press_advance
+	content_priority = 700
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}
@@ -62,6 +65,7 @@ skaryna_printing = {
 volok_reform = {
 	age = age_4_reformation
 	icon = debt_and_loans
+	content_priority = 900
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}
@@ -76,6 +80,7 @@ volok_reform = {
 religious_dualism = {
 	age = age_5_absolutism
 	icon = a_tolerant_society
+	content_priority = 300
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}
@@ -90,6 +95,7 @@ religious_dualism = {
 polesian_amber = {
 	age = age_6_revolutions
 	icon = milanese_tradition
+	content_priority = 700
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}
@@ -101,6 +107,7 @@ polesian_amber = {
 new_bread = {
 	age = age_6_revolutions
 	icon = potato_production
+	content_priority = 300
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}

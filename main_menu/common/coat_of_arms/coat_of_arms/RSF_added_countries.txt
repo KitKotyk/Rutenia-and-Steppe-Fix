@@ -197,7 +197,7 @@ ISC = { # Isaccea
 
 HTM = { # Cossack Hetmanate
 	pattern = "pattern_solid.dds"
-	color1 = "blue"
+	color1 = "blue_dark"
 	color2 = "white"
 
 	textured_emblem = {

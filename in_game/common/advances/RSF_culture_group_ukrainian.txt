@@ -17,6 +17,7 @@ tamed_steppes = {
 ############################
 east_and_west = {
 	age = age_2_renaissance
+	content_priority = 800
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
@@ -32,6 +33,7 @@ east_and_west = {
 steppe_frontier = {
 	age = age_3_discovery
 	icon = cossack_raids
+	content_priority = 1000
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
@@ -43,6 +45,7 @@ steppe_frontier = {
 chumak_trading = {
 	age = age_3_discovery
 	icon = exploit_the_alpine_trade
+	content_priority = 800
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
@@ -58,6 +61,7 @@ chumak_trading = {
 religious_brotherhoods = {
 	age = age_4_reformation
 	icon = byz_heart_of_orthodoxy_advance
+	content_priority = 500
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
@@ -70,6 +74,7 @@ religious_brotherhoods = {
 gunpowder_boom = {
 	age = age_4_reformation
 	icon = artillery_institution_advance
+	content_priority = 400
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
@@ -84,6 +89,7 @@ gunpowder_boom = {
 fiery_army = {
 	age = age_5_absolutism
 	icon = pike_and_shot_advance
+	content_priority = 1000
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
@@ -98,6 +104,7 @@ fiery_army = {
 orlyk_constitution = {
 	age = age_6_revolutions
 	icon = the_constitution
+	content_priority = 700
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}

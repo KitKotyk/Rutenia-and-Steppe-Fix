@@ -1,0 +1,63 @@
+﻿# ----- UPDATED by Kotyk -----
+
+TRY_INJECT:land_of_many_religions = { 	# Lithuanian
+	tolerance_heretic = 2				# increased from 1 to 3
+	tolerance_heathen = 2				# increased from 1 to 3
+}
+
+TRY_INJECT:turco_mongol_tradition = { 	# Steppe Hordes	
+	cultures_capacity = 1				# increased from 1 to 2
+}
+
+TRY_INJECT:yams_of_the_great_khan = { 	# Steppe Hordes
+	global_distance_from_capital_speed_propagation = 0.2	# increased from 0.1 to 0.3
+	flatland_proximity_impact = -0.5						# added
+}
+
+TRY_INJECT:colonies = {					# Steppe Hordes do not colonise, Jokser
+    potential = {
+        NOT = { government_type = government_type:steppe_horde }
+    }
+}
+
+
+# Folwark was implemented in Halych and Volhynian lands
+TRY_REPLACE:folwark_system = {
+	content_priority = 600
+	age = age_2_renaissance
+	potential = { 
+		OR = {
+			has_or_had_tag = POL
+			has_or_had_tag = HAL 
+			has_or_had_tag = VOL
+		} 
+	}
+
+	expand_rgo_farming_cost_modifier = -0.25
+	global_max_rgo_size_modifier = 0.2
+
+	requires = renaissance_urbanisation
+}
+
+# Ukrainian Farmlands moved to the Age 4 and include Zaporizhzhia area too
+# Added millet and made all 10%
+TRY_REPLACE:ukrainian_farmlands = {
+	content_priority = 400
+	age = age_4_reformation
+	potential = {
+		any_owned_location = {
+			OR = {
+				area = area:left_bank_ukraine_area
+				area = area:right_bank_ukraine_area
+				area = area:zaporizhzhia_area
+			}
+		}
+	}
+
+	requires = road_advance_1
+
+	global_wheat_output_modifier = 0.1
+	global_millet_output_modifier = 0.1
+	global_legumes_output_modifier = 0.1
+	global_fiber_crops_output_modifier = 0.1
+}

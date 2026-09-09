@@ -5,7 +5,7 @@
 
 UKR = { # Ruthenia Kyivan default, Yaroslav trident
 	pattern = "pattern_solid.dds" 
-	color1 = "blue_secondary"
+	color1 = "blue_dark"
 	color2 = "yellow"
 	
 	colored_emblem = {

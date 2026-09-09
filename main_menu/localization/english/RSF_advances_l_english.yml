@@ -3,28 +3,49 @@
  # Kyiv
  northern_jerusalem: "Northern Jerusalem"
  northern_jerusalem_desc: "Following the Baptism of Rus, Kyiv became one of the foremost centers of Eastern Christianity. Its ancient monasteries, revered relics, and spiritual learning earned it the name 'Northern Jerusalem,' drawing pilgrims and clergy from across the Orthodox world."
-  
+
+ from_the_ashes: "From the Ashes"
+ from_the_ashes_desc: "Though Batu Khan's armies reduced Kyiv to ruins, the city did not perish. Its people returned, churches and workshops were rebuilt, and trade once again flowed along the Dnieper. From the ashes of the old Rus' capital, Kyiv slowly rose anew."
+
+ rich_soil: "Rich Soil"
+ rich_soil_desc: "Kyivan fertile soils reward those willing to tame the wilderness. As forests are cleared and new fields brought under the plough, abundant harvests allow farming to spread ever farther across the land."
+
+
  # Halych + Volhynia
  high_castle: "High Castle"
  high_castle_desc: "Perched atop commanding hills, the mighty fortresses of Halych and Lviv guard the Carpathian frontier. Their walls stand as a steadfast shield against invaders from every direction."
+
  between_four_fires: "Between Four Fires"
  between_four_fires_desc: "Caught between powerful neighbors, Halych-Volhynian rulers mastered the art of balancing rival ambitions through diplomacy, alliances, and careful compromise."
+
+ filvarok_system: "Filvarok System" # Folwark custom loc
+ falvarak_system: "Falvarak System" # Folwark custom loc
+
+ ruthenian_forests: "Ruthenian Forests"
+ ruthenian_forests_desc: "Where villages once stood, forests reclaimed the land. With fewer hands to clear them, Ruthenia's woodlands grew vast and abundant, yielding timber, furs, honey and game in quantities unseen for generations."
+
 
  # Chernihiv + Novhorod-Siverskyi
  olgovych_realm: "Realm of the Olgovychs"
  olgovych_realm_desc: "For generations, the Olgovych princes ruled one of Rus most enduring dynasties, preserving their authority through intricate succession, diplomacy, and determined resilience."
+
  legacy_of_prince_igor: "Legacy of Prince Igor"
  legacy_of_prince_igor_desc: "The ill-fated campaign of Prince Igor lives on in legend, inspiring generations with tales of courage, sacrifice, and the enduring spirit of the Severian lands."
+ 
  
  # Hetmanate + Zaporizhian Sich
  ambush_tactics_advance: "Ambush Tactics"
  ambush_tactics_advance_desc: "Cossack warriors have perfected the art of striking suddenly and vanishing before the enemy can respond. Swift manoeuvres, careful scouting and mastery of the rugged frontier allow them to seize the initiative on the battlefield."
+
  dnieper_secured_advance: "The Dnieper Secured"
  dnieper_secured_advance_desc: "With the Dnieper's waters made safer, merchants can travel freely along one of the great arteries of the Ukrainian lands. Grain, salt and other goods flow downstream towards the Black Sea and the markets beyond."
+
  de_libertate_advance: "De Libertate"
  de_libertate_advance_desc: "In his celebrated poem, Hryhoriy Skovoroda praises liberty above wealth and worldly power. His words give philosophical expression to an ideal long cherished in the Ukrainian lands: that true freedom is worth more than all earthly riches."
+
  zaporozhian_army_advance: "The Zaporozhian Army"
  zaporozhian_army_advance_desc: "The warriors of the Ukrainian Steppes have forged a distinctive military tradition on the southern frontier. Hardened by constant warfare, they combine mobility, discipline and experience."
+
 
  # Lithuania
  tolerant_rule_advance: "Tolerant Rule"
@@ -53,6 +74,9 @@
 
  cyrillic_printing: "Cyrillic Printing" 
  cyrillic_printing_desc: "Inspired by pioneers of European printing, Ruthenian craftsmen establish presses that spread books, religious texts, and knowledge in the Cyrillic script. From the works of Francysk Skaryna to the printing efforts of Ivan Fedorov, these presses strengthen literacy, education, and cultural identity across Ruthenian lands."
+
+ ruthenian_awakening: "Ruthenian Awakening" 
+ ruthenian_awakening_desc: "The seventeenth century saw the Ruthenian lands stirred by a growing determination to defend their faith, liberties and ancient rights. From the great Cossack uprising of Bohdan Khmelnytskyi to later rebellions, generations of Ukrainians and Belarusians took up arms against foreign domination and magnate rule. Though often defeated, these struggles forged a powerful tradition of resistance and peoples accustomed to fighting for their freedom."
 
 
  # Ukrainian culture group
