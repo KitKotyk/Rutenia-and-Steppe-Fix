@@ -1,10 +1,23 @@
 ﻿l_english:
+
  # Belarus missing
  volosovichy.belarusian_dialect: "Vałosavičy" 
  dobrush.belarusian_dialect: "Dobruš"
  slawharad.belarusian_dialect: "Prapojsk"
  tereshkovichy.belarusian_dialect: "Ciareškavičy"
  novy_bykhaw.belarusian_dialect: "Novy Bychaŭ"
+ haradok.belarusian_dialect: "Haradok"
+ bobr.belarusian_dialect: "Bobr"
+ rudnya.belarusian_dialect: "Rudnia"
+ shumyachi.belarusian_dialect: "Šumiačy"
+ marjina_horka.belarusian_dialect: "Marjina Horka"
+ wlodawa.belarusian_dialect: "Uładava"
+ davyd_haradok.belarusian_dialect: "Davyd-Haradok"
+ horki.belarusian_dialect: "Horki"
+ hajnowka.belarusian_dialect: "Hajnoŭka"
+ stolin.belarusian_dialect: "Stolin"
+ brahin.belarusian_dialect: "Brahin"
+
  
  # Novgorod
  staraya_russa.belarusian_dialect: "Staraja Rusa"
@@ -19,7 +32,7 @@
  oreshek.belarusian_dialect: "Arešak"
  chudovo.belarusian_dialect: "Čudava"
  lisino.belarusian_dialect: "Lisina"
- lyuban.belarusian_dialect: "Ljuban"
+ lyuban.belarusian_dialect: "Luban"
  markovo.belarusian_dialect: "Markava"
  martyshkino.belarusian_dialect: "Marčyškina"
  neva.belarusian_dialect: "Neva"
@@ -28,7 +41,7 @@
  porkhov.belarusian_dialect: "Porhaŭ"
  dubronjo.belarusian_dialect: "Dubronja"
  gorodets_luga.belarusian_dialect: "Harodac"
- lyady.belarusian_dialect: "Ljada"
+ lyady.belarusian_dialect: "Lada"
  plyussa.belarusian_dialect: "Pljussa"
  pribuzh.belarusian_dialect: "Prybuž"
  staropolye.belarusian_dialect: "Starapolje"
@@ -40,6 +53,15 @@
  kobyle.belarusian_dialect: "Kabylje"
  meletovo.belarusian_dialect: "Meletava"
  prudy.belarusian_dialect: "Prudy"
+ 
+ 
+ vydritsa.belarusian_dialect: "Vydryca"
+ rasony.belarusian_dialect: "Rasony"
+ nekloch.belarusian_dialect: "Niekłoč"
+ zhizhets.belarusian_dialect: "Žyžec"
+ usvyaty.belarusian_dialect: "Uśviaty"
+ ilyino.belarusian_dialect: "Ilina"
+ bibirevo.belarusian_dialect: "Bibirava"
 
  rzheva_pustaya.belarusian_dialect: "Pustaja"
  ashevo.belarusian_dialect: "Aševa"
@@ -72,15 +94,15 @@
  okhona.belarusian_dialect: "Ohona"
  ozerevo.belarusian_dialect: "Ozierava"
 
- lyubytino.belarusian_dialect: "Ljubytina"
+ lyubytino.belarusian_dialect: "Lubytina"
  borovichi.belarusian_dialect: "Baryvičy"
  moshenskoye.belarusian_dialect: "Mšenskaje"
  troshovo.belarusian_dialect: "Trošava"
 
  demon.belarusian_dialect: "Dziamon"
  berezovets.belarusian_dialect: "Biarezoŭec"
- lyakhovichy.belarusian_dialect: "Ljachovičy"
- lyubno.belarusian_dialect: "Ljubna"
+ lyakhovichy.belarusian_dialect: "Lachovičy"
+ lyubno.belarusian_dialect: "Lubna"
  maryovo.belarusian_dialect: "Marjova"
  nalyuchi.belarusian_dialect: "Naliučy"
  zhabny.belarusian_dialect: "Žabny"
@@ -95,7 +117,7 @@
  tervenichi.belarusian_dialect: "Tervieniči"
 
  megra.belarusian_dialect: "Mehra"
- lodenoye_pole.belarusian_dialect: "Ladziejnae Pole"
+ lodenoye_pole.belarusian_dialect: "Ładziejnae Pole"
  maselga.belarusian_dialect: "Masielha"
  spirkovo.belarusian_dialect: "Spirkava"
  vinnitsy.belarusian_dialect: "Vinnicy"
@@ -139,7 +161,7 @@
 
  kolomna.belarusian_dialect: "Kalomna"
  khatun.belarusian_dialect: "Chatun"
- przemysl_moscow.belarusian_dialect: "Przemyšl"
+ przemysl_moscow.belarusian_dialect: "Piaremyšl Zalesski"
  serpukhov.belarusian_dialect: "Serpuchava"
  koshira.belarusian_dialect: "Košyra"
  vysokoye.belarusian_dialect: "Vysokaje Ruskaje"
@@ -221,7 +243,7 @@
  meshchovsk.belarusian_dialect: "Miaščoŭsk"
  usty.belarusian_dialect: "Uscie"
  
- novosil.belarusian_dialect: "Novasil"
+ novosil.belarusian_dialect: "Novasił"
  bogorodskoye.belarusian_dialect: "Baharodskaje"
  kolpny.belarusian_dialect: "Kołpny"
  mikhailovka.belarusian_dialect: "Michajłaŭka"
@@ -263,11 +285,11 @@
  sosnytsia.belarusian_dialect: "Sosnyca"
  snovsk.belarusian_dialect: "Snoŭsk"
  
- nizhyn.belarusian_dialect: "Nižyn"
+ nizhyn.belarusian_dialect: "Niežyn"
  buryn.belarusian_dialect: "Buryń"
  bakhmach.belarusian_dialect: "Bachmač"
  melnya.belarusian_dialect: "Mielnia"
- putyvl.belarusian_dialect: "Pucyŭl"
+ putyvl.belarusian_dialect: "Putyŭl"
  
  novhorod_siverskyi.belarusian_dialect: "Novaharad-Siverski"
  hlukhiv.belarusian_dialect: "Hłuchaŭ"
@@ -289,8 +311,13 @@
  pryluky.belarusian_dialect: "Pryluki"
  chornukhy.belarusian_dialect: "Čarnuchi"
  lypova_dolyna.belarusian_dialect: "Lipavaja Dalina"
+ 
+ vilshana.belarusian_dialect: "Vilšana"
+ glushkovo.belarusian_dialect: "Chaciń"
+ sumy.belarusian_dialect: "Sumy"
+ okhtyrka.belarusian_dialect: "Achtyrka"
 
- lubny.belarusian_dialect: "Lubny"
+ lubny.belarusian_dialect: "Łubny"
  pyriatyn.belarusian_dialect: "Piracin"
  horodyshche.belarusian_dialect: "Haradyšča"
  horoshino.belarusian_dialect: "Harošyn"
@@ -300,7 +327,7 @@
  pereiaslav.belarusian_dialect: "Perajasłaŭ"
  boryspil.belarusian_dialect: "Baryspal"
  oster.belarusian_dialect: "Aścior"
- lutava.belarusian_dialect: "Lutava"
+ lutava.belarusian_dialect: "Łutava"
  kozelets.belarusian_dialect: "Kazielec"
  yaroslavka.belarusian_dialect: "Jarasłaŭka"
  
@@ -371,7 +398,7 @@
 
  lutsk.belarusian_dialect: "Łucak"
  chortoryisk.belarusian_dialect: "Čartaryjsk"
- peremyl.belarusian_dialect: "Peremyl"
+ peremyl.belarusian_dialect: "Peremył"
  rozhyshche.belarusian_dialect: "Rožyšča"
  stepan.belarusian_dialect: "Sciapań"
  volodymyrets.belarusian_dialect: "Uładzimieriec"
@@ -387,6 +414,10 @@
  kovel.belarusian_dialect: "Koviel"
  melnytsya.belarusian_dialect: "Mielnica"
  turiisk.belarusian_dialect: "Turyjsk"
+ 
+ chernyany.belarusian_dialect: "Čarniany"
+ dubrovytsia.belarusian_dialect: "Dubrovica"
+ hlynne.belarusian_dialect: "Hlinna"
 
  novohrad_volynskyi.belarusian_dialect: "Źviahiel"
  iziaslav.belarusian_dialect: "Zasłaŭ"
@@ -394,3 +425,70 @@
  liubar.belarusian_dialect: "Liubar"
  polonne.belarusian_dialect: "Pałonnaje"
  
+ horodok.belarusian_dialect: "Haradok-Padolski"
+ bakota.belarusian_dialect: "Bakota"
+ kamianets_podilskyi.belarusian_dialect: "Kamianiec-Padolski"
+ zalishchyky.belarusian_dialect: "Zaleščyki"
+
+ ushytsia.belarusian_dialect: "Ušyca"
+ khmilnyk.belarusian_dialect: "Chmelnik"
+ letychiv.belarusian_dialect: "Latyčaŭ"
+ mezhybozhe.belarusian_dialect: "Miadžybaž"
+ mohyliv_podilskyi.belarusian_dialect: "Mahileŭ-Padolski"
+ rov.belarusian_dialect: "Roŭ"
+
+ bratslav.belarusian_dialect: "Braclaŭ"
+ balta.belarusian_dialect: "Balta"
+ bershad.belarusian_dialect: "Beršad"
+ drahushiv.belarusian_dialect: "Drahušoŭ"
+ karabul.belarusian_dialect: "Karabuł"
+ savran.belarusian_dialect: "Saŭrań"
+
+ vinnytsia.belarusian_dialect: "Vińnica"
+ buzhskyi.belarusian_dialect: "Bucki"
+ pohrebyshche.belarusian_dialect: "Pahrabišča"
+ sokilets.belarusian_dialect: "Sakiłeć"
+
+ torhovytsia.belarusian_dialect: "Tarhovica"
+ teplyk.belarusian_dialect: "Teplyk"
+ tsybuliv.belarusian_dialect: "Cybuleŭ"
+ uman.belarusian_dialect: "Umań"
+ zavallia.belarusian_dialect: "Zavallia"
+
+ drohobych.belarusian_dialect: "Drahobyč"
+ sambir.belarusian_dialect: "Sambar"
+ stryi.belarusian_dialect: "Stryj"
+ turka.belarusian_dialect: "Turka"
+ 
+ halych.belarusian_dialect: "Halič"
+ bohorodchany.belarusian_dialect: "Baharadčany"
+ zhydachiv.belarusian_dialect: "Žydačaŭ"
+ bolekhiv.belarusian_dialect: "Balechaŭ"
+ dolyna.belarusian_dialect: "Dalina"
+ 
+ kolomyia.belarusian_dialect: "Kalamyja"
+ kosiv.belarusian_dialect: "Kosaŭ"
+ sniatyn.belarusian_dialect: "Sniatyn"
+ tysmenytsia.belarusian_dialect: "Tyśmienyca"
+ 
+ lviv.belarusian_dialect: "Lvoŭ"
+ zhovkva.belarusian_dialect: "Žoŭkva"
+ yavoriv.belarusian_dialect: "Javaraŭ"
+ zvenyhorod.belarusian_dialect: "Zvenyharad"
+ 
+ przemysl.belarusian_dialect: "Piaremyšl"
+ piskorowice.belarusian_dialect: "Piskarovičy"
+ rzeszow.belarusian_dialect: "Rešaŭ"
+ yaroslav_poland.belarusian_dialect: "Jaraslaŭ"
+ lubaczow.belarusian_dialect: "Lubačaŭ"
+ 
+ sanok.belarusian_dialect: "Sanok"
+ krosno.belarusian_dialect: "Krosna"
+ lesko.belarusian_dialect: "Leska"
+ 
+ terebovlia.belarusian_dialect: "Cieraboŭla"
+ khorostkiv.belarusian_dialect: "Charostkaŭ"
+ ternopil.belarusian_dialect: "Tarnopaĺ"
+ buchach.belarusian_dialect: "Bučač"
+ rohatyn.belarusian_dialect: "Rahaćin"
+ bereschany.belarusian_dialect: "Beražany"

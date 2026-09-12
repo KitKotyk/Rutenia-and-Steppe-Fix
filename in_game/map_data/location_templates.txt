@@ -4252,7 +4252,7 @@ orsha = { topography = flatland vegetation = forest climate = continental religi
 drutsk = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = polatskian_culture raw_material = lumber}
 horki = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = polatskian_culture raw_material = lumber}
 kopys = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = polatskian_culture raw_material = fish}
-rudnya = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = polatskian_culture raw_material = wild_game}
+rudnya = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = polatskian_culture raw_material = iron}
 tyatseryn = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = polatskian_culture raw_material = clay}
 polotsk = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = polatskian_culture raw_material = iron}
 bocheikovo = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = polatskian_culture raw_material = livestock}
@@ -4713,7 +4713,7 @@ yelan = { topography = flatland vegetation = grasslands climate = cold_arid reli
 machekha = { topography = flatland vegetation = grasslands climate = cold_arid religion = sunni culture = mishar raw_material = fiber_crops}
 novonikolayevsky = { topography = flatland vegetation = grasslands climate = cold_arid religion = sunni culture = mishar raw_material = wild_game}
 samoylovka = { topography = flatland vegetation = grasslands climate = cold_arid religion = sunni culture = mishar raw_material = wool}
-rudnya_pontic = { topography = flatland vegetation = grasslands climate = cold_arid religion = sunni culture = astrakhani raw_material = livestock}
+rudnya_pontic = { topography = flatland vegetation = grasslands climate = cold_arid religion = sunni culture = astrakhani raw_material = iron}
 danilovka = { topography = flatland vegetation = grasslands climate = cold_arid religion = sunni culture = astrakhani raw_material = horses}
 kotovo = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = astrakhani raw_material = wool}
 kamyshin = { topography = flatland vegetation = sparse climate = cold_arid religion = sunni culture = astrakhani raw_material = fish}
