@@ -120,3 +120,21 @@ regimental_administration_reform = { # Regimental Administration reform
 		monthly_towards_defensive = societal_value_monthly_move
 	}
 }
+
+starshyna_reform = { # General Starsyna – Генеральна Старшина
+	age = age_6_revolutions
+	content_priority = 1100
+
+	potential = {
+		culture = { has_culture_group = culture_group:ruthene_group }
+	}
+
+	locked = {
+	}
+
+	country_modifier = {
+		court_spending_efficiency = 0.1
+		country_cabinet_efficiency = 0.1
+		monthly_towards_humanist = societal_value_monthly_move
+	}
+}

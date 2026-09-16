@@ -250,7 +250,7 @@
  mtsensk.belarusian_dialect: "Mcensk"
  plavsk.belarusian_dialect: "Płaŭsk"
  tagin.belarusian_dialect: "Tahin"
- vorotynsk_novosil.belarusian_dialect: "Varacynsk"
+ vorotynsk_novosil.belarusian_dialect: "Varatynsk Novasiłski"
  
  tarusa.belarusian_dialect: "Tarusa"
  kaluga.belarusian_dialect: "Kałuha"
@@ -260,7 +260,7 @@
  odoyev.belarusian_dialect: "Adojeŭ"
  belyov.belarusian_dialect: "Bialoŭ"
  rzhavets.belarusian_dialect: "Ržaviec"
- vorotynsk.belarusian_dialect: "Varacynsk"
+ vorotynsk.belarusian_dialect: "Varatynsk"
  
  tula_russia.belarusian_dialect: "Tuła"
  arkhangelskoye.belarusian_dialect: "Archanhielskaje"
@@ -280,9 +280,9 @@
 
  # Ukraine
  chernihiv.belarusian_dialect: "Čarnihaŭ"
- horodnia.belarusian_dialect: "Harodnia"
+ horodnia.belarusian_dialect: "Harodnia Sievierskaja"
  liubech.belarusian_dialect: "Liubeč"
- sosnytsia.belarusian_dialect: "Sosnyca"
+ sosnytsia.belarusian_dialect: "Sośnica"
  snovsk.belarusian_dialect: "Snoŭsk"
  
  nizhyn.belarusian_dialect: "Niežyn"
@@ -291,13 +291,13 @@
  melnya.belarusian_dialect: "Mielnia"
  putyvl.belarusian_dialect: "Putyŭl"
  
- novhorod_siverskyi.belarusian_dialect: "Novaharad-Siverski"
+ novhorod_siverskyi.belarusian_dialect: "Noŭharad-Sievierski"
  hlukhiv.belarusian_dialect: "Hłuchaŭ"
  verba.belarusian_dialect: "Vierba"
  voronizh_chernihiv.belarusian_dialect: "Varonež"
  znobov.belarusian_dialect: "Znobaŭ"
  
- starodub_siverskyi.belarusian_dialect: "Staradub"
+ starodub_siverskyi.belarusian_dialect: "Staradub-Sievierski"
  drokov.belarusian_dialect: "Drokaŭ"
  klintsy.belarusian_dialect: "Klincy"
  mglin.belarusian_dialect: "Mhlin"

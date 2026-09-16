@@ -22,11 +22,10 @@ government = {
    
 	reforms = {
 		feudal_nobility
-		agricultural_cultivation
 	}
 			
     privilege = {
-        #nobles
+        # Nobles
         auxilium_et_consilium
 		banal_lordship
         nobles_land_rights
@@ -35,25 +34,25 @@ government = {
         noble_fortification_licenses
         kormlenije
 
-        #clergy
+        # Clergy
         reduced_from_military_obligations
         clergy_powerful_dioceses
         clergy_strengthen_faith
         clergy_literacy_rights
 
-        #burghers
+        # Burghers
         market_fairs
         formal_guilds
         building_roads_rights
         building_rights
 
-        #Commoners
+        # Commoners
         allow_hunting
 		no_labor_sunday
 		peasants_fewer_levies
         ruthenian_starostas
 		
-		#Tribesmen
+		# Tribesmen
 		tribes_allow_gatherings
 		tribes_land_rights
 		tribes_pasture_access

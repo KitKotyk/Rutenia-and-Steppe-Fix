@@ -2541,6 +2541,10 @@ countries = {
 			ruler_term = { character = bry_vasily_alexandrovich_rurikovich start_date = 1310.1.1 end_date = 1314.1.1 regnal_number = 1 }
 			ruler_term = { character = bry_vasily_alexandrovich_rurikovich start_date = 1314.1.1 end_date = 1333.1.1 regnal_number = 1 }
 			ruler_term = { character = bry_gleb_svyatoslavich_rurikovich start_date = 1333.1.1 regnal_number = 1 }
+		
+			reforms = {
+				agricultural_cultivation
+			}
 		}
 
 		liturgical_language = church_slavonic_language
@@ -2573,6 +2577,10 @@ countries = {
 			ruler_term = { character = bry_vasily_alexandrovich_rurikovich start_date = 1310.1.1 end_date = 1314.1.1 regnal_number = 1 }
 			ruler_term = { character = bry_vasily_alexandrovich_rurikovich start_date = 1314.1.1 end_date = 1333.1.1 regnal_number = 1 }
 			ruler_term = { character = bry_gleb_svyatoslavich_rurikovich start_date = 1333.1.1 regnal_number = 1 }
+		
+			reforms = {
+				agricultural_cultivation
+			}
 		}
 
 		liturgical_language = church_slavonic_language
@@ -2612,6 +2620,10 @@ countries = {
 			ruler_term = { character = bry_roman_mikhailovich_rurikovich start_date = 1263.1.1 end_date = 1288.1.1 regnal_number = 1 }
 
 			ruler_term = { character = bry_gleb_svyatoslavich_rurikovich start_date = 1333.1.1 regnal_number = 1 }
+		
+			reforms = {
+				agricultural_cultivation
+			}
 		}
 
 		liturgical_language = church_slavonic_language
@@ -2640,6 +2652,10 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
+			
+			reforms = {
+				agricultural_cultivation
+			}
 		}
 
 		liturgical_language = church_slavonic_language
@@ -2669,6 +2685,10 @@ countries = {
 			ruler = random
 
 			ruler_term = { character = vol_mstislav_sviatopolkovich_rurikovich start_date = 1095.1.1 end_date = 1097.1.1 regnal_number = 1 }
+		
+			reforms = {
+				agricultural_cultivation
+			}
 		}
 
 		liturgical_language = church_slavonic_language
@@ -2696,6 +2716,10 @@ countries = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = random
+			
+			reforms = {
+				agricultural_cultivation
+			}
 		}
 
 		liturgical_language = church_slavonic_language
@@ -42449,6 +42473,10 @@ countries = {
 			ruler_term = {	character = vol_andrii_rurikovich start_date = 1308.1.1 end_date = 1323.1.1 regnal_number = 1	}
 			ruler_term = {	character = vol_boleslaw_jerzy_ii_piast start_date = 1323.1.1 regnal_number = 2	regnal_name = name_george }
 
+			reforms = {
+				diplomatic_traditions
+			}
+
 			privilege = {
 				#Burghers
 				novi_fori
@@ -42521,6 +42549,10 @@ countries = {
 			ruler_term = {	character = vol_yuri_i_rurikovich start_date = 1301.1.1 end_date = 1308.1.1 regnal_number = 1	}
 			ruler_term = {	character = vol_andrii_rurikovich start_date = 1308.1.1 end_date = 1323.1.1 regnal_number = 1	}
 			ruler_term = {	character = vol_boleslaw_jerzy_ii_piast start_date = 1323.1.1 regnal_number = 2	regnal_name = name_george }
+
+			reforms = {
+				diplomatic_traditions
+			}
 
 			privilege = {
 				#Burghers
@@ -42767,6 +42799,11 @@ countries = {
 				name_vainius = 1
 				name_narimantas = 1
 			}
+			
+			reforms = {
+				diplomatic_traditions
+			}
+
 		}
 
 		liturgical_language = church_slavonic_language
@@ -42796,7 +42833,14 @@ countries = {
 			heir_selection = cognatic_primogeniture
 			ruler = nrk_karijotas_gediminds
 			ruler_term = {	 character = nrk_karijotas_gediminds start_date = 1333.1.1 regnal_number = 1	}
-			laws = { heir_religion_law = heir_any_religion }
+			
+			reforms = {
+				agricultural_cultivation
+			}
+
+			laws = {
+				heir_religion_law = heir_any_religion
+			}
 		}
 
 		liturgical_language = church_slavonic_language
@@ -42862,6 +42906,10 @@ countries = {
 				name_gleb = 2
 				name_vseslav = 2
 				name_albert = 1
+			}
+			
+			reforms = {
+				agricultural_cultivation
 			}
 		}
 
@@ -42938,6 +42986,10 @@ countries = {
 				name_gediminas = 1
 				name_narimantas = 1
 			}
+			
+			reforms = {
+				agricultural_cultivation
+			}
 		}
 
 		liturgical_language = church_slavonic_language
@@ -43005,6 +43057,10 @@ countries = {
 				name_demetrius = 1
 				name_daniel = 1
 			}
+			
+			reforms = {
+				agricultural_cultivation
+			}
 		}
 
 		liturgical_language = church_slavonic_language
@@ -43028,7 +43084,14 @@ countries = {
 			heir_selection = cognatic_primogeniture
 			ruler = lit_gediminas_gediminids
 			ruler_term = {	character = lit_gediminas_gediminids start_date = 1320.1.1 regnal_number = 1	}
-			laws = { heir_religion_law = heir_any_religion }
+			
+			reforms = {
+				agricultural_cultivation
+			}
+
+			laws = {
+				heir_religion_law = heir_any_religion
+			}
 		}
 		capital = slutsk
 		#
@@ -43093,8 +43156,14 @@ countries = {
 				name_mary = 1
 				name_algirdas = 1
 			}
+			
+			reforms = {
+				agricultural_cultivation
+			}
 
-			laws = { heir_religion_law = heir_any_religion }
+			laws = {
+				heir_religion_law = heir_any_religion
+			}
 		}
 
 		liturgical_language = church_slavonic_language
@@ -43127,6 +43196,10 @@ countries = {
 			ruler_term = { character = msv_mikhail_rostislavich_rurikovich start_date = 1260.1.1  end_date = 1278.1.1 regnal_number = 1 }
 
 			ruler_term = { character = msv_roman_glebovich_rurikovich start_date = 1281.1.1  end_date = 1301.1.1 regnal_number = 1 }
+		
+			reforms = {
+				agricultural_cultivation
+			}
 		}
 
 		liturgical_language = church_slavonic_language
@@ -43173,6 +43246,10 @@ countries = {
 			ruler_term = { character = smo_ivan_alexandrovich_rurikovich start_date = 1314.1.1 regnal_number = 1	}
 			regnal_numbers = {
 				Iwan = 1
+			}
+			
+			reforms = {
+				diplomatic_traditions
 			}
 		}
 		capital = smolensk
@@ -43294,7 +43371,7 @@ countries = {
 			ruler_term = { character = kie_teodoras_ivanovich_rurikovich start_date = 1331.1.1 regnal_number = 1	}
 
 			reforms = {
-				
+				frontier_liberties_reform
 			}
 
 			privilege = {
