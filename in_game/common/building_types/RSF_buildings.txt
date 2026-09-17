@@ -1,12 +1,63 @@
 ﻿# ----- UPDATED by Kotyk -----
-# Kurultai
 
-TRY_INJECT:kurultai = { # Kurultai	
+TRY_INJECT:kurultai = {		# Kurultai	
 	rural_settlement = no	# Changed to no
 	
 	modifier = {
 		local_proximity_source = 50
 	}
+}
+
+TRY_REPLACE:ostrog = {		# Added steppes_region
+	audio_tier = 2
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+	
+	employment_size = castle_employment
+	category = defense_category
+	
+	rural_settlement = yes
+	build_time = government_build_time
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:russian_group }
+	}
+	
+	location_potential = {
+		is_capital = no
+		has_river = yes
+		
+		OR = {
+			region = region:russian_region
+			region = region:steppes_region
+			region = region:ural_region
+			region = region:west_siberia_region
+			region = region:east_siberia_region
+		}
+	}
+
+	unique_production_methods = {
+		ostrog_maintenance_1 = {
+			lumber = 0.2
+			tools = 0.1
+			firearms = 0.2
+			weaponry = 0.2
+			tar = 0.1
+			category = building_maintenance
+		}
+
+	}
+
+	construction_demand = ostrog_construction
+
+	modifier = {
+		local_max_control = 0.10
+		local_garrison_size = 0.10
+		local_distance_from_capital_speed_propagation = 0.1
+	}
+	
 }
 
 

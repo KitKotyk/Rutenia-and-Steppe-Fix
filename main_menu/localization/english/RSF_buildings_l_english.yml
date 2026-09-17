@@ -8,4 +8,6 @@
  #settlement_building: "[Custom('GetSettlement')]"
 
  # seems to be missing from the error log
- scientific_revolution_advance: "Scientific revolution advance"
+ scientific_revolution_advance: "Scientific Revolution"
+
+ ostrog_maintenance_1: "Ostrogs"
