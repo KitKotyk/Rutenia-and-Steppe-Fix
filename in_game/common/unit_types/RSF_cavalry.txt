@@ -1,0 +1,93 @@
+﻿##### CAVALRY #####
+
+
+# COSSACK CAVALRY UNITS
+
+# Early light Cossack cavalry
+# Unique for the Ukrainian steppe cultures (Cossack, Ruthenian, Severian)
+a_cossack_raiders = {
+	copy_from = a_age_3_discovery_light_cavalry
+	is_special = yes
+	upgrades_to = a_cossack_cavalry
+	buildable = yes
+	
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.005
+	}
+	
+	movement_speed = 0.1
+	flanking_ability = 0.2
+	
+	gfx_tags = { archer_tag light_tag }
+}
+
+# Generic Cossack cavalry
+# Unique for all Ukrainian cultures
+a_cossack_cavalry = {		
+	copy_from = a_age_4_reformation_light_cavalry
+	is_special = yes
+	upgrades_to = a_hussars
+	buildable = yes
+
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}	
+	
+	movement_speed = 0.1
+	flanking_ability = 0.2
+
+	gfx_tags = { light_tag }
+}
+
+
+# HISTORICAL UNITS – unique for cultures and tags (UKR, HET, ZAZ, PLC)
+
+# Panzer Boyars (Ruthenian heavy cavalry under Lithuanian rule)
+# https://be.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BD%D1%86%D1%8B%D1%80%D0%BD%D1%8B%D1%8F_%D0%B1%D0%B0%D1%8F%D1%80%D1%8B
+# Unique for for all Belarusian cultures + Volhynian culture
+a_panzer_boyars = {
+	copy_from = a_age_4_reformation_heavy_cavalry
+	is_special = yes
+	upgrades_to = a_gallop_cavalry
+	buildable = yes
+	
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.2
+	}
+	
+	strength_damage_done = 0.15
+
+	gfx_tags = { heavy_tag }
+}
+
+# Kompaniytsi (historical Cossack cavalry in the Cossack Hetmanate)
+# https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D1%96_%D0%BF%D0%BE%D0%BB%D0%BA%D0%B8
+# Unique for HET, ZAZ tags
+a_kompaniytsi = {
+	copy_from = a_age_5_absolutism_light_cavalry
+	is_special = yes
+	upgrades_to = a_light_dragoons	
+	buildable = yes
+	
+	strength_damage_done = 0.15
+
+	gfx_tags = { medium_tag musket_tag }
+}
+
+# Cossack Hussars
+# Historically all Ukrainian Cossack regiments in the Russian Empire were transformed into hussars after the 1770s
+# Unique for for UKR tag
+a_ukrainian_hussars = {
+	copy_from = a_age_6_revolutions_light_cavalry
+	is_special = yes
+	buildable = yes	
+	
+	initiative = 2
+	morale_damage_taken = -0.2
+
+	gfx_tags = { light_tag }
+}
+

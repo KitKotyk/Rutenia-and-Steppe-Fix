@@ -1,0 +1,37 @@
+﻿
+# Cossack Chaika
+
+chaika_4_construction = {
+	naval_supplies = 1.0
+	tools = 0.7
+	lumber = 10.0
+	cannons = 0.8
+	cloth = 1.0
+	category = ship_construction
+}
+chaika_4_maintenance = {
+	naval_supplies = 0.3
+	cannons = 0.08
+	liquor = 0.068
+	salt = 0.068
+	cloth = 0.1
+	category = ship_maintenance
+}
+
+
+# transport_5_construction = {
+# 	naval_supplies = 1.0
+# 	tools = 1.0
+# 	lumber = 30.0
+# 	cannons = 1.3
+# 	cloth = 3.0
+# 	category = ship_construction
+# }
+# transport_5_maintenance = {
+# 	naval_supplies = 0.42
+# 	cannons = 0.2
+# 	liquor = 0.084
+# 	salt = 0.084
+# 	cloth = 0.3
+# 	category = ship_maintenance
+# }

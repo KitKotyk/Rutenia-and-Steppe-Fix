@@ -1,0 +1,163 @@
+﻿# GENERIC COSSACK UNITS 
+# Infantry
+a_discovery_cossacks_advance = {
+	age = age_3_discovery
+
+	potential = {
+		culture = { has_culture_group = culture_group:ukrainian_group }
+	}
+
+	unlock_unit = a_discovery_cossacks
+	requires = unlock_early_arquebusiers_advance
+}
+
+a_reformation_cossacks_advance = {
+	age = age_4_reformation
+
+	potential = {
+		culture = { has_culture_group = culture_group:ukrainian_group }
+	}
+
+	unlock_unit = a_reformation_cossacks
+	requires = unlock_arquebusiers_advance
+}
+
+a_absolutism_cossacks_advance = {
+	age = age_5_absolutism
+
+	potential = {
+		culture = { has_culture_group = culture_group:ukrainian_group }
+	}
+
+	unlock_unit = a_absolutism_cossacks
+	requires = unlock_musketeers_advance
+}
+
+a_revolutions_cossacks_advance = {
+	age = age_6_revolutions
+
+	potential = {
+		culture = { has_culture_group = culture_group:ukrainian_group }
+	}
+
+	unlock_unit = a_revolutions_cossacks
+	requires = unlock_fusiliers_advance
+}
+
+# Cavalry
+a_cossack_raiders_advance = {
+	age = age_3_discovery
+
+	potential = {			# Ukrainian steppe cultures
+		OR = {
+			culture = culture:ruthenian
+			culture = culture:severian
+			culture = culture:cossack_culture
+			culture = { merged_culture_group_contains_culture = culture:ruthenian }
+			culture = { merged_culture_group_contains_culture = culture:severian }
+			culture = { merged_culture_group_contains_culture = culture:cossack_culture }
+		}
+	}
+
+	unlock_unit = a_cossack_raiders
+	requires = unlock_light_lancers_advance
+}
+
+a_cossack_cavalry_advance = {
+	age = age_4_reformation
+
+	potential = {
+		culture = { has_culture_group = culture_group:ukrainian_group }
+	}
+
+	unlock_unit = a_cossack_cavalry
+	requires = unlock_pistoleers_advance
+}
+
+
+# HISTORICAL UNITS
+# Infantry
+a_opryshky_advance = {
+	age = age_4_reformation
+
+	potential = {			# Ukrainian Carpathian cultures
+		OR = {
+			culture = culture:halychian_culture
+			culture = culture:rusyn_culture
+			culture = { merged_culture_group_contains_culture = culture:halychian_culture }
+			culture = { merged_culture_group_contains_culture = culture:rusyn_culture }
+		}
+	}
+
+	unlock_unit = a_opryshky
+	requires = unlock_arquebusiers_advance
+}
+
+a_registered_cossacks_advance = {
+	age = age_4_reformation
+
+	potential = {
+		has_or_had_tag = UKR			# Ruthenia
+	}
+
+	unlock_unit = a_registered_cossacks
+	requires = unlock_pikemen_advance
+}
+
+a_serdiuks_advance = {
+	age = age_4_reformation
+
+	potential = {
+		OR = {
+			has_or_had_tag = HTM		# Hetmanate
+			has_or_had_tag = ZAZ		# Zaporizhian host
+		}
+	}
+
+	unlock_unit = a_serdiuks
+	requires = unlock_pikemen_advance
+}
+
+# Cavalry
+a_panzer_boyars_advance = {
+	age = age_4_reformation
+
+	potential = {			# Belarusian + Volhynian cultures
+		OR = {
+			culture = { has_culture_group = culture_group:belarusian_group }
+			culture = culture:volhynian_culture
+			culture = { merged_culture_group_contains_culture = culture:polesian_culture }
+			culture = { merged_culture_group_contains_culture = culture:polatskian_culture }
+			culture = { merged_culture_group_contains_culture = culture:smolenskian_culture }
+			culture = { merged_culture_group_contains_culture = culture:volhynian_culture }
+		}
+	}
+
+	unlock_unit = a_panzer_boyars
+	requires = unlock_heavy_lancers_advance
+}
+
+a_kompaniytsi_advance = {
+	age = age_5_absolutism
+
+	potential = {
+		OR = {
+			has_or_had_tag = HTM		# Hetmanate
+			has_or_had_tag = ZAZ		# Zaporizhian host
+		}
+	}
+
+	unlock_unit = a_kompaniytsi
+	requires = unlock_hussars_advance
+}
+
+a_ukrainian_hussars_advance = {
+	age = age_6_revolutions
+
+	potential = {
+		has_or_had_tag = UKR			# Ruthenia
+	}
+
+	unlock_unit = a_ukrainian_hussars
+	requires = unlock_light_dragoons_advance
+}

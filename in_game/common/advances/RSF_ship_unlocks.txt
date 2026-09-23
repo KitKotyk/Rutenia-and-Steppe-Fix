@@ -1,0 +1,16 @@
+﻿# HISTORICAL COSSACK NAVY 
+
+# Chaika
+n_chaika_advance = {
+	age = age_4_reformation
+
+	potential = {
+		OR = {
+			culture = culture:cossack_culture
+			culture = { merged_culture_group_contains_culture = culture:cossack_culture }
+		}
+	}
+
+	unlock_unit = n_chaika
+	requires = unlock_chambered_cannon_advance
+}

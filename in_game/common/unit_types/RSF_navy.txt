@@ -1,0 +1,18 @@
+﻿##### NAVY #####
+
+# Cossack Chaika – https://en.wikipedia.org/wiki/Chaika_(boat)
+# 1 boat here abstracted to represent several Chaikas
+# They were used by the Cossacks like mosquito navy transport for quick naval raids on the Black Sea
+n_chaika = {
+	is_special = yes
+	upgrades_to = n_merchantman
+	category = navy_transport
+	copy_from = n_age_4_reformation_transport
+
+	movement_speed = 3
+	crew_size = -0.02
+	food_storage_per_strength = 10
+	
+	maintenance_demand = chaika_4_maintenance
+	construction_demand = chaika_4_construction
+}

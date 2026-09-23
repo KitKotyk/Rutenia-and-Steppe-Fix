@@ -2,6 +2,42 @@
 
  subunit_type_army_infantry_ukrainian: "Pikhota"
  subunit_type_army_cavalry_knights_ukrainian: "Druzhyna"
- subunit_type_army_cavalry_ukrainian: "Kavaleria"
+ subunit_type_army_cavalry_ukrainian: "Kinnota"
  subunit_type_army_artillery_ukrainian: "Artyleria"
- subunit_type_army_auxiliary_ukrainian: "Oboz" 
+ subunit_type_army_auxiliary_ukrainian: "Oboz"
+
+ # Cossack Unit chain
+ cossacks: "Cossacks"
+ a_discovery_cossacks: "Early Cossacks"
+ a_discovery_cossacks_desc: "Cossacks emerged as frontier communities of free warriors, settlers, and adventurers on the steppe. They defended the borderlands, raided enemy lands, and gradually developed their own military traditions and institutions. Their mobility, self-government, and skill in irregular warfare made them a distinctive force in Eastern Europe."
+ a_reformation_cossacks: "Sich Cossacks"
+ a_reformation_cossacks_desc: "$a_discovery_cossacks_desc$"
+ a_absolutism_cossacks: "Cossack Infantry"
+ a_absolutism_cossacks_desc: "$a_discovery_cossacks_desc$"
+ a_revolutions_cossacks: "Line Cossack Infantry"
+ a_revolutions_cossacks_desc: "$a_discovery_cossacks_desc$"
+
+ # Infantry units
+ a_opryshky: "Opryshky"
+ a_opryshky_desc: "From the 16th to 19th centuries, Opryshky were mountain partisans and outlaws of the Carpathians. Moving through forests and mountain passes, they fought landlords and authorities and became a lasting symbol of resistance in the Ruthenian highlands."
+ a_registered_cossacks: "Registered Cossacks"
+ a_registered_cossacks_desc: "$a_discovery_cossacks_desc$"
+ a_serdiuks: "Serdiuk Infantry"
+ a_serdiuks_desc: "Since the 17th century, serdiuky formed the professional infantry of the Cossack Hetmanate. Maintained directly by the Hetmans, these disciplined troops served as a reliable force alongside the registered Cossack regiments."
+ 
+ # Cavalry units
+ a_cossack_raiders: "Cossack Raiders"
+ a_cossack_raiders_desc: "$a_discovery_cossacks_desc$"
+ a_cossack_cavalry: "Cossack Cavalry"
+ a_cossack_cavalry_desc: "$a_discovery_cossacks_desc$"
+ a_panzer_boyars: "Panzer Boyars"
+ a_panzer_boyars_desc: "From the 14th to 16th centuries, Panzer Boyars were military landholders of the Ruthenian lands who served as armoured cavalry. Holding their estates in return for military service, they preserved an older tradition of local warrior nobility."
+ a_kompaniytsi: "Kompaniytsi"
+ a_kompaniytsi_desc: "From the late 17th to 18th centuries, Kompaniytsi were professional cavalry companies maintained by the Hetmans. Recruited from Cossacks and other free men, they provided the Hetmanate with a permanent force independent of the general Cossack levy."
+ a_ukrainian_hussars: "Ukrainian Hussars"
+ a_ukrainian_hussars_desc: "From the 1770s to the early 19th century, the former Ukrainian Cossack regiments were reorganised into hussar formations. Adopting the distinctive dress and tactics of light cavalry, they carried the military traditions of the old Cossack regimental system into a new era."
+
+ # Navy units
+ n_chaika: "Chaika"
+ n_chaika_desc: "From the 16th to 18th centuries, the Chaika was the swift riverine and seagoing boat of the Zaporizhian Cossacks. Light and manoeuvrable, these boats carried Cossack raiders down the Dnieper and across the Black Sea, enabling daring raids and the sacking of Ottoman coastal cities."
+ 

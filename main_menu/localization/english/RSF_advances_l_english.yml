@@ -123,3 +123,43 @@
 
  new_bread: "New Bread"
  new_bread_desc: "The widespread adoption of the potato transformed rural life, providing reliable harvests that sustained population growth and reduced the threat of famine."
+
+ # Unit unlocks
+ a_discovery_cossacks_advance: "$a_discovery_cossacks$"
+ a_discovery_cossacks_advance_desc: "$a_discovery_cossacks_desc$"
+
+ a_reformation_cossacks_advance: "$a_reformation_cossacks$"
+ a_reformation_cossacks_advance_desc: "$a_reformation_cossacks_desc$"
+
+ a_absolutism_cossacks_advance: "$a_absolutism_cossacks$"
+ a_absolutism_cossacks_advance_desc: "$a_absolutism_cossacks_desc$"
+
+ a_revolutions_cossacks_advance: "$a_revolutions_cossacks$"
+ a_revolutions_cossacks_advance_desc: "$a_revolutions_cossacks_desc$"
+
+ a_opryshky_advance: "$a_opryshky$"
+ a_opryshky_advance_desc: "$a_opryshky_desc$"
+ 
+ a_registered_cossacks_advance: "$a_registered_cossacks$"
+ a_registered_cossacks_advance_desc: "$a_registered_cossacks_desc$"
+
+ a_serdiuks_advance: "$a_serdiuks$"
+ a_serdiuks_advance_desc: "$a_serdiuks_desc$"
+ 
+ a_cossack_raiders_advance: "$a_cossack_raiders$"
+ a_cossack_raiders_advance_desc: "$a_cossack_raiders_desc$"
+
+ a_cossack_cavalry_advance: "$a_cossack_cavalry$"
+ a_cossack_cavalry_advance_desc: "$a_cossack_cavalry_desc$"
+
+ a_panzer_boyars_advance: "$a_panzer_boyars$"
+ a_panzer_boyars_advance_desc: "$a_panzer_boyars_desc$"
+ 
+ a_kompaniytsi_advance: "$a_kompaniytsi$"
+ a_kompaniytsi_advance_desc: "$a_kompaniytsi_desc$"
+
+ a_ukrainian_hussars_advance: "$a_ukrainian_hussars$"
+ a_ukrainian_hussars_advance_desc: "$a_ukrainian_hussars_desc$"
+
+ n_chaika_advance: "$n_chaika$"
+ n_chaika_advance_desc: "$n_chaika_desc$"

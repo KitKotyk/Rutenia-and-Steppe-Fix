@@ -1,0 +1,130 @@
+﻿##### INFANTRY #####
+
+
+# GENERIC COSSACK UNIT CHAIN (inspired by the Turkish Janissaries chain)
+# Unique for the Ukrainian culture group, Ages 3–6
+
+# Age 3 – Early Cossacks
+a_discovery_cossacks = {			
+	copy_from = a_age_3_discovery_light_infantry
+	is_special = yes
+	upgrades_to_only = a_reformation_cossacks
+	buildable = yes
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.005
+	}
+
+	initiative = 2
+	morale_damage_taken = -0.2
+	
+	gfx_tags = { light_tag archer_tag spear_tag }
+}
+
+# Age 4 – Sich Cossacks
+a_reformation_cossacks = {			
+	copy_from = a_age_4_reformation_light_infantry
+	is_special = yes
+	upgrades_to_only = a_absolutism_cossacks
+	buildable = yes
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.005
+	}
+	
+	strength_damage_done = 0.1
+	morale_damage_taken = -0.2
+	
+	gfx_tags = { light_tag musket_tag }
+}
+
+# Age 5 – Cossack Infantry
+a_absolutism_cossacks = {			
+	copy_from = a_age_5_absolutism_light_infantry
+	is_special = yes
+	upgrades_to_only = a_revolutions_cossacks
+	buildable = yes
+
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.005
+	}
+	
+	strength_damage_done = 0.2
+	morale_damage_taken = -0.1
+	
+	gfx_tags = { light_tag musket_tag }
+}
+
+# Age 6 – Line Cossack Infantry
+a_revolutions_cossacks = {			
+	copy_from = a_age_6_revolutions_light_infantry
+	is_special = yes
+	buildable = yes
+	
+	strength_damage_done = 0.2
+	strength_damage_taken = -0.1
+	
+	gfx_tags = { light_tag musket_tag }
+}
+
+
+# HISTORICAL UNITS – unique for cultures and tags (UKR, HET, ZAZ, PLC)
+
+# Opryshky (Carpathian mountain guerillas) – https://en.wikipedia.org/wiki/Opryshky
+# Unique for Ukrainian mountain cultures (Halychian, Carpathorusyn)
+a_opryshky = {				
+	copy_from = a_age_4_reformation_light_infantry
+	is_special = yes	
+	upgrades_to = a_hunters
+	buildable = yes
+
+	initiative = 2
+	combat = {
+		woods = 0.1
+		forest = 0.15
+		hills = 0.1
+		mountains = 0.15
+	}
+	impact = {
+		woods = -0.1
+		forest = -0.15
+		hills = -0.1
+		mountains = -0.15
+	}
+	
+	gfx_tags = { light_tag musket_tag }
+}
+
+# Registered Cossacks – https://en.wikipedia.org/wiki/Registered_Cossacks
+# Unique for UKR, PLC tags
+a_registered_cossacks = {	
+	copy_from = a_age_4_reformation_heavy_infantry
+	is_special = yes
+	upgrades_to = a_musketeers
+	buildable = yes
+
+	# Loaction limitation for the P-L Commonwealth mostly
+	location_trigger = {	
+		dominant_culture = { has_culture_group = culture_group:ruthene_group }
+	}
+
+	strength_damage_taken = -0.1
+	
+	gfx_tags = { medium_tag musket_tag }
+}
+
+# Serdiuks (elite Cossack guard) – https://en.wikipedia.org/wiki/Serdyuk
+# Unique for HET, ZAZ tags
+a_serdiuks = {	
+	copy_from = a_age_4_reformation_heavy_infantry
+	is_special = yes
+	upgrades_to = a_musketeers	
+	buildable = yes
+	
+	strength_damage_done = 0.1
+
+	gfx_tags = { medium_tag musket_tag }
+}
