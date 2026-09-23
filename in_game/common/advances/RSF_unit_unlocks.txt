@@ -97,7 +97,10 @@ a_registered_cossacks_advance = {
 	age = age_4_reformation
 
 	potential = {
-		has_or_had_tag = UKR			# Ruthenia
+		OR = {
+			has_or_had_tag = UKR			# Ruthenia
+			has_or_had_tag = PLC			# Polish-Lithuanian Commonwealth
+		}
 	}
 
 	unlock_unit = a_registered_cossacks

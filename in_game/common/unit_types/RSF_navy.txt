@@ -11,7 +11,6 @@ n_chaika = {
 
 	movement_speed = 3
 	crew_size = -0.02
-	food_storage_per_strength = 10
 	
 	maintenance_demand = chaika_4_maintenance
 	construction_demand = chaika_4_construction
