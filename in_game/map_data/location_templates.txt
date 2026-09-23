@@ -4004,7 +4004,7 @@ vowpa = { topography = flatland vegetation = forest climate = continental religi
 ichnia = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = severian raw_material = livestock}
 hadiach = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = severian raw_material = saltpeter}
 romen = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = severian raw_material = wheat}
-pryluky = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = severian raw_material = livestock}
+pryluky = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = severian raw_material = fruit}
 chornukhy = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = severian raw_material = wool}
 lypova_dolyna = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = severian raw_material = beeswax}
 lubny = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = ruthenian raw_material = legumes}
@@ -4023,7 +4023,7 @@ kremenchuk = { topography = flatland vegetation = grasslands climate = continent
 myrhorod = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = ruthenian raw_material = fiber_crops}
 velyki_sorochyntsi = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = ruthenian raw_material = livestock}
 hovtva = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = ruthenian raw_material = saltpeter}
-opishnya = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = ruthenian raw_material = fruit}
+opishnya = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = ruthenian raw_material = horses}
 bratslav = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = ruthenian raw_material = medicaments}
 balta = { topography = flatland vegetation = grasslands climate = cold_arid religion = orthodox culture = ruthenian raw_material = wild_game}
 bershad = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = ruthenian raw_material = lumber}
@@ -4123,11 +4123,11 @@ tereshkovichy = { topography = flatland vegetation = woods climate = continental
 volosovichy = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = polesian_culture raw_material = livestock}
 nizhyn = { topography = wetlands vegetation = grasslands climate = continental religion = orthodox culture = severian raw_material = iron}
 buryn = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = severian raw_material = horses}
-bakhmach = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = severian raw_material = fiber_crops}
+bakhmach = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = severian raw_material = wild_game}
 melnya = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = severian raw_material = fish}
-putyvl = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = severian raw_material = livestock}
+putyvl = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = severian raw_material = saltpeter}
 novhorod_siverskyi = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = severian raw_material = lumber}
-hlukhiv = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = severian raw_material = wild_game}
+hlukhiv = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = severian raw_material = livestock}
 verba = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = severian raw_material = clay}
 voronizh_chernihiv = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = severian raw_material = fiber_crops}
 znobov = { topography = wetlands vegetation = forest climate = continental religion = orthodox culture = severian raw_material = sand}
@@ -4252,7 +4252,7 @@ orsha = { topography = flatland vegetation = forest climate = continental religi
 drutsk = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = polatskian_culture raw_material = lumber}
 horki = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = polatskian_culture raw_material = lumber}
 kopys = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = polatskian_culture raw_material = fish}
-rudnya = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = polatskian_culture raw_material = iron}
+rudnya = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = polatskian_culture raw_material = wild_game}
 tyatseryn = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = polatskian_culture raw_material = clay}
 polotsk = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = polatskian_culture raw_material = iron}
 bocheikovo = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = polatskian_culture raw_material = livestock}
