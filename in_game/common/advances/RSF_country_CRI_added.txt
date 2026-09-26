@@ -1,0 +1,30 @@
+﻿
+# ----- CRIMEA -----
+
+syvash_salt = { 						# Historical salt production
+	age = age_2_renaissance
+	icon = markets_for_salt
+	content_priority = 700
+	ai_weight = { add = 10 }
+	potential = {
+		has_or_had_tag = CRI
+	}
+	global_salt_output_modifier = 0.2
+	ai_weight = { add = 200 }
+	requires = patron_of_art
+}
+
+control_over_the_shore = { 				# To make Crimea more stable
+	age = age_3_discovery	
+	icon = mge_improved_yam_system
+	content_priority = 1100
+	ai_weight = { add = 100 }
+	potential = {
+		OR = {
+		has_or_had_tag = CRI
+		} 
+	}	
+	global_max_control = 0.05
+
+	requires = crown_power_advance_discovery
+}

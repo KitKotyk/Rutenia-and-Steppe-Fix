@@ -17,6 +17,7 @@ flexible_loyalty = {
 ############################
 international_influences = {
 	age = age_2_renaissance
+	ai_weight = { add = 10 }
 	potential = {
 		has_or_had_tag = UKR
 	}
@@ -32,6 +33,7 @@ international_influences = {
 ############################
 ruthenian_rural_buildings = {
 	age = age_3_discovery
+	ai_weight = { add = 10 }
 	potential = {
 		has_or_had_tag = UKR
 	}
@@ -46,6 +48,7 @@ ruthenian_rural_buildings = {
 ############################
 reuniting_rus = {
 	age = age_4_reformation
+	ai_weight = { add = 10 }
 	potential = {
 		has_or_had_tag = UKR
 	}
@@ -62,6 +65,7 @@ reuniting_rus = {
 ############################
 ruthenian_state_advance = {
 	age = age_5_absolutism
+	ai_weight = { add = 10 }
 	potential = {
 		has_or_had_tag = UKR
 	}
@@ -76,6 +80,7 @@ ruthenian_state_advance = {
 ############################
 ruthenia_commoner_education = {
 	age = age_6_revolutions
+	ai_weight = { add = 10 }
 	potential = {
 		has_or_had_tag = UKR
 	}

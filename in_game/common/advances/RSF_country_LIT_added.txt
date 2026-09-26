@@ -1,0 +1,26 @@
+﻿
+# ----- LITHUANIA -----
+
+tolerant_rule_advance = { 				# Lithuanian culture capacity
+	age = age_1_traditions	
+	icon = cultural_acceptance_advance
+	potential = {
+		has_or_had_tag = LIT
+	}	
+	cultures_capacity = 2
+
+	requires = feudalism_advance
+}
+
+lith_wilderness = { 					# Attrition in forests and marshes	
+	age = age_1_traditions
+	icon = alchemy_advance
+	content_priority = 950
+	ai_weight = { add = 20 }
+	potential = {
+		has_or_had_tag = LIT
+	}
+	global_hostile_attrition = 1
+
+	requires = feudalism_advance	
+}

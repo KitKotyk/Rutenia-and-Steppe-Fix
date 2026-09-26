@@ -76,35 +76,70 @@ UKR = { # Ruthenia
 		coa = UKR_severian
 		priority = 2
 		trigger = {
-			coa_def_UKR_severian_trigger = yes
+			coa_def_severian_trigger = yes
 		}		
 	}
 	flag_definition = {
 		coa = UKR_halician
 		priority = 3
 		trigger = {
-			coa_def_UKR_halician_trigger = yes
+			coa_def_halician_trigger = yes
 		}		
 	}
 	flag_definition = {
 		coa = UKR_volhynian
 		priority = 4
 		trigger = {
-			coa_def_UKR_volhynian_trigger = yes
+			coa_def_volhynian_trigger = yes
 		}		
 	}
 	flag_definition = {
 		coa = UKR_polesian
 		priority = 5
 		trigger = {
-			coa_def_UKR_polesian_trigger = yes
+			coa_def_polesian_trigger = yes
 		}		
 	}
 	flag_definition = {
 		coa = UKR_belarusian
 		priority = 6
 		trigger = {
-			coa_def_UKR_belarusian_trigger = yes
+			coa_def_belarusian_trigger = yes
+		}		
+	}
+}
+
+HTM = { # Hetmanate
+	flag_definition = {
+		coa = HTM
+		priority = 1
+	}
+	flag_definition = {
+		coa = HTM_cossack
+		priority = 2
+		trigger = {
+			coa_def_cossack_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = HTM_severian
+		priority = 3
+		trigger = {
+			coa_def_severian_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = HTM_volhynian
+		priority = 4
+		trigger = {
+			coa_def_volhynian_trigger = yes
+		}		
+	}
+	flag_definition = {
+		coa = HTM_halician
+		priority = 5
+		trigger = {
+			coa_def_halician_trigger = yes
 		}		
 	}
 }

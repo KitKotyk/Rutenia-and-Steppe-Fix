@@ -1,0 +1,48 @@
+﻿
+# ----- KYIV -----
+
+mother_of_russian_cities = { 			# Mother of Rus cities – historical, moved from RUthenian culture
+	age = age_1_traditions	
+	icon = cultural_acceptance_advance
+	potential = {
+		has_or_had_tag = KIE
+	}	
+	monthly_prestige = 0.1
+
+	requires = feudalism_advance
+}
+
+northern_jerusalem = { 					# Rus baptism and Orthodox centre
+	age = age_1_traditions	
+	icon = city_of_churches
+	potential = {
+		has_or_had_tag = KIE
+	}	
+	monthly_religious_influence = 0.05
+
+	requires = feudalism_advance
+}
+
+rich_soil = { 							# Rich soil, effective expand farming
+	age =  age_2_renaissance	
+	icon = agriculture_advance
+	content_priority = 800
+	potential = {
+		has_or_had_tag = KIE
+	}	
+	expand_rgo_farming_cost_modifier = -0.1
+
+	requires = renaissance_urbanisation
+}
+
+from_the_ashes = { 						# Rebuilding after the Mongol invasion
+	age = age_3_discovery	
+	icon = city_building_advance
+	content_priority = 800
+	potential = {
+		has_or_had_tag = KIE
+	}	
+	global_build_buildings_efficiency = 0.1
+
+	requires = crown_power_advance_discovery
+}

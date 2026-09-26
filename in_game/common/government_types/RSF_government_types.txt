@@ -6,6 +6,7 @@ TRY_INJECT:steppe_horde = { # No downgrade, +Morale, –Research&Institution, -A
 		research_speed_modifier = -0.10
 		global_institution_growth_modifier = -0.20
 		global_pop_assimilation_speed_modifier = -0.90
+		cultural_influence_modifier = -0.90
 		cultures_capacity = 2
 	}
 }
@@ -17,6 +18,7 @@ TRY_INJECT:tribe = { # No downgrade, +Discipline, –Research&Institution, -Assi
 		research_speed_modifier = -0.10
 		global_institution_growth_modifier = -0.10 # Changed High Kingship respectively
 		global_pop_assimilation_speed_modifier = -0.50
+		cultural_influence_modifier = -0.50
 		cultures_capacity = 1
 	}
 }

@@ -1,8 +1,8 @@
-﻿# Cossacks can have dynasties and they did have
+﻿# Cossacks can have dynasties and they did have in reality
 
 TRY_REPLACE:cossacks_estate = {
 	color = map_cossack
-	power_per_pop  = 0.5
+	power_per_pop  = 0.75
 	tax_per_pop = 0.02
 	rival = -0.01
 	alliance = 0.01

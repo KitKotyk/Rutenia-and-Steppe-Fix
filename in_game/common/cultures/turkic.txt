@@ -129,6 +129,7 @@ uzbek_culture = {
 	culture_groups = {
 		tatar_group
 		turkic_group
+		steppe_group
 	}
 
 	use_patronym = yes
@@ -151,6 +152,7 @@ khorezmian_culture = {
 	}	
 	culture_groups = {
 		turkic_group
+		steppe_group
 	}
 
 }

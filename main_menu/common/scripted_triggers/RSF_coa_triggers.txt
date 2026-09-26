@@ -13,25 +13,24 @@
 # |          | if it exists     |                     | if it exists      |
 # |----------|------------------|---------------------|-------------------|
 
-# Country ###
 
-# Ruthenia UKR – Cultures
+# Primary culture trigger
 
-coa_def_UKR_kyivan_trigger = { # Kyivan Ruthenia
+coa_def_kyivan_trigger = { # Kyivan default
 	scope:actor ?= {
 		exists = culture
 		culture = culture:ruthenian
 	}
 }
 
-coa_def_UKR_severian_trigger = { # Severian Ruthenia
+coa_def_severian_trigger = { # Severian
 	scope:actor ?= {
 		exists = culture
 		culture = culture:severian
 	}
 }
 
-coa_def_UKR_halician_trigger = { # Halician Ruthenia
+coa_def_halician_trigger = { # Halician
 	scope:actor ?= {
 		OR = {
 			AND = {
@@ -46,21 +45,21 @@ coa_def_UKR_halician_trigger = { # Halician Ruthenia
 	}
 }
 
-coa_def_UKR_volhynian_trigger = { # Volhynian Ruthenia
+coa_def_volhynian_trigger = { # Volhynian
 	scope:actor ?= {		
 		exists = culture
 		culture = culture:volhynian_culture	
 	}
 }
 
-coa_def_UKR_polesian_trigger = { # Polesian Ruthenia
+coa_def_polesian_trigger = { # Polesian
 	scope:actor ?= {
 		exists = culture
 		culture = culture:polesian_culture
 	}
 }
 
-coa_def_UKR_belarusian_trigger = { # Belarus Ruthenia
+coa_def_belarusian_trigger = { # Belarusian (one of)
 	scope:actor ?= {
 		OR = {
 			AND = {

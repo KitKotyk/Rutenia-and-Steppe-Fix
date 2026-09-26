@@ -43409,24 +43409,14 @@ countries = {
 	}
 
 	ZAZ = { #Zaporozhia
-		type = army
+		# type = army
 		starting_technology_level = 3
 		include = "expl_eastern_europe"
 		include = "cossack_republic_no_coast_not_present"
 		court_language = ukrainian_dialect
 
-		government = {
-			# type = steppe_horde
-			# heir_selection = tribal_oldest_male
-			ruler = random
-			# reforms = {
-				# cossacks_reform
-			# }
-
-			# laws = {
-				# marriage_law = monogamous_marriage
-				# heir_religion_law = heir_same_religion
-			# }
+		government = {			
+			ruler = random			
 		}
 
 		liturgical_language = church_slavonic_language

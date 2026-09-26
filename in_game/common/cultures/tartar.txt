@@ -46,7 +46,9 @@ cuman_culture = { #https://en.wikipedia.org/wiki/Cumans
 	
 	culture_groups = {
 		carpathian_group
+		tatar_group
 		turkic_group
+		steppe_group
 	}
 
 	use_patronym = yes
@@ -299,6 +301,7 @@ bolghar_culture = {
 	culture_groups = {
 		tatar_group
 		turkic_group
+		steppe_group
 	}
 
 	use_patronym = yes

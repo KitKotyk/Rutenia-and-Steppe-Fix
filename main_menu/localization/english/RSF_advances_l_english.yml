@@ -59,10 +59,16 @@
  syvash_salt: "Syvash Salt"
  syvash_salt_desc: "The shallow lagoons of the Syvash have yielded prized salt since antiquity. Harvested beneath the southern sun and carried by merchants across the steppe and the Black Sea, Crimean salt became an essential commodity, enriching the khanate and provisioning distant lands."
 
+ control_over_the_shore: "Control Over The Shore"
+ control_over_the_shore_desc: "Securing the Black Sea and Azov coasts and its ports strengthens the state's authority over the peninsula, keeping trade routes, settlements, and local communities firmly under control."
+
 
  # Pontic region
  pontic_mosaic_advance: "Pontic Mosaic"
  pontic_mosaic_advance_desc: "Along the windswept shores of the Black Sea, Greeks, Tatars, Ruthenians, Armenians, Alans, and countless others have long shared markets, ports, and the Steppe. Here, survival was never found in uniformity, but in coexistence."
+
+ pontic_trade_advance: "Pontic Trade"
+ pontic_trade_advance_desc: "Control of the Black Sea trade routes brings merchants from across the Pontic shores under the state's influence, expanding commercial networks and opportunities for trade."
 
 
  # Ruthene culture group

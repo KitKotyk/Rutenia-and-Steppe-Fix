@@ -162,6 +162,91 @@ UKR_belarusian = { # Ruthenia Belarusian, Pahonia
 }
 
 
+# ------- Hetmanate -------
+
+HTM = { # Cossack Hetmanate default
+	pattern = "pattern_solid.dds"
+	color1 = "blue_dark"
+	color2 = "white"
+
+	textured_emblem = {
+		texture = "te_cossack.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }				
+	}
+}
+
+HTM_cossack = { # Cossack Culture Hetmanate
+	pattern = "pattern_solid.dds"
+	color1 = "white_secondary"
+	color2 = "maroon"
+
+	textured_emblem = {
+		texture = "te_cossack.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }				
+	}	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.16 0.78 } scale = { 0.23 0.23 } }						
+		instance = { position = { 0.84 0.22 } scale = { 0.23 0.23 } }								
+	}	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color1
+		color2 = color1
+		instance = { position = { 0.20 0.78 } scale = { 0.22 0.22 } }						
+		instance = { position = { 0.80 0.22 } scale = { 0.22 0.22 } }								
+	}		
+	colored_emblem = {
+		texture = "ce_cross_patty_cossack.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.14 0.21 } scale = { 0.3 0.3 } }						
+	}		
+	colored_emblem = {
+		texture = "ce_star_08.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.86 0.79 } scale = { 0.33 0.33 } }						
+	}
+}
+
+HTM_severian = { # Severian Hetmanate
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+
+	textured_emblem = {
+		texture = "te_cossack.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }				
+	}
+}
+
+HTM_volhynian = { # Volhynian Hetmanate
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+
+	textured_emblem = {
+		texture = "te_cossack_3.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }				
+	}
+}
+
+HTM_halician = { # Halician Hetmanate
+	pattern = "pattern_solid.dds"
+	color1 = "blue_light"
+	color2 = "white"
+
+	textured_emblem = {
+		texture = "te_cossack.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }				
+	}
+}
+
+
 # ------- Kyiv -------
 
 KIE_volhynia = { # Kyiv owns Volhynia

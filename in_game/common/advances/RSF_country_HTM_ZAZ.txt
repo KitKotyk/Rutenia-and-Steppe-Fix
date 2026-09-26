@@ -20,6 +20,7 @@ ambush_tactics_advance = {
 	age = age_4_reformation
 	icon = ruthenian_state_advance
 	content_priority = 700
+	ai_weight = { add = 10 }
 	potential = {
 		has_or_had_tag = HTM
 		has_or_had_tag = ZAZ
@@ -32,6 +33,7 @@ ambush_tactics_advance = {
 cossacks_serf_autonomy = {
 	age = age_4_reformation
 	content_priority = 500
+	ai_weight = { add = 10 }
 	potential = {
 		has_or_had_tag = HTM
 		has_or_had_tag = ZAZ
@@ -50,6 +52,7 @@ dnieper_secured_advance = {
 	age = age_5_absolutism
 	icon = river_trade
 	content_priority = 700
+	ai_weight = { add = 10 }
 	potential = {
 		has_or_had_tag = HTM
 		has_or_had_tag = ZAZ
@@ -62,6 +65,7 @@ dnieper_secured_advance = {
 cossacks_escaped_serfs = {
 	age = age_5_absolutism
 	content_priority = 500
+	ai_weight = { add = 10 }
 	potential = {
 		has_or_had_tag = HTM
 		has_or_had_tag = ZAZ
@@ -78,6 +82,7 @@ de_libertate_advance = {
 	age = age_6_revolutions
 	icon = global_clergy_max_literacy_advance
 	content_priority = 500
+	ai_weight = { add = 10 }
 	potential = {
 		has_or_had_tag = HTM
 		has_or_had_tag = ZAZ
@@ -91,6 +96,7 @@ zaporozhian_army_advance = {
 	age = age_6_revolutions
 	icon = cossacks_recruitment
 	content_priority = 700
+	ai_weight = { add = 10 }
 	potential = {
 		has_or_had_tag = HTM
 		has_or_had_tag = ZAZ

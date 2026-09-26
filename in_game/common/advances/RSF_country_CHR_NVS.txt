@@ -1,0 +1,31 @@
+﻿
+# ----- CHERNIHIV, NOVHOROD-SIVERSKYI -----
+
+olgovych_realm = { 						# Ancient realm of Olgovychi branch of the Rurikids
+	age = age_1_traditions	
+	icon = russian_resiliance
+	potential = {
+		OR = {
+			has_or_had_tag = CHR 
+			has_or_had_tag = NVS
+		} 
+	}	
+	monthly_prestige = 0.05
+
+	requires = feudalism_advance
+}
+
+legacy_of_prince_igor = { 				# 'Tale of Igor's Campaign', he was a N.-S. prince
+	age = age_1_traditions	
+	icon = land_of_the_rus
+
+	potential = {
+		OR = {
+			has_or_had_tag = CHR 
+			has_or_had_tag = NVS
+		} 
+	}	
+	army_initiative = 0.1
+
+	requires = feudalism_advance
+}
