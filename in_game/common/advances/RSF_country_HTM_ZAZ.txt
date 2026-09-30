@@ -22,8 +22,10 @@ ambush_tactics_advance = {
 	content_priority = 700
 	ai_weight = { add = 10 }
 	potential = {
-		has_or_had_tag = HTM
-		has_or_had_tag = ZAZ
+		OR = {
+			has_or_had_tag = HTM
+			has_or_had_tag = ZAZ
+		}
 	}
 	army_initiative = 0.2
 
@@ -35,8 +37,10 @@ cossacks_serf_autonomy = {
 	content_priority = 500
 	ai_weight = { add = 10 }
 	potential = {
-		has_or_had_tag = HTM
-		has_or_had_tag = ZAZ
+		OR = {
+			has_or_had_tag = HTM
+			has_or_had_tag = ZAZ
+		}
 	}
 	global_separatism = -0.1
 	monthly_republican_tradition = 0.1
@@ -54,8 +58,10 @@ dnieper_secured_advance = {
 	content_priority = 700
 	ai_weight = { add = 10 }
 	potential = {
-		has_or_had_tag = HTM
-		has_or_had_tag = ZAZ
+		OR = {
+			has_or_had_tag = HTM
+			has_or_had_tag = ZAZ
+		}
 	}
 	merchant_maintenance_efficiency = 0.2
 
@@ -67,8 +73,10 @@ cossacks_escaped_serfs = {
 	content_priority = 500
 	ai_weight = { add = 10 }
 	potential = {
-		has_or_had_tag = HTM
-		has_or_had_tag = ZAZ
+		OR = {
+			has_or_had_tag = HTM
+			has_or_had_tag = ZAZ
+		}
 	}
 	army_reinforce_efficiency = 0.1
 
@@ -78,14 +86,16 @@ cossacks_escaped_serfs = {
 ############################
 # age_6_revolutions
 ############################
-orlyk_constitution = {
+orlyk_constitution_advance = {
 	age = age_6_revolutions
 	icon = the_constitution
 	content_priority = 700
 	potential = {
-		has_or_had_tag = HTM
-		has_or_had_tag = ZAZ
-	}	
+		OR = {
+			has_or_had_tag = HTM
+			has_or_had_tag = ZAZ
+		}
+	}
 	unlock_government_reform = orlyk_constitution_reform
 	ai_weight = { add = 100 }
 	requires = separation_of_powers
@@ -97,8 +107,10 @@ zaporozhian_army_advance = {
 	content_priority = 700
 	ai_weight = { add = 10 }
 	potential = {
-		has_or_had_tag = HTM
-		has_or_had_tag = ZAZ
+		OR = {
+			has_or_had_tag = HTM
+			has_or_had_tag = ZAZ
+		}
 	}	
 	army_maintenance_efficiency = 0.1
 

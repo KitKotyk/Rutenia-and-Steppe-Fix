@@ -30,15 +30,17 @@ orlyk_constitution_reform = { # Pylyp Orlyk's Cossack Constitution of 1709
 	content_priority = 1100
 
 	potential = {
-		has_or_had_tag = HTM
-		has_or_had_tag = ZAZ
+		OR = {
+			has_or_had_tag = HTM
+			has_or_had_tag = ZAZ
+		}
 	}
 
 	locked = {
 	}
 
 	country_modifier = {
-		global_estate_target_satisfaction = large_permanent_target_satisfaction
+		global_estate_target_satisfaction = medium_permanent_target_satisfaction
 		monthly_towards_liberalism = societal_value_large_monthly_move
 	}
 	years = 2

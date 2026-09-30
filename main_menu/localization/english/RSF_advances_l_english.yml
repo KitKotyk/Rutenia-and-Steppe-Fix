@@ -109,8 +109,8 @@
  fiery_army: "Fiery Army" 
  fiery_army_desc: "Forged by years of frontier warfare, Cossack forces become renowned for their bold assaults and relentless sieges. Skilled at storming fortifications, digging trenches, and adapting quickly on the battlefield, they turn determination and ingenuity into a powerful weapon against even the strongest defenses."
 
- orlyk_constitution: "Orlyk's Constitution" 
- orlyk_constitution_desc: "Written in the aftermath of a turbulent struggle for independence, the Constitution of Pylyp Orlyk envisions a balance between the ruler, the Cossack host, and the wider political community. By defining rights, responsibilities, and limits of power, it strengthens trust between estates and promotes a more stable order."
+ orlyk_constitution_advance: "Orlyk's Constitution" 
+ orlyk_constitution_advance_desc: "Written in the aftermath of a turbulent struggle for independence, the Constitution of Pylyp Orlyk envisions a balance between the ruler, the Cossack host, and the wider political community. By defining rights, responsibilities, and limits of power, it strengthens trust between estates and promotes a more stable order."
 
 
  # Belarusian culture group

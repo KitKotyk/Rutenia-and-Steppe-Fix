@@ -111,7 +111,6 @@ steppe_outpost = {
 		local_merchant_capacity = 0.1
 		local_raw_material_output = 0.2
 		local_migration_attraction = 0.2
-		local_tribes_estate_power = 0.25
 		local_cossacks_estate_power = 0.25
 	}
 }
