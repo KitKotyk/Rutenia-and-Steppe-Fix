@@ -42,5 +42,6 @@
  n_chaika_desc: "From the 16th to 18th centuries, the Chaika was the swift riverine and seagoing boat of the Zaporizhian Cossacks. Light and manoeuvrable, these boats carried Cossack raiders down the Dnieper and across the Black Sea, enabling daring raids and the sacking of Ottoman coastal cities."
  
  # Vanilla localisation
- a_noble_cavalry.ruthenian_language: "Druzhyna"
- a_plated_knights.ruthenian_language: "Late Druzhyna"
+ a_noble_cavalry.ruthenian_language: "Druzhyna Levy"
+ a_armored_horsemen.ruthenian_language: "Druzhyna"
+ a_heavy_cavalrymen.ruthenian_language: "Late Druzhyna"

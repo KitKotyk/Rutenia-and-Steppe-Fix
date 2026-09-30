@@ -190,6 +190,11 @@ cossack_culture = {
 		russian_group
 		slavic_group
 	}
+
+	goods_demand_modifier = {
+		wild_game = 1.5
+		fish = 1.5
+	}
 }
 
 polatskian_culture = { 

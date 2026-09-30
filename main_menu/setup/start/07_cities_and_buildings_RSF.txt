@@ -179,6 +179,7 @@ building_manager = {
 	market_village = { tag = GLH level = 1 location = ismail }
 	market_village = { tag = GLH level = 1 location = simbirsk }
 	market_village = { tag = GLH level = 1 location = balikley }
+	market_village = { tag = GLH level = 1 location = torhovytsia }
 	
 	market_village = { tag = CHG level = 1 location = turkestan }
 	
@@ -234,11 +235,11 @@ building_manager = {
 	market_village = { tag = TRB level = 1 location = trubchevsk }	
 	market_village = { tag = SSK level = 1 location = slutsk }
 	market_village = { tag = VBK level = 1 location = vitebsk }
-	market_village = { tag = LIT level = 1 location = brest_litowsk }
+	market_village = { tag = LIT level = 1 location = brest_litowsk }	
 
 	marketplace	= { tag = KIE level = 1 location = kyiv }
 	marketplace	= { tag = HAL level = 1 location = lviv }
-	marketplace	= { tag = POK level = 1 location = smolensk }
+	marketplace	= { tag = SMO level = 1 location = smolensk }
 
 	charcoal_maker = { tag = VOL level = 1 location = iziaslav }
 	charcoal_maker = { tag = VOL level = 1 location = kovel }
@@ -267,14 +268,14 @@ building_manager = {
 	stockade = { tag = NSL level = 1 location = karachev }
 	stockade = { tag = NSL level = 1 location = kozelsk }
 	
-	# stockade = { tag = BUL level = 1 location = constanta }
+	# Stockade = { tag = BUL level = 1 location = constanta }
 	stockade = { tag = HTN level = 1 location = hotin }
-	stockade = { tag = HAL level = 1 location = kamianets_podilskyi }	
-	stockade = { tag = HAL level = 1 location = halych }
+	stockade = { tag = HAL level = 1 location = kamianets_podilskyi }
 	stockade = { tag = VOL level = 1 location = kremenets }
 	stockade = { tag = KIE level = 1 location = ovruch }
 	stockade = { tag = KIE level = 1 location = putyvl }
-	stockade = { tag = KIE level = 1 location = pereiaslav }	
+	stockade = { tag = KIE level = 1 location = pereiaslav }
+	stockade = { tag = KIE level = 1 location = zhytomyr }
 	stockade = { tag = NVS level = 1 location = novhorod_siverskyi }
 	stockade = { tag = STS level = 1 location = starodub_siverskyi }	
 	stockade = { tag = TRB level = 1 location = trubchevsk }
@@ -284,4 +285,32 @@ building_manager = {
 	stockade = { tag = SSK level = 1 location = slutsk }
 	stockade = { tag = DRU level = 1 location = drutsk }
 	stockade = { tag = VBK level = 1 location = vitebsk }
+
+	# Cossack Colonies
+	cossacks_colony = { tag = GLH level = 1 location = bratslav }
+	cossacks_colony = { tag = GLH level = 1 location = vinnytsia }
+	cossacks_colony = { tag = GLH level = 1 location = sokilets }
+	cossacks_colony = { tag = GLH level = 1 location = torhovytsia }
+	cossacks_colony = { tag = GLH level = 1 location = usivka }
+	cossacks_colony = { tag = GLH level = 1 location = myshuryn_rih }
+	cossacks_colony = { tag = GLH level = 1 location = kodak }
+	cossacks_colony = { tag = GLH level = 1 location = tomakivka }
+	cossacks_colony = { tag = GLH level = 1 location = mykytyn_rih }
+	cossacks_colony = { tag = GLH level = 1 location = oril }
+	cossacks_colony = { tag = GLH level = 1 location = samarchyk }
+	cossacks_colony = { tag = GLH level = 1 location = rozdory }
+	cossacks_colony = { tag = GLH level = 1 location = kichkas }
+	cossacks_colony = { tag = GLH level = 1 location = kolomak }
+	cossacks_colony = { tag = GLH level = 1 location = berestyn }
+	cossacks_colony = { tag = GLH level = 1 location = khotmyzh }
+
+	# Cossack Training Grounds
+	cossacks_training_grounds = { tag = KIE level = 1 location = cherkasy }
+	cossacks_training_grounds = { tag = KIE level = 1 location = kremenchuk }
+
+	# Cossack Hunting Grounds
+	cossacks_hunting_grounds = { tag = KIE level = 1 location = hovtva }
+	cossacks_hunting_grounds = { tag = KIE level = 1 location = chyhyryn }
+	cossacks_hunting_grounds = { tag = GLH level = 1 location = okhtyrka }
+	cossacks_hunting_grounds = { tag = GLH level = 1 location = tsybuliv }
 }

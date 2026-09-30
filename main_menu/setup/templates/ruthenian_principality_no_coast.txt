@@ -21,13 +21,13 @@ government = {
     }
    
 	reforms = {
-		feudal_nobility
+		rus_appanage_reform
 	}
 			
     privilege = {
         # Nobles
         auxilium_et_consilium
-		banal_lordship
+		obrok_privilege
         nobles_land_rights
 		noble_serfdom_rights
         noble_marriage_rights

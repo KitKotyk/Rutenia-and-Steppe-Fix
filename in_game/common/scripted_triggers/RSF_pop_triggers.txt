@@ -1,0 +1,6 @@
+﻿# Cossacks were settling in the horde too
+
+TRY_REPLACE:is_cossacks = {
+	culture = culture:cossack_culture
+	religion = religion:orthodox
+}

@@ -17,12 +17,16 @@
 	parliament = {
 		parliament_type = estate_parliament
 	}
+   
+	reforms = {
+		rus_appanage_reform
+	}
 
 	#Estate Privileges
 	privilege = {
 		#nobles
 		noble_leaders_only
-		banal_lordship
+		obrok_privilege
 		noble_serfdom_rights
 		nobles_land_rights
 		kormlenije

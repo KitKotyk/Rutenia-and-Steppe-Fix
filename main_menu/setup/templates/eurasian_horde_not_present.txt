@@ -38,35 +38,48 @@
 	}
 	
 	privilege = {
-				#Nobles				
-				nobility_council
-				primacy_of_nobility
+		#Nobles	
+		nobles_offensive_military_doctrine
+		primacy_of_nobility
+		noble_serfdom_rights
+		nobility_council
+		noble_leaders_only
 				
-				#Ulama
-				clergy_religious_state
-				clergy_literacy_rights				
-				religious_diplomats
+		#Ulama
+		clerical_advisory_council
+		clergy_literacy_rights
+		clergy_land_rights
 				
-				#Burghers
-				allow_trade_center_sponsorship
-				building_rights
-				urban_development_grants
+		#Burghers
+		allow_trade_center_sponsorship
+		commercial_advisory_council
+		market_fairs
+		building_rights
+		urban_development_grants
 				
-				#Peasants
-				peasants_allowed_weapons_privilege
-				communal_lands
+		#Peasants
+		communal_lands
+		peasants_free_peasantry
+		allow_hunting
+		peasants_allowed_weapons_privilege
+		peasants_autonomous_villages
 				
-				#Dhimmi				
-				dhimmi_military_service
-				dhimmi_traditions
-				dhimmi_administrative_posts
-				dhimmi_in_administration
+		#Dhimmi				
+		dhimmi_military_service
+		dhimmi_traditions
+		dhimmi_administrative_posts
+		dhimmi_in_administration
 				
-				#Tribes
-				tribes_tribal_levies
-				tribes_pasture_access
-				tribes_allow_gatherings
-				jaysh_armies
+		#Tribes
+		tribes_land_rights
+		tribes_tribal_levies
+		tribes_allow_gatherings
+		tribes_pasture_access
+		tribes_tribal_registry
+		tribes_protected_faith
+		tribes_respect_tribal_traditions
+		tribes_in_administration
+		jaysh_armies
 	}
 }
 

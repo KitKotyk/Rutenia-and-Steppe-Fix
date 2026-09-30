@@ -1,0 +1,138 @@
+﻿TRY_REPLACE:catholic = {
+	color = religion_catholic
+	group = christian
+
+	language = church_dialect
+
+	needs_reform = yes
+	has_religious_influence = yes
+
+	has_religious_head = yes
+	has_cardinals = yes
+	has_canonization = yes
+
+	important_country = PAP
+
+	tithe = 0.02		#2% is 20% of the tenth
+
+	goods_demand_modifier = {
+		fish = 1.25
+		beeswax = 2					# Added by Kotyk
+		livestock = 0.9				# Added by Kotyk
+	}
+	
+	clergy_goods_demand_modifier = {
+		incense = 2
+		beeswax = 1.5				# Added by Kotyk
+	}
+
+	definition_modifier = {
+		clergy_estate_max_tax = -1.0
+		monthly_religious_influence = 0.1
+		global_clergy_max_literacy = 25
+		
+		can_have_monasteries = yes
+		block_from_change_to_empire_rank_catholic = yes
+		maximum_religious_influence = 900
+
+		cannot_declare_no_cb_wars_on_religion_head = yes
+		country_allow_canonization = yes
+	}
+	
+	opinions = {
+		bogomilism = enemy
+		bosnian_church = enemy
+		catharism = enemy
+		hussite = enemy
+		orthodox = positive			# Changed by Kotyk
+		waldensian = enemy
+		judaism = negative
+		sunni = enemy
+		shia = enemy
+		ibadi = enemy
+	}
+	
+	tags = { catholic_gfx western_christian_gfx christian_gfx abrahamic_gfx }
+}
+
+
+TRY_REPLACE:miaphysite = {
+	color = color_miaphysite
+	group = christian
+
+	has_religious_influence = yes
+	has_autocephalous_patriarchates = yes
+	has_canonization = yes
+	religious_aspects = 3
+
+	goods_demand_modifier = {
+		livestock = 0.5
+		beeswax = 2					# Added by Kotyk
+	}
+	
+	clergy_goods_demand_modifier = {
+		incense = 2
+		beeswax = 1.5				# Added by Kotyk
+	}
+
+	definition_modifier = {
+	
+		clergy_estate_max_tax = -0.5
+		tolerance_own = 1
+		tolerance_heretic = -1
+		clergy_estate_cannot_marry = yes
+		monthly_religious_influence = 0.1
+
+		maximum_religious_influence = 400
+		country_allow_canonization = yes
+
+	}
+	
+	opinions = {
+		orthodox = kindred
+	}
+
+	tags = { eastern_christian_gfx christian_gfx abrahamic_gfx }
+}
+
+TRY_REPLACE:orthodox = {
+	color = religion_orthodox
+	group = christian
+
+	has_patriarchs = yes
+	has_canonization = yes
+	has_autocephalous_patriarchates = yes
+	has_religious_influence = yes
+	use_icons = yes
+
+	goods_demand_modifier = {
+		fish = 1.2					# Added by Kotyk
+		beeswax = 2					# Added by Kotyk
+		livestock = 0.9				# Added by Kotyk
+	}
+
+	clergy_goods_demand_modifier = {
+		incense = 2
+		beeswax = 1.5				# Added by Kotyk
+	}
+
+	definition_modifier = {
+		stability_cost_efficiency = 0.2
+		global_max_literacy = 5
+		clergy_estate_cannot_marry = yes
+		maximum_religious_influence = 400
+		country_allow_canonization = yes
+	}
+	
+	opinions = {
+		bogomilism = enemy
+		bosnian_church = negative
+		catholic = negative			# Changed by Kotyk
+		paulicianism = negative
+		sunni = negative			# Changed by Kotyk
+		shia = negative				# Changed by Kotyk
+		judaism = positive
+	}
+
+	tags = { orthodox_gfx eastern_christian_gfx christian_gfx abrahamic_gfx }
+}

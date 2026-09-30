@@ -78,18 +78,17 @@ cossacks_escaped_serfs = {
 ############################
 # age_6_revolutions
 ############################
-de_libertate_advance = {
+orlyk_constitution = {
 	age = age_6_revolutions
-	icon = global_clergy_max_literacy_advance
-	content_priority = 500
-	ai_weight = { add = 10 }
+	icon = the_constitution
+	content_priority = 700
 	potential = {
 		has_or_had_tag = HTM
 		has_or_had_tag = ZAZ
-	}
-	global_estate_target_satisfaction = small_permanent_target_satisfaction
-
-	requires = enlightened_court
+	}	
+	unlock_government_reform = orlyk_constitution_reform
+	ai_weight = { add = 100 }
+	requires = separation_of_powers
 }
 
 zaporozhian_army_advance = {

@@ -43,6 +43,17 @@ heritage_of_the_rus = {
 	requires = crown_power_advance_discovery
 }
 
+chynsh_advance = {
+	age = age_3_discovery
+	icon = mos_skilled_tax_collectors
+	content_priority = 500
+	potential = {
+		culture = { has_culture_group = culture_group:ruthene_group }
+	}
+	unlock_estate_privilege = chynsh_privilege
+	ai_weight = { add = 100 }
+	requires = pop_promotion_speed_age_3
+}
 
 ############################
 # age_4_reformation

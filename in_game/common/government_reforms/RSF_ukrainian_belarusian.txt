@@ -1,4 +1,5 @@
-﻿# For the Zaporizhian Sich
+﻿###### For the Zaporizhian Sich.
+
 TRY_REPLACE:cossacks_reform = { 
 	major = yes
 	content_priority = 500
@@ -20,11 +21,55 @@ TRY_REPLACE:cossacks_reform = {
 		monthly_towards_belligerent = societal_value_monthly_move
 		monthly_towards_liberalism = societal_value_monthly_move
 	}
+	years = 2
+}
+
+##### Unique for the Hetmanate and Zaporizhia Age 6
+orlyk_constitution_reform = { # Pylyp Orlyk's Cossack Constitution of 1709
+	age = age_6_revolutions
+	content_priority = 1100
+
+	potential = {
+		has_or_had_tag = HTM
+		has_or_had_tag = ZAZ
+	}
+
+	locked = {
+	}
+
+	country_modifier = {
+		global_estate_target_satisfaction = large_permanent_target_satisfaction
+		monthly_towards_liberalism = societal_value_large_monthly_move
+	}
+	years = 2
 }
 
 
+##### Rus appanage system. Inspired by the French appanage system. Locked if subject, including paying tribute to the GH.
 
-# New government reforms for Ukrainian cultures
+rus_appanage_reform = { # Ancient Rus appanage system, for all East Slavic cultures
+
+	potential = {
+		culture = { has_culture_group = culture_group:russian_group }
+	}
+	
+	locked = {
+		OR = {
+			is_subject = yes
+			is_member_of_international_organization = international_organization:tatar_yoke
+		}		
+	}
+
+	country_modifier = {
+		stability_investment = small_stability_investment
+		nobles_estate_target_satisfaction = medium_permanent_target_satisfaction
+		monthly_towards_aristocracy = societal_value_monthly_move
+	}
+	years = 2
+}
+
+
+##### New government reforms for Ukrainian cultures
 
 frontier_liberties_reform = { # Autonomy for protection from the Tatars and to flip to Republic easier
 	content_priority = 600
@@ -42,6 +87,7 @@ frontier_liberties_reform = { # Autonomy for protection from the Tatars and to f
 		global_defensive = 0.2
 		monthly_towards_plutocracy = societal_value_large_monthly_move
 	}
+	years = 2
 }
 
 kurin_kish_reform = { # Organisational principle of Zaporizhian Sich
@@ -60,6 +106,7 @@ kurin_kish_reform = { # Organisational principle of Zaporizhian Sich
 		land_morale_modifier = 0.1
 		monthly_towards_quantity = societal_value_monthly_move
 	}
+	years = 2
 }
 
 valok_reform_belarus = { # Duplicated Lithuanian volok_reform without event for Belarusian cultures
@@ -79,6 +126,7 @@ valok_reform_belarus = { # Duplicated Lithuanian volok_reform without event for 
 		peasants_estate_levy_size = 0.2
 		global_pop_promotion_speed_modifier = -0.3
 	}
+	years = 2
 }
 
 the_hetmanate_reform = { # Cossack Hetmanate reform – major
@@ -101,6 +149,7 @@ the_hetmanate_reform = { # Cossack Hetmanate reform – major
 		monthly_towards_free_subjects = societal_value_monthly_move
 		monthly_towards_plutocracy = societal_value_monthly_move
 	}
+	years = 2
 }
 
 regimental_administration_reform = { # Regimental Administration reform
@@ -119,6 +168,7 @@ regimental_administration_reform = { # Regimental Administration reform
 		land_cost_on_distance_from_capital_speed_propagation = 0.2
 		monthly_towards_defensive = societal_value_monthly_move
 	}
+	years = 2
 }
 
 starshyna_reform = { # General Starsyna – Генеральна Старшина
@@ -137,4 +187,5 @@ starshyna_reform = { # General Starsyna – Генеральна Старшин�
 		country_cabinet_efficiency = 0.1
 		monthly_towards_humanist = societal_value_monthly_move
 	}
+	years = 2
 }

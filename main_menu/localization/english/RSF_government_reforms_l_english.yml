@@ -4,6 +4,10 @@
  nomadic_societies_reform: "Nomadic Societies"
  nomadic_societies_reform_desc: "In the aftermath of Mongol fragmentation, nomadic polities increasingly prioritize internal organization over external diplomacy, consolidating authority within tribal and noble hierarchies. This shift strengthens the mobilization capacity of both tribal and aristocratic levies, reflecting a more structured distribution of obligations within the steppe."
 
+ # Rus Appanages
+ rus_appanage_reform: "Rus Appanages"
+ rus_appanage_reform_desc: "The lands of Rus are divided among the princes of the ruling dynasty, each governing his own appanage while acknowledging the seniority of the greater prince. Bound by kinship and custom, the Rurikid princes share a common realm, yet jealously guard the rights and privileges of their own domains."
+
  # Cossacks & Ukraine
  frontier_liberties_reform: "Frontier Liberties"
  frontier_liberties_reform_desc: "The people who settle the exposed frontier are granted broad freedoms in return for defending their homes. Accustomed to bearing arms and governing their own communities, these settlers grow prosperous and independent, gradually giving the free towns and frontier communities a greater voice in the affairs of the realm."
@@ -22,3 +26,6 @@
 
  starshyna_reform: "Starshyna Council"
  starshyna_reform_desc: "The General Starshyna forms the highest circle of Cossack officers, entrusted with the administration of the Hetmanate and the command of its armies. From the Hetman’s court, they oversee the state’s most important affairs."
+
+ orlyk_constitution_reform: "Cossack Constitution"
+ orlyk_constitution_reform_desc: "Written in the aftermath of a turbulent struggle for independence, the Constitution of Pylyp Orlyk envisions a balance between the ruler, the Cossack host, and the wider political community. By defining rights, responsibilities, and limits of power, it strengthens trust between estates and promotes a more stable order."

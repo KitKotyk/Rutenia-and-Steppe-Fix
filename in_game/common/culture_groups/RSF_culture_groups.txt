@@ -7,7 +7,21 @@ ukrainian_group = {
 }
 
 zalessian_group = { # Russian cultures, but russian_group already exists for the East Slavic group
+	goods_demand_modifier = {
+		wheat = 1.1
+        millet = 1.9
+		legumes = 0.8
+        livestock = 0.8
+        fur = 1.5
+	}
 }
 
 ruthene_group = {   # Ukrainian and Belarusian groups
+	goods_demand_modifier = {
+		wheat = 1.5
+        millet = 1.5
+		legumes = 0.8
+        livestock = 0.8
+        fur = 1.5
+	}
 }

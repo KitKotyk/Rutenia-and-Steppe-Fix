@@ -17,13 +17,25 @@ tamed_steppes = {
 ############################
 east_and_west = {
 	age = age_2_renaissance
-	content_priority = 800
+	content_priority = 600
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
 	global_merchant_power = 0.1
 	ai_weight = { add = 100 }
 	requires = power_projection_advance_2
+}
+
+steppe_outpost_advance = {
+	age = age_2_renaissance
+	content_priority = 700
+	icon = tamed_steppes
+	potential = {
+		culture = { has_culture_group = culture_group:ukrainian_group }
+	}
+	requires = recruitment_law_advance	
+	unlock_building = steppe_outpost
+	ai_weight = { add = 100 }
 }
 
 
@@ -37,7 +49,7 @@ steppe_frontier = {
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
-	global_defensive = 0.05
+	global_defensive = 0.1
 	ai_weight = { add = 100 }
 	requires = fort_limit_3_advance
 }
@@ -49,7 +61,7 @@ chumak_trading = {
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
-	global_merchant_capacity_modifier = 0.10
+	global_merchant_capacity_modifier = 0.1
 	ai_weight = { add = 100 }
 	requires = paved_road_advance
 }
@@ -101,14 +113,16 @@ fiery_army = {
 ############################
 # age_6_revolutions
 ############################
-orlyk_constitution = {
+
+de_libertate_advance = {
 	age = age_6_revolutions
-	icon = the_constitution
-	content_priority = 700
+	icon = global_clergy_max_literacy_advance
+	content_priority = 500
+	ai_weight = { add = 10 }
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
-	global_estate_target_satisfaction = medium_permanent_target_satisfaction
-	ai_weight = { add = 100 }
-	requires = separation_of_powers
+	global_estate_target_satisfaction = small_permanent_target_satisfaction
+
+	requires = enlightened_court
 }

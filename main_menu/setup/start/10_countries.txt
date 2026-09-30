@@ -4256,11 +4256,21 @@ countries = {
 				legacy_of_genghis
 				nomadic_societies_reform # Added in RSF
 			}
+
 			privilege = {
+				# Dhimmi
 				dhimmi_abrahamic_communities
 				dhimmi_military_service
 				dhimmi_traditions
 				dhimmi_administrative_posts
+
+				# Cossacks
+				cossacks_land_rights
+				cossacks_sanctioned_atamans
+				cossacks_allowed_free_roaming
+				cossacks_protected_faith
+				cossacks_respected_traditions
+				cossack_identity
 			}
 
 			laws = {
@@ -4327,14 +4337,14 @@ countries = {
 
 			# Zaporizhia
 			kichkas rozdory hryshyne pavlohrad ternivka yelanets usivka mala_vyska umanske ingul petrove
-			karlivka kolomak berestyn samarchyk oril kodak myshuryn_rih sofiivka kryvyi_rih tomakivka mykytyn_rih
+			karlivka berestyn samarchyk oril kodak myshuryn_rih sofiivka kryvyi_rih tomakivka mykytyn_rih
 
 			# Azov
 			azok bagayevskaya shcherbinovka balzimachi kanevskaya starominskaya yegorlykskaya tana krasny_sulin shakhty rovenky kalmius kamenskaya
 			semikarakorsk luhansk 
 
 			# Sloboda
-			izium adalaga barvinkove sloviansk donets_kharkiv chuhuiv kotelva zmiiv
+			izium adalaga barvinkove sloviansk donets_kharkiv chuhuiv zmiiv
 			
 			# Majar
 			belaya_glina peschanokopskoye
@@ -4350,7 +4360,18 @@ countries = {
 		
 		religious_school = hanafi_school
 		government = { 
-			mysticism_vs_jurisprudence = -35 
+			mysticism_vs_jurisprudence = -35
+			
+			privilege = {
+				# Cossacks
+				cossacks_land_rights
+				cossacks_sanctioned_atamans
+				cossacks_allowed_free_roaming
+				cossacks_protected_faith
+				cossacks_respected_traditions
+				cossack_identity
+			}
+
 			laws = {
 				legal_code_law = sharia_law_policy
 				sharia_law = hanafi_policy
@@ -18941,7 +18962,7 @@ countries = {
 			ruler = random
 		}
 		
-		tolerated_cultures = {
+		accepted_cultures = {
 			szekely_culture
 		}		
 		liturgical_language = church_slavonic_language
@@ -19013,7 +19034,7 @@ countries = {
 			ruler = random
 		}
 		
-		tolerated_cultures = {
+		accepted_cultures = {
 			halychian_culture
 		}
 		
@@ -19037,7 +19058,7 @@ countries = {
 			ruler = random
 		}
 		
-		tolerated_cultures = {
+		accepted_cultures = {
 			jasz_culture
 		}
 		
@@ -19060,7 +19081,7 @@ countries = {
 			ruler = random
 		}
 		
-		tolerated_cultures = {
+		accepted_cultures = {
 			halychian_culture
 		}
 
@@ -19083,7 +19104,7 @@ countries = {
 			ruler = random
 		}
 		
-		tolerated_cultures = {
+		accepted_cultures = {
 			halychian_culture
 		}
 
@@ -42404,6 +42425,12 @@ countries = {
 			bakota horodok kamianets_podilskyi zalishchyky
 		}
 
+		our_cores_conquered_by_others = { # Shypyntsi land
+			balti hotin lipnic soroca viadineti
+			dorohoi cernauti cetatea_tetina stefanesti
+			putna siret storozhynets
+		}
+
 		starting_technology_level = 3
 		include = "expl_eastern_europe"
 		include = "ruthenian_principality_no_coast"
@@ -43375,7 +43402,7 @@ countries = {
 			}
 
 			privilege = {
-				#Cossacks
+				# Cossacks
 				cossack_identity
 				cossacks_land_rights
 				cossacks_allowed_free_roaming
@@ -43399,8 +43426,8 @@ countries = {
 
 		currency_data = {
 			stability = 50
-			prestige = -25
-			government_power = 60
+			prestige = 0
+			government_power = 70
 		}
 
 		capital = kyiv

@@ -261,6 +261,14 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
+
+			privilege = {
+				# Cossacks
+				cossack_identity
+				cossacks_land_rights
+				cossacks_allowed_free_roaming
+				cossacks_military_service
+			}
 		}
 
 		liturgical_language = church_slavonic_language

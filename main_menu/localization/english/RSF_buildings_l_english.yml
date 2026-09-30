@@ -1,13 +1,29 @@
 ﻿l_english:
+
+ # Unique buildings
  kyiv_pech_lavra: "Kyiv-Pechersk Lavra"
  kyiv_pech_lavra_desc: "Established in 1051 by the monks Anthony and Theodosius, the Kyiv Pechersk Lavra, or #italic Monastery of the Caves#!, is one of the oldest and most important centers of Eastern Orthodox Christianity. Built partly underground, its cave complexes served as both monastic dwellings and burial sites. Over time, it grew into a vast religious and cultural complex, with theological study and manuscript production. By the 14th century, the Lavra was a central part of Kievan Rus' spirituality and learning."
- kyiv_pech_lavra_maintenance: "Lavra maintenance"
+
+ steppe_outpost: "Steppe Outpost"
+ steppe_outpost_desc: "The Steppe Outpost serves as the primary building for the gathering of what the Great Steppe gives. Many peasants and Cossacks seek out these buildings in flat wilds in the hope of making a living of the trade."
+
+ # Cossacks Estate buildings
+ cossacks_colony: "Cossack Colony"
+ cossacks_colony_desc: "Cossack settlements established in the Wild Field, providing refuge for free settlers and a base for defence, raiding, and the cultivation of the surrounding steppe."
+
+ cossacks_training_grounds: "Cossack Training Grounds"
+ cossacks_training_grounds_desc: "As frontier communities are accustomed to the use of arms, local training grounds allow Cossacks to hone their skills in shooting, riding, and close combat, keeping them ready to take up arms at a moment’s notice."
+
+ cossacks_hunting_grounds: "Cossack Hunting Grounds"
+ cossacks_hunting_grounds_desc: "Cossacks will quickly establish specific grounds for hunting so that they can exploit the wildlife of any local forested area without permission."
+
+
+ # Other
+
+ # Seems to be missing from the error log
+ scientific_revolution_advance: "Scientific Revolution"
 
  settlement_standard: "Settlement"
  cossack_sloboda: "Sloboda"
- #settlement_building: "[Custom('GetSettlement')]"
+ # settlement_building: "[Custom('GetSettlement')]"
 
- # seems to be missing from the error log
- scientific_revolution_advance: "Scientific Revolution"
-
- ostrog_maintenance_1: "Ostrogs"

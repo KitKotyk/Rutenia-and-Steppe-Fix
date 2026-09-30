@@ -8,3 +8,9 @@
 
  ruthenian_starostas: "Rural Starostas"
  ruthenian_starostas_desc: "The starosta was entrusted with the administration of a district, maintaining order, collecting dues and protecting its inhabitants. In return for their obligations, the peasantry received the protection of the local authority, whose prosperity depended upon the continued cultivation and security of the lands under his care."
+
+ obrok_privilege: "Obrok"
+ obrok_privilege_desc: "Rather than rendering service through labour, peasants fulfil their obligations through regular payments, most commonly in grain, livestock, honey, and other goods. This arrangement gives them greater freedom to manage their own time and holdings while providing their lord with a dependable source of provisions and income."
+
+ chynsh_privilege: "Chynsh"
+ chynsh_privilege_desc: "A customary land payment made by peasants and townsmen for the right to hold and use their plots. Usually fixed in money, the chynsh provides a predictable income to the landholder while allowing tenants greater freedom from direct labour obligations."

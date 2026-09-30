@@ -39,35 +39,42 @@
 	}
 
 	privilege = {
-		#Nobles
+		# Nobles
+		nobles_offensive_military_doctrine
 		primacy_of_nobility
 		noble_serfdom_rights
 		nobility_council
 		noble_leaders_only
 
-		#Clergy
+		# Clergy
 		freedom_of_interpretation
 		clerical_advisory_council
 		clergy_literacy_rights
 		clergy_land_rights
 		
-		#Burghers
+		# Burghers
 		allow_trade_center_sponsorship
 		commercial_advisory_council
 		market_fairs
 		building_rights
 		urban_development_grants
 
-		#Commoners
+		# Commoners
 		communal_lands
 		peasants_free_peasantry
 		allow_hunting
 		peasants_allowed_weapons_privilege
+		peasants_autonomous_villages
 		
-		#Tribesmen
+		# Tribesmen
+		tribes_land_rights
 		tribes_tribal_levies
 		tribes_allow_gatherings
 		tribes_pasture_access
+		tribes_tribal_registry
+		tribes_protected_faith
+		tribes_respect_tribal_traditions
+		tribes_in_administration
 	}
 }
 

@@ -15066,8 +15066,8 @@ hotin = {
 }
 lipnic = {
 	define_pop = {	type = clergy	size = 0.008	culture = moldovan	religion = orthodox }
-	define_pop = {	type = peasants	size = 3.634	culture = moldovan	religion = orthodox }
-	define_pop = {	type = peasants	size = 1.033	culture = halychian_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 2.634	culture = moldovan	religion = orthodox }
+	define_pop = {	type = peasants	size = 2.033	culture = halychian_culture	religion = orthodox }
 }
 soroca = {
 	define_pop = {	type = clergy	size = 0.010	culture = moldovan	religion = orthodox }
@@ -15182,17 +15182,18 @@ sasyk_lagoon = {
 }
 dorohoi = {
 	define_pop = {	type = clergy	size = 0.009	culture = moldovan	religion = orthodox }
-	define_pop = {	type = peasants	size = 5.777	culture = moldovan	religion = orthodox }
+	define_pop = {	type = peasants	size = 2.777	culture = moldovan	religion = orthodox }
+	define_pop = {	type = slaves	size = 1.470	culture = halychian_culture	religion = orthodox }
 }
 cernauti = {
 	define_pop = {	type = clergy	size = 0.007	culture = moldovan	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.786	culture = moldovan	religion = orthodox }
-	define_pop = {	type = slaves	size = 1.470	culture = halychian_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 1.786	culture = moldovan	religion = orthodox }
+	define_pop = {	type = slaves	size = 2.470	culture = halychian_culture	religion = orthodox }
 }
 cetatea_tetina = {
 	define_pop = {	type = clergy	size = 0.006	culture = moldovan	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.514	culture = moldovan	religion = orthodox }
-	define_pop = {	type = slaves	size = 2.027	culture = halychian_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 2.014	culture = moldovan	religion = orthodox }
+	define_pop = {	type = slaves	size = 2.527	culture = halychian_culture	religion = orthodox }
 }
 cotnari = {
 	define_pop = {	type = clergy	size = 0.009	culture = moldovan	religion = orthodox }
@@ -15302,8 +15303,8 @@ siret = {
 }
 storozhynets = {
 	define_pop = {	type = clergy	size = 0.009	culture = moldovan	religion = orthodox }
-	define_pop = {	type = peasants	size = 3.737	culture = moldovan	religion = orthodox }
-	define_pop = {	type = slaves	size = 1.972	culture = halychian_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 2.737	culture = moldovan	religion = orthodox }
+	define_pop = {	type = slaves	size = 2.972	culture = halychian_culture	religion = orthodox }
 }
 vatra_dornei = {
 	define_pop = {	type = clergy	size = 0.009	culture = moldovan	religion = orthodox }

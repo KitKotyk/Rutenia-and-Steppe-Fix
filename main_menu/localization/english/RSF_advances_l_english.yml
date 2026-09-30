@@ -71,9 +71,17 @@
  pontic_trade_advance_desc: "Control of the Black Sea trade routes brings merchants from across the Pontic shores under the state's influence, expanding commercial networks and opportunities for trade."
 
 
+ # East Slavic culture group
+ steppe_outpost_advance: "Steppe Outpost" 
+ steppe_outpost_advance_desc: "The Steppe Outpost serves as the primary building for the gathering of what the Great Steppe gives. Many peasants and Cossacks seek out these buildings in flat wilds in the hope of making a living of the trade."
+
+
  # Ruthene culture group
  varangians_greeks: "From the Varangians to the Greeks" 
  varangians_greeks_desc: "Ancient trade routes linking the Baltic and Black Seas continue to shape the commerce of the lands of Rus. Merchants, river fleets, and fortified settlements along the great waterways connect distant markets, fostering trade, prosperity, and cultural exchange across Eastern Europe."
+
+ chynsh_advance: "Chynsh Tax" 
+ chynsh_advance_desc: "A customary land payment made by peasants and townsmen for the right to hold and use their plots. Usually fixed in money, the chynsh provides a predictable income to the landholder while allowing tenants greater freedom from direct labour obligations."
 
  ruthenian_cochineal: "Ruthenian Chervets" 
  ruthenian_cochineal_desc: "The tiny cochineal insects found beneath the soil of Ruthenian lands provide a rare crimson dye coveted across Europe. Collected and processed by skilled craftsmen, this valuable export enriches merchants and connects local economies with distant markets."

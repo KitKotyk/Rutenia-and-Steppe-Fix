@@ -1,0 +1,117 @@
+﻿# ----- ADDED by Kotyk -----
+
+# Kyiv-Pechersk Lavra
+# Unique in Kyiv, huge significance and historical impact
+kyiv_pech_lavra = {
+	is_special = yes
+	is_foreign = no
+	max_levels = 1
+	pop_type = clergy	
+	employment_size = huge_religious_building_employment
+	category = religious_category
+
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	build_time = religious_building_time
+
+	expensive = yes
+	
+	country_potential = {
+		always = no
+	}
+
+	allow = {
+		always = no
+	}	
+
+	unique_production_methods = {
+		kyiv_pech_lavra_maintenance = {
+			glass = 0.05
+			paper = 0.1
+			books = 0.05
+			cloth = 0.1
+			wine = 0.1
+			beeswax = 0.2
+			category = building_maintenance
+		}
+	}
+	
+	modifier = {
+		local_clergy_estate_power = 1.0
+		local_clergy_food_consumption = 0.5
+		local_cultural_tradition = 5
+		local_cultural_influence = 5
+		local_institution_growth_modifier = 0.2
+		monthly_towards_spiritualist = societal_value_minor_monthly_move
+	}
+
+	construction_demand = town_building_construction
+}
+
+# Steppe Outpost
+# Similar as Pomor Outpost, but for the Steppes and Tribesmen, Age 2 advance
+steppe_outpost = {
+	audio_tier = 2
+	is_special = yes
+	is_foreign = no
+	pop_type = tribesmen
+	max_levels = rural_building_cap
+	
+	employment_size = tiny_rural_peasant_enhance_employment
+	category = consumer_goods_category
+	
+	rural_settlement = yes
+	build_time = rural_build_time
+
+	country_potential = {
+		culture = { has_culture_group = culture_group:russian_group }
+	}
+	
+	location_potential = {
+		OR = {
+			region = region:steppes_region
+			area = area:left_bank_ukraine_area
+		}		
+		OR = {
+			raw_material = goods:wheat
+			raw_material = goods:millet
+			raw_material = goods:fish
+			raw_material = goods:salt
+			raw_material = goods:saltpeter
+		}
+	}
+
+	remove_if = {
+		location = {
+			NOR = {
+				raw_material = goods:wheat
+				raw_material = goods:millet
+				raw_material = goods:fish
+				raw_material = goods:salt
+				raw_material = goods:saltpeter
+			}
+		}
+	}
+
+	unique_production_methods = {
+		steppe_outpost_maintenance = {
+			lumber = 0.05
+			tools = 0.015			
+
+			category = building_maintenance
+		}
+	}
+
+	construction_demand = pomor_outpost_construction
+
+	modifier = {
+		local_merchant_capacity = 0.1
+		local_raw_material_output = 0.2
+		local_migration_attraction = 0.2
+		local_tribes_estate_power = 0.25
+		local_cossacks_estate_power = 0.25
+	}
+}

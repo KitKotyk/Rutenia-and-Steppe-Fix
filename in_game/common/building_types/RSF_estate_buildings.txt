@@ -1,0 +1,170 @@
+﻿# ----- COSSACKS -----
+
+# Cossack Colony in non-orthodox countries
+cossacks_colony = {		
+	audio_tier = 2	
+	is_foreign = no
+	max_levels = estate_building_single_level
+	pop_type = tribesmen
+	
+	category = estate_category
+	employment_size = estate_peasants_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = no
+	megalopolis = no
+	
+	estate = cossacks_estate
+	build_time = estate_build_time
+
+	country_potential = {		
+	}
+	
+	location_potential = {
+		any_pop = { 
+			is_cossacks = yes
+		}
+		OR = {
+			region = region:steppes_region
+			area = area:left_bank_ukraine_area
+			area = area:right_bank_ukraine_area
+			area = area:podolia_area
+		}
+	}
+
+	allow = {
+		NOT = { owner ?= { religion ?= religion:orthodox } }
+	}
+
+	remove_if = {
+		location = { 
+			owner = { religion ?= religion:orthodox }
+		}
+	}
+
+	possible_production_methods = {
+		estate_building_input
+	}
+
+	construction_demand = estate_construct_building
+
+	modifier = {
+		local_cossacks_estate_power = 1		# 100% higher here.
+		local_raw_material_output = 0.05
+		local_pop_assimilation_speed_modifier = -0.5
+		local_pop_conversion_speed_modifier = -0.5
+	}	
+}
+
+# Cossack Training Grounds – similar to Peasants Training Grounds
+cossacks_training_grounds = {
+	audio_tier = 1
+	is_foreign = no
+	max_levels = estate_building_single_level
+	pop_type = tribesmen
+	
+	category = estate_category
+	employment_size = estate_manpower_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = no
+	megalopolis = no
+	
+	estate = cossacks_estate
+	build_time = estate_build_time
+
+	country_potential = {		
+	}
+	
+	location_potential = {
+		any_pop = { 
+			is_cossacks = yes
+		}
+		OR = {
+			region = region:steppes_region
+			area = area:left_bank_ukraine_area
+			area = area:right_bank_ukraine_area
+			area = area:podolia_area
+		}
+	}
+
+	allow = {
+		owner ?= { religion ?= religion:orthodox }
+	}
+
+	remove_if = {
+		location = { 
+			NOT = { owner = { religion ?= religion:orthodox } }
+		}
+	}
+
+	possible_production_methods = {
+		estate_building_input
+	}
+
+	construction_demand = estate_construct_building
+	
+	modifier = {
+		local_cossacks_estate_power = 1
+		local_manpower = 0.001
+	}
+}
+
+# Cossack Hunting Grounds – similar to Peasants Hunting Grounds
+cossacks_hunting_grounds = {
+	audio_tier = 1
+	is_foreign = no
+	max_levels = estate_building_single_level
+	pop_type = tribesmen
+	
+	category = estate_category
+	employment_size = estate_peasants_employment
+	
+	rural_settlement = yes
+	town = no
+	city = no
+	megalopolis = no
+	
+	estate = cossacks_estate
+	build_time = estate_build_time
+
+	country_potential = {		# Cossacks do not need permission
+	}
+	
+	location_potential = {
+		any_pop = { 
+			is_cossacks = yes
+		}
+		OR = {
+			region = region:steppes_region
+			area = area:left_bank_ukraine_area
+			area = area:right_bank_ukraine_area
+			area = area:podolia_area
+		}
+		OR = {
+			vegetation = woods
+			vegetation = forest
+		}
+	}
+
+	allow = {		
+	}
+
+	remove_if = {		
+	}
+
+	possible_production_methods = {
+		estate_building_input
+	}
+
+	construction_demand = estate_construct_building
+	
+	modifier = {
+		local_cossacks_estate_power = 0.5
+		local_peasants_food_consumption = -0.05
+		local_tribesmen_food_consumption = -0.1		# Not sure if they eat something
+		local_peasant_enfranchisment = 0.01
+	}
+}
