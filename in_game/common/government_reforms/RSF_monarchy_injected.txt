@@ -1,6 +1,6 @@
 ﻿# ----- UPDATED by Kotyk -----
 
-TRY_REPLACE:feudal_nobility = {
+TRY_REPLACE:feudal_nobility = {		# Added mutually exclusive with Russ Appanages
 	age = age_1_traditions
 	government = monarchy
 	potential = {

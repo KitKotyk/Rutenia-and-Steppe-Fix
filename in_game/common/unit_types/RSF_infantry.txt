@@ -82,12 +82,14 @@ a_opryshky = {
 	buildable = yes
 
 	initiative = 2
+	
 	combat = {
 		woods = 0.1
 		forest = 0.1
 		hills = 0.1
 		mountains = 0.1
 	}
+
 	impact = {
 		woods = -0.1
 		forest = -0.1

@@ -12,7 +12,8 @@ obrok_privilege = {			# Obrok – historical Rus tax that Nobility took from pea
 	country_modifier = {
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_nobles_estate_power = 1.0
-		global_production_efficiency = tiny_production_efficiency_bonus
+		global_production_efficiency = small_production_efficiency_bonus
+		peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 		global_peasant_enfranchisment = -0.05
 	}
 }
@@ -32,6 +33,7 @@ chynsh_privilege = {		# Chynsh – historical later Ruthenian tax in form of mon
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_nobles_estate_power = 1.0
 		nobles_estate_max_tax = 0.1
+		peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 		global_peasant_enfranchisment = -0.05
 	}
 }

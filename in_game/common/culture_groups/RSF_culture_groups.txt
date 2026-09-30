@@ -1,15 +1,29 @@
-﻿# avoid naming the same as Cultures and Languages
+﻿# Avoid naming the same as Cultures and Languages
 
 belarusian_group = {
+	goods_demand_modifier = {
+		wheat = 1.3
+        millet = 1.7
+		legumes = 0.8
+        livestock = 0.8
+        fur = 1.5
+	}
 }
 
 ukrainian_group = {
+	goods_demand_modifier = {
+		wheat = 1.5
+        millet = 1.5
+		legumes = 0.8
+        livestock = 0.8
+        fur = 1.2
+	}
 }
 
 zalessian_group = { # Russian cultures, but russian_group already exists for the East Slavic group
 	goods_demand_modifier = {
-		wheat = 1.1
-        millet = 1.9
+		wheat = 1.2
+        millet = 1.8
 		legumes = 0.8
         livestock = 0.8
         fur = 1.5
@@ -17,11 +31,15 @@ zalessian_group = { # Russian cultures, but russian_group already exists for the
 }
 
 ruthene_group = {   # Ukrainian and Belarusian groups
+}
+
+
+# Added goods demands
+TRY_INJECT:steppe_group = {
 	goods_demand_modifier = {
-		wheat = 1.5
-        millet = 1.5
-		legumes = 0.8
-        livestock = 0.8
-        fur = 1.5
+		wheat = 0.5
+        millet = 2.5
+        livestock = 2
+        horses = 3
 	}
 }

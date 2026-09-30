@@ -1,0 +1,19 @@
+# Added Halych-Volhynian Druzhyna
+
+unit_manager = {
+	army = {
+		country = HAL
+		location = lviv
+		sub_units = {
+			a_armored_horsemen = { strength = 1 }
+		}
+	}
+
+	army = {
+		country = VOL
+		location = volodymyr
+		sub_units = {
+			a_armored_horsemen = { strength = 1 }
+		}
+	}
+}
