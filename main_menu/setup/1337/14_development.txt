@@ -379,5 +379,6 @@ development = {
 	skaniatares = 1
 	tsikahiotsisto = 1
 	canajoharie = 1
+	pamplona = 2
 }
 

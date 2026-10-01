@@ -29,6 +29,7 @@
 		obrok_privilege
 		noble_serfdom_rights
 		nobles_land_rights
+		noble_private_armies_privilege
 		kormlenije
 
 		#clergy

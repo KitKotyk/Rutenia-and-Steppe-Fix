@@ -3,7 +3,7 @@
 	
 	color = map_ARM
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
 		greek_culture = positive
@@ -24,7 +24,7 @@ georgian_culture = { #https://en.wikipedia.org/wiki/Georgians
 	
 	color = map_GEO
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
         laz_culture = kindred
@@ -45,7 +45,7 @@ laz_culture = { #https://en.wikipedia.org/wiki/Laz_people
 	
 	color = color_culture_laz
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
         georgian_culture = kindred
@@ -65,7 +65,7 @@ mingrelian_culture = { #https://en.wikipedia.org/wiki/Mingrelians
 	
 	color = color_culture_mingrelian
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
         georgian_culture = kindred
@@ -84,7 +84,7 @@ svan_culture = { #https://en.wikipedia.org/wiki/Svans
 	
 	color = color_culture_svan
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
         georgian_culture = kindred
@@ -102,7 +102,7 @@ circassian_culture = { #https://en.wikipedia.org/wiki/Circassians
 	
 	color = map_CIR
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
 		balkar_culture = kindred
@@ -121,7 +121,7 @@ alan_culture = {
 	
 	color = map_ALN
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
 		pontic_greek_culture = positive
@@ -136,7 +136,7 @@ jasz_culture = { #https://en.wikipedia.org/wiki/Jasz_people
 	
 	color = map_jasz
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
 		alan_culture = kindred
@@ -149,7 +149,7 @@ nakh_culture = {
 	
 	color = map_nakh
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
 
@@ -165,7 +165,7 @@ avar_culture = {
 	
 	color = map_AVR
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
 
@@ -181,7 +181,7 @@ dargin_culture = {
 	
 	color = map_dargin
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
 		lak_culture = positive
@@ -197,7 +197,7 @@ lak_culture = {
 	
 	color = map_lak
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
 		dargin_culture = positive
@@ -213,7 +213,7 @@ lezgin_culture = {
 	
 	color = map_LEK
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
 
@@ -229,7 +229,7 @@ abazin_culture = {
 	
 	color = map_abazin
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
 		abkhazian_culture = positive
@@ -246,7 +246,7 @@ abkhazian_culture = {
 	
 	color = map_abkhazian
 	
-	tags = { caucasian_gfx east_mediterranean_gfx mediterranean_gfx eastern_european_gfx european_gfx }
+	tags = { caucasian_gfx east_mediterranean_gfx eastern_mediterranean_and_turkish_gfx mediterranean_gfx eastern_european_gfx european_gfx }
 
 	opinions = {
         georgian_culture = positive

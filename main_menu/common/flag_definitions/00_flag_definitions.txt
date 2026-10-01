@@ -204,6 +204,15 @@ DEFAULT = {
 	}	
 }
 
+REVOLT = {
+	flag_definition = {
+		coa = list "template_rebel_default_list"
+		trigger = {
+			coa_def_revolutionary_republic_trigger = no
+		}
+	}
+}
+
 ENG = { # England
 	# NB: all subject cantons need to be defined for this tag
 	flag_definition = {
@@ -795,6 +804,20 @@ ATR = { # Astrakhan
 				coa_def_tamgha_trigger = yes
 				coa_def_muslim_trigger = yes # although possibly with a slightly different composition
 			}
+		}
+	}
+}
+
+ATU = { # Asturias
+	flag_definition = {
+		coa = ATU
+		priority = 1
+	}
+	flag_definition = {
+		coa = ATU_muslim
+		priority = 100
+		trigger = {
+			coa_def_muslim_trigger = yes
 		}
 	}
 }
@@ -1441,6 +1464,13 @@ CAS = { # Castile
 		trigger = {
 			coa_def_revolutionary_republic_trigger = yes
 			coa_def_leonese_primary_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = CAS_muslim
+		priority = 200
+		trigger = {
+			coa_def_muslim_trigger = yes
 		}
 	}
 }
@@ -2634,6 +2664,20 @@ GER = { # Germany
 		trigger = {
 			coa_def_monarchy_trigger = yes
 		}		
+	}
+	flag_definition = {
+		coa = GER_eagle
+		priority = 2
+		trigger = {
+			coa_def_theocracy_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GER_eagle
+		priority = 2
+		trigger = {
+			coa_def_republic_trigger = yes
+		}
 	}
 	flag_definition = {
 		coa = GER
@@ -5729,6 +5773,14 @@ POR = { # Portugal
 			coa_def_revolutionary_republic_trigger = yes
 		}
 	}	
+
+	flag_definition = {
+		coa = POR_muslim
+		priority = 200
+		trigger = {
+			coa_def_muslim_trigger = yes
+		}
+	}	
 }
 
 PRA = { # Prato
@@ -6656,15 +6708,8 @@ SPA = { # Spain
 	# SPA_merchant - 18th c. Merchant flag : O 2 horizontal stripes G
 
 	flag_definition = {
-		coa = SPA_base	# default version (Q1 Aragon, Q2 Castile, Q3 Leon, Q4 Portugal)
+		coa = SPA_base	# default version (Q1 Castile-Leon, Q2 Aragon, Q3 Portugal, Q4 Navarre)
 		priority = 1
-	}
-	flag_definition = {
-		coa = SPA_base_castile	# default version (Q1 Castile, Q2 Aragon, Q3 Portugal, Q4 Leon)
-		priority = 2
-		trigger = {
-			coa_def_SPA_castile_trigger = yes
-		}
 	}
 	
 	### Castile ###
@@ -6874,6 +6919,7 @@ SPA = { # Spain
 		priority = 32
 		trigger = {
 			coa_def_SPA_castile_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
 			coa_def_portugal_ownership_trigger = yes
 			coa_def_sicily_ownership_trigger = yes
 		}
@@ -6883,9 +6929,32 @@ SPA = { # Spain
 		priority = 33
 		trigger = {
 			coa_def_SPA_castile_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
 			coa_def_sicily_ownership_trigger = yes
 			coa_def_granada_ownership_trigger = yes
 			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_aragon_portugal_navarre # Castile Q1, Aragon Q2, Portugal Q3, Navarre Q4
+		priority = 34
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_castile_aragon_sicily_portugal_navarre # Castile Q1, Aragon-Sicily Q2, Portugal Q3, Navarre Q4
+		priority = 37
+		trigger = {
+			coa_def_SPA_castile_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = no
 		}
 	}
 	flag_definition = {
@@ -6915,19 +6984,11 @@ SPA = { # Spain
 
 	### Aragon ###
 
-	flag_definition = { # Base designs for Aragon
-		coa = SPA_aragon_simple # Aragon Q1-Q4, Castile Q2, Leon Q3
+	flag_definition = { # Base design for Aragon
+		coa = SPA_aragon # Aragon Q1-Q4, Castile Leon Q2-Q3
 		priority = 10
 		trigger = {
 			coa_def_SPA_aragon_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = SPA_aragon # Aragon Q1-Q4, Castile Leon Q2-Q3
-		priority = 11
-		trigger = {
-			coa_def_SPA_aragon_trigger = yes
-			coa_def_discovery_age_3_trigger = yes
 		}
 	}
 	flag_definition = { # Design at game start
@@ -6965,7 +7026,7 @@ SPA = { # Spain
 		}
 	}
 	flag_definition = {
-		coa = SPA_aragon_granada # Aragon Q1-Q4, Castile Leon Q2, Granada Q3
+		coa = SPA_aragon_granada # Aragon Q1-Q4, Castile-Leon Q2-Q3, Granada Q5
 		priority = 22
 		trigger = {
 			coa_def_SPA_aragon_trigger = yes
@@ -6994,6 +7055,31 @@ SPA = { # Spain
 			coa_def_aragonese_sicily_trigger = no
 			coa_def_navarre_ownership_trigger = yes
 			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = SPA_aragon_navarre_granada # Aragon Q1-Q4, Castile Leon Q2, Navarre Q3, Granada Q5
+		priority = 25
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			coa_def_sicily_ownership_trigger = no
+			coa_def_aragonese_sicily_trigger = no
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = no
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_aragon_portugal_granada # Aragon Q1-Q4, Castile Leon Q2, Portugal Q3, Granada Q5
+		priority = 26
+		trigger = {
+			coa_def_SPA_aragon_trigger = yes
+			coa_def_sicily_ownership_trigger = no
+			coa_def_aragonese_sicily_trigger = no
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = no
 			coa_def_granada_ownership_trigger = yes
 		}
 	}
@@ -7093,7 +7179,7 @@ SPA = { # Spain
 	### Navarre ###
 
 	flag_definition = {
-		coa = SPA_navarre # Navarre Q1-Q4, Castile Q2, Leon Q3
+		coa = SPA_navarre # Navarre Q1-Q4, Castile-Leon Q2-Q3
 		priority = 10
 		trigger = {
 			coa_def_SPA_navarre_trigger = yes
@@ -7257,21 +7343,107 @@ SPA = { # Spain
 		}
 	}
 
-	### Portugal ###
+	# With Granada (no Portugal)
 
-	flag_definition = { # Default for Portugal (Early)
-		coa = SPA_portugal # Q1-Q4 Portugal, Q2-Q3 Castile-Leon
-		priority = 10
+	flag_definition = {
+		coa = SPA_navarre_granada # Navarre Q1+Q4, Castile-Leon Q2-Q3, Granada Q5
+		priority = 40
 		trigger = {
-			coa_def_SPA_portugal_trigger = yes
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_aragon_ownership_trigger = no
+			coa_def_portugal_ownership_trigger = no
 		}
 	}
 	flag_definition = {
-		coa = SPA_portugal_late # Q1-Q4 Portugal (Late), Q2-Q3 Castile-Leon
-		priority = 11
+		coa = SPA_navarre_granada_capetian # Navarre-France Q1, Castile-Leon Q2-Q3, Navarre Q4, Granada Q5
+		priority = 41
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_aragon_ownership_trigger = no
+			coa_def_portugal_ownership_trigger = no
+			coa_def_capetian_navarre_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_granada # Navarre Q1+Q4, Castile-Leon Q2, Aragon Q3, Granada Q5
+		priority = 42
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = no
+			coa_def_portugal_ownership_trigger = no
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_granada_capetian # Navarre-France Q1, Castile-Leon Q2, Aragon Q3, Navarre Q4, Granada Q5
+		priority = 43
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = no
+			coa_def_portugal_ownership_trigger = no
+			coa_def_capetian_navarre_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_sicily_granada # Navarre Q1+Q4, Castile-Leon Q2, Aragon-Sicily Q3, Granada Q5
+		priority = 44
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = no
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_aragon_sicily_granada_capetian # Navarre-France Q1, Castile-Leon Q2, Aragon-Sicily Q3, Navarre Q4, Granada Q5
+		priority = 45
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = no
+			coa_def_capetian_navarre_trigger = yes
+		}
+	}
+
+	# With Portugal & Granada (no Aragon)
+
+	flag_definition = {
+		coa = SPA_navarre_portugal_granada # Navarre Q1, Castile-Leon Q2-Q3, Portugal Q4, Granada Q5
+		priority = 46
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_aragon_ownership_trigger = no
+		}
+	}
+	flag_definition = {
+		coa = SPA_navarre_portugal_granada_capetian # Navarre-France Q1, Castile-Leon Q2-Q3, Portugal Q4, Granada Q5
+		priority = 47
+		trigger = {
+			coa_def_SPA_navarre_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_aragon_ownership_trigger = no
+			coa_def_capetian_navarre_trigger = yes
+		}
+	}
+
+	### Portugal ###
+
+	flag_definition = { # Default for Portugal
+		coa = SPA_portugal_late # Q1-Q4 Portugal, Q2-Q3 Castile-Leon
+		priority = 10
 		trigger = {
 			coa_def_SPA_portugal_trigger = yes
-			coa_def_discovery_age_3_trigger = yes
 		}
 	}
 	
@@ -7297,6 +7469,17 @@ SPA = { # Spain
 			coa_def_aragon_ownership_trigger = no
 			coa_def_navarre_ownership_trigger = no
 			coa_def_galicia_ownership_trigger = no
+		}
+	}
+	flag_definition = {
+		coa = SPA_portugal_galicia_granada # Q1+Q4 Portugal, Q2 Castile-Leon, Q3 Galicia, Q5 Granada
+		priority = 16
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_galicia_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+			coa_def_aragon_ownership_trigger = no
+			coa_def_navarre_ownership_trigger = no
 		}
 	}
 
@@ -7463,7 +7646,7 @@ SPA = { # Spain
 			coa_def_granada_ownership_trigger = yes
 		}
 	}
-	# Galicia replacing Granada at this point
+	# Galicia takes the Q5 escutcheon when owned and Granada is not (no room for both)
 	flag_definition = {
 		coa = SPA_portugal_galicia_navarre_aragon # Q1 Portugal, Q2 Castile-Leon, Q3 Aragon, Q4 Navarre, Q5 Galicia
 		priority = 38
@@ -7485,37 +7668,173 @@ SPA = { # Spain
 			coa_def_sicily_ownership_trigger = yes
 		}
 	}
+	# Galicia AND Granada both owned: 6 arms, 5 slots -> drop Castile-Leon, show all territories
+	flag_definition = {
+		coa = SPA_portugal_galicia_navarre_aragon_granada # Q1 Portugal, Q2 Aragon, Q3 Navarre, Q4 Galicia, Q5 Granada
+		priority = 40
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_galicia_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_portugal_galicia_navarre_aragon_sicily_granada # Q1 Portugal, Q2 Aragon-Sicily, Q3 Navarre, Q4 Galicia, Q5 Granada
+		priority = 41
+		trigger = {
+			coa_def_SPA_portugal_trigger = yes
+			coa_def_galicia_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
 
 	### Minors ###
 
-	# Leon
+	# Leon-Castile
 	flag_definition = { # Default (Aragon)
-		coa = SPA_leon_simple_aragon # Q1-Q4 Leon-Castile, Q2-Q3 Aragon
+		coa = SPA_leon_simple_aragon
 		priority = 50
 		trigger = {
 			coa_def_SPA_leon_trigger = yes
 		}
 	}
 	flag_definition = {
-		coa = SPA_leon_simple_portugal # Q1-Q4 Leon-Castile, Q2-Q3 Portugal
-		priority = 51
+		coa = SPA_leon_simple_aragon_sicily
+		priority = 53
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_simple_portugal
+		priority = 54
 		trigger = {
 			coa_def_SPA_leon_trigger = yes
 			coa_def_portugal_ownership_trigger = yes
 		}
 	}
 	flag_definition = {
-		coa = SPA_leon_aragon_portugal # Q1-Q4 Leon-Castile, Q2 Aragon, Q3 Portugal
-		priority = 52
+		coa = SPA_leon_aragon_portugal
+		priority = 55
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_aragon_portugal_sicily
+		priority = 57
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_navarre
+		priority = 58
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_aragon_navarre
+		priority = 59
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_aragon_sicily_navarre
+		priority = 61
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_portugal_navarre
+		priority = 62
 		trigger = {
 			coa_def_SPA_leon_trigger = yes
 			coa_def_portugal_ownership_trigger = yes
-			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
 		}
 	}
-	flag_definition = { # Complete with Granada
-		coa = SPA_leon # Q1-Q4 Leon-Castile, Q2 Aragon-Sicily, Q3 Portugal, Q5 Granada
-		priority = 55
+	flag_definition = {
+		coa = SPA_leon_aragon_portugal_navarre
+		priority = 63
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_aragon_sicily_portugal_navarre
+		priority = 65
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_granada
+		priority = 66
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_aragon_granada
+		priority = 67
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_aragon_sicily_granada
+		priority = 69
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_portugal_granada
+		priority = 70
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_aragon_portugal_granada
+		priority = 71
 		trigger = {
 			coa_def_SPA_leon_trigger = yes
 			coa_def_aragon_ownership_trigger = yes
@@ -7523,29 +7842,298 @@ SPA = { # Spain
 			coa_def_granada_ownership_trigger = yes
 		}
 	}
+	flag_definition = {
+		coa = SPA_leon
+		priority = 73
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_navarre_granada
+		priority = 74
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_aragon_navarre_granada
+		priority = 75
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_aragon_sicily_navarre_granada
+		priority = 77
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_portugal_navarre_granada
+		priority = 78
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_aragon_portugal_navarre_granada
+		priority = 79
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_leon_aragon_sicily_portugal_navarre_granada
+		priority = 81
+		trigger = {
+			coa_def_SPA_leon_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
 
 	# Andorra
 	flag_definition = { # Default (Aragon)
-		coa = SPA_andorra_simple_aragon # Q1 Andorra, Q2-Q3 Aragon, Q4 Castile
+		coa = SPA_andorra_simple_aragon
 		priority = 50
 		trigger = {
 			coa_def_SPA_andorra_trigger = yes
 		}
 	}
 	flag_definition = {
-		coa = SPA_andorra_aragon_navarre # Q1 Andorra, Q2 Castile, Q3 Aragon, Q4 Navarre
-		priority = 51
+		coa = SPA_andorra_simple_aragon_sicily
+		priority = 53
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_portugal
+		priority = 54
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_aragon_portugal
+		priority = 55
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_aragon_sicily_portugal
+		priority = 57
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_navarre
+		priority = 58
 		trigger = {
 			coa_def_SPA_andorra_trigger = yes
 			coa_def_navarre_ownership_trigger = yes
 		}
 	}
-	flag_definition = { # Complete with Granada
-		coa = SPA_andorra # Q1 Andorra, Q2 Castile, Q3 Aragon-Sicily, Q4 Navarre, Q5 Granada
-		priority = 55
+	flag_definition = {
+		coa = SPA_andorra_aragon_navarre
+		priority = 59
 		trigger = {
 			coa_def_SPA_andorra_trigger = yes
 			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_aragon_sicily_navarre
+		priority = 61
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_portugal_navarre
+		priority = 62
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_aragon_portugal_navarre
+		priority = 63
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_aragon_sicily_portugal_navarre
+		priority = 65
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_granada
+		priority = 66
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_aragon_granada
+		priority = 67
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_aragon_sicily_granada
+		priority = 69
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_portugal_granada
+		priority = 70
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_aragon_portugal_granada
+		priority = 71
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_aragon_sicily_portugal_granada
+		priority = 73
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_navarre_granada
+		priority = 74
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_aragon_navarre_granada
+		priority = 75
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra
+		priority = 77
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_portugal_navarre_granada
+		priority = 78
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_aragon_portugal_navarre_granada
+		priority = 79
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_aragon_sicily_portugal_navarre_granada
+		priority = 81
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
 			coa_def_navarre_ownership_trigger = yes
 			coa_def_granada_ownership_trigger = yes
 		}
@@ -7553,15 +8141,59 @@ SPA = { # Spain
 
 	# Mallorca
 	flag_definition = { # Default (Aragon)
-		coa = SPA_mallorca_simple_aragon # Q1 Mallorca, Q2 & Q3 Aragon, Q4 Castile
+		coa = SPA_mallorca_simple_aragon
 		priority = 50
 		trigger = {
 			coa_def_SPA_mallorca_trigger = yes
 		}
 	}
 	flag_definition = {
-		coa = SPA_mallorca_aragon_navarre # Q1 Mallorca-Aragon, Q2 & Q3 Castile, Q4 Navarre
-		priority = 51
+		coa = SPA_mallorca_simple_aragon_sicily
+		priority = 53
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_portugal
+		priority = 54
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_aragon_portugal
+		priority = 55
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_aragon_sicily_portugal
+		priority = 57
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_navarre
+		priority = 58
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_aragon_navarre
+		priority = 59
 		trigger = {
 			coa_def_SPA_mallorca_trigger = yes
 			coa_def_aragon_ownership_trigger = yes
@@ -7569,8 +8201,8 @@ SPA = { # Spain
 		}
 	}
 	flag_definition = {
-		coa = SPA_mallorca_aragon_sicily_navarre # Q1 Mallorca, Q2 Aragon-Sicily, Q3 Castile, Q4 Navarre
-		priority = 52
+		coa = SPA_mallorca_aragon_sicily_navarre
+		priority = 61
 		trigger = {
 			coa_def_SPA_mallorca_trigger = yes
 			coa_def_aragon_ownership_trigger = yes
@@ -7578,12 +8210,152 @@ SPA = { # Spain
 			coa_def_navarre_ownership_trigger = yes
 		}
 	}
-	flag_definition = { # Complete with Granada
-		coa = SPA_mallorca # Q1 Mallorca, Q2 Aragon-Sicily, Q3 Castile, Q4 Navarre, Q5 Granada
-		priority = 55
+	flag_definition = {
+		coa = SPA_mallorca_portugal_navarre
+		priority = 62
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_aragon_portugal_navarre
+		priority = 63
 		trigger = {
 			coa_def_SPA_mallorca_trigger = yes
 			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_aragon_sicily_portugal_navarre
+		priority = 65
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_granada
+		priority = 66
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_aragon_granada
+		priority = 67
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_aragon_sicily_granada
+		priority = 69
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_portugal_granada
+		priority = 70
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_aragon_portugal_granada
+		priority = 71
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_aragon_sicily_portugal_granada
+		priority = 73
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_navarre_granada
+		priority = 74
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_aragon_navarre_granada
+		priority = 75
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca
+		priority = 77
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_portugal_navarre_granada
+		priority = 78
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_aragon_portugal_navarre_granada
+		priority = 79
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_aragon_sicily_portugal_navarre_granada
+		priority = 81
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
 			coa_def_navarre_ownership_trigger = yes
 			coa_def_granada_ownership_trigger = yes
 		}
@@ -7591,46 +8363,221 @@ SPA = { # Spain
 
 	# Valencia
 	flag_definition = { # Default (Aragon)
-		coa = SPA_valencia_simple_aragon # Q1 Valencia, Q2-Q3 Castile, Q4 Aragon
+		coa = SPA_valencia_simple_aragon
 		priority = 50
 		trigger = {
 			coa_def_SPA_valencia_trigger = yes
 		}
 	}
 	flag_definition = {
-		coa = SPA_valencia_aragon_sicily # Q1 Valencia, Q2-Q3 Castile, Q4 Aragon-Sicily
-		priority = 51
-		trigger = {
-			coa_def_SPA_valencia_trigger = yes
-			coa_def_aragon_ownership_trigger = yes
-			coa_def_sicily_ownership_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = SPA_valencia_aragon_navarre # Q1 Valencia, Q2 Castile, Q3 Aragon, Q4 Navarre
-		priority = 52
-		trigger = {
-			coa_def_SPA_valencia_trigger = yes
-			coa_def_aragon_ownership_trigger = yes
-			coa_def_navarre_ownership_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = SPA_valencia_aragon_sicily_navarre # Q1 Valencia, Q2 Castile, Q3 Aragon-Sicily, Q4 Navarre
+		coa = SPA_valencia_aragon_sicily
 		priority = 53
 		trigger = {
 			coa_def_SPA_valencia_trigger = yes
 			coa_def_aragon_ownership_trigger = yes
-			coa_def_navarre_ownership_trigger = yes
 			coa_def_sicily_ownership_trigger = yes
 		}
 	}
-	flag_definition = { # Complete with Granada
-		coa = SPA_valencia # Q1 Valencia, Q2 Castile, Q3 Aragon-Sicily, Q4 Navarre, Q5 Granada
+	flag_definition = {
+		coa = SPA_valencia_portugal
+		priority = 54
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_portugal
 		priority = 55
 		trigger = {
 			coa_def_SPA_valencia_trigger = yes
 			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_sicily_portugal
+		priority = 57
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_navarre
+		priority = 58
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_navarre
+		priority = 59
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_sicily_navarre
+		priority = 61
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_portugal_navarre
+		priority = 62
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_portugal_navarre
+		priority = 63
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_sicily_portugal_navarre
+		priority = 65
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_granada
+		priority = 66
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_granada
+		priority = 67
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_sicily_granada
+		priority = 69
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_portugal_granada
+		priority = 70
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_portugal_granada
+		priority = 71
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_sicily_portugal_granada
+		priority = 73
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_navarre_granada
+		priority = 74
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_navarre_granada
+		priority = 75
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia
+		priority = 77
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_portugal_navarre_granada
+		priority = 78
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_portugal_navarre_granada
+		priority = 79
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_aragon_sicily_portugal_navarre_granada
+		priority = 81
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
 			coa_def_navarre_ownership_trigger = yes
 			coa_def_granada_ownership_trigger = yes
 		}
@@ -7638,71 +8585,262 @@ SPA = { # Spain
 
 	# Catalonia
 	flag_definition = { # Default (Aragon)
-		coa = SPA_catalonia_simple_aragon # Q1 Catalonia, Q2-Q3 Castile, Q4 Aragon
+		coa = SPA_catalonia_simple_aragon
 		priority = 50
 		trigger = {
 			coa_def_SPA_catalonia_trigger = yes
 		}
 	}
 	flag_definition = {
-		coa = SPA_catalonia_aragon_sicily # Q1 Catalonia, Q2-Q3 Castile, Q4 Aragon-Sicily
-		priority = 51
-		trigger = {
-			coa_def_SPA_catalonia_trigger = yes
-			coa_def_aragon_ownership_trigger = yes
-			coa_def_sicily_ownership_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = SPA_catalonia_aragon_navarre # Q1 Catalonia, Q2 Castile, Q3 Navarre, Q4 Aragon
-		priority = 52
-		trigger = {
-			coa_def_SPA_catalonia_trigger = yes
-			coa_def_aragon_ownership_trigger = yes
-			coa_def_navarre_ownership_trigger = yes
-		}
-	}
-	flag_definition = {
-		coa = SPA_catalonia_aragon_sicily_navarre # Q1 Catalonia, Q2 Castile, Q3 Navarre, Q4 Aragon-Sicily
+		coa = SPA_catalonia_aragon_sicily
 		priority = 53
 		trigger = {
 			coa_def_SPA_catalonia_trigger = yes
 			coa_def_aragon_ownership_trigger = yes
-			coa_def_navarre_ownership_trigger = yes
 			coa_def_sicily_ownership_trigger = yes
 		}
 	}
 	flag_definition = {
-		coa = SPA_catalonia # Q1 Catalonia, Q2 Castile, Q3 Navarre, Q4 Aragon-Sicily, Q5 Granada
+		coa = SPA_catalonia_portugal
+		priority = 54
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_portugal
 		priority = 55
 		trigger = {
 			coa_def_SPA_catalonia_trigger = yes
 			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_sicily_portugal
+		priority = 57
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
 			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_navarre
+		priority = 58
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_navarre
+		priority = 59
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_sicily_navarre
+		priority = 61
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_portugal_navarre
+		priority = 62
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_portugal_navarre
+		priority = 63
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_sicily_portugal_navarre
+		priority = 65
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_granada
+		priority = 66
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_granada
+		priority = 67
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_sicily_granada
+		priority = 69
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_portugal_granada
+		priority = 70
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_portugal_granada
+		priority = 71
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_sicily_portugal_granada
+		priority = 73
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_navarre_granada
+		priority = 74
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_navarre_granada
+		priority = 75
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia
+		priority = 77
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_portugal_navarre_granada
+		priority = 78
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_portugal_navarre_granada
+		priority = 79
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_catalonia_aragon_sicily_portugal_navarre_granada
+		priority = 81
+		trigger = {
+			coa_def_SPA_catalonia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
 			coa_def_navarre_ownership_trigger = yes
 			coa_def_granada_ownership_trigger = yes
 		}
 	}
 
 	# Galicia
-	flag_definition = { # Default
-		coa = SPA_galicia_simple # Q1-Q4 Galicia, Q2-Q3 Castile-Leon
+	flag_definition = { # Default (Aragon)
+		coa = SPA_galicia_simple
 		priority = 50
 		trigger = {
 			coa_def_SPA_galicia_trigger = yes
 		}
 	}
 	flag_definition = {
-		coa = SPA_galicia_portugal # Q1 Galicia, Q2-Q3 Castile-Leon, Q4 Portugal
+		coa = SPA_galicia_aragon
 		priority = 51
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_aragon_sicily
+		priority = 53
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_portugal
+		priority = 54
 		trigger = {
 			coa_def_SPA_galicia_trigger = yes
 			coa_def_portugal_ownership_trigger = yes
 		}
 	}
 	flag_definition = {
-		coa = SPA_galicia_portugal_aragon # Q1 Galicia, Q2 Castile-Leon, Q3 Aragon-Sicily, Q4 Portugal
-		priority = 52
+		coa = SPA_galicia_aragon_portugal
+		priority = 55
 		trigger = {
 			coa_def_SPA_galicia_trigger = yes
 			coa_def_aragon_ownership_trigger = yes
@@ -7710,8 +8848,111 @@ SPA = { # Spain
 		}
 	}
 	flag_definition = {
-		coa = SPA_galicia # Q1 Galicia, Q2 Castile-Leon, Q3 Aragon-Sicily, Q4 Portugal, Q5 Granada
-		priority = 55
+		coa = SPA_galicia_portugal_aragon
+		priority = 57
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_navarre
+		priority = 58
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_aragon_navarre
+		priority = 59
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_aragon_sicily_navarre
+		priority = 61
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_portugal_navarre
+		priority = 62
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_aragon_portugal_navarre
+		priority = 63
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_aragon_sicily_portugal_navarre
+		priority = 65
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_granada
+		priority = 66
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_aragon_granada
+		priority = 67
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_aragon_sicily_granada
+		priority = 69
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_portugal_granada
+		priority = 70
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_aragon_portugal_granada
+		priority = 71
 		trigger = {
 			coa_def_SPA_galicia_trigger = yes
 			coa_def_aragon_ownership_trigger = yes
@@ -7719,14 +8960,99 @@ SPA = { # Spain
 			coa_def_granada_ownership_trigger = yes
 		}
 	}
+	flag_definition = {
+		coa = SPA_galicia
+		priority = 73
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_navarre_granada
+		priority = 74
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_aragon_navarre_granada
+		priority = 75
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_aragon_sicily_navarre_granada
+		priority = 77
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_portugal_navarre_granada
+		priority = 78
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_aragon_portugal_navarre_granada
+		priority = 79
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_aragon_sicily_portugal_navarre_granada
+		priority = 81
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_aragon_ownership_trigger = yes
+			coa_def_sicily_ownership_trigger = yes
+			coa_def_portugal_ownership_trigger = yes
+			coa_def_navarre_ownership_trigger = yes
+			coa_def_granada_ownership_trigger = yes
+		}
+	}
 
 	### Government/Rank ###
 
+	# Age of Revolutions ensigns (Rojigualda) - above colonial crosses, below revolutionary
 	flag_definition = {
 		coa = SPA_republic
-		priority = 80
+		priority = 120
 		trigger = {
+			coa_def_revolutions_age_6_trigger = yes
 			coa_def_republic_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_republic_crowned
+		priority = 121
+		trigger = {
+			coa_def_revolutions_age_6_trigger = yes
+			coa_def_republic_trigger = no
+			coa_def_absolute_monarchy_trigger = no
 		}
 	}
 
@@ -7771,6 +9097,42 @@ SPA = { # Spain
 		priority = 104
 		trigger = {
 			coa_def_SPA_leon_trigger = yes
+			coa_def_american_colonies_trigger = yes
+			coa_def_reformation_age_4_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_mallorca_cross
+		priority = 105
+		trigger = {
+			coa_def_SPA_mallorca_trigger = yes
+			coa_def_american_colonies_trigger = yes
+			coa_def_reformation_age_4_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_valencia_cross
+		priority = 106
+		trigger = {
+			coa_def_SPA_valencia_trigger = yes
+			coa_def_american_colonies_trigger = yes
+			coa_def_reformation_age_4_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_galicia_cross
+		priority = 107
+		trigger = {
+			coa_def_SPA_galicia_trigger = yes
+			coa_def_american_colonies_trigger = yes
+			coa_def_reformation_age_4_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = SPA_andorra_cross
+		priority = 108
+		trigger = {
+			coa_def_SPA_andorra_trigger = yes
 			coa_def_american_colonies_trigger = yes
 			coa_def_reformation_age_4_trigger = yes
 		}
@@ -8163,6 +9525,20 @@ TUN = { # Tunis
 		trigger = {
 			coa_def_marinid_dynasty_trigger = yes
 		}
+	}
+}
+
+BIJ = {
+	flag_definition = {
+		coa = BIJ
+		priority = 1
+	}
+}
+
+ALM = {
+	flag_definition = {
+		coa = ALM
+		priority = 1
 	}
 }
 
@@ -9605,6 +10981,21 @@ CNA = { # Naghachu
 		priority = 100
 		trigger = {
 			coa_def_empire_trigger = yes
+		}
+	}
+}
+
+CSH = { # Shun
+	flag_definition = {
+		coa = CSH
+		priority = 1
+	}
+	flag_definition = {
+		coa = CSH_dragon
+		priority = 100
+		trigger = {
+			coa_def_empire_trigger = yes
+			coa_def_rebel_trigger = no
 		}
 	}
 }

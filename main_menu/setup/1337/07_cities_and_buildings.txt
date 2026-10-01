@@ -433,6 +433,7 @@ locations={
 	algiers = { rank = town 	town_setup = maghreb_coastal_town }
 	kairouan = { rank = town town_setup = maghreb_town }
 	azemmour = { rank = town 		town_setup = maghreb_coastal_town }
+	sale = { rank = town 		town_setup = maghreb_coastal_town }
 	noul_lamta = { rank = town 	town_setup = maghreb_coastal_town }
 	cherchell = { rank = town 	town_setup = maghreb_coastal_town }
 	tahert = { rank = town 		town_setup = maghreb_town }
@@ -462,16 +463,16 @@ locations={
 	# Iberia
 	barcelona = { rank = city 	town_setup = barcelona_city }
 	cordoba = { rank = city town_setup = cordoba_city }
-	granada = { rank = city town_setup = iberian_city }
+	granada = { rank = city town_setup = granada_city }
 	lisbon = { rank = city town_setup = iberian_city_port }
-	malaga = { rank = city town_setup = iberian_city_port }
+	malaga = { rank = city town_setup = malaga_city }
 	sevilla = { rank = city town_setup = iberian_city }
 	toledo = { rank = city town_setup = toledo_city }
 	valencia = { rank = city town_setup = iberian_city_port }
 	valladolid = { rank = city town_setup = iberian_city }
 	
 	alcala_de_henares = { rank = town town_setup = iberian_town }
-	almeria = { rank = town town_setup = iberian_town_port }
+	almeria = { rank = town town_setup = almeria_town }
 	badajoz = { rank = town town_setup = iberian_town }
 	burgos = { rank = town town_setup = iberian_town }
 	calatayud = { rank = town town_setup = iberian_town }
@@ -602,7 +603,7 @@ locations={
 	ganzhou = { rank = city town_setup = chinese_city }
 	guangzhou = { rank = city town_setup = guangzhou_city }
 	handan = { rank = city town_setup = chinese_city }
-	hangzhou = { rank = city town_setup = hangzhou_city }
+	hangzhou = { rank = megalopolis town_setup = hangzhou_city }
 	jiangdu = { rank = city town_setup = chinese_city } #Yangzhou
 	jiangling = { rank = city town_setup = chinese_city }
 	kaifeng = { rank = city town_setup = chinese_city }
@@ -1803,6 +1804,8 @@ building_manager = {
 	#castle = { tag = NAV level = 1 location = tudela } #Castle of Cortes. Already implemented by the country template. Keeping for info.
 	castle = { tag = POR level = 1 location = viana_do_castelo } #Castle of Valença do Minho
 
+	monument_torre_de_hercules = { tag = CAS level = 1 location = coruna } #Roman-era lighthouse, 2nd century AD
+
 	cathedral 	= { tag = CAS level = 1 location = astorga } #Saint Mary Cathedral, established in 1069
 	cathedral 	= { tag = CAS level = 1 location = avila } #Cathedral of the Saviour, established in 1091
 	cathedral 	= { tag = CAS level = 1 location = badajoz } #Saint John Cathedral, established in 1276
@@ -1811,10 +1814,13 @@ building_manager = {
 	cathedral 	= { tag = ARA level = 1 location = benabarre } #Saint Vincent Martyr Cathedral, established in 1030
 	cathedral 	= { tag = CAS level = 1 location = burgo_de_osma } #Cathedral of the Assumption of Mary, established in 1272
 	cathedral 	= { tag = CAS level = 1 location = burgos } #Saint Mary Cathedral, established in 1260
+	cathedral 	= { tag = CAS level = 1 location = cadiz } #Holy Cross Cathedral, established in 1262. Destroyed in 1596, Cathedral until 1838
+	cathedral 	= { tag = CAS level = 1 location = calahorra } #Saint Mary Cathedral, establishment unknown, but was Episcopal See since 1045
 	cathedral 	= { tag = CAS level = 1 location = cartagena } #Saint Mary Cathedral, established in 1250
 	cathedral 	= { tag = CAS level = 1 location = ciudad_rodrigo } #Saint Mary Cathedral, established in 1160
 	cathedral 	= { tag = POR level = 1 location = coimbra } #Coimbra Cathedral, established in 1139
 	cathedral 	= { tag = CAS level = 1 location = cordoba } #Cathedral of the Assumption of our Lady, established in 1236
+	cathedral 	= { tag = CAS level = 1 location = coria } #Saint Mary of the Assumption Cathedral, established in Visigothic times. Demolished around 1495 and replaced.
 	cathedral 	= { tag = CAS level = 1 location = cuenca } #Saint Mary and Saint Julian Cathedral, established in 1196
 	cathedral 	= { tag = POR level = 1 location = evora } #Évora Cathedral, established in 1204
 	cathedral 	= { tag = ARA level = 1 location = girona } #Saint Mary Cathedral, established in 1038
@@ -1826,25 +1832,29 @@ building_manager = {
 	cathedral 	= { tag = CAS level = 1 location = leon } #Saint Mary Cathedral, established in 1303
 	cathedral 	= { tag = POR level = 1 location = lisbon } #Lisboa Cathedral, established in 1147
 	cathedral 	= { tag = ARA level = 1 location = lleida } #Saint Mary Cathedral, established in 1278
-	cathedral 	= { tag = CAS level = 1 location = logrono } #Saint Dominic Cathedral, established in 1232
 	cathedral 	= { tag = CAS level = 1 location = lugo } #Cathedral of the Assumption of Saint Mary, established in 1273
 	cathedral 	= { tag = CAS level = 1 location = mondonedo } #Cathedral of the Virgin of the Assumption, established in 1246
+	cathedral 	= { tag = CAS level = 1 location = najera } #Cathedral of the Savior in Santo Domingo de la Calzada, established in 1232
 	cathedral 	= { tag = CAS level = 1 location = ourense } #Saint Martin Cathedral, established in 1188
 	cathedral 	= { tag = CAS level = 1 location = oviedo } #Cathedral of the Holy Saviour, established in 821
+	cathedral 	= { tag = CAS level = 1 location = palencia } #Saint of Saint Antoninus, established in 1321
 	cathedral 	= { tag = MLL level = 1 location = palma } #Saint Mary Cathedral, established in 1229
 	cathedral 	= { tag = NAV level = 1 location = pamplona } #Saint Mary Cathedral, established in 1127
+	cathedral 	= { tag = CAS level = 1 location = plasencia } #Saint Mary Cathedral, established in 1270
 	cathedral 	= { tag = POR level = 1 location = porto } #Porto Cathedral, established in 1110
 	cathedral 	= { tag = CAS level = 1 location = salamanca } #Saint Mary Cathedral, established in 1236
 	cathedral 	= { tag = CAS level = 1 location = santiago_compostela } #Saint James the Apostle Cathedral, established in 1211
+	cathedral 	= { tag = CAS level = 1 location = segovia } #Saint Mary Cathedral, established in 1228. Destroyed in 1520.
 	cathedral 	= { tag = ARA level = 1 location = seu_durgell } #Saint Mary Cathedral, established in 1040
+	cathedral 	= { tag = CAS level = 1 location = sevilla } #Saint Mary of the See Cathedral, established in 1248. Demolished in 1401 and then replaced in 1410
 	cathedral 	= { tag = CAS level = 1 location = siguenza } #Saint Mary Cathedral, established in 1169
 	cathedral 	= { tag = ARA level = 1 location = tarazona } #Saint Mary of la Huerta Cathedral, established in 1235
 	cathedral 	= { tag = ARA level = 1 location = tarragona } #Saint Thecla Cathedral, established in 1331
+	cathedral 	= { tag = CAS level = 1 location = toledo } #Saint Mary Cathedral, established in 1226.
 	cathedral 	= { tag = NAV level = 1 location = tudela } #Saint Mary Cathedral, established in 1270
 	cathedral 	= { tag = CAS level = 1 location = tuy } #Cathedral of Saint Mary of the Assumption, established in 1225
 	cathedral 	= { tag = ARA level = 1 location = valencia } #Cathedral of the Assumption of our Lady, established in 1238
 	cathedral 	= { tag = POR level = 1 location = viseu } #Viseu Cathedral, established in 1109
-	cathedral 	= { tag = CAS level = 1 location = vitoria } #Saint Mary Cathedral, established in 1200
 	cathedral 	= { tag = CAS level = 1 location = zamora } #Cathedral of the Saviour, established in 1174
 	cathedral 	= { tag = ARA level = 1 location = zaragoza } #Cathedral of the Saviour, established in 1318
 	
@@ -1975,6 +1985,7 @@ building_manager = {
 	fine_cloth_guild = { tag = ARA level = 1 location = barcelona }
 	fine_cloth_guild = { tag = ARA level = 1 location = jativa }
 	fine_cloth_guild = { tag = ARA level = 1 location = valencia }
+	fine_cloth_guild = { tag = FLO level = 3 location = florence }
 
 
 	tar_kiln = { tag = NAV level = 4 location = elizondo } 
@@ -1994,6 +2005,14 @@ building_manager = {
 		#Granada Alhambra
 	alhambra = { tag = GRA level = 1 location = granada }	
 	funduq = { tag = GRA level = 1 location = granada } #https://en.wikipedia.org/wiki/Corral_del_Carb%C3%B3n
+
+		#Granadan Trans-Saharan Trade Office network — funduq factors along the gold caravan axis
+	trade_office = { tag = GRA level = 4 location = niani }
+	trade_office = { tag = GRA level = 4 location = timbuktu }
+	trade_office = { tag = GRA level = 4 location = sijilmasa }
+	trade_office = { tag = GRA level = 3 location = fez }
+	trade_office = { tag = GRA level = 3 location = marrakesh }
+	trade_office = { tag = GRA level = 2 location = meknes }
 
 		#Brethren of the Marsh #Unique
 	brethren_marsh = { tag = CAS level = 1 location = bilbao }
@@ -2018,7 +2037,7 @@ building_manager = {
 	#trade_office = { tag = ARA level = 1 location = malta } #1305
 	#trade_office = { tag = ARA level = 1 location = oristano } #1325
 
-
+	pirate_haven = { tag = BIJ level = 1 location = bejaia }
 
 	tar_kiln = { tag = HUN level = 3 location = cuhea } 
 	cathedral 	= { tag = HUN level = 1 location = fehervar } 
@@ -2393,6 +2412,7 @@ building_manager = {
 	#monastery	= { tag = AUL level = 1	location = la_louviere }
 	monastery 	= { tag = MOU level = 1 location = mouzon }
 	monastery 	= { tag = SCL level = 1 location = saint_claude }
+	monastery	= { tag = ELL level = 1	location = ellwangen }
 
 	#Western Africa
 	madrasa = { tag = MAL level = 1	location = timbuktu }
@@ -3804,9 +3824,20 @@ building_manager = {
 	royal_garden = { tag = MOR level = 1 location = fez } #https://en.wikipedia.org/wiki/Mosara_Garden
 	royal_court = { tag = MOR level = 1 location = fez } #https://en.wikipedia.org/wiki/Royal_Palace_of_Fez
 	madrasa = { tag = MOR level = 1 location = fez } # https://en.wikipedia.org/wiki/Al-Attarine_Madrasa https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin
+	cloth_guild = { tag = MOR level = 5 location = fez }
 	castle = { tag = TFL level = 1 location = ouarzazate } #https://en.wikipedia.org/wiki/A%C3%AFt_Benhaddou
 	qalat_al_mashwar = { tag = TLE level = 1 location = tlemcen } #https://en.wikipedia.org/wiki/El_Mechouar_Palace
+	local_governor = { tag = MOR level = 1 location = marrakesh }
+	wharf = { tag = SLE level = 1 location = sale }
+	dock = { tag = SLE level = 1 location = sale }
 
+	monument_dar_al_makhzen = { tag = MOR level = 1 location = fez } #Fes Jdid royal city, founded 1276
+	monument_qarawiyyin = { tag = MOR level = 1 location = fez } #https://en.wikipedia.org/wiki/University_of_al-Qarawiyyin, founded 859
+	monument_hassan_tower = { tag = MOR level = 1 location = rabat } #https://en.wikipedia.org/wiki/Hassan_Tower, built 1195-1199
+	monument_kasbah_udayas = { tag = MOR level = 1 location = rabat } #https://en.wikipedia.org/wiki/Kasbah_of_the_Udayas
+	monument_mansourah_tlemcen = { tag = TLE level = 1 location = tlemcen } #https://en.wikipedia.org/wiki/Mansourah,_Tlemcen, built c. 1303
+	monument_great_mosque_algiers = { tag = TLE level = 1 location = algiers } #https://en.wikipedia.org/wiki/Great_Mosque_of_Algiers, built 1097
+	monument_kairouan_mosque = { tag = TUN level = 1 location = kairouan } #https://en.wikipedia.org/wiki/Great_Mosque_of_Kairouan, founded 670
 	
 	#Caucasus
 
@@ -4488,4 +4519,15 @@ building_manager = {
 	aqueduct_system = { tag = CAS level = 1 location = segovia }
 
 	porto_pisano = { tag = PIS level = 1 location = pisa }
+
+	#Itinerant Court starting seats — every realm that starts with itinerant_court_policy begins with one in the capital
+	itinerant_court_seat = { tag = SCO level = 1 location = dunfermline }
+	itinerant_court_seat = { tag = ARA level = 1 location = valencia }
+	itinerant_court_seat = { tag = CAS level = 1 location = sevilla }
+	itinerant_court_seat = { tag = POR level = 1 location = lisbon }
+	itinerant_court_seat = { tag = ETH level = 1 location = ankober }
+	itinerant_court_seat = { tag = UBV level = 1 location = munich }
+	itinerant_court_seat = { tag = MOY level = 1 location = elgin }
+	itinerant_court_seat = { tag = LOI level = 1 location = islay }
+	itinerant_court_seat = { tag = ROS level = 1 location = dingwall }
 }

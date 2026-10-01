@@ -2,8 +2,8 @@
 # ----- KYIV -----
 
 mother_of_russian_cities = { 			# Mother of Rus cities – historical, moved from RUthenian culture
-	age = age_1_traditions	
-	icon = cultural_acceptance_advance
+	age = age_1_traditions
+	icon = mother_of_russian_cities
 	potential = {
 		has_or_had_tag = KIE
 	}	

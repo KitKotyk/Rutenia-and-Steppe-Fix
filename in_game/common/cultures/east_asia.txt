@@ -3,7 +3,7 @@
 	
 	color = map_KOR
 	
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		tamna_culture = kindred
@@ -18,7 +18,7 @@ saigoku_culture = {
 
 	color = map_JAP
 
-	tags = { japanese_gfx east_asian_gfx }
+	tags = { japanese_gfx east_asian_gfx afrasian_gfx }
 
 	culture_groups = {
 		japanese_group
@@ -37,7 +37,7 @@ tougoku_culture = {
 
 	color = map_tougoku
 
-	tags = { japanese_gfx east_asian_gfx }
+	tags = { japanese_gfx east_asian_gfx afrasian_gfx }
 
 	culture_groups = {
 		japanese_group
@@ -57,7 +57,7 @@ kyushu_culture = {
 
 	color = map_kyushu
 
-	tags = { japanese_gfx east_asian_gfx }
+	tags = { japanese_gfx east_asian_gfx afrasian_gfx }
 
 	culture_groups = {
 		japanese_group
@@ -76,7 +76,7 @@ touhoku_culture = {
 
 	color = map_touhoku
 
-	tags = { japanese_gfx east_asian_gfx }
+	tags = { japanese_gfx east_asian_gfx afrasian_gfx }
 	culture_groups = {
 		japanese_group
 		confucian_group
@@ -95,7 +95,7 @@ ainu_culture = {
 
 	color = map_ANU
 
-	tags = { ainu_gfx japanese_gfx east_asian_gfx }
+	tags = { ainu_gfx japanese_gfx east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -106,7 +106,7 @@ ryukyu_culture = {
 
 	color = map_ryukyu
 
-	tags = { japanese_gfx east_asian_gfx }
+	tags = { japanese_gfx east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -117,7 +117,7 @@ jurchen_culture = {
 
 	color = map_jurchen
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 		haixi_culture = kindred
@@ -134,7 +134,7 @@ haixi_culture = {
 
 	color = map_haixi
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 		hurga_culture = kindred
@@ -151,7 +151,7 @@ hurga_culture = {
 
 	color = map_hurga
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 		haixi_culture = kindred
@@ -169,7 +169,7 @@ tamna_culture = {
 
 	color = map_TMN
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		korean_culture = kindred
@@ -184,7 +184,7 @@ hui_muslim_culture = {
 
 	color = map_hui_muslim
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -199,7 +199,7 @@ yan_culture = { #燕
 
 	color = map_yan
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -214,7 +214,7 @@ jilu_culture = { #冀魯
 
 	color = map_jilu
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -229,7 +229,7 @@ jiaodong_culture = { #胶东
 
 	color = map_jiaodong
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -244,7 +244,7 @@ liaodong_culture = { #辽东
 
 	color = map_liaodong
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -259,7 +259,7 @@ zhongyuan_culture = { #中原
 
 	color = map_zhongyuan
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -274,7 +274,7 @@ liang_culture = { #涼
 
 	color = map_liang
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -289,7 +289,7 @@ huaihai_culture = { #淮海
 
 	color = map_huaihai
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -304,7 +304,7 @@ qin_culture = { #秦
 
 	color = map_qin
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -319,7 +319,7 @@ jianghuai_culture = { #江淮
 
 	color = map_jianghuai
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -334,7 +334,7 @@ tongtai_culture = { #通泰
 
 	color = map_tongtai
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -349,7 +349,7 @@ chu_culture = { #楚
 
 	color = map_chu
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -364,7 +364,7 @@ changde_culture = { #常德
 
 	color = map_changde
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -379,7 +379,7 @@ shu_culture = { #蜀
 
 	color = map_sichuanese
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -394,7 +394,7 @@ jin_culture = {
 
 	color = map_jin
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -409,7 +409,7 @@ wu_culture = { #吳
 
 	color = map_wu
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -424,7 +424,7 @@ yue_wu_culture = { #越
 
 	color = map_yue_wu
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -439,7 +439,7 @@ xuanzhou_culture = { #宣州
 
 	color = map_xuanzhou
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -454,7 +454,7 @@ wuzhou_culture = { #婺州
 
 	color = map_wuzhou
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -469,7 +469,7 @@ quzhou_culture = { #衢州
 
 	color = map_quzhou
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -484,7 +484,7 @@ chuzhou_culture = { #滁州
 
 	color = map_chuzhou
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -499,7 +499,7 @@ jiangshan_culture = { #江山
 
 	color = map_jiangshan
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -514,7 +514,7 @@ taizhou_wu_culture = { #台州
 
 	color = map_taizhou_wu
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -529,7 +529,7 @@ ouhai_culture = { #瓯海
 
 	color = map_ouhai
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -544,7 +544,7 @@ tunxi_culture = { #屯溪
 
 	color = map_tunxi
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -559,7 +559,7 @@ jixi_culture = { #绩溪
 
 	color = map_jixi
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -574,7 +574,7 @@ qiwu_culture = { #屯溪
 
 	color = map_qiwu
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -589,7 +589,7 @@ xinxiang_culture = { #新湘
 
 	color = map_xiang
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -604,7 +604,7 @@ laoxiang_culture = { #老湘
 
 	color = map_laoxiang
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -619,7 +619,7 @@ xianxi_culture = { #湘西
 
 	color = map_xiangxi
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -634,7 +634,7 @@ yongzhou_culture = { #永州
 
 	color = map_yongzhou
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -649,7 +649,7 @@ hengzhou_culture = { #衡州
 
 	color = map_hengzhou
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -664,7 +664,7 @@ waxiang_culture = { #瓦乡
 
 	color = map_waxiang
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -679,7 +679,7 @@ gan_culture = { #贛
 
 	color = map_gan
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -694,7 +694,7 @@ kejia_culture = { #客家
 
 	color = map_hakka
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -709,7 +709,7 @@ huizhou_hakka_culture = { #惠州
 
 	color = map_huizhou_hakka
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -724,7 +724,7 @@ dongjiang_culture = { #東江
 
 	color = map_dongjiang
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -739,7 +739,7 @@ fuzhou_culture = { #福州
 
 	color = map_min
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -754,7 +754,7 @@ funing_culture = { #福宁
 
 	color = map_funing
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -769,7 +769,7 @@ manjiang_culture = { #蛮讲
 
 	color = map_manjiang
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -784,7 +784,7 @@ xinghua_culture = { #兴化
 
 	color = map_xinghua
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -799,7 +799,7 @@ minnan_culture = { #闽南
 
 	color = map_minnan
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -814,7 +814,7 @@ chaozhou_culture = { #潮州
 
 	color = map_chaozhou
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -829,7 +829,7 @@ fulao_culture = { #福佬
 
 	color = map_fulao
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -844,7 +844,7 @@ leizhou_culture = { #雷州
 
 	color = map_leizhou
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -859,7 +859,7 @@ qiong_culture = { #琼
 
 	color = map_qiong
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -874,7 +874,7 @@ cunhua_culture = { #村话
 
 	color = map_cunhua
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -889,7 +889,7 @@ jianning_culture = { #建宁
 
 	color = map_jianning
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -904,7 +904,7 @@ yuehai_culture = { #粵海
 
 	color = map_yue
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -919,7 +919,7 @@ xinhui_culture = { #新会
 
 	color = map_xinhui
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -934,7 +934,7 @@ malao_culture = { #麻佬
 
 	color = map_malao
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -949,7 +949,7 @@ huazhou_culture = { #化州
 
 	color = map_huazhou
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -964,7 +964,7 @@ gaozhou_culture = { #高州
 
 	color = map_gaozhou
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -979,7 +979,7 @@ wuchuan_culture = { #吴川
 
 	color = map_wuchuan
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -994,7 +994,7 @@ yangjiang_culture = { #阳江
 
 	color = map_yangjiang
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -1009,7 +1009,7 @@ guangxin_culture = { #广信
 
 	color = map_guangxin
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -1024,7 +1024,7 @@ tubai_culture = { #土白
 
 	color = map_tubai
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -1039,7 +1039,7 @@ yulin_culture = { #郁林
 
 	color = map_yulin
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -1054,7 +1054,7 @@ danzhou_culture = { #儋州
 
 	color = map_danzhou
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -1069,7 +1069,7 @@ mai_culture_culture = { #迈
 
 	color = map_mai
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -1084,7 +1084,7 @@ guibei_culture = { #桂北
 
 	color = map_guibei
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -1099,7 +1099,7 @@ guinan_culture = { #桂北
 
 	color = map_guinan
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	}
@@ -1114,7 +1114,7 @@ mongolian_culture = {
 
 	color = map_mongol
 
-	tags = { mongol_gfx central_asian_gfx mongolian_coa_gfx east_asian_gfx }
+	tags = { mongol_gfx central_asian_gfx mongolian_coa_gfx east_asian_gfx afrasian_gfx }
 
 	opinions = {		
 		uzbek_culture = positive
@@ -1139,7 +1139,7 @@ formosan_culture = {
 
 	color = map_formosan
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1154,7 +1154,7 @@ zhuang_culture = {
 
 	color = map_zhuang
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1169,7 +1169,7 @@ hmong_culture = { #Hmong
 
 	color = map_hmong
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1184,7 +1184,7 @@ yao_china_culture = { #Yao https://en.wikipedia.org/wiki/Iu_Mien_people
 
 	color = map_yao_china_culture
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1199,7 +1199,7 @@ yi_culture = {
 
 	color = map_yi
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1214,7 +1214,7 @@ tujia_culture = {
 
 	color = map_tujia
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1229,7 +1229,7 @@ utsang_culture = {
 
 	color = map_tibetan
 
-	tags = { tibetan_gfx east_asian_gfx }
+	tags = { tibetan_gfx east_asian_gfx afrasian_gfx }
 	culture_groups = {
 		tibetan_group
 		tibeto_burman_group
@@ -1245,7 +1245,7 @@ khampa_culture = {
 
 	color = map_khampa
 
-	tags = { tibetan_gfx east_asian_gfx }
+	tags = { tibetan_gfx east_asian_gfx afrasian_gfx }
 	culture_groups = {
 		tibetan_group
 		tibeto_burman_group
@@ -1261,7 +1261,7 @@ amdowa_culture = {
 
 	color = map_amdowa
 
-	tags = { tibetan_gfx east_asian_gfx }
+	tags = { tibetan_gfx east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1277,7 +1277,7 @@ dai_culture = { #https://en.wikipedia.org/wiki/Dai_people
 
 	color = map_dai
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1292,7 +1292,7 @@ bai_culture = { #https://en.wikipedia.org/wiki/Bai_people
 
 	color = map_bai
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1308,7 +1308,7 @@ uyghur_culture = {
 
 	color = map_uyghur
 
-	tags = { central_asian_gfx middle_east_gfx }
+	tags = { central_asian_gfx middle_east_gfx afrasian_gfx }
 
 	opinions = {
 		uzbek_culture = kindred		
@@ -1328,7 +1328,7 @@ kam_culture = { #https://en.wikipedia.org/wiki/Kam_people
 
 	color = map_kam
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1343,7 +1343,7 @@ hani_culture = { #https://en.wikipedia.org/wiki/Hani_people
 
 	color = map_hani
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1358,7 +1358,7 @@ hlai_culture = { #https://en.wikipedia.org/wiki/Hlai_people
 
 	color = map_hlai
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1373,7 +1373,7 @@ hlai_culture = { #https://en.wikipedia.org/wiki/Hlai_people
 
  	color = map_she
 
- 	tags = { east_asian_gfx }
+ 	tags = { east_asian_gfx afrasian_gfx }
 
  	opinions = {
 
@@ -1388,7 +1388,7 @@ lisu_culture = { #https://en.wikipedia.org/wiki/Lisu_people
 
 	color = map_lisu
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1403,7 +1403,7 @@ sarta_culture = { #https://en.wikipedia.org/wiki/Dongxiangs
 
 	color = map_sarta
 
-	tags = { east_asian_gfx mongolian_coa_gfx }
+	tags = { east_asian_gfx mongolian_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1418,7 +1418,7 @@ gelao_culture = { #https://en.wikipedia.org/wiki/Gelao_people
 
 	color = map_gelao
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1434,7 +1434,7 @@ bo_culture = {
 
 	color = map_bo
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1450,7 +1450,7 @@ lahu_culture = { #https://en.wikipedia.org/wiki/Lahu_people
 
 	color = map_lahu
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1465,7 +1465,7 @@ wa_culture = { #https://en.wikipedia.org/wiki/Wa_people
 
 	color = map_wa
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1480,7 +1480,7 @@ sui_culture = { #https://en.wikipedia.org/wiki/Sui_people
 
 	color = map_sui
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1495,7 +1495,7 @@ nashi_culture = { #https://en.wikipedia.org/wiki/Nakhi_people
 
 	color = map_nashi
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1510,7 +1510,7 @@ rma_culture = { #https://en.wikipedia.org/wiki/Qiang_people
 
 	color = map_rma
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1525,7 +1525,7 @@ gyalrong_culture = {
 
 	color = map_gyalrong
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1540,7 +1540,7 @@ mi_niah_culture = { #https://en.wikipedia.org/wiki/Tangut_people
 
 	color = map_tangut
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1555,7 +1555,7 @@ monguor_culture = { #https://en.wikipedia.org/wiki/Monguor_people
 
 	color = map_monguor
 
-	tags = { east_asian_gfx mongolian_coa_gfx }
+	tags = { east_asian_gfx mongolian_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1570,7 +1570,7 @@ mulam_culture = { #https://en.wikipedia.org/wiki/Mulao_people
 
 	color = map_mulam
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1585,7 +1585,7 @@ sibe_culture = { #https://en.wikipedia.org/wiki/Sibe_people
 
 	color = map_sibe
 
-	tags = { east_asian_gfx  tungusic_coa_gfx }
+	tags = { east_asian_gfx  tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1601,7 +1601,7 @@ kyrgyz_culture = { #https://en.wikipedia.org/wiki/Kyrgyz_in_China
 
 	color = map_kyrgyz
 
-	tags = { central_asian_gfx middle_east_gfx }
+	tags = { central_asian_gfx middle_east_gfx afrasian_gfx }
 
 	opinions = {
 		khorezmian_culture = positive
@@ -1621,7 +1621,7 @@ jingpo_culture = { #https://en.wikipedia.org/wiki/Jingpo_people
 
 	color = map_jingpo
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1636,7 +1636,7 @@ salar_culture = { #https://en.wikipedia.org/wiki/Salar_people
 
 	color = map_salar
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1653,7 +1653,7 @@ blang_culture = { #https://en.wikipedia.org/wiki/Blang_people
 
 	color = map_blang
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1668,7 +1668,7 @@ maonan_culture = { #https://en.wikipedia.org/wiki/Maonan_people
 
 	color = map_maonan
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1683,7 +1683,7 @@ pumi_culture = { #https://en.wikipedia.org/wiki/Pumi_people
 
 	color = map_pumi
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1698,7 +1698,7 @@ ngacang_culture = { #https://en.wikipedia.org/wiki/Achang_people
 
 	color = map_ngacang
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1713,7 +1713,7 @@ nu_culture = { #https://en.wikipedia.org/wiki/Nu_people
 
 	color = map_nu
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1728,7 +1728,7 @@ jino_culture = { #https://en.wikipedia.org/wiki/Jino_people
 
 	color = map_jino
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1743,7 +1743,7 @@ palaung_culture = { #https://en.wikipedia.org/wiki/Palaung_people
 
 	color = map_palaung
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1758,7 +1758,7 @@ bonan_culture = { #https://en.wikipedia.org/wiki/Bonan_people
 
 	color = map_bonan
 
-	tags = { east_asian_gfx mongolian_coa_gfx  }
+	tags = { east_asian_gfx mongolian_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1773,7 +1773,7 @@ yugur_culture = { #https://en.wikipedia.org/wiki/Yugur
 
 	color = map_yugur
 
-	tags = { east_asian_gfx mongolian_coa_gfx }
+	tags = { east_asian_gfx mongolian_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1788,7 +1788,7 @@ derung_culture = { #https://en.wikipedia.org/wiki/Derung_language
 
 	color = map_derung
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -1803,7 +1803,7 @@ sherpa_culture = { #https://en.wikipedia.org/wiki/Sherpa_people
 
 	color = map_sherpa
 
-	tags = { tibetan_gfx east_asian_gfx }
+	tags = { tibetan_gfx east_asian_gfx afrasian_gfx }
 	culture_groups = {
 		nepali_group
 		tibetan_group
@@ -1821,7 +1821,7 @@ ladakh_culture = { #https://en.wikipedia.org/wiki/Ladakhis
 
 	color = map_MAR
 
-	tags = { tibetan_gfx east_asian_gfx }
+	tags = { tibetan_gfx east_asian_gfx afrasian_gfx }
 	culture_groups = {
 		tibetan_group
 		tibeto_burman_group
@@ -1837,7 +1837,7 @@ baima_culture = { #https://en.wikipedia.org/wiki/Baima_people
 
 	color = map_baima
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1852,7 +1852,7 @@ monpa_culture = { #https://en.wikipedia.org/wiki/Monpa_people
 
 	color = map_monpa
 
-	tags = { tibetan_gfx east_asian_gfx }
+	tags = { tibetan_gfx east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1868,7 +1868,7 @@ changpa_culture = { #https://en.wikipedia.org/wiki/Monpa_people
 
 	color = map_changpa
 
-	tags = { tibetan_gfx east_asian_gfx }
+	tags = { tibetan_gfx east_asian_gfx afrasian_gfx }
 	culture_groups = {
 		tibetan_group
 		tibeto_burman_group
@@ -1884,7 +1884,7 @@ oirat_culture = {
 
 	color = map_oirat
 
-	tags = { east_asian_gfx mongolian_coa_gfx }
+	tags = { east_asian_gfx mongolian_coa_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1900,7 +1900,7 @@ mishmi_culture = { #https://en.wikipedia.org/wiki/Mishmi_people
 
 	color = map_mishmi
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1915,7 +1915,7 @@ tani_culture = { #https://en.wikipedia.org/wiki/Tani_people
 
 	color = map_tani
 
-	tags = { east_asian_gfx }
+	tags = { east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1930,7 +1930,7 @@ tebbu_culture = { #https://en.wikipedia.org/wiki/Tebbu_people
 
 	color = map_tebbu
 
-	tags = { tibetan_gfx east_asian_gfx }
+	tags = { tibetan_gfx east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1946,7 +1946,7 @@ ngalop_culture = { #https://en.wikipedia.org/wiki/Ngalop_people
 
 	color = map_ngalop
 
-	tags = { tibetan_gfx east_asian_gfx }
+	tags = { tibetan_gfx east_asian_gfx afrasian_gfx }
 
 	opinions = {
 		
@@ -1963,7 +1963,7 @@ kirati_culture = { #https://en.wikipedia.org/wiki/Kirati_people
 
 	color = map_kirati
 
-	tags = { tibetan_gfx east_asian_gfx }
+	tags = { tibetan_gfx east_asian_gfx afrasian_gfx }
 	culture_groups = {
 		nepali_group
 		tibetan_group
@@ -1980,7 +1980,7 @@ sikkim_culture = { #https://en.wikipedia.org/wiki/Sikkimese_people
 
 	color = map_sikkim
 
-	tags = { tibetan_gfx east_asian_gfx }
+	tags = { tibetan_gfx east_asian_gfx afrasian_gfx }
 	culture_groups = {
 		nepali_group
 		tibetan_group
@@ -1997,22 +1997,19 @@ nivkh_culture = { #https://en.wikipedia.org/wiki/Nivkh_people
 
 	color = map_nivkh
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
 	}
-	culture_groups = {
-		tungusic_group
 	}
-}
 
 evenk_culture = { #https://en.wikipedia.org/wiki/Evenks
 	language = evenk_language
 
 	color = map_evenk
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2027,7 +2024,7 @@ olyokma_culture = {
 
 	color = map_olyokma
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2042,7 +2039,7 @@ aldan_culture = {
 
 	color = map_aldan
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2057,7 +2054,7 @@ sym_culture = {
 
 	color = map_sym
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2072,7 +2069,7 @@ uchami_culture = {
 
 	color = map_uchami
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2087,7 +2084,7 @@ ilimpeya_culture = {
 
 	color = map_ilimpeya
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2102,7 +2099,7 @@ ayan_mai_culture = {
 
 	color = map_ayan_mai
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2117,7 +2114,7 @@ fuglyad_culture = {
 
 	color = map_fuglyad
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2132,7 +2129,7 @@ kantakul_culture = {
 
 	color = map_kantakul
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2147,7 +2144,7 @@ lamutk_culture = {
 
 	color = map_lamutk
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2162,7 +2159,7 @@ memel_culture = {
 
 	color = map_memel
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2177,7 +2174,7 @@ tugochar_culture = {
 
 	color = map_tugochar
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2192,7 +2189,7 @@ beldet_culture = {
 
 	color = map_beldet
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2207,7 +2204,7 @@ lalagir_culture = {
 
 	color = map_lalagir
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2222,7 +2219,7 @@ selogon_culture = {
 
 	color = map_selogon
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2237,7 +2234,7 @@ nanagir_culture = {
 
 	color = map_nanagir
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2252,7 +2249,7 @@ silyagir_culture = {
 
 	color = map_silyagir
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2267,7 +2264,7 @@ cemdal_culture = {
 
 	color = map_cemdal
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2282,7 +2279,7 @@ kondogir_culture = {
 
 	color = map_kondogir
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2297,7 +2294,7 @@ nyurmgan_culture = {
 
 	color = map_nyurmgan
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2312,7 +2309,7 @@ nyurilc_culture = {
 
 	color = map_nyurilc
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2327,7 +2324,7 @@ kindigir_culture = {
 
 	color = map_kindigir
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2342,7 +2339,7 @@ managir_culture = {
 
 	color = map_managir
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2357,7 +2354,7 @@ pochegor_culture = {
 
 	color = map_pochegor
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2372,7 +2369,7 @@ vargagaits_culture = {
 
 	color = map_vargagaits
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2387,7 +2384,7 @@ obgints_culture = {
 
 	color = map_obgints
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2402,7 +2399,7 @@ vitimske_culture = {
 
 	color = map_vitimske
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2417,7 +2414,7 @@ nalyagir_culture = {
 
 	color = map_nalyagir
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2432,10 +2429,13 @@ evesel_culture = { #https://en.wikipedia.org/wiki/Evens
 
 	color = map_evesel
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		tungusic_group
 	}
 }
 
@@ -2444,7 +2444,7 @@ evesel_culture = { #https://en.wikipedia.org/wiki/Evens
 #
 #	color = map_arman
 #
-#	tags = { east_asian_gfx tungusic_coa_gfx }
+#	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 #	opinions = {
 #
@@ -2456,7 +2456,7 @@ evesel_culture = { #https://en.wikipedia.org/wiki/Evens
 #
 #	color = map_indigirka
 #
-#	tags = { east_asian_gfx tungusic_coa_gfx }
+#	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 #	opinions = {
 #
@@ -2468,10 +2468,13 @@ sakkyryr_culture = {
 
 	color = map_sakkyryr
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		tungusic_group
 	}
 }
 
@@ -2480,10 +2483,13 @@ nimchan_culture = {
 
 	color = map_nimchan
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		tungusic_group
 	}
 }
 
@@ -2492,10 +2498,13 @@ chukchi_culture = {	#https://en.wikipedia.org/wiki/Chukchi_people
 
 	color = map_chukchi
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		chukotko_kamchatkan_group
 	}
 }
 
@@ -2504,10 +2513,13 @@ alyutor_culture = {
 
 	color = map_alyutor
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		chukotko_kamchatkan_group
 	}
 }
 
@@ -2516,10 +2528,13 @@ kerek_culture = {	#https://en.wikipedia.org/wiki/Kereks
 
 	color = map_kerek
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		chukotko_kamchatkan_group
 	}
 }
 
@@ -2528,10 +2543,13 @@ chuvan_culture = {	#https://en.wikipedia.org/wiki/Chuvans
 
 	color = map_chuvan
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		yukaghir_group
 	}
 }
 
@@ -2540,10 +2558,13 @@ omok_culture = {
 
 	color = map_omok
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		yukaghir_group
 	}
 }
 
@@ -2552,10 +2573,13 @@ anauls_culture = {
 
 	color = map_anauls
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		yukaghir_group
 	}
 }
 
@@ -2564,10 +2588,13 @@ vadul_culture = {
 
 	color = map_vadul
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		yukaghir_group
 	}
 }
 
@@ -2576,10 +2603,13 @@ olyuben_culture = {
 
 	color = map_olyuben
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		yukaghir_group
 	}
 }
 
@@ -2588,10 +2618,13 @@ yandin_culture = {
 
 	color = map_yandin
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		yukaghir_group
 	}
 }
 
@@ -2600,10 +2633,13 @@ shoromba_culture = {
 
 	color = map_shoromba
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		yukaghir_group
 	}
 }
 
@@ -2612,10 +2648,13 @@ kolyms_culture = {
 
 	color = map_kolyms
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		yukaghir_group
 	}
 }
 
@@ -2624,10 +2663,13 @@ yandyr_culture = {
 
 	color = map_yandyr
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		yukaghir_group
 	}
 }
 
@@ -2636,10 +2678,13 @@ onoid_culture = {
 
 	color = map_onoid
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		yukaghir_group
 	}
 }
 
@@ -2648,10 +2693,13 @@ khoromboy_culture = {
 
 	color = map_khoromboy
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		yukaghir_group
 	}
 }
 
@@ -2660,10 +2708,13 @@ koryak_culture = {	#https://en.wikipedia.org/wiki/Koryaks
 
 	color = map_koryak
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		chukotko_kamchatkan_group
 	}
 }
 
@@ -2672,10 +2723,13 @@ itelmen_culture = {	#https://en.wikipedia.org/wiki/Itelmens
 
 	color = map_itelmen
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		chukotko_kamchatkan_group
 	}
 }
 
@@ -2684,10 +2738,13 @@ yupighyt_culture = {	#https://en.wikipedia.org/wiki/Siberian_Yupik
 
 	color = map_yupighyt
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
+	}
+	culture_groups = {
+		yupik_group
 	}
 }
 
@@ -2696,7 +2753,7 @@ yupighyt_culture = {	#https://en.wikipedia.org/wiki/Siberian_Yupik
 #
 #	color = map_nanai
 #
-#	tags = { east_asian_gfx tungusic_coa_gfx }
+#	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 #
 #	opinions = {
 #
@@ -2713,7 +2770,7 @@ oroqen_culture = { #https://en.wikipedia.org/wiki/Oroqen_people
 
 	color = map_oroqen
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2728,7 +2785,7 @@ daur_culture = { #https://en.wikipedia.org/wiki/Daur_people
 
 	color = map_daur
 
-	tags = { east_asian_gfx mongolian_coa_gfx altai_coa_gfx }
+	tags = { east_asian_gfx mongolian_coa_gfx altai_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2744,7 +2801,7 @@ ulch_culture = { #https://en.wikipedia.org/wiki/Ulch_people
 
 	color = map_ulch
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2759,7 +2816,7 @@ oroch_culture = { #https://en.wikipedia.org/wiki/Oroch_people
 
 	color = map_oroch
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2774,7 +2831,7 @@ udege_culture = { #https://en.wikipedia.org/wiki/Udege_people
 
 	color = map_udege
 
-	tags = { east_asian_gfx tungusic_coa_gfx }
+	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 	
 
 	opinions = {
@@ -2791,7 +2848,7 @@ buryat_culture = { #https://en.wikipedia.org/wiki/Buryats
 
 	color = map_buryat
 
-	tags = { east_asian_gfx mongolian_coa_gfx altai_coa_gfx }
+	tags = { east_asian_gfx mongolian_coa_gfx altai_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2807,7 +2864,7 @@ khamag_culture = { #https://en.wikipedia.org/wiki/Khamag_Mongol
 
 	color = map_khamag
 
-	tags = { east_asian_gfx mongolian_coa_gfx altai_coa_gfx }
+	tags = { east_asian_gfx mongolian_coa_gfx altai_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2823,7 +2880,7 @@ kharchin_culture = { #https://en.wikipedia.org/wiki/Kharchin_Mongols
 
 	color = map_kharchin
 
-	tags = { east_asian_gfx mongolian_coa_gfx altai_coa_gfx }
+	tags = { east_asian_gfx mongolian_coa_gfx altai_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2839,7 +2896,7 @@ tumed_culture = { #https://en.wikipedia.org/wiki/Tumed
 
 	color = map_tumed
 
-	tags = { east_asian_gfx mongolian_coa_gfx altai_coa_gfx }
+	tags = { east_asian_gfx mongolian_coa_gfx altai_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2855,7 +2912,7 @@ tuvan_culture = { #https://en.wikipedia.org/wiki/Tuvans
 
 	color = map_tuvan
 
-	tags = { central_asian_gfx middle_east_gfx mongolian_coa_gfx altai_coa_gfx }
+	tags = { central_asian_gfx middle_east_gfx mongolian_coa_gfx altai_coa_gfx afrasian_gfx }
 
 	opinions = {
 
@@ -2873,7 +2930,7 @@ tuvan_culture = { #https://en.wikipedia.org/wiki/Tuvans
 #
 #	color = map_solon
 #
-#	tags = { east_asian_gfx tungusic_coa_gfx }
+#	tags = { east_asian_gfx tungusic_coa_gfx afrasian_gfx }
 #
 #	opinions = {
 #
@@ -2888,7 +2945,7 @@ balti_culture = {
 	
 	color = map_balti
 	
-	tags = { tibetan_gfx east_asian_gfx }
+	tags = { tibetan_gfx east_asian_gfx afrasian_gfx }
 
 	opinions = {
 	

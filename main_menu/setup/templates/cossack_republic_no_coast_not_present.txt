@@ -68,6 +68,7 @@ government = {
 		cossacks_land_rights
 		cossacks_allowed_free_roaming
 		cossacks_military_service
+		cossack_private_armies_privilege
 	}
 	
 	laws = { # WORKS FOR THE REPUBLICAN SICH !!!

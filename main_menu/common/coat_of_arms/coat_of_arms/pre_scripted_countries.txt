@@ -21,6 +21,11 @@ DUMMY = {
 	color1 = "red"
 	color2 = "black"
 }
+default_white_flag = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "white"
+}
 MER = {
 	pattern = "pattern_solid.dds"
 	color1 = "black"
@@ -615,6 +620,34 @@ AIR = { # Aïr/Agadez
 	}		
 } 
 
+AHG = { # Kel Ahaggar
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+
+	colored_emblem = {
+		texture = "ce_tuareg_cross_agadez.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+	}
+}
+
+AJJ = { # Kel Ajjer — indigo tagelmust + yellow Berber tower (northern Amazigh identity)
+	pattern = "pattern_solid.dds"
+	color1 = hsv360 { 245 65 42 }
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_tower_berber.dds"
+		color1 = color2
+		color2 = color2
+		color3 = "black"
+		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }
+	}
+}
+
 AIT = { # Aït Abbas/Beni Abbas
 	pattern = "pattern_solid.dds"
 	color1 = "white"
@@ -865,25 +898,80 @@ ALL = { # Allstedt
 	}			
 }
 
-ALN = { # Alania new	
-	
-	pattern = "pattern_base_25.dds"
-	color1 = "red"
-	color2 = "yellow"
-	color3 = "white"
-	color4 = "black"
+@almohad_checkerboard_size_w = @[half]
+@almohad_checkerboard_size_h = @[half * ratio]
+@almohad_checker_size_h = @[almohad_checkerboard_size_h / 8]
+@almohad_checker_size_w = @[almohad_checkerboard_size_w / 8]
+ALM = { #Almohad
+	pattern = "pattern_solid.dds"
+	color1 = "red_mid"
+	color2 = "white"
+	color3 = "black"
 	
 	colored_emblem = {
-		texture = "ce_mountain.dds"
+		texture = "ce_solid.dds"
 		color1 = color3
-		color2 = color3
-		instance = { position = { 0.5 0.5 } scale = { 1.2 1.8 } }				
+		instance = { position = { 0.5 0.5 } scale = { @almohad_checkerboard_size_w @almohad_checkerboard_size_h } }				
 	}
 	
+	#Checkerboard
 	colored_emblem = {
-		texture = "ce_tiger.dds"
+		texture = "ce_solid.dds"
+		color1 = color2
+		# first row
+		instance = { position = { @[0.5 - 3.5 * almohad_checker_size_w] @[0.5 - 3.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 - 1.5 * almohad_checker_size_w] @[0.5 - 3.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 + 0.5 * almohad_checker_size_w] @[0.5 - 3.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 + 2.5 * almohad_checker_size_w] @[0.5 - 3.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		# second
+		instance = { position = { @[0.5 - 2.5 * almohad_checker_size_w] @[0.5 - 2.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 - 0.5 * almohad_checker_size_w] @[0.5 - 2.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 + 1.5 * almohad_checker_size_w] @[0.5 - 2.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 + 3.5 * almohad_checker_size_w] @[0.5 - 2.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		# third
+		instance = { position = { @[0.5 - 1.5 * almohad_checker_size_w] @[0.5 - 1.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 - 3.5 * almohad_checker_size_w] @[0.5 - 1.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 + 0.5 * almohad_checker_size_w] @[0.5 - 1.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 + 2.5 * almohad_checker_size_w] @[0.5 - 1.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		# fourth
+		instance = { position = { @[0.5 - 0.5 * almohad_checker_size_w] @[0.5 - 0.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 - 2.5 * almohad_checker_size_w] @[0.5 - 0.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 + 1.5 * almohad_checker_size_w] @[0.5 - 0.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 + 3.5 * almohad_checker_size_w] @[0.5 - 0.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		# fifth
+		instance = { position = { @[0.5 + 0.5 * almohad_checker_size_w] @[0.5 + 0.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 + 2.5 * almohad_checker_size_w] @[0.5 + 0.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 - 1.5 * almohad_checker_size_w] @[0.5 + 0.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 - 3.5 * almohad_checker_size_w] @[0.5 + 0.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		# sixth
+		instance = { position = { @[0.5 + 1.5 * almohad_checker_size_w] @[0.5 + 1.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 + 3.5 * almohad_checker_size_w] @[0.5 + 1.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 - 0.5 * almohad_checker_size_w] @[0.5 + 1.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 - 2.5 * almohad_checker_size_w] @[0.5 + 1.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		# seventh
+		instance = { position = { @[0.5 + 2.5 * almohad_checker_size_w] @[0.5 + 2.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 + 0.5 * almohad_checker_size_w] @[0.5 + 2.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 - 1.5 * almohad_checker_size_w] @[0.5 + 2.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 - 3.5 * almohad_checker_size_w] @[0.5 + 2.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		# eighth
+		instance = { position = { @[0.5 + 3.5 * almohad_checker_size_w] @[0.5 + 3.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 + 1.5 * almohad_checker_size_w] @[0.5 + 3.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 - 0.5 * almohad_checker_size_w] @[0.5 + 3.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+		instance = { position = { @[0.5 - 2.5 * almohad_checker_size_w] @[0.5 + 3.5 * almohad_checker_size_h] } scale = { @almohad_checker_size_w @almohad_checker_size_h } }
+	}
+}
+
+ALN = { # Alania
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_horse_salient_variant.dds"
 		color1 = color2
 		color2 = color2
+		color3 = color1
 		instance = { position = { 0.49 0.65 } scale = { 0.75 0.6 } }				
 	}	
 }
@@ -2610,6 +2698,18 @@ AUX = { # Auxerre
 
 	colored_emblem = {
 		texture = "ce_bend.dds"
+		color1 = color2
+		color2 = color2
+	}
+}
+
+AVI = { # Order of Avis / Aviz
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+
+	colored_emblem = {
+		texture = "ce_cross_fleury_shield.dds"
 		color1 = color2
 		color2 = color2
 	}
@@ -6659,6 +6759,138 @@ CAR = { # Carniola
 	}			
 }
 
+# Nominal Iberian kingdoms (titular claimants; cores held by conquerors in 1337)
+TOL = { # Toledo — royal crown Or on azure
+	pattern = "pattern_solid.dds"
+	color1 = "cyan"
+	color2 = "yellow"
+	colored_emblem = {
+		texture = "ce_crown_imperial.dds"
+		color1 = color2
+		color2 = color1
+		color3 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+	}
+}
+ATU = { # Asturias — Cruz de la Victoria Or on azure
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+	color3 = "green"
+	color4 = "red"
+
+	colored_emblem = {
+		texture = "ce_cross_asturias.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color4
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+	}
+}
+ATU_muslim = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+	color3 = "green"
+	color4 = "red"
+
+	colored_emblem = {
+		texture = "ce_crescent_star_05_rotated_02.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color4
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+	}
+}
+ALV = { # Algarve — Christian and Moorish king heads quarterly
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "white"
+	color2 = "blue"
+	color3 = "yellow"
+	color4 = "black"
+	colored_emblem = {
+		texture = "ce_crown_head.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.25 0.25 } scale = { 0.4 0.4 } }
+		instance = { position = { 0.75 0.75 } scale = { 0.4 0.4 } }
+	}
+	colored_emblem = {
+		texture = "ce_moor_head_crowned.dds"
+		color1 = color4
+		color2 = color3
+		instance = { position = { 0.75 0.25 } scale = { 0.4 0.4 } }
+		instance = { position = { 0.25 0.75 } scale = { 0.4 0.4 } }
+	}
+}
+CRD = { # Cordoba — lion rampant gules crowned Or on argent, bordure of Castile-Leon
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+	color3 = "yellow"
+	colored_emblem = {
+		texture = "ce_lion_crowned_wide.dds"
+		color1 = color2
+		color2 = "red_secondary"
+		color3 = color3
+		instance = { position = { 0.5 0.5 } scale = { 0.6 0.6 } }
+	}
+	textured_emblem = {
+		texture = "te_border_cas.dds"
+	}
+}
+JAE = { # Jaen — quarterly Or and Gules, bordure of Castile-Leon
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "red"
+	color2 = "white"
+	textured_emblem = {
+		texture = "te_border_cas.dds"
+	}
+}
+SEV = { # Sevilla — enthroned king (approximated with te_king_on_throne)
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+	textured_emblem = {
+		texture = "te_king_on_throne_meath.dds"
+		instance = { position = { 0.3 0.5 } scale = { 0.7 0.7 } }
+	}
+	textured_emblem = {
+		texture = "te_border_cas.dds"
+	}
+}
+MUC = { # Murcia — barry Or and Gules (pre-1361; starting arms at 1337)
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "red"
+	colored_emblem = {
+		texture = "ce_tricolor_stripes_horizontal_05.dds"
+		color1 = color2
+		color2 = color1
+		color3 = color1
+	}
+
+	
+}
+MUC_crowns = { # Murcia — six crowns Or on gules, bordure of Castile-Leon (post-1361)
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+	colored_emblem = {
+		texture = "ce_crown.dds"
+		color1 = color2
+		instance = { position = { 0.4 0.33 } scale = { 0.2 0.2 } }
+		instance = { position = { 0.6 0.33 } scale = { 0.2 0.2 } }
+		instance = { position = { 0.4 0.5 } scale = { 0.2 0.2 } }
+		instance = { position = { 0.6 0.5 } scale = { 0.2 0.2 } }
+		instance = { position = { 0.4 0.67 } scale = { 0.2 0.2 } }
+		instance = { position = { 0.6 0.67 } scale = { 0.2 0.2 } }
+	}
+	textured_emblem = {
+		texture = "te_border_castile_leon.dds"
+	}			
+}
+
 CAS = { # Castile
 	pattern = "pattern_solid.dds"
 	color1 = "red"
@@ -6821,6 +7053,28 @@ CAS_republic_revolutionary = { # the merchant flag
 		color2 = color2
 		instance = { position = { 0.5 0.26 } scale = { 1.0 0.22 } }
 		instance = { position = { 0.5 0.74 } scale = { 1.0 0.22 } }
+	}
+}
+CAS_muslim = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+	color3 = "red"
+	color4 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_mena_polygon_polylobed_frame.dds"
+		color1 = color3
+		color2 = color4
+		color3 = color3
+	}
+
+	colored_emblem = {
+		texture = "ce_castle_short.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color3
+		instance = { position = { 0.5 0.5 } scale = { 0.6 0.6 } }
 	}
 }
 
@@ -9537,6 +9791,53 @@ CSA = { # Casma
 		color1 = color2
 		color2 = color1		
 	}		
+}
+
+CSH = { # Shun
+	pattern = "pattern_solid.dds"
+	color1 = hsv360 	{	130	70	40	}
+	color2 = hsv360 	{	45	85	88	}
+	color3 = "black_secondary"
+
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 0.65 0.65 } }
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.5 0.5 } scale = { 0.60 0.60 } }
+	}
+	colored_emblem = {
+		texture = "ce_chinese_shun_character.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 0.44 0.46 } }
+	}
+	colored_emblem = {
+		texture = "ce_border_of_3_thin_line_inner.dds"
+		color1 = color2
+		color2 = color1
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+	}
+}
+CSH_dragon = { # Shun - Imperial
+	pattern = "pattern_solid.dds"
+	color1 = hsv360 	{	130	70	40	}
+	color2 = hsv360 	{	45	85	88	}
+
+	colored_emblem = {
+		texture = "ce_border_thin_line_inner.dds"
+		color1 = color1
+		color2 = color2
+	}
+	textured_emblem = {
+		texture = "te_dragon_flaming_pearl_clouds_red_gold_variant.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.85 0.8 } }
+	}
 }
 
 CSI = { # Li Siqi
@@ -19630,6 +19931,20 @@ KAB = { # Kaabu
 	}
 }
 
+KAH = { # Kel Adagh — indigo tagelmust + white crescent (Islamic trade city Takedda identity)
+	pattern = "pattern_solid.dds"
+	color1 = hsv360 { 245 65 42 }
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+	}
+}
+
 KAI = { # Kaitag
 	pattern = "pattern_solid.dds"
 	color1 = "yellow"
@@ -19994,6 +20309,34 @@ KGR = { # Kangra
 		color1 = color2
 		color2 = color2
 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }							
+	}		
+}
+
+IWL = { # Iwellemmeden — indigo tagelmust + white crescent-star (Niger River Islamic identity)
+	pattern = "pattern_solid.dds"
+	color1 = hsv360 { 245 65 42 }
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_crescent_star_06_mena.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+	}
+}
+
+KGS = { # Kel Gres — indigo tagelmust + yellow Agadez cross (documented Kel Gres symbol)
+	pattern = "pattern_solid.dds"
+	color1 = hsv360 { 245 65 42 }
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_tuareg_cross_agadez.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
 	}		
 }
 
@@ -31987,18 +32330,45 @@ POR = { # Portugal - 14th c. design
 		color2 = "blue_mid"
 		color3 = color3
 		instance = { position = { 0.05 0.075 } scale = { 0.16 0.15 } }			
-		instance = { position = { 0.275 0.075 } scale = { 0.16 0.15 } }				
 		instance = { position = { 0.50 0.075 } scale = { 0.16 0.15 } }			
-		instance = { position = { 0.725 0.075 } scale = { 0.16 0.15 } }				
 		instance = { position = { 0.95 0.075 } scale = { 0.16 0.15 } }		
-		instance = { position = { 0.05 0.35 } scale = { 0.16 0.15 } }			
-		instance = { position = { 0.95 0.35 } scale = { 0.16 0.15 } }		
-		instance = { position = { 0.05 0.65 } scale = { 0.16 0.15 } }			
-		instance = { position = { 0.95 0.65 } scale = { 0.16 0.15 } }						
+		instance = { position = { 0.05 0.5 } scale = { 0.16 0.15 } }
+		instance = { position = { 0.95 0.5 } scale = { 0.16 0.15 } }
 		instance = { position = { 0.05 0.925 } scale = { 0.16 0.15 } }			
-		instance = { position = { 0.275 0.925 } scale = { 0.16 0.15 } }				
-		instance = { position = { 0.50 0.925 } scale = { 0.16 0.15 } }		
-		instance = { position = { 0.725 0.925 } scale = { 0.16 0.15 } }				
+		instance = { position = { 0.95 0.925 } scale = { 0.16 0.15 } }
+	}	
+}
+POR_muslim = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+	color3 = "blue"
+	color4 = "yellow"
+	color5 = "green"
+
+	colored_emblem = {
+		texture = "ce_border.dds"
+		color1 = color2
+		color2 = color2
+	}
+	colored_emblem = {
+		texture = "ce_crescent_decrescent_stars_03_variant.dds"
+		color1 = color3
+		color2 = color3
+		color3 = color1
+		instance = { position = { 0.5 0.5 } scale = { 0.75 0.75 } }
+	}
+	colored_emblem = {
+		texture = "ce_castle_short.dds"
+		color1 = color4
+		color2 = "blue_mid"
+		color3 = color3
+		instance = { position = { 0.05 0.075 } scale = { 0.16 0.15 } }
+		instance = { position = { 0.50 0.075 } scale = { 0.16 0.15 } }
+		instance = { position = { 0.95 0.075 } scale = { 0.16 0.15 } }
+		instance = { position = { 0.05 0.5 } scale = { 0.16 0.15 } }
+		instance = { position = { 0.95 0.5 } scale = { 0.16 0.15 } }
+		instance = { position = { 0.05 0.925 } scale = { 0.16 0.15 } }
 		instance = { position = { 0.95 0.925 } scale = { 0.16 0.15 } }			
 	}	
 }
@@ -32020,10 +32390,10 @@ POR_renaissance = { # Portugal - Avis early - Late 14th c. design (fleurs de lis
 		color1 = color5
 		color2 = color5
 		color3 = color1
-		instance = { position = { 0.5 0.095 } scale = { 0.24 0.24 }  }
-		instance = { position = { 0.065 0.5 } rotation = -90 scale = { 0.16 0.36 }  }
-		instance = { position = { 0.5 0.905 } scale = { 0.24 -0.24 }  }					
-		instance = { position = { 0.935 0.5 } rotation = 90 scale = { 0.16 0.36 }  }		
+		instance = { position = { 0.065 0.275 } rotation = -90 scale = { 0.16 0.36 } }
+		instance = { position = { 0.065 0.725 } rotation = -90 scale = { 0.16 0.36 } }
+		instance = { position = { 0.935 0.275 } rotation = 90 scale = { 0.16 0.36 } }
+		instance = { position = { 0.935 0.725 } rotation = 90 scale = { 0.16 0.36 } }
 	}		
 	colored_emblem = {
 		texture = "ce_solid.dds"
@@ -32044,20 +32414,11 @@ POR_renaissance = { # Portugal - Avis early - Late 14th c. design (fleurs de lis
 		color2 = "blue_secondary"
 		color3 = color3
 		instance = { position = { 0.05 0.075 } scale = { 0.16 0.16 } }			
-		instance = { position = { 0.20 0.075 } scale = { 0.16 0.16 } }				
-		instance = { position = { 0.35 0.075 } scale = { 0.16 0.16 } }				
-		instance = { position = { 0.65 0.075 } scale = { 0.16 0.16 } }				
-		instance = { position = { 0.80 0.075 } scale = { 0.16 0.16 } }				
+		instance = { position = { 0.50 0.075 } scale = { 0.16 0.16 } }
 		instance = { position = { 0.95 0.075 } scale = { 0.16 0.16 } }		
-		instance = { position = { 0.05 0.275 } scale = { 0.16 0.16 } }			
-		instance = { position = { 0.95 0.275 } scale = { 0.16 0.16 } }		
-		instance = { position = { 0.05 0.725 } scale = { 0.16 0.16 } }			
-		instance = { position = { 0.95 0.725 } scale = { 0.16 0.16 } }				
+		instance = { position = { 0.05 0.5 } scale = { 0.16 0.16 } }
+		instance = { position = { 0.95 0.5 } scale = { 0.16 0.16 } }
 		instance = { position = { 0.05 0.925 } scale = { 0.16 0.16 } }			
-		instance = { position = { 0.20 0.925 } scale = { 0.16 0.16 } }				
-		instance = { position = { 0.35 0.925 } scale = { 0.16 0.16 } }	
-		instance = { position = { 0.65 0.925 } scale = { 0.16 0.16 } }
-		instance = { position = { 0.80 0.925 } scale = { 0.16 0.16 } }
 		instance = { position = { 0.95 0.925 } scale = { 0.16 0.16 } }
 	}
 }
@@ -32100,7 +32461,6 @@ POR_late = { # Portugal - 16th c. design - Escutcheons palewise charged with 5 r
 		instance = { position = { 0.95 0.5 }  scale = { 0.17 0.16 } }
 		instance = { position = { 0.05 0.925 }  scale = { 0.175 0.16 } }
 		instance = { position = { 0.95 0.925 }  scale = { 0.175 0.16 } }
-		instance = { position = { 0.5 0.925 }  scale = { 0.175 0.16 } }
 	}
 }
 POR_white = { # Portugal 17th c. (early version centered without armillary sphere)
@@ -32214,7 +32574,6 @@ POR_colonial_merchant = { # Portugal - Colonial Merchant flag 15th c.
 		instance = { position = { 0.95 0.5 }  scale = { 0.17 0.16 } }
 		instance = { position = { 0.05 0.925 }  scale = { 0.175 0.16 } }
 		instance = { position = { 0.95 0.925 }  scale = { 0.175 0.16 } }
-		instance = { position = { 0.5 0.925 }  scale = { 0.175 0.16 } }
 	}	
 }
 POR_merchant = { # Mix of late merchant flag with spanish design
@@ -37021,7 +37380,77 @@ SPA_leon_cross = { # Cross of Burgundy, White Purple
 		instance = { position = { 0.5 0.5 } scale = { 1.04 1.0 } }
 	}
 }
-SPA_republic = { # 19th c. flag
+SPA_mallorca_cross = { # Cross of Burgundy, Azure-White variant (inverted for variety)
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_saltire_cross_burgundy.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1.04 1.0 } }
+	}
+}
+SPA_valencia_cross = { # Cross of Burgundy, White-Azure variant (Mallorca/Valencia)
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+
+	colored_emblem = {
+		texture = "ce_saltire_cross_burgundy.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1.04 1.0 } }
+	}
+}
+SPA_galicia_cross = { # Cross of Burgundy, Azure-Or variant (Galicia)
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_saltire_cross_burgundy.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1.04 1.0 } }
+	}
+}
+SPA_andorra_cross = { # Cross of Burgundy, Gules-Or variant (Andorra)
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_saltire_cross_burgundy.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.5 0.5 } scale = { 1.04 1.0 } }
+	}
+}
+SPA_republic = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "red"
+	color3 = "white"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = color2
+		color2 = color2
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.125 } }
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.875 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_spain_round_shield.dds"
+		instance = { position = { 0.3 0.5 } scale = { 0.5 0.5 } }		
+	}	
+	textured_emblem = {
+		texture = "te_coa_spain_round_shield.dds"
+		instance = { position = { 0.3 0.5 } scale = { 0.5 0.5 } }		
+	}		
+}
+SPA_republic_crowned = { # 19th c. flag
 	pattern = "pattern_solid.dds"
 	color1 = "yellow"
 	color2 = "red"
@@ -39309,6 +39738,37 @@ MEDICI = {
 	}	
 }
 
+MENDES = { # House of Mendes
+	pattern = "pattern_quarterly_flag.dds"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "white"
+	color4 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tower.dds"
+		color1 = color3
+		color2 = color3
+		color3 = "grey_dark"
+		instance = { position = { 0.20 0.29 } scale = { 0.33 0.34 } }
+		instance = { position = { 0.70 0.79 } scale = { 0.33 0.34 } }
+	}
+	colored_emblem = {
+		texture = "ce_lion_rampant_wide.dds"
+		color1 = color3
+		color2 = color3
+		instance = { position = { 0.32 0.30 } scale = { 0.33 0.40 } }
+		instance = { position = { 0.82 0.80 } scale = { 0.33 0.40 } }
+	}
+	colored_emblem = {
+		texture = "ce_fleur_de_lis.dds"
+		color1 = color4
+		color2 = color4
+		instance = { position = { 0.75 0.25 } scale = { 0.42 0.42 } }
+		instance = { position = { 0.25 0.75 } scale = { 0.42 0.42 } }
+	}
+}
+
 THO_late = { # Thomond (late variant)
 	pattern = "pattern_vertical_split_01.dds"
 	color1 = "red"
@@ -40489,6 +40949,34 @@ TRF = { # Taraf
 	}	
 }
 
+KAY = { # Kel Ayr — indigo tagelmust + white Agadez cross (the cross is Kel Ayr's own symbol)
+	pattern = "pattern_solid.dds"
+	color1 = hsv360 { 245 65 42 }
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_tuareg_cross_agadez.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+	}
+}
+
+TRG = { # Tuareg — unified confederation, black + gold Agadez cross (imperial identity, distinct from KAY's indigo+white and AHG's yellow+black)
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = hsv360 { 45 75 88 }
+
+	colored_emblem = {
+		texture = "ce_tuareg_cross_agadez.dds"
+		color1 = color2
+		color2 = color2
+		color3 = color1
+		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+	}	
+}
+
 TRH = { # Torghut Oirats
 	pattern = "pattern_solid.dds"
 	color1 = hsv360 	{	40	75	88	}
@@ -41074,6 +41562,19 @@ TUN_morocco = { # Tunis - Morocco variant
 		color1 = color2
 		color2 = color2
 		instance = { position = { 0.15 0.5 } scale = { 0.3 1.0 } }
+	}
+}
+
+BIJ = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+
+	colored_emblem = {
+		texture = "ce_crescent_decrescent.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0.35 0.5 } scale = { 0.85 0.85 } }
 	}
 }
 

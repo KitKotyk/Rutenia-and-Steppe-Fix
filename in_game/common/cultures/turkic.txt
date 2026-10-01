@@ -5,7 +5,7 @@ turkish_culture = { #https://en.wikipedia.org/wiki/Turkish_people
 
 	color = color_culture_turkish
 
-	tags = { turkish_gfx turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx }
+	tags = { turkish_gfx eastern_mediterranean_and_turkish_gfx turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx afrasian_gfx }
 
 	opinions = {
 		turkoman_culture = kindred
@@ -39,7 +39,7 @@ turkoman_culture = {
 
 	color = color_culture_turkoman
 
-	tags = { turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx }
+	tags = { turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx afrasian_gfx }
 
 	opinions = {
 		turkish_culture = kindred
@@ -71,7 +71,7 @@ turkmen_culture = {
 	
 	color = color_culture_turkmen
 	
-	tags = { turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx }
+	tags = { turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx afrasian_gfx }
 
 	opinions = {
 		qashqai_culture = positive
@@ -92,7 +92,7 @@ azeri_culture = {
 	
 	color = map_azeri
 	
-	tags = { turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx }
+	tags = { turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx afrasian_gfx }
 
 	opinions = {
 		turkoman_culture = positive
@@ -111,7 +111,7 @@ uzbek_culture = {
 	
 	color = map_uzbek
 	
-	tags = { turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx }
+	tags = { turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx afrasian_gfx }
 
 	opinions = {
 		mongolian_culture = kindred
@@ -140,7 +140,7 @@ khorezmian_culture = {
 	
 	color = map_CHG
 	
-	tags = { turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx }
+	tags = { turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx afrasian_gfx }
 
 	opinions = {
 		mongolian_culture = kindred
@@ -162,7 +162,7 @@ qashqai_culture = {
 	
 	color = map_qashqai
 	
-	tags = { turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx }
+	tags = { turkic_gfx persianate_gfx central_asian_gfx middle_east_gfx afrasian_gfx }
 
 	opinions = {		
 		turkmen_culture = positive

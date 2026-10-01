@@ -274,6 +274,7 @@ countries = {
 			privilege = {
 				#Nobles
 				primacy_of_nobility
+				noble_private_armies_privilege
 				#Clergy
 				#Peasants
 				peasants_free_peasantry
@@ -1028,6 +1029,7 @@ countries = {
 
 		include = "catholic_bishopric"
 		include = "expl_northern_europe"
+		country_rank = rank_duchy
 
 		government = {
 			type = theocracy
@@ -2093,6 +2095,7 @@ countries = {
 				banal_lordship
 				noble_serfdom_rights
 				nobles_land_rights
+				noble_private_armies_privilege
 				kormlenije
 
 				#clergy
@@ -3181,7 +3184,7 @@ countries = {
 		}
 
 		starting_technology_level = 3
-		country_rank = rank_kingdom
+		country_rank = rank_duchy
 
 		government = {
 			type = monarchy
@@ -3431,6 +3434,7 @@ countries = {
 				banal_lordship
 				noble_serfdom_rights
 				nobles_land_rights
+				noble_private_armies_privilege
 				kormlenije
 
 				#clergy
@@ -3518,6 +3522,7 @@ countries = {
 				banal_lordship
 				noble_serfdom_rights
 				nobles_land_rights
+				noble_private_armies_privilege
 				kormlenije
 
 				#clergy
@@ -4271,6 +4276,7 @@ countries = {
 				cossacks_protected_faith
 				cossacks_respected_traditions
 				cossack_identity
+				cossack_private_armies_privilege
 			}
 
 			laws = {
@@ -4370,6 +4376,7 @@ countries = {
 				cossacks_protected_faith
 				cossacks_respected_traditions
 				cossack_identity
+				cossack_private_armies_privilege
 			}
 
 			laws = {
@@ -5645,6 +5652,7 @@ countries = {
 		capital = dublin
 		accepted_cultures = { anglo_irish }
 		tolerated_cultures = { irish }
+		country_rank = rank_duchy
 	}
 	TYR = {
 		own_control_core = {
@@ -5840,6 +5848,7 @@ countries = {
 
 		include = "catholic_bishopric"
 		include = "expl_western_europe"
+		country_rank = rank_duchy
 
 		government = {
 			type = theocracy
@@ -6522,6 +6531,10 @@ countries = {
 				peasants_fewer_levies
 				peasants_protected_faith
 			}
+			bureaucracies = {
+				# The Persian-style chancery was the defining institution of Delhi's administration.
+				{ type = diwan_al_insha_bureaucracy date = 1320.1.1 entrenchment = 60 }
+			}
 
 		}
 		tolerated_cultures = {
@@ -7105,7 +7118,6 @@ countries = {
 		}
 
 		tolerated_cultures = {
-			afghan_culture
 			kohistani
 		 }
 		religious_school = hanafi_school
@@ -9311,7 +9323,7 @@ countries = {
 				name_barisone = 2
 				name_marianus = 3
 				name_orzocorre = 3
-				name_torbjon = 1
+				name_torbjorn = 1
 				name_constantine = 3
 				name_barisone = 1
 				name_peter = 3
@@ -9529,7 +9541,7 @@ countries = {
 			heir_selection = cognatic_primogeniture
 
 			regnal_numbers = {
-				Barisone = 1
+				name_barisone = 1
 				name_constantine = 2
 				name_john = 1
 				name_william = 3
@@ -9995,7 +10007,6 @@ countries = {
 			}
 
 			ruler = fae_ricciardo_manfredi
-			consort = for_cia_ubaldini
 
 			ruler_term = { character = fae_francesco_manfredi start_date = 1313.1.1	end_date = 1327.1.1 regnal_number = 0 }
 			ruler_term = { character = fae_alberghettino_ii_manfredi start_date = 1327.1.1 end_date = 1329.1.1 regnal_number = 2 }
@@ -10334,7 +10345,7 @@ countries = {
 				Saltaro = 1
 				#Ittocorre = 1
 				name_comita = 1
-				Barisone = 1
+				name_barisone = 1
 				name_helen = 1
 				name_lambert = 1
 				name_adelaide = 1
@@ -12199,7 +12210,7 @@ countries = {
 
 			regnal_numbers = {
 				name_conrad = 3
-				Rainaldo = 2
+				name_reginald = 2
 				name_henry = 2
 				name_welf = 2
 			}
@@ -12321,10 +12332,10 @@ countries = {
 			regnal_numbers = {
 				name_adelaide = 1
 				name_andrea = 1
-				Barisone = 3
+				name_barisone = 3
 				name_comita = 2
 				name_constantine = 4
-				Enzo = 1
+				name_henry = 1
 				Gonario = 2
 				name_marianus = 2
 				name_peter = 2
@@ -13160,7 +13171,7 @@ countries = {
 			heir_selection = cognatic_primogeniture
 
 			ruler = epi_theodoros_synadenos
-			consort = epi_eudokia_doukania_kommene
+			consort = epi_eudokia_doukaina_komnene
 
 			ruler_term = { character = epi_michael_i_komnenos_doukas start_date = 1205.1.1 end_date = 1215.1.1 regnal_number = 1 }
 			ruler_term = { character = the_theodoros_komnenos_doukas start_date = 1215.1.1 end_date = 1230.1.1 regnal_number = 1 }
@@ -13576,7 +13587,7 @@ countries = {
 				name_eudokia = 1
 				name_alexis = 5
 				name_emmanuel = 1
-				name_andonikos = 3
+				name_andronikos = 3
 				name_theodore = 2
 			}
 
@@ -13882,7 +13893,7 @@ countries = {
 			heir_selection = cognatic_primogeniture
 
 			ruler = ser_stefan_dusan
-			consort = ser_helena
+			consort = ser_helena_sratsimir
 
 			ruler_term = { character = ser_stefan_nemanja start_date = 1166.1.1 end_date = 1196.1.1 regnal_number = 0 }
 			ruler_term = { character = ser_stefan_nemanjic start_date = 1196.1.1 end_date = 1202.1.1 regnal_number = 1 }
@@ -14597,6 +14608,11 @@ countries = {
 				name_peter = 3
 				name_james = 2
 			}
+			
+			reforms = {
+				has_dlc = "d009_across_the_pillars"
+				cat_corts_catalanes_reform
+			}
 		}
 	}
 	ANR = {
@@ -14613,9 +14629,14 @@ countries = {
 			type = theocracy
 
 			ruler_term = { character = anr_arnau_de_llorda start_date = 1326.6.27 }
+
+			reforms = {
+				has_dlc = "d009_across_the_pillars"
+				anr_coprincipality_reform
+			}
 		}
 		capital = andorra_la_vella
-		country_rank = rank_duchy
+		country_rank = rank_county
 	}
 	ARA = {
 		own_control_core = {
@@ -14768,12 +14789,41 @@ countries = {
 				name_james = 3
 				name_sancho = 1
 			}
+
+			reforms = {
+				autocracy
+			}
+
+			privilege = {
+				#Noblity
+				jewish_letters_of_protection
+				noble_sponsored_navy
+				#Burghers
+				shipwright_contracts
+				sponsor_maritime_contracts
+				allow_trade_center_sponsorship
+			}
+			privilege = {
+				has_dlc = "d009_across_the_pillars"
+				mll_consolat_de_mar
+			}
+
+			land_vs_naval = 50
 		}
 
 		tolerated_cultures = {
-			languedocien
 			sephardi
 			andalusi
+		}
+
+		accepted_cultures = { 
+			languedocien
+		}
+
+		currency_data = {
+			stability = 40
+			gold = 100
+			war_exhaustion = 2
 		}
 
 	}
@@ -14952,6 +15002,7 @@ countries = {
 				clergy_military_orders
 				#Burghers
 				land_of_commerce
+				shipwright_contracts
 			}
 			laws = {
 				administrative_system = central_councils
@@ -14969,7 +15020,7 @@ countries = {
 
 			centralization_vs_decentralization = 15
 			mercantilism_vs_free_trade = -20
-			land_vs_naval = -10
+			land_vs_naval = 10
 			quality_vs_quantity = -10
 			capital_economy_vs_traditional_economy = 80
 		}
@@ -15067,6 +15118,12 @@ countries = {
 				name_urraca = 1
 				name_henry = 1
 			}
+
+			reforms = {
+				has_dlc = "d009_across_the_pillars"
+				lon_cortes_de_leon_reform
+			}
+		
 		}
 
 		country_rank = rank_kingdom
@@ -15150,13 +15207,37 @@ countries = {
 			reforms = {
 				the_jewel_of_alandalus_reform
 			}
+			reforms = {
+				has_dlc = "d009_across_the_pillars"
+				gra_hajib_reform
+			}
 			laws = {
 				sharia_law = maliki_policy
+				slave_conversion = allow_slave_religion
+			}
+			laws = {
+				has_dlc = "d009_across_the_pillars"
+				dhimmi_regulations_law = dhimmi_status_policy
+			}
+			privilege = {
+				noble_sponsored_navy
+				jewish_court_financier_charter
+				jewish_physician_exemption
+				dhimmi_pact_of_umar
+				al_caid
+				treasury_rights
+			}
+			parliament = {
+				has_dlc = "d009_across_the_pillars"
+				parliament_type = jamaa_parliament
 			}
 		}
 		court_language = maghrebi_dialect
 		religious_school = maliki_school
-		government = { mysticism_vs_jurisprudence = -5 }
+		government = {
+			mysticism_vs_jurisprudence = -5
+			offensive_vs_defensive = 40
+		}
 
 		country_rank = rank_duchy
 
@@ -15247,10 +15328,11 @@ countries = {
 
 			reforms = {
 				pyrenean_fueros_reform
-				sons_of_the_oak_reform
 			}
-
-
+			reforms = {
+				has_dlc = "d009_across_the_pillars"
+				nav_cortes_navarra_reform
+			}
 			laws = {
 				administrative_system = merindad_policy
 				legal_code_law = pyrenean_law_policy
@@ -15262,6 +15344,7 @@ countries = {
 			mercantilism_vs_free_trade = -30
 			quality_vs_quantity = -20
 			capital_economy_vs_traditional_economy = 80
+			
 		}
 
 		accepted_cultures = {
@@ -15279,6 +15362,123 @@ countries = {
 		capital = pamplona
 		dynasty = de_evreux_dynasty
 
+	}
+
+	#Nominal Iberian kingdoms (titular claimants; cores held by conquerors in 1337)
+	ALV = {
+		our_cores_conquered_by_others = {
+			faro silves tavira lagos
+		}
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+		country_rank = rank_kingdom
+		capital = faro
+	}
+
+	ATU = {
+		our_cores_conquered_by_others = {
+			oviedo aviles castropol tineo villaviciosa cangas llanes mieres
+		}
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+		country_rank = rank_kingdom
+		capital = oviedo
+	}
+
+	CRD = {
+		our_cores_conquered_by_others = {
+			cordoba lucena baena palma_del_rio carpio espiel fuenteovejuna pedroche santa_eufemia
+		}
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+		country_rank = rank_kingdom
+		capital = cordoba
+	}
+
+	JAE = {
+		our_cores_conquered_by_others = {
+			jaen baeza ubeda andujar jodar cazorla martos
+		}
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+		country_rank = rank_kingdom
+		capital = jaen
+	}
+
+	MUC = {
+		our_cores_conquered_by_others = {
+			murcia cartagena lorca mula
+			albacete chinchilla jumilla villena
+			hellin caravaca cieza segura_de_la_sierra
+		}
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+		country_rank = rank_kingdom
+		capital = murcia
+	}
+
+	SEV = {
+		our_cores_conquered_by_others = {
+			sevilla carmona constantina coria_del_rio ecija moron olvera osuna sanlucar_la_mayor
+			cadiz algeciras arcos_de_la_frontera gibraltar jerez_de_la_frontera medina_sidonia sanlucar tarifa
+			huelva almonaster_la_real aracena aroche ayamonte niebla puebla_de_guzman
+		}
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+		country_rank = rank_kingdom
+		capital = sevilla
+	}
+
+	TOL = {
+		our_cores_conquered_by_others = {
+			toledo guadalupe illescas los_yebenes navalucillos puebla_de_montalban puente_arzobispo talavera_de_la_reina
+			ocana alcazar_de_san_juan chinchon consuegra tomelloso ucles
+			madrid alcala_de_henares colmenar el_escorial maqueda
+			guadalajara brihuega buitrago_de_lozoya cobeta siguenza zorita
+			cuenca beteta canete huete molina_de_aragon pareja torralba
+			alarcon belmonte iniesta jorquera moya san_clemente requena
+			alcaraz lezuza alhambra_location montiel villapalacios villarobledo
+			ciudad_real almaden almodovar_del_campo calatrava malagon manzanares puertollano
+		}
+		include = "expl_western_europe"
+		include = "catholic_monarchy_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+		country_rank = rank_kingdom
+		capital = toledo
 	}
 
 
@@ -15425,7 +15625,7 @@ countries = {
 				#Clodomir = 1
 				name_theodoric = 4
 				#Thibert = 2
-				name_thobald = 1
+				name_theobald = 1
 				#Childebert = 4
 				#Clotaire = 5
 				#Caribert = 1
@@ -15477,6 +15677,7 @@ countries = {
 				clergy_literacy_rights
 				auxilium_et_consilium
 				nobles_land_rights
+				noble_private_armies_privilege
 				noble_leaders_only
 				primacy_of_nobility
 				noble_armies
@@ -15501,6 +15702,9 @@ countries = {
 
 		country_rank = rank_kingdom
 		capital = paris
+		ai_advance_preference_tags = {
+			exploration = 5
+		}
 	}
 
 	#Britanny
@@ -16198,7 +16402,7 @@ countries = {
 
 			regnal_numbers = {
 				name_roger = 1
-				name_eudes = 1
+				name_otto = 1
 				name_theobald = 2
 				name_stephen.name_henry = 1
 				name_stephen = 2
@@ -16373,7 +16577,7 @@ countries = {
 
 			ruler_term = { character = amg_arnaud_odon_lomagne start_date = 1246.3.25 end_date = 1255.1.1 regnal_number = 1 }
 			ruler_term = {
-				character = amg_mascarose_ii_lomagne start_date = 1255.1.1 end_date = 1256.1.1 regnal_number = 2
+				character = amg_mascorose_ii_lomagne start_date = 1255.1.1 end_date = 1256.1.1 regnal_number = 2
 				character = fra_eschivat_iv_chabanais start_date = 1255.1.1 end_date = 1256.1.1 regnal_number = 1
 			}
 
@@ -17285,7 +17489,7 @@ countries = {
 				#Begon = 1
 				#Ramnulf = 2
 				#Acfred = 1
-				name_ebles = 1
+				name_eblo = 1
 				name_raymond = 2
 				name_otto = 2
 				name_eleanor = 1
@@ -17366,7 +17570,7 @@ countries = {
 				name_godfrey = 3
 				#Ragenold = 1
 				name_roger = 1
-				name_joceline = 1
+				name_jocelyn = 1
 				name_hugh = 5
 				name_herbert = 2
 				name_walter = 1
@@ -17709,7 +17913,7 @@ countries = {
 				#Émenon = 1
 				name_reginald = 1
 				#Ramnulf = 2
-				name_ebles = 1
+				name_eblo = 1
 				name_aimar = 1
 				name_william = 8
 				name_otto = 1
@@ -18635,7 +18839,7 @@ countries = {
 			champenais
 		}
 
-		country_rank = rank_duchy
+		country_rank = rank_county
 		capital = liege
 	}
 
@@ -18829,7 +19033,7 @@ countries = {
 				name_samuel = 1
 				name_andrew = 3
 				name_bela = 4
-				name_solomon = 1
+				name_salomon = 1
 				name_geza = 2
 				name_vladislav = 4
 				name_kalman = 1
@@ -19611,7 +19815,7 @@ countries = {
 				name_abu.name_john = 1
 				name_joseph = 1
 				name_salomon = 1
-				Ali = 1
+				name_ali = 1
 			}
 
 			#https://en.wikipedia.org/wiki/Barbary_Coast
@@ -19630,16 +19834,30 @@ countries = {
 				#Burghers
 				land_of_commerce
 				allow_trade_center_sponsorship
+				al_caid
+				andalusi_elite
+				treasury_rights
 				#Dhimmi
 				dhimmi_pact_of_umar
 				#Tribes
 				tribes_tribal_levies
 				tribes_allow_gatherings
 				local_tribal_strongholds
+				desert_power
+			}
+			privilege = {
+				has_dlc = "d009_across_the_pillars"
+				mor_andalusian_refugees
 			}
 			laws = {
 				amazigh_familial_connections = reliance_on_local_tribes
 				sharia_law = maliki_policy
+				distribution_of_power_law = dop_favor_the_nobles
+			}
+			laws = {
+				has_dlc = "d009_across_the_pillars"
+				bled_makhzen_siba_law = negotiated_authority_policy
+				bayaa_succession_law = bayaa_tribal_assembly_policy
 			}
 		}
 
@@ -19656,6 +19874,20 @@ countries = {
 
 		capital = fez
 		dynasty = marinid_dynasty
+	}
+	
+	ALM = {
+		include = "expl_muslim_mediterranean"
+		include = "muslim_monarchy_not_present"
+		country_rank = rank_empire
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+		}
+
+		capital = marrakesh
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
 	}
 
 	TLE = { #Tlemcen
@@ -19696,6 +19928,11 @@ countries = {
 				Abu_Tashufin = 1
 			}
 
+			reforms = {
+				tle_support_of_banu_al_wad
+				catalan_merchant_privileges
+			}
+
 			#https://en.wikipedia.org/wiki/Barbary_Coast
 			land_vs_naval = 30
 			laws = {
@@ -19709,15 +19946,22 @@ countries = {
 				#Burghers
 				land_of_commerce
 				allow_trade_center_sponsorship
+				al_caid
+				andalusi_elite
 				#Dhimmi
 				dhimmi_pact_of_umar
 				#Tribes
 				tribes_tribal_levies
 				tribes_allow_gatherings
+				desert_power
 			}
 			laws = {
 				amazigh_familial_connections = reliance_on_local_tribes
 				sharia_law = maliki_policy
+			}
+			bureaucracies = {
+				# Tlemcen's Zayyanid court maintained the Maghrebi muhtasib tradition.
+				{ type = hisba_bureaucracy date = 1250.1.1 entrenchment = 50 }
 			}
 		}
 		religious_school = maliki_school
@@ -19738,18 +19982,16 @@ countries = {
 	TUN = { #Tunis
 		own_control_core = {
 			bir_el_alter
-			madjul mahres sidi_fredj bou_hajla sfaqes chebba
+			madjul mahres bou_hajla sfaqes chebba
 			kairouan sbiba kasserine subaytila thala
 			mahdia sousse el_jem monastir
-			bejaia el_kseur mansouria bouira kalaa_of_ait_abbas setif
-			annaba cheffia jijel el_milia skikda el_kala guelma collo tekouch
 			bizerte tabarka sejnane mateur beja_TUN souk_el_arba el_kef thagaste
 			tunis tebourba el_fahs zaghouan nabeul kelibia hammamet kesra
-			constantine_ALG mila ngaous baghai dufanat bazer_sakhra tiffech tebessa meskiana tijis ikjan
-			feriana
-			bordj_bou_arreridj jama_TUN
+			feriana jama_TUN
 			el_ksour medjez_el_bab sbikha
-
+		}
+		own_control_conquered = {
+			sidi_fredj #Recently reconquered from Aragonese
 		}
 
 		starting_technology_level = 3
@@ -19780,6 +20022,10 @@ countries = {
 
 			#https://en.wikipedia.org/wiki/Barbary_Coast
 			land_vs_naval = 30
+			reforms = {
+				guardians_of_ifriqiya
+			}
+			land_vs_naval = 30 # https://en.wikipedia.org/wiki/Hafsids_of_B%C3%A9ja%C3%AFa and subjects
 			laws = {
 				piracy_law = state_piracy_policy
 			}
@@ -19791,17 +20037,21 @@ countries = {
 				#Burghers
 				land_of_commerce
 				allow_trade_center_sponsorship
+				al_caid
+				andalusi_elite
 				#Dhimmi
 				dhimmi_pact_of_umar
 				#Tribes
 				tribes_tribal_levies
 				tribes_allow_gatherings
+				desert_power
 			}
 			laws = {
 				amazigh_familial_connections = reliance_on_local_tribes
 				sharia_law = maliki_policy
 			}
 		}
+		include = "hafsid_state"
 		religious_school = maliki_school
 		government = { mysticism_vs_jurisprudence = -5 }
 
@@ -19813,6 +20063,88 @@ countries = {
 		}
 
 		capital = tunis
+		dynasty = hafsid_dynasty
+	}
+
+	BIJ = {
+		own_control_core = {
+			bejaia el_kseur mansouria bouira kalaa_of_ait_abbas setif
+			annaba cheffia jijel el_milia skikda el_kala guelma collo tekouch
+			
+			constantine_ALG mila ngaous baghai dufanat bazer_sakhra tiffech tebessa meskiana tijis ikjan
+			
+			bordj_bou_arreridj
+		}
+
+		starting_technology_level = 3
+		include = "expl_muslim_mediterranean"
+		include = "muslim_monarchy_no_abrahamic_dhimmi"
+		country_rank = rank_duchy
+		
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+			ruler = tun_abu_zakariya_yahya
+
+			regnal_numbers = {
+				Abd_al-Wahid = 1
+				name_abdullah = 1
+				name_john = 2
+				name_muhammad = 2
+				name_abraham = 1
+				name_abd_al_aziz = 1
+				name_omar = 1
+				Khalid = 1
+				name_zechariah = 1
+				name_abu_bakr = 1
+			}
+ 
+			laws = {
+				piracy_law = state_piracy_policy
+			}
+			privilege = {
+				#Nobles
+				noble_sponsored_navy
+				#Ulama
+				waqf_payments
+				#Burghers
+				land_of_commerce
+				allow_trade_center_sponsorship
+				al_caid
+				andalusi_elite
+				#Dhimmi
+				dhimmi_pact_of_umar
+				#Tribes
+				tribes_tribal_levies
+				tribes_allow_gatherings
+				desert_power
+			}
+			laws = {
+				amazigh_familial_connections = reliance_on_local_tribes
+				sharia_law = maliki_policy
+			}
+			bureaucracies = {
+				# The Hafsid court upheld the western-Mediterranean muhtasib tradition.
+				{ type = hisba_bureaucracy date = 1250.1.1 entrenchment = 50 }
+			}
+		}
+		include = "hafsid_state"
+
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+
+		accepted_cultures = {
+			tunisian
+		}
+
+		tolerated_cultures = {
+			kabyle
+			chaoui
+			mustaarabi
+		}
+
+		capital = bejaia
 		dynasty = hafsid_dynasty
 	}
 
@@ -20004,6 +20336,7 @@ countries = {
 				sharia_law = ibadi_policy
 			}
 		}
+		include = "maghrebi_ibadi"
 
 		religious_school = ibadi_school
 
@@ -20082,6 +20415,7 @@ countries = {
 				sharia_law = ibadi_policy
 			}
 		}
+		include = "maghrebi_ibadi"
 		religious_school = ibadi_school
 
 		tolerated_cultures = {
@@ -20145,6 +20479,7 @@ countries = {
 				sharia_law = ibadi_policy
 			}
 		}
+		include = "maghrebi_ibadi"
 		religious_school = ibadi_school
 
 		tolerated_cultures = {
@@ -20175,6 +20510,8 @@ countries = {
 		}
 		religious_school = maliki_school
 		government = { mysticism_vs_jurisprudence = -5 }
+
+		include = "hafsid_state"
 
 		tolerated_cultures = {
 			chaoui
@@ -20241,6 +20578,7 @@ countries = {
 				sharia_law = ibadi_policy
 			}
 		}
+		include = "maghrebi_ibadi"
 
 		religious_school = ibadi_school
 
@@ -21368,14 +21706,117 @@ countries = {
 		government = { mysticism_vs_jurisprudence = -5 }
 	}
 
-	TRG = {
+	KAY = {
+		type = pop
+
+		add_pops_from_locations = {
+			agadez assode iferouane in_gall marandet
+		}
+
+		include = "expl_west_africa_muslim"
+		include = "subsaharan_muslim_tribe"
+
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+		government = {
+			ruler = random
+
+			laws = {
+				sharia_law = maliki_policy
+			}
+		}
+	}
+
+	AHG = {
+		type = pop
+
+		add_pops_from_locations = {
+			abalessa
+		}
+
+		include = "expl_west_africa_muslim"
+		include = "subsaharan_muslim_tribe"
+
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+		government = {
+			ruler = random
+
+			laws = {
+				sharia_law = maliki_policy
+			}
+		}
+	}
+
+	AJJ = {
+		type = pop
+
+		add_pops_from_locations = {
+			djanet ghat in_amenas
+		}
+
+		include = "expl_west_africa_muslim"
+		include = "subsaharan_muslim_tribe"
+
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+		government = {
+			ruler = random
+
+			laws = {
+				sharia_law = maliki_policy
+			}
+		}
+	}
+
+	KAH = {
+		type = pop
+
+		add_pops_from_locations = {
+			tadmekka takedda
+		}
+
+		include = "expl_west_africa_muslim"
+		include = "subsaharan_muslim_tribe"
+
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+		government = {
+			ruler = random
+
+			laws = {
+				sharia_law = maliki_policy
+			}
+		}
+	}
+
+	IWL = {
 		type = pop
 
 		add_pops_from_locations = {
 			walata gotheye boubon ouallam goudel hamdallaye tondikandia koure loga dongondoutchi kaouara
-			birni_ader tahoua kalfou abalak marandet aderbissinat ollelewa zinder guidimouni kelle in_gall agadez
-			takedda assode iferouane abalessa djanet ghat in_amenas
-			tadmekka
+			birni_ader tahoua kalfou abalak
+		}
+
+		include = "expl_west_africa_muslim"
+		include = "subsaharan_muslim_tribe"
+
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+		government = {
+			ruler = random
+
+			laws = {
+				sharia_law = maliki_policy
+			}
+		}
+	}
+
+	KGS = {
+		type = pop
+
+		add_pops_from_locations = {
+			zinder guidimouni kelle aderbissinat ollelewa
 		}
 
 		include = "expl_west_africa_muslim"
@@ -23106,6 +23547,11 @@ countries = {
 				administrative_system = local_courts_administration
 				iqta_law = lenient_taxation
 			}
+			bureaucracies = {
+				{ type = bayt_al_mal_bureaucracy date = 1250.1.1 entrenchment = 75s }
+				# Baybars I refined the Mamluk barid into a sophisticated relay-and-intelligence network.
+				{ type = barid_bureaucracy date = 1261.1.1 entrenchment = 75 }
+			}
 		}
 		religious_school = shafii_school #While Egypt today is mostly Hanafi, the $mamluks$ favored Shaafi over the rest
 		government = { mysticism_vs_jurisprudence = 20 }
@@ -23119,8 +23565,6 @@ countries = {
 			eastern_amazigh
 			mizrahi
 		}
-
-		currency_data = { complacency = 15 }
 
 		capital = cairo
 	}
@@ -24627,12 +25071,6 @@ countries = {
 			seongcheon
 			myeongju uljin samcheok jeongseon
 			goseong tongcheon ingnyeong
-		}
-
-		own_control_integrated = {
-			ganggye huju chosan 
-			jangjin
-			gapsan samsu linjiang_jurchen
 		}
 
 		our_cores_conquered_by_others = {
@@ -30399,6 +30837,8 @@ countries = {
 			selemde burunda buse kogan mamyn nehru ulma
 			upper_nioman akishma olongki tujun tyrma urgal
 			djee argi dep kupuri mulmuga tok
+
+			ganggye huju chosan jangjin gapsan samsu linjiang_jurchen
 		}
 
 		own_control_conquered = {
@@ -30543,10 +30983,6 @@ countries = {
 			start_date = 1337.1.1
 			date = 1368.1.1
 			size = 1
-		}
-
-		currency_data = {
-			complacency = 25
 		}
 	}
 
@@ -33273,7 +33709,7 @@ countries = {
 				name_wido = 1
 				name_aimeric = 1
 				name_hugh = 4
-				name_henri = 2
+				name_henry = 2
 				name_john = 1
 				name_amalric = 2
 			}
@@ -36328,9 +36764,9 @@ countries = {
 			regnal_numbers = {
 				name_peter = 3
 				name_john = 1
-				Aymo = 3
-				Girold = 1
-				Willhelm = 1
+				name_haimo = 3
+				name_gerald = 1
+				name_william = 1
 			}
 			ruler = trn_peter_iii_turn
 
@@ -36860,7 +37296,7 @@ countries = {
 			ruler_term = {	character = nsi_gerlach_i_nassau start_date = 1298.7.2 regnal_number = 1	}
 
 			regnal_numbers = {
-				name_adolph = 1
+				name_adolf = 1
 				name_gerlach = 1
 				name_waleram = 2
 			}
@@ -36887,7 +37323,7 @@ countries = {
 			ruler_term = {	character = nsi_gerlach_i_nassau start_date = 1298.7.2 regnal_number = 1	}
 
 			regnal_numbers = {
-				name_adolph = 1
+				name_adolf = 1
 				name_gerlach = 1
 				name_waleram = 2
 			}
@@ -37463,9 +37899,8 @@ countries = {
 		}
 		starting_technology_level = 3
 		include = "expl_western_europe"
+		include = "catholic_abbey"
 		include = "expl_northern_europe"
-		include = "catholic_monarchy_no_coast"
-		include = "german_principality"
 		government = { ruler = random }
 		country_rank = rank_county
 		capital = ellwangen
@@ -37530,7 +37965,7 @@ countries = {
 
 			regnal_numbers = {
 				name_burchard = 2
-				name_friedrich = 9
+				name_frederick = 9
 				name_godfrey = 1
 			}
 		}
@@ -37581,7 +38016,7 @@ countries = {
 		include = "expl_northern_europe"
 		include = "catholic_monarchy_no_coast"
 		include = "german_principality"
-		government = { ruler = random }
+		government = { ruler = tub_gottfried_ii_tubingen }
 		country_rank = rank_county
 		capital = tubingen
 	}
@@ -40403,7 +40838,7 @@ countries = {
 
 			regnal_numbers = {
 				name_baldwin = 1
-				name_dirk = 1
+				name_theodoric = 1
 				name_egbert = 1
 				name_john = 2
 				name_otto = 2
@@ -40838,7 +41273,7 @@ countries = {
 				name_christian = 4
 				name_john = 3
 				name_otto = 2
-				Moritz = 1
+				name_maurice = 1
 				Egilmar = 2
 			}
 		}
@@ -41631,8 +42066,8 @@ countries = {
 			ruler_term = {	character = tes_kazimir_piast start_date = 1315.1.1 regnal_number = 1	}
 
 			regnal_numbers = {
-				Miszko = 1
-				Kazimir = 1
+				name_mieszko = 1
+				name_casimir = 1
 			}
 		}
 
@@ -41914,7 +42349,7 @@ countries = {
 		starting_technology_level = 3
 		include = "catholic_german_bishopric_no_coast"
 		include = "expl_northern_europe"
-		country_rank = rank_duchy
+		country_rank = rank_county
 		government = {
 			type = theocracy
 			ruler = nys_nanker
@@ -43000,7 +43435,7 @@ countries = {
 				name_yaropolk = 2
 				name_wenceslas = 2
 				name_waldemar = 2
-				name_sviatoslav = 1
+				name_svyatoslav = 1
 				name_yaroslav = 3
 				name_george = 2
 				name_andrew = 1
@@ -43075,7 +43510,7 @@ countries = {
 				name_yaropolk = 1
 				name_wenceslas = 2
 				name_waldemar = 2
-				name_sviatoslav = 1
+				name_svyatoslav = 1
 				name_yaroslav = 1
 				name_george = 2
 				name_andrew = 2
@@ -43272,7 +43707,7 @@ countries = {
 			ruler_term = { character = smo_alexander_glebovich_rurikovich start_date = 1297.1.1  end_date = 1314.1.1 regnal_number = 1 }
 			ruler_term = { character = smo_ivan_alexandrovich_rurikovich start_date = 1314.1.1 regnal_number = 1	}
 			regnal_numbers = {
-				Iwan = 1
+				name_john = 1
 			}
 			
 			reforms = {
@@ -43407,6 +43842,7 @@ countries = {
 				cossacks_land_rights
 				cossacks_allowed_free_roaming
 				cossacks_military_service
+				cossack_private_armies_privilege
 			}
 		}
 
@@ -52266,7 +52702,7 @@ countries = {
 		type = pop
 
 		add_pops_from_locations = {
-			anyuan_lianzhou ruxi xiaodong baishan anding_mashan duyang yongshun lingfang shanglin qianjiang_binzhou 
+			anyuan_lianzhou ruxi xiaodong baishan anding_mashan yongshun lingfang shanglin qianjiang_binzhou
 			yining yongfu guishun xiaozhenan zhenan_guishun ningpu yongning_hengzhou qianlong xilong 
 			bada ceheng machang zhenfeng maping liucheng wuxian_liuzhou yangshou laibin luorong dayaoshan 
 			lipu yangshuo nandan bama donglan zhishan nadi liuzhai 
@@ -60785,7 +61221,7 @@ countries = {
 		include = "muslim_monarchy_no_abrahamic_dhimmi_no_coast"
 		government = {
 			type = monarchy
-			heir_selection = cognatic_primogeniture
+			heir_selection = ibadi_zuhur_heir_selection
 
 			ruler = oma_abu_muhammad
 
@@ -60805,6 +61241,8 @@ countries = {
 
 			laws = {
 				sharia_law = ibadi_policy
+				ibadi_shurat_law = ibadi_institutionalize_the_shurat_policy
+				ibadi_imamate_law = ibadi_zuhur_imam_policy
 			}
 		}
 

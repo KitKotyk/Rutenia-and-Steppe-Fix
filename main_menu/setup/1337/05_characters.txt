@@ -5776,6 +5776,7 @@ character_db={
 		birth_date = 37.12.15
 		death_date = 68.6.9
 		birth = rome # born in Antium
+		father = byz_caligula # nephew
 		dynasty = julio_claudian_dynasty
 		tag = BYZ
 		ruler_trait = sinner
@@ -5912,9 +5913,10 @@ character_db={
 		religion = hellenism_religion
 		estate = nobles_estate
 		adm = 75 dip = 70 mil = 40
-		birth_date = 86.9.19
+		birth_date = 86.12.19
 		death_date = 161.3.7
 		birth = rome
+		father = byz_hadrian # by adoption
 		dynasty = nerva_antonine_dynasty
 		tag = BYZ
 		ruler_trait = benevolent
@@ -6065,6 +6067,7 @@ character_db={
 		birth_date = 204.1.1
 		death_date = 222.3.11
 		birth = antioch # born in Emesa, Syria
+		father = byz_caracalla # claimed descent
 		dynasty = severan_dynasty
 		tag = BYZ
 		ruler_trait = sinner
@@ -6080,6 +6083,7 @@ character_db={
 		birth_date = 208.10.1
 		death_date = 235.3.19
 		birth = antioch # born in Arca Caesarea, Syria
+		father = byz_caracalla # claimed descent
 		dynasty = severan_dynasty
 		tag = BYZ
 		ruler_trait = well_advised
@@ -6390,6 +6394,20 @@ character_db={
 		tag = BYZ
 	}
 
+	byz_julius_constantius = {
+		first_name = { name = name_julius }
+		last_name = { name = name_flavius }
+		culture = roman_culture
+		religion = hellenism_religion
+		estate = nobles_estate
+		birth_date = 289.1.1
+		death_date = 337.9.1
+		birth = constantinople
+		father = byz_constantius_i
+		dynasty = constantinian_dynasty
+		tag = BYZ
+	}
+
 	byz_julian_apostate = {
 		first_name = { name = name_julian }
 		last_name = { name = name_flavius }
@@ -6401,6 +6419,7 @@ character_db={
 		birth_date = 331.11.6
 		death_date = 363.6.26
 		birth = constantinople
+		father = byz_julius_constantius
 		dynasty = constantinian_dynasty
 		tag = BYZ
 		ruler_trait = scholar
@@ -6529,6 +6548,21 @@ character_db={
 		tag = BYZ
 	}
 
+	byz_ariadne = {
+		first_name = { name = name_ariadne }
+		last_name = { name = name_flavius }
+		female = yes
+		culture = roman_culture
+		religion = orthodox
+		estate = nobles_estate
+		birth_date = 450.1.1
+		death_date = 515.8.1
+		birth = constantinople
+		father = byz_leo_i
+		dynasty = leonid_dynasty
+		tag = BYZ
+	}
+
 	byz_zeno = {
 		first_name = { name = name_zeno }
 		last_name = { name = name_flavius }
@@ -6553,6 +6587,7 @@ character_db={
 		death_date = 474.11.17
 		birth = constantinople
 		father = byz_zeno
+		mother = byz_ariadne
 		dynasty = leonid_dynasty
 		tag = BYZ
 	}
@@ -6614,6 +6649,7 @@ character_db={
 		birth_date = 520.1.1
 		death_date = 578.10.5
 		birth = constantinople
+		father = byz_justinian_i # nephew
 		dynasty = justinianic_dynasty
 		tag = BYZ
 	}
@@ -6879,6 +6915,7 @@ character_db={
 		death_date = 805.1.1 # blinded and deposed
 		birth = constantinople
 		father = byz_leo_iv
+		mother = byz_irene
 		dynasty = isaurian_dynasty
 		tag = BYZ
 		ruler_trait = naive
@@ -13830,11 +13867,75 @@ character_db={
 		culture = median
 		religion = catholic
 		estate = clergy_estate
+		religious_order = franciscan_order_religious_order
 		adm = 50 dip = 66 mil = 36
 		birth_date = 1277.1.1 #Unknown
 		birth = rome
 		tag = PAT
 		ruler_trait = just
+	}
+
+	# Minister General of the Franciscans 1329-1342
+	pap_gerald_odonis = {
+		first_name = { name = name_gerald }
+		last_name = { name = Odonis }
+		culture = languedocien
+		religion = catholic
+		estate = clergy_estate
+		adm = 82 dip = 68 mil = 22
+		birth_date = 1285.1.1
+		birth = figeac
+		tag = PAP
+	}
+
+	# Master General of the Dominicans 1333-1341
+	bur_hugh_vaucemain = {
+		first_name = { name = name_hugh }
+		last_name = { name = de_Vaucemain }
+		culture = burgundian
+		religion = catholic
+		estate = clergy_estate
+		adm = 74 dip = 70 mil = 24
+		birth_date = 1288.1.1 #Unknown
+		birth = auxerre
+		tag = BUR
+	}
+
+	# Prior General of the Augustinians 1326-1342
+	fra_guglielmo_cremona = {
+		first_name = { name = name_william }
+		last_name = { name = da_Cremona }
+		culture = lombard
+		religion = catholic
+		estate = clergy_estate
+		adm = 84 dip = 72 mil = 18
+		birth_date = 1270.1.1 #Unknown
+		birth = cremona
+		tag = FRA
+	}
+
+	bur_jean_chaudenay = {
+		first_name = { name = name_john }
+		last_name = { name = de_Chaudenay }
+		culture = burgundian
+		religion = catholic
+		estate = clergy_estate
+		adm = 72 dip = 62 mil = 24
+		birth_date = 1292.1.1 #Unknown
+		birth = beaune
+		tag = BUR
+	}
+
+	nap_raymond_gramat = {
+		first_name = { name = name_raymond }
+		last_name = { name = de_Gramat }
+		culture = languedocien
+		religion = catholic
+		estate = clergy_estate
+		adm = 70 dip = 58 mil = 28
+		birth_date = 1282.1.1 #Unknown
+		birth = cahors
+		tag = NAP
 	}
 
 	# Grandmother of the King of Aragon & Sister of the King of Naples
@@ -19269,6 +19370,21 @@ character_db={
 		tag = ORA
 	}
 
+	# Provençal Jewish scholars
+	ora_levi_ben_gershom = { # https://en.wikipedia.org/wiki/Gersonides
+		first_name = { name = Levi }
+		culture = sephardi # Provençal Jewish; no dedicated culture in game
+		religion = judaism
+		estate = burghers_estate
+		birth_date = 1288.1.1 # unknown
+		birth = uzes # Born in Bagnols-sur-Cèze, Diocese of Uzès
+		tag = ORA
+		artist = writer
+		artist_skill = 0.95
+		artist_trait = adept
+		artist_trait = prescient
+	}
+
 	# HOUSE OF BLOIS
 
 	bls_thibault_i_blois = {	
@@ -21985,6 +22101,7 @@ character_db={
 		culture = gascon
 		religion = catholic
 		estate = clergy_estate
+		religious_order = cistercian_order_religious_order
 		adm = 50 dip = 55 mil = 13
 		birth_date = 1285.1.1
 		birth = muret
@@ -24846,6 +24963,7 @@ character_db={
 		female = yes
 		birth_date = 1255.1.1
 		death_date = 1310.1.1
+		father = byz_konstantinos_palaiologos
 		dynasty = palaiologos_dynasty
 		tag = BYZ
 	}
@@ -27488,6 +27606,7 @@ character_db={
 		culture = limousin
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		adm = 55 dip = 75 mil = 26
 		birth_date = 1291.1.1
 		birth = tulle
@@ -27502,6 +27621,7 @@ character_db={
 		culture = limousin
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		adm = 55 dip = 75 mil = 13
 		birth_date = 1293.1.1 # Unknown
 		birth = tulle
@@ -28038,6 +28158,7 @@ character_db={
 		culture = arpitan
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		adm = 60 dip = 60 mil = 36
 		birth_date = 1322.1.1
 		birth = turin
@@ -29356,6 +29477,7 @@ character_db={
 		culture = champenais
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		adm = 45 dip = 50 mil = 26
 		birth_date = 1270.1.1 # Died 1345
 		birth = mouzon
@@ -29367,6 +29489,7 @@ character_db={
 		culture = champenais
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		adm = 66 dip = 45 mil = 13
 		birth_date = 1272.1.1 # Died 1347
 		birth = mouzon
@@ -29379,6 +29502,7 @@ character_db={
 		culture = champenais
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		adm = 66 dip = 55 mil = 26
 		birth_date = 1273.1.1 # Died 1348
 		birth = mouzon
@@ -29391,6 +29515,7 @@ character_db={
 		culture = gallo
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		adm = 55 dip = 55 mil = 13
 		birth_date = 1279.1.1 # Died 1354
 		birth = saint_brieuc
@@ -29402,6 +29527,7 @@ character_db={
 		culture = champenais
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		adm = 55 dip = 55 mil = 13
 		birth_date = 1280.1.1 # Died 1355
 		birth = mouzon
@@ -29414,6 +29540,7 @@ character_db={
 		culture = champenais
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		adm = 66 dip = 50 mil = 26
 		birth_date = 1285.1.1 # Died 1360
 		birth = mouzon
@@ -29426,6 +29553,7 @@ character_db={
 		culture = french
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		adm = 66 dip = 55 mil = 13
 		birth_date = 1303.1.1 # Died 1378
 		birth = vendome
@@ -29438,6 +29566,7 @@ character_db={
 		culture = french
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		adm = 55 dip = 45 mil = 13
 		birth_date = 1319.1.1 # Died 1394
 		birth = corbeil
@@ -29468,6 +29597,7 @@ character_db={
  		culture = vivaro_alpine
  		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
  		adm = 45 dip = 39 mil = 39
  		tag = SCL
  	}
@@ -29865,6 +29995,7 @@ character_db={
 		culture = tuscan
 		religion = catholic
 		estate = clergy_estate
+		religious_order = dominican_order_religious_order
 		adm = 66 dip = 80 mil = 26
 		birth_date = 1298.1.1
 		birth = florence
@@ -31556,6 +31687,16 @@ character_db={
 		#mother = Agnes de Courtenay
 		spouse = koj_guglielmo_spadalunga
 		dynasty = anjou_jerusalem_dynasty
+		tag = KOJ
+	}
+
+	koj_petrus_bartholomaeus = { #https://en.wikipedia.org/wiki/Peter_Bartholomew
+		first_name = { name = name_peter }
+		last_name = { name = name_bartholomew }
+		culture = provencal
+		religion = catholic
+		birth_date = 1060.1.1
+		death_date = 1099.4.20
 		tag = KOJ
 	}
 
@@ -34711,6 +34852,7 @@ character_db={
 		culture = median
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		birth_date = 1266.1.1 # Unknown
 		birth = fabriano
 		father = fab_alberghetto_i_chiavelli
@@ -44837,6 +44979,7 @@ character_db={
 		culture = venetian
 		religion = catholic
 		estate = clergy_estate
+		religious_order = dominican_order_religious_order
 		birth_date = 1330.1.1
 		birth = verona
 		father = ver_mastino_ii_scala
@@ -45183,6 +45326,7 @@ character_db={
 		culture = tuscan
 		religion = catholic
 		estate = clergy_estate
+		religious_order = dominican_order_religious_order
 		adm = 75 dip = 66 mil = 13
 		birth_date = 1289.1.1
 		birth = siena #unknown origin
@@ -46873,6 +47017,7 @@ character_db={
 		culture = lombard
 		religion = catholic
 		estate = clergy_estate
+		religious_order = dominican_order_religious_order
 		birth_date = 1283.1.1
 		birth = milano
 		tag = MLO
@@ -46915,6 +47060,7 @@ character_db={
 		culture = lombard
 		religion = catholic
 		estate = clergy_estate
+		religious_order = dominican_order_religious_order
 		adm = 50 dip = 55 mil = 13
 		birth_date = 1273.1.1
 		birth = locarno
@@ -46982,6 +47128,7 @@ character_db={
 		culture = languedocien
 		religion = catholic
 		estate = clergy_estate
+		religious_order = cistercian_order_religious_order
 		adm = 50 dip = 45 mil = 13
 		birth_date = 1285.1.1
 		birth = foix
@@ -47023,6 +47170,7 @@ character_db={
 		culture = auvergnat
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		adm = 66 dip = 80 mil = 39
 		birth_date = 1310.1.1
 		birth = mende
@@ -47062,6 +47210,7 @@ character_db={
 		culture = lombard
 		religion = catholic
 		estate = clergy_estate
+		religious_order = dominican_order_religious_order
 		adm = 55 dip = 55 mil = 13
 		birth_date = 1295.1.1 # Unknown
 		birth = padova
@@ -47116,6 +47265,7 @@ character_db={
 		culture = median
 		religion = catholic
 		estate = clergy_estate
+		religious_order = franciscan_order_religious_order
 		adm = 75 dip = 66 mil = 13
 		birth_date = 1257.1.1 # Died 1347 age 90
 		birth = macerata
@@ -48162,6 +48312,9 @@ character_db={
 		culture = moroccan
 		religion = sunni
 		estate = clergy_estate
+		artist = writer
+		artist_skill = 0.9
+		artist_trait = prominent
 		adm = 89
 		dip = 100
 		mil = 82
@@ -48192,6 +48345,18 @@ character_db={
 		father = tle_abu_hammu
 		dynasty = zayyanid_dynasty
 		tag = TLE
+	}
+	
+	# Almohad Prince
+	alm_abu_l_abbas_prince = {
+		first_name = { name = Abu-l_Abbas }
+		culture = moroccan
+		religion = sunni
+		adm = 53 dip = 48 mil = 47 #led a rebellion, worked as a tailor, received education in Cairo
+		birth_date = 1320.1.1 #unknown
+		birth = cairo
+		dynasty = almohad_dynasty
+		tag = TUN
 	}
 	
 	#Hafsids
@@ -48247,6 +48412,18 @@ character_db={
 		dynasty = hafsid_dynasty
 		tag = GFS
 	}
+	tun_abu_zakariya_yahya = {
+		first_name = { name = name_john }
+		nickname = { name = Abu-Zakariyya }
+		culture = masmuda
+		religion = sunni
+		adm = 30 dip = 33 mil = 45
+		birth_date = 1306.1.1 #unknown
+		father = tun_abu_yahya_abu_bakr_ii
+		birth = bejaia
+		dynasty = hafsid_dynasty
+		tag = BIJ
+	}
 	
 	#Future Usurper
 	tun_abu_hafs_umar = {
@@ -48298,6 +48475,20 @@ character_db={
 		birth = tunis
 		dynasty = hafsid_dynasty
 		tag = TUN
+	}
+
+	
+
+	tun_abu_muhammad_ibn_tafragin = { #https://ca.wikipedia.org/wiki/Ibn_Tafragin
+		first_name = { name = name_muhammad }
+		dynasty = tafragin_dynasty
+		culture = moroccan
+		religion = sunni
+		adm = 56 dip = 91 mil = 45
+		birth_date = 1285.1.1 #Unknown
+		birth = tunis
+		tag = TUN
+		cabinet_trait = influential
 	}
 
 	#Zab
@@ -48503,7 +48694,7 @@ character_db={
 
 	lon_pedro_cantabria = {
 		first_name = { name = name_peter }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 680.1.1
@@ -48516,7 +48707,7 @@ character_db={
 	lon_alfonso_i_asturias = { #https://en.wikipedia.org/wiki/Alfonso_I_of_Asturias
 		first_name = { name = name_alphonse }
 		nickname = { name = nick_the_catholic }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		adm = 26 dip = 26 mil = 45
@@ -48531,7 +48722,7 @@ character_db={
 	
 	lon_mauregato_asturias = { # A Bastard #https://en.wikipedia.org/wiki/Mauregatus
 		first_name = { name = name_mauregatus }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		adm = 39 dip = 39 mil = 55
@@ -48553,7 +48744,7 @@ character_db={
 	
 	lon_fruela_cantabria = {
 		first_name = { name = name_froila }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 708.1.1
@@ -48566,7 +48757,7 @@ character_db={
 	
 	lon_aurelio_asturias = { #https://en.wikipedia.org/wiki/Aurelius_of_Asturias
 		first_name = { name = name_aurelius }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 740.1.1
@@ -48580,7 +48771,7 @@ character_db={
 	lon_bermudo_i_asturias = { #https://en.wikipedia.org/wiki/Bermudo_I_of_Asturias
 		first_name = { name = name_bermund }
 		nickname = { name = nick_the_deacon }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 750.1.1
@@ -48888,7 +49079,7 @@ character_db={
 	cat_guifre_i_barcelona = {
 		first_name = { name = name_wilfred }
 		nickname = { name = nick_the_hairy }
-		culture = catalan
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		adm = 80 dip = 55 mil = 45
@@ -49958,6 +50149,21 @@ character_db={
 		tag = MLL
 	}	
 	
+	# Mallorcan Jewish cartographer
+	mll_abraham_cresques = { # https://en.wikipedia.org/wiki/Abraham_Cresques
+		first_name = { name = name_abraham }
+		culture = sephardi
+		religion = judaism
+		estate = burghers_estate
+		birth_date = 1325.1.1 # unknown
+		birth = palma
+		tag = MLL
+		artist = writer
+		artist_skill = 0.88
+		artist_trait = adept
+		artist_trait = prescient
+	}
+
 	# Queen Consort of Naples & Aunt of the King of Mallorca
 	nap_sancha_aragon = {
 		first_name = { name = name_sancha }
@@ -50203,7 +50409,7 @@ character_db={
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 1240.1.1 # estimated
-		death_date = 1278.1.1 # estimated
+		death_date = 1285.1.1 # estimated; must postdate son cas_pedro_nunez_guzman_ii birth 1280.1.1
 		birth = sevilla
 		dynasty = guzman_dynasty
 		tag = CAS
@@ -50906,6 +51112,101 @@ character_db={
 		tag = CAS
 	}
 
+	# Sephardi Jewish scholars and courtiers
+	ara_nissim_gerondi = { # https://en.wikipedia.org/wiki/Nissim_of_Gerona
+		first_name = { name = name_nissim }
+		culture = sephardi
+		religion = judaism
+		estate = burghers_estate
+		birth_date = 1315.1.1 # unknown; some sources cite c. 1290
+		birth = barcelona
+		tag = ARA
+		artist = writer
+		artist_skill = 0.90
+		artist_trait = adept
+		artist_trait = prominent
+	}
+
+	ara_bahya_ben_asher = { # https://en.wikipedia.org/wiki/Bahya_ben_Asher
+		first_name = { name = name_bahya }
+		last_name = { name = name_asher }
+		has_patronym = yes
+		culture = sephardi
+		religion = judaism
+		estate = burghers_estate
+		birth_date = 1255.1.1 # unknown
+		death_date = 1340.1.1 # unknown
+		birth = zaragoza
+		tag = ARA
+		artist = writer
+		artist_skill = 0.83
+		artist_trait = adept
+		artist_trait = workaholic
+	}
+
+	cas_asher_ben_jehiel = { # https://en.wikipedia.org/wiki/Asher_ben_Jehiel
+		first_name = { name = name_asher }
+		culture = ashkenazi
+		religion = judaism
+		birth_date = 1250.1.1 # Unknown
+		death_date = 1327.1.1 # unknown
+		birth = cologne
+		tag = CAS
+		artist = writer
+		artist_skill = 0.87
+		artist_trait = adept
+		artist_trait = prominent
+	}
+
+	cas_jacob_ben_asher = { # https://en.wikipedia.org/wiki/Jacob_ben_Asher
+		first_name = { name = name_james } # Should be: Yaacob
+		last_name = { name = name_asher }
+		has_patronym = yes
+		culture = sephardi
+		religion = judaism
+		estate = burghers_estate
+		birth_date = 1269.1.1 # unknown; born in Germany, raised in Toledo
+		birth = cologne
+		father = cas_asher_ben_jehiel
+		tag = CAS
+		artist = writer
+		artist_skill = 0.93
+		artist_trait = adept
+		artist_trait = meticulous
+	}
+
+	cas_judah_ben_asher = { # https://en.wikipedia.org/wiki/Judah_ben_Asher
+		first_name = { name = name_judah }
+		last_name = { name = name_asher }
+		has_patronym = yes
+		culture = sephardi
+		religion = judaism
+		estate = burghers_estate
+		birth_date = 1270.1.1 # unknown; born in Germany, raised in Toledo
+		birth = cologne
+		father = cas_asher_ben_jehiel
+		tag = CAS
+		artist = writer
+		artist_skill = 0.78
+		artist_trait = adept
+		artist_trait = workaholic
+	}
+
+	cas_samuel_halevi_abulafia = { # https://en.wikipedia.org/wiki/Samuel_ha-Levi_Abulafia
+		first_name = { name = name_samuel }
+		nickname = { name = "nick_ha_levi" }
+		culture = sephardi
+		religion = judaism
+		estate = burghers_estate
+		adm = 80 dip = 65 mil = 10
+		birth_date = 1320.1.1 # unknown
+		birth = ubeda
+		dynasty = abulafia_dynasty
+		tag = CAS
+		ruler_trait = midas_touched
+		ruler_trait = architectural_visionary
+	}
+
 	# Line of the Viscounts of Narbonne
 
 	nrb_aimeric_iii_lara = {
@@ -51322,7 +51623,7 @@ character_db={
 		culture = andalusi
 		religion = sunni
 		estate = nobles_estate
-		adm = 66 dip = 39 mil = 39
+		adm = 78 dip = 71 mil = 63
 		birth_date = 1318.6.29
 		birth = granada
 		father = gra_ismail_i_nasrid
@@ -51450,11 +51751,38 @@ character_db={
 		tag = GRA		
 	}
 	
+	# https://en.wikipedia.org/wiki/Ibn_al-Khatib - Lisan al-Din, polymath, poet and future vizier of Granada
+	gra_ibn_al_khatib = {
+		first_name = { name = name_muhammad }
+		last_name = { name = ibn_al_khatib }
+		culture = andalusi
+		religion = sunni
+		estate = nobles_estate
+		adm = 88 dip = 79 mil = 84
+		birth_date = 1313.11.16
+		birth = loja
+		tag = GRA
+	}
+
+	# https://en.wikipedia.org/wiki/Abu_Abdallah_ibn_al-Hakim - dhu al-wizaratayn, all-powerful vizier and poet under Muhammad III
+	gra_ibn_al_hakim_al_rundi = {
+		first_name = { name = name_muhammad }
+		last_name = { name = ibn_al_hakim_al_rundi }
+		culture = andalusi
+		religion = sunni
+		estate = nobles_estate
+		adm = 85 dip = 70 mil = 79
+		birth_date = 1261.1.1
+		death_date = 1309.3.14 # Killed by a mob in Granada during the coup against Muhammad III
+		birth = ronda
+		tag = GRA		
+	}
+	
 	# HOUSE OF PELAYO (Former Kings of León)
 	
 	lon_pelagio_asturias = {#https://en.wikipedia.org/wiki/Pelagius_of_Asturias
 		first_name = { name = name_pelagius }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		adm = 39 dip = 39 mil = 70
@@ -51469,7 +51797,7 @@ character_db={
 	
 	lon_favila_asturias = {#https://en.wikipedia.org/wiki/Favila_of_Asturias
 		first_name = { name = name_favila }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 719.1.1 # Unknown
@@ -51483,7 +51811,7 @@ character_db={
 	
 	lon_ermesinda_asturias = {
 		first_name = { name = name_ermesinde }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		female = yes
@@ -51500,7 +51828,7 @@ character_db={
 	lon_fruela_i_asturias = {#https://en.wikipedia.org/wiki/Fruela_I_of_Asturias
 		first_name = { name = name_froila }
 		nickname = { name = Cruel }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		adm = 55 dip = 45 mil = 39
@@ -51534,7 +51862,7 @@ character_db={
 	
 	lon_adosinda_asturias = {
 		first_name = { name = name_adosinda }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		female = yes
@@ -51550,7 +51878,7 @@ character_db={
 	
 	lon_silo_asturias = { #https://en.wikipedia.org/wiki/Silo_of_Asturias
 		first_name = { name = name_silo }
-		culture = leonese
+		culture = gothic_culture # visigothic
 		religion = catholic
 		estate = nobles_estate
 		birth_date = 720.1.1 # Unknown
@@ -75129,6 +75457,7 @@ character_db={
 		birth_date = 1258.1.1
 		culture = turkish_culture
 		religion = sunni
+		adm = 52 dip = 58 mil = 43
 		tag = GRM
 	}
 	
@@ -79632,6 +79961,7 @@ character_db={
 		culture = danube_bavarian
 		religion = catholic
 		estate = clergy_estate
+		religious_order = augustine_order_religious_order
 		birth_date = 1296.1.1
 		birth = berchtesgaden
 		tag = BRC
@@ -79817,6 +80147,7 @@ character_db={
 		estate = clergy_estate
 		birth_date = 1302.1.1
 		birth = bruchsal
+		dynasty = ehrenberg_dynasty
 		tag = SPY
 	}
 
@@ -80080,7 +80411,7 @@ character_db={
 	}
 
 	ans_agnes_von_wurttemberg_helfenstein = { #Second Spouse of Ruler
-		first_name = { name = name_conrad }
+		first_name = { name = name_agnes }
 		culture = east_franconian
 		religion = catholic
 		female = yes
@@ -80124,7 +80455,7 @@ character_db={
 		culture = swabian
 		religion = catholic
 		birth_date = 1300.1.1
-		birth = leuchtenberg 
+		birth = tubingen 
 		death_date = 1327.1.1
 		dynasty = tubingen_dynasty
 		tag = TUB
@@ -80135,7 +80466,7 @@ character_db={
 		culture = swabian
 		religion = catholic
 		birth_date = 1317.1.1
-		birth = leuchtenberg 
+		birth = tubingen 
 		father = tub_wilhelm_ii_tubingen
 		dynasty = tubingen_dynasty
 		tag = TUB
@@ -80147,8 +80478,9 @@ character_db={
 		culture = swabian
 		religion = catholic
 		estate = clergy_estate
+		religious_order = cistercian_order_religious_order
 		birth_date = 1280.1.1
-		birth = leuchtenberg 
+		birth = cheb 
 		tag = WLD
 	}	
 
@@ -80758,6 +81090,7 @@ character_db={
 		culture = rhine_alemannic
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		adm = 45 dip = 45 mil = 9
 		birth_date = 1325.1.1
 		birth = haguenau
@@ -80815,6 +81148,7 @@ character_db={
 		culture = high_alemannic
 		religion = catholic
 		estate = clergy_estate
+		religious_order = augustine_order_religious_order
 		birth_date = 1297.1.1
 		birth = chur
 		tag = BCH
@@ -85148,8 +85482,10 @@ character_db={
 		religion = catholic
 		female = yes
 		birth_date = 1300.1.1
-		birth = hohenberg
+		birth = wiesbaden
 		spouse = hhb_rudolf_ii_hohenberg_rotenburg
+		father = nsh_emich_i_nassau
+		mother = nsa_anna_nassau
 		tag = HHB
 	}
 
@@ -85312,6 +85648,7 @@ character_db={
 		culture = swabian
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		adm = 30 dip = 54 mil = 13
 		birth_date = 1277.1.1
 		birth = balingen
@@ -87754,6 +88091,7 @@ character_db={
 		culture = english
 		religion = catholic
 		estate = clergy_estate
+		religious_order = franciscan_order_religious_order
 		adm = 37
 		dip = 24
 		mil = 5
@@ -87777,6 +88115,7 @@ character_db={
 		culture = emilian
 		religion = catholic
 		estate = clergy_estate
+		religious_order = franciscan_order_religious_order
 		adm = 75
 		dip = 68
 		mil = 37
@@ -88871,20 +89210,10 @@ character_db={
 		culture = saxon
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		birth_date = 1280.1.1
 		birth = hersfeld
 		tag = HSF
-	}
-
-	#Speyer
-	sye_gerhard_von_ehrenberg = { #Ruler
-		first_name = { name = name_gerard }
-		culture = westphalian
-		religion = catholic
-		birth_date = 1300.1.1
-		birth = lippstadt
-		dynasty = ehrenberg_dynasty
-		tag = SYE
 	}
 
 	#Cologne
@@ -88906,6 +89235,7 @@ character_db={
 		culture = moselle_franconian
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		birth_date = 1300.1.1
 		birth = prum
 		tag = APR
@@ -88941,6 +89271,7 @@ character_db={
 		culture = walloon
 		religion = catholic
 		estate = clergy_estate
+		religious_order = benedictine_order_religious_order
 		birth_date = 1292.1.1
 		birth = stavelot
 		tag = STV
@@ -91144,7 +91475,7 @@ character_db={
 		first_name = { name = name_theodoric }
 		culture = prussian
 		religion = catholic
-		adm = 76 dip = 25 mil = 59
+		adm = 76 dip = 30 mil = 59
 		birth_date = 1290.1.1
 		birth = altenburg
 		dynasty = altenburg_dynasty
@@ -91186,6 +91517,7 @@ character_db={
 		culture = prussian
 		religion = catholic
 		estate = clergy_estate
+		religious_order = franciscan_order_religious_order
 		birth_date = 1270.1.1
 		birth = riga
 		tag = ARR
@@ -92213,6 +92545,7 @@ character_db={
 		last_name = { name = Mikhailovich }
 		culture = muscovite
 		religion = orthodox
+		adm = 38 dip = 52 mil = 32
 		birth_date = 1306.1.1
 		birth = tver
 		father = tve_mikhail_yaroslavich_rurikovich
@@ -100043,6 +100376,7 @@ character_db={
 		first_name = { name = name_john }
 		last_name = { name = da_firenze }
 		estate = clergy_estate
+		religious_order = dominican_order_religious_order
 		adm = 61 dip = 77 mil = 35
 		culture = median
 		religion = catholic
@@ -104554,5 +104888,64 @@ character_db={
 		birth = lahijan
 		dynasty = naservand_dynasty
 		tag = LHJ
+	}
+
+	cas_juan_nunez_de_prado = {
+		first_name = { name = name_juan }
+		last_name = { name = name_nuno }
+		has_patronym = yes
+		culture = castilian
+		religion = catholic
+		adm = 70 dip = 60 mil = 85
+		birth_date = 1295.1.1
+		birth = calatrava
+		tag = CAS
+	}
+
+	cas_vasco_rodriguez_de_coronado = {
+		first_name = { name = name_vasco }
+		last_name = { name = name_roderick }
+		has_patronym = yes
+		culture = leonese
+		religion = catholic
+		adm = 70 dip = 70 mil = 75
+		birth_date = 1285.1.1
+		birth = ucles
+		tag = CAS
+	}
+
+	cas_rodrigo_perez_alcantara = {
+		first_name = { name = name_roderick }
+		last_name = { name = name_peter }
+		has_patronym = yes
+		culture = leonese
+		religion = catholic
+		adm = 55 dip = 45 mil = 70
+		birth_date = 1290.1.1
+		birth = alcantara
+		tag = CAS
+	}
+
+	por_estevao_goncalves_leitao = {
+		first_name = { name = name_stephen }
+		last_name = { name = name_gonzalo }
+		has_patronym = yes
+		culture = portuguese
+		religion = catholic
+		adm = 70 dip = 55 mil = 70
+		birth_date = 1290.1.1
+		birth = tomar
+		tag = POR
+	}
+
+	ara_pere_de_thous = {
+		first_name = { name = name_peter }
+		last_name = { name = de_Thous }
+		culture = catalan
+		religion = catholic
+		adm = 80 dip = 65 mil = 70
+		birth_date = 1295.1.1
+		birth = peniscola
+		tag = ARA
 	}
 }

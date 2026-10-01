@@ -428,12 +428,9 @@ flavor_lit.5 = {
 			ruler = {
 				OR = {
 					any_child = {
-						is_alive = yes
-						is_adult = yes
-						has_available_marriage_slot = yes
+						is_eligible_for_marriage = yes
 						NOT = { is_same_gender = c:LIT.ruler }
 						NOT = { is_close_relative = c:LIT.ruler }
-						modifier:blocked_from_marriage = no
 						NOT = {
 							c:LIT.ruler = {
 								is_same_gender = PREV
@@ -461,12 +458,9 @@ flavor_lit.5 = {
 				if = {
 					limit = {
 						any_child = {
-							is_alive = yes
-							is_adult = yes
-							has_available_marriage_slot = yes
+							is_eligible_for_marriage = yes
 							NOT = { is_same_gender = c:LIT.ruler }
 							NOT = { is_close_relative = c:LIT.ruler }
-							modifier:blocked_from_marriage = no
 							NOT = {
 								root.ruler = {
 									is_same_gender = PREV
@@ -476,12 +470,9 @@ flavor_lit.5 = {
 					}
 					random_child = {
 						limit = {
-							is_alive = yes
-							is_adult = yes
-							has_available_marriage_slot = yes
+							is_eligible_for_marriage = yes
 							NOT = { is_same_gender = c:LIT.ruler }
 							NOT = { is_close_relative = c:LIT.ruler }
-							modifier:blocked_from_marriage = no
 							NOT = {
 								root.ruler = {
 									is_same_gender = PREV
@@ -530,18 +521,19 @@ flavor_lit.5 = {
 
 		historical_option = yes
 
-		add_government_power = government_power_extreme_bonus
+		add_political_influence = political_influence_extreme_bonus
 
 		hidden_effect = {
 			set_variable = accepted_marriage_variable
 		}
 		custom_tooltip = lit_should_poland_accept_tt
+		custom_tooltip = lit_offer_hand_to_poland_tt
 	}
 
 	option = {
 		name = flavor_lit.5.b
 
-		add_government_power = government_power_extreme_penalty
+		add_political_influence = political_influence_extreme_penalty
 		c:POL = {
 			add_casus_belli = {
 				target = ROOT
@@ -894,8 +886,7 @@ flavor_lit.10 = {
 			is_subject = no
 			has_ruler = yes
 			ruler = {
-				has_available_marriage_slot = yes
-				modifier:blocked_from_marriage = no
+				is_eligible_for_marriage = yes
 			}
 		}
 		c:MOS = {
@@ -907,12 +898,9 @@ flavor_lit.10 = {
 			at_war = no
 			ruler_or_regent = {
 				any_child = {
-					is_alive = yes
-					is_adult = yes
-					has_available_marriage_slot = yes
+					is_eligible_for_marriage = yes
 					NOT = { is_same_gender = c:LIT.ruler }
 					NOT = { is_close_relative = c:LIT.ruler }
-					modifier:blocked_from_marriage = no
 				}
 			}
 		}
@@ -933,12 +921,9 @@ flavor_lit.10 = {
 				save_scope_as = target_character2
 				random_child = {
 					limit = {
-						is_alive = yes
-						is_adult = yes
-						has_available_marriage_slot = yes
+						is_eligible_for_marriage = yes
 						NOT = { is_same_gender = c:LIT.ruler }
 						NOT = { is_close_relative = c:LIT.ruler }
-						modifier:blocked_from_marriage = no
 					}
 					save_scope_as = target_character4
 				}
@@ -1150,12 +1135,9 @@ flavor_lit.13 = {
 			save_scope_as = target_character2
 			random_child = {
 				limit = {
-					is_alive = yes
-					is_adult = yes
-					has_available_marriage_slot = yes
+					is_eligible_for_marriage = yes
 					NOT = { is_same_gender = c:LIT.ruler }
 					NOT = { is_close_relative = c:LIT.ruler }
-					modifier:blocked_from_marriage = no
 				}
 				save_scope_as = target_character3
 			}

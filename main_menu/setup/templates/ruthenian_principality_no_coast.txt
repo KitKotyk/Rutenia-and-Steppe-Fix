@@ -32,6 +32,7 @@ government = {
 		noble_serfdom_rights
         noble_marriage_rights
         noble_fortification_licenses
+		noble_private_armies_privilege
         kormlenije
 
         # Clergy

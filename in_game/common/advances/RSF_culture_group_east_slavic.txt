@@ -3,6 +3,7 @@
 ############################
 veche_advance = {
 	age = age_1_traditions
+	icon = veche_advance
 	potential = {
 		culture = { has_culture_group = culture_group:russian_group }
 	}
@@ -21,7 +22,8 @@ ostrog_advance = {
 	potential = {
 		culture = { has_culture_group = culture_group:russian_group }
 	}
-	unlock_building = ostrog
+	unlock_building = ostrog	
+	num_ostrogs = 3
 	ai_weight = { add = 100 }
 }
 
@@ -31,11 +33,13 @@ ostrog_advance = {
 ############################
 voivode_advance = {
 	age = age_3_discovery
+	icon = voivode_advance
 	content_priority = 500
 	potential = {
 		culture = { has_culture_group = culture_group:russian_group }
 	}
 	requires = pike_square
+	num_ostrogs = 3
 	unlock_government_reform = voivode_reform
 	ai_weight = { add = 100 }
 }
@@ -46,6 +50,7 @@ voivode_advance = {
 ############################
 russian_integration = {
 	age = age_4_reformation
+	icon = russian_integration
 	content_priority = 500
 	potential = {
 		culture = { has_culture_group = culture_group:russian_group }
@@ -61,6 +66,7 @@ russian_integration = {
 ############################
 land_of_the_rus = {
 	age = age_5_absolutism
+	icon = land_of_the_rus
 	content_priority = 300
 	potential = {
 		culture = { has_culture_group = culture_group:russian_group }
@@ -75,6 +81,7 @@ land_of_the_rus = {
 ############################
 united_faith = {
 	age = age_6_revolutions
+	icon = united_faith
 	content_priority = 300
 	potential = {
 		culture = { has_culture_group = culture_group:russian_group }

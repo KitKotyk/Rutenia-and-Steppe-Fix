@@ -3,6 +3,7 @@
 ############################
 russian_resiliance = {
 	age = age_1_traditions
+	icon = russian_resiliance
 	potential = {
 		culture = { has_culture_group = culture_group:zalessian_group }
 	}
@@ -16,6 +17,7 @@ russian_resiliance = {
 ############################
 the_mestnichestvo_advance = {
 	age = age_2_renaissance
+	icon = the_mestnichestvo_advance
 	potential = {
 		culture = { has_culture_group = culture_group:zalessian_group }
 	}
@@ -29,10 +31,12 @@ the_mestnichestvo_advance = {
 ############################
 siberian_frontier = {
 	age = age_3_discovery
+	icon = siberian_frontier
 	potential = {
 		culture = { has_culture_group = culture_group:zalessian_group }
 	}
 	global_population_growth = 0.0002
+	num_ostrogs = 3
 	unlock_building = pomor_outpost
 	ai_weight = { add = 100 }
 	requires = colonial_charters	
@@ -44,6 +48,7 @@ siberian_frontier = {
 ############################
 russian_artillery_yard = {
 	age = age_4_reformation
+	icon = russian_artillery_yard
 	potential = {
 		culture = { has_culture_group = culture_group:zalessian_group }
 	}
@@ -59,10 +64,12 @@ russian_artillery_yard = {
 ############################
 table_of_ranks = {
 	age = age_5_absolutism
+	icon = table_of_ranks
 	potential = {
 		culture = { has_culture_group = culture_group:zalessian_group }
 	}
 	monthly_army_tradition = 0.03
+	num_ostrogs = 3
 	ai_weight = { add = 100 }
 }
 
@@ -72,6 +79,7 @@ table_of_ranks = {
 ############################
 russian_legitimization = {
 	age = age_6_revolutions
+	icon = russian_legitimization
 	potential = {
 		culture = { has_culture_group = culture_group:zalessian_group }
 	}

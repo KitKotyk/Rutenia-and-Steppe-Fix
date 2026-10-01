@@ -27,8 +27,9 @@ enforce_religion = {
 		}
 		target_flag = recipient
 		name = "choose_country"
+		default_sort = will
 		column = {
-			data = name
+			data = country_diplomacy_info_subject
 		}
 		visible = {
 			not = { religion = scope:actor.religion }

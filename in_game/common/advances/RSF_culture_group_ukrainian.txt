@@ -6,7 +6,7 @@ tamed_steppes = {
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
-	global_monthly_food_modifier = 0.05
+	global_monthly_food_modifier = monthly_food_productivity_weak_bonus
 
 	requires = agriculture_advance
 }
@@ -17,6 +17,7 @@ tamed_steppes = {
 ############################
 east_and_west = {
 	age = age_2_renaissance
+	icon = east_and_west
 	content_priority = 600
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
@@ -33,7 +34,8 @@ steppe_outpost_advance = {
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
-	requires = recruitment_law_advance	
+	requires = recruitment_law_advance
+	num_ostrogs = 3
 	unlock_building = steppe_outpost
 	ai_weight = { add = 100 }
 }

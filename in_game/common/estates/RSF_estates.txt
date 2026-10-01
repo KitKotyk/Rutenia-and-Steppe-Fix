@@ -1,9 +1,9 @@
 ﻿# Cossacks can have dynasties and they did have in reality
 
+
 TRY_REPLACE:cossacks_estate = {
 	color = map_cossack
-	power_per_pop  = 0.75
-	tax_per_pop = 0.02
+	tax_per_pop = 0.5
 	rival = -0.01
 	alliance = 0.01
 	
@@ -15,14 +15,19 @@ TRY_REPLACE:cossacks_estate = {
 	#multiplied with (satisfaction - LOW_SATISFACTION_THRESHOLD)
 	satisfaction = {
 		monthly_war_exhaustion = -0.05
-		global_monthly_food_modifier = 0.10
+		global_monthly_food_modifier = monthly_food_productivity_mild_bonus
 	}
 	#multiplied with (relative_power - LOW_POWER_THRESHOLD) if > LOW_POWER_THRESHOLD
 	high_power = {
 		cossacks_estate_max_tax = -0.3
 		military_tactics = 0.1
-		
+
 		monthly_towards_offensive = societal_value_significant_monthly_move
+		monthly_legitimacy = high_power_estate_government_power_penalty
+		monthly_republican_tradition = high_power_estate_government_power_penalty
+		monthly_devotion = high_power_estate_government_power_penalty
+		monthly_horde_unity = high_power_estate_government_power_penalty
+		monthly_tribal_cohesion = high_power_estate_government_power_penalty
 	}
 	
 	
@@ -33,94 +38,116 @@ TRY_REPLACE:cossacks_estate = {
 	}
 
 	opinion = {
-		add = {
-			desc = "ESTATE_OPINION_BASE"
-			value = "opinion(scope:target)"
-			multiply = 0.05
-		}
-		
 		if = {
-			limit = {
-				"estate(estate_type:cossacks_estate)" = {
-					dominant_religion ?= {
-						this != scope:target.religion
-						group = scope:target.religion.group
+			limit = { country_exists = scope:target }
+			add = {
+				desc = "ESTATE_OPINION_BASE"
+				value = "opinion(scope:target)"
+				multiply = 0.05
+			}
+
+			if = {
+				limit = {
+					scope:target = {
+						has_discriminated_culture = root.culture
 					}
 				}
-			}
-			add = {
-				desc = "ESTATE_OPINION_HERETIC"
-				value = -5
-			}
-		}
-
-		if = {
-			limit = {
-				"estate(estate_type:cossacks_estate)" = {
-					dominant_religion ?= { group != scope:target.religion.group }
+				add = {
+					desc = "ESTATE_OPINION_TARGET_DISCRIMINATES_OUR_CULTURE"
+					value = -50
 				}
 			}
-			add = {
-				desc = "ESTATE_OPINION_HEATHEN"
-				value = -10
-			}
-		}
-
-		if = {
-			limit = {
-				"estate(estate_type:cossacks_estate)" = {
-					scope:target.culture.language = dominant_culture.language
+		
+			if = {
+				limit = {
+					"estate(estate_type:cossacks_estate)" = {
+						dominant_religion ?= {
+							this != scope:target.religion
+							group = scope:target.religion.group
+						}
+					}
+				}
+				add = {
+					desc = "ESTATE_OPINION_HERETIC"
+					value = -5
 				}
 			}
-			add = {
-				desc = "ESTATE_OPINION_SAME_COMMON_LANGUAGE"
-				value = 5
-			}
-		}
 
-		if = {
-			limit = {
-				is_rival_of = scope:target
-			}	
-			add = {
-				desc = "ESTATE_OPINION_RIVAL"
-				value = -20
-			}
-		}
-
-		if = {
-			limit = {
-				"estate(estate_type:cossacks_estate)" = {
-					dominant_culture ?= { this = scope:target.culture }
+			if = {
+				limit = {
+					"estate(estate_type:cossacks_estate)" = {
+						dominant_religion ?= { group != scope:target.religion.group }
+					}
+				}
+				add = {
+					desc = "ESTATE_OPINION_HEATHEN"
+					value = -10
 				}
 			}
-			add = { desc = "ESTATE_OPINION_SAME_ESTATE_CULTURE" value = 20 }
-		}
-		else_if = {
-			limit = {
-				"estate(estate_type:cossacks_estate)" = {
-					scope:target = { has_accepted_culture = prev.dominant_culture }
-				}
-			}
-			add = { desc = "ESTATE_OPINION_ACCEPTED_ESTATE_CULTURE" value = 10 }
-		}
-		else_if = {
-			limit = {
-				"estate(estate_type:cossacks_estate)" = {
-					scope:target = { has_tolerated_culture = prev.dominant_culture }
-				}
-			}
-			add = { desc = "ESTATE_OPINION_TOLERATED_ESTATE_CULTURE" value = 5 }
-		}
 
-		if = {
-			limit = {
-				"estate(estate_type:cossacks_estate)" = {
-					dominant_religion ?= { this = scope:target.religion }
+			if = {
+				limit = {
+					"estate(estate_type:cossacks_estate)" = {
+						scope:target.culture.language = dominant_culture.language
+					}
+				}
+				add = {
+					desc = "ESTATE_OPINION_SAME_COMMON_LANGUAGE"
+					value = 5
 				}
 			}
-			add = { desc = "ESTATE_OPINION_SAME_ESTATE_RELIGION" value = 20 }
-		}
 
+			if = {
+				limit = {
+					is_rival_of = scope:target
+				}	
+				add = {
+					desc = "ESTATE_OPINION_RIVAL"
+					value = -20
+				}
+			}
+
+			if = {
+				limit = {
+					"estate(estate_type:cossacks_estate)" = {
+						dominant_culture ?= { this = scope:target.culture }
+					}
+				}
+				add = { desc = "ESTATE_OPINION_SAME_ESTATE_CULTURE" value = 20 }
+			}
+			else_if = {
+				limit = {
+					"estate(estate_type:cossacks_estate)" = {
+						scope:target = { has_accepted_culture = prev.dominant_culture }
+					}
+				}
+				add = { desc = "ESTATE_OPINION_ACCEPTED_ESTATE_CULTURE" value = 10 }
+			}
+			else_if = {
+				limit = {
+					"estate(estate_type:cossacks_estate)" = {
+						scope:target = { has_tolerated_culture = prev.dominant_culture }
+					}
+				}
+				add = { desc = "ESTATE_OPINION_TOLERATED_ESTATE_CULTURE" value = 5 }
+			}
+
+			if = {
+				limit = {
+					"estate(estate_type:cossacks_estate)" = {
+						dominant_religion ?= { this = scope:target.religion }
+					}
+				}
+				add = { desc = "ESTATE_OPINION_SAME_ESTATE_RELIGION" value = 20 }
+			}
+
+		}
+	}
+
+	private_army_per_pop = 0.1
+
+	private_army_unit_categories = {
+		army_light_cavalry = 2.0
+		army_heavy_cavalry = 1.0
 	}
 }

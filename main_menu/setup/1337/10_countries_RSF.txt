@@ -268,6 +268,7 @@ countries = {
 				cossacks_land_rights
 				cossacks_allowed_free_roaming
 				cossacks_military_service
+				cossack_private_armies_privilege
 			}
 		}
 
@@ -302,6 +303,15 @@ countries = {
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
+
+			privilege = {
+				# Cossacks
+				cossack_identity
+				cossacks_land_rights
+				cossacks_allowed_free_roaming
+				cossacks_military_service
+				cossack_private_armies_privilege
+			}
 		}
 
 		liturgical_language = church_slavonic_language
