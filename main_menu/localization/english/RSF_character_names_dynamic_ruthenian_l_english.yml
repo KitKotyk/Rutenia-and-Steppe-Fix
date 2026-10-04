@@ -30,29 +30,29 @@
  name_agatha.ukrainian_dialect: "Ahafia"
 
  # name_agrippina: "Agrippina" 
- name_agrippina.ruthenian_language: "Ahrafena"
-
- # name_agrippina: "Agrippina"
- name_agrippina.belarusian_dialect: "Ahrypina"
- name_agrippina.ukrainian_dialect: "Horpyna"
+ name_agrippina.ruthenian_language: "Ahrypina"
+ name_agrippina.belarusian_dialect.diminutive: "Harpina"
+ name_agrippina.ukrainian_dialect.diminutive: "Horpyna"
+ name_agrippina.east_slavic_language.diminutive: "Agrafena"
 
  # name_albert: "Albert"
  name_albert.belarusian_dialect: "Vojciech"
+ name_albert.ukrainian_dialect: "Voycech"
 
- # name_alexander: "Alexander" 
- name_alexander.belarusian_dialect: "Alaksandar"
- name_alexander.belarusian_dialect.diminutive: "Aleś"
+ # name_alexander: "Alexander"
+ name_alexander.belarusian_dialect: "Aliaksandar"
+ name_alexander.belarusian_dialect.diminutive: "Alieś"
  name_alexander.ukrainian_dialect: "Oleksandr"
  name_alexander.ukrainian_dialect.diminutive: "Oles"
- 
+
  # name_alexandra: "Alexandra"
- name_alexandra.belarusian_dialect: "Alaksandara"
- name_alexandra.belarusian_dialect.diminutive: "Alesia"
+ name_alexandra.belarusian_dialect: "Aliaksandra"
+ name_alexandra.belarusian_dialect.diminutive: "Aliesia"
  name_alexandra.ukrainian_dialect: "Oleksandra"
  name_alexandra.ukrainian_dialect.diminutive: "Olesia"
 
  # name_alexis: "Alexis"
- name_alexis.belarusian_dialect: "Alaksiej"
+ name_alexis.belarusian_dialect: "Aliaksiej"
  name_alexis.ukrainian_dialect: "Oleksiy"
  name_alexis.ukrainian_dialect.diminutive: "Oleksa"
 
@@ -61,9 +61,14 @@
  name_alina.belarusian_dialect: "Alina"
  name_alina.ukrainian_dialect: "Lina"
 
+ # name_alla: Alla
+ name_alla: "Alla"
+ name_alla.belarusian_dialect: "Alla"
+ name_alla.ukrainian_dialect: "Alla"
+
  # name_anastasia: "Anastasia"
- name_anastasia.belarusian_dialect: "Anastasyja"
- name_anastasia.ukrainian_dialect: "Anastasia" 
+ name_anastasia.belarusian_dialect: "Anastasia"
+ name_anastasia.ukrainian_dialect: "Anastasia"
 
  #  name_anatoly: "Anatoly"
  name_anatoly.belarusian_dialect: "Anatol"
@@ -74,7 +79,7 @@
  name_andrew.belarusian_dialect.diminutive: "Andruś"
  name_andrew.ukrainian_dialect: "Andriy"
  name_andrew.ukrainian_dialect.diminutive: "Andriyko"
- 
+
  # name_anna: "Anna"
  name_anna.ruthenian_language: "Hanna"
 
@@ -101,15 +106,17 @@
 
  # name_athanasius: "Athanasius"
  name_athanasius.belarusian_dialect: "Afanasij"
- name_athanasius.belarusian_dialect.diminutive: "Panas"
+ name_athanasius.belarusian_dialect.diminutive: "Apanas"
  name_athanasius.ukrainian_dialect: "Afanasiy"
  name_athanasius.ukrainian_dialect.diminutive: "Panas"
 
  # name_augustine: "Augustine"
+ name_augustine.belarusian_dialect: "Avhustin"
  name_augustine.ukrainian_dialect: "Avhustyn"
 
  # name_barbara: "Barbara"
- name_barbara.belarusian_dialect: "Barbara"
+ name_barbara.belarusian_dialect: "Varvara"
+ name_barbara.belarusian_dialect.alternative: "Barbara"
  name_barbara.ukrainian_dialect: "Varvara"
 
  # name_basil: "Basil"
@@ -142,7 +149,7 @@
  # name_cassius: "Cassio"
  name_cassius.ruthenian_language: "Kasian"
 
- # name_catherine: "Catherine" 
+ # name_catherine: "Catherine"
  name_catherine.belarusian_dialect: "Kaciaryna"
  name_catherine.ukrainian_dialect: "Kateryna"
  name_catherine.ukrainian_dialect.diminutive: "Katria"
@@ -154,30 +161,43 @@
  name_christine.ukrainian_dialect.diminutive: "Khrystia"
 
  # name_constantine: "Constantine"
- name_constantine.belarusian_dialect: "Kanstantyn"
+ name_constantine.belarusian_dialect: "Kanstancin"
  name_constantine.belarusian_dialect.diminutive: "Kastuś"
  name_constantine.ukrainian_dialect: "Kostiantyn"
+ name_constantine.ukrainian_dialect.alternative: "Kost’" # Кость
+ name_constantine.ukrainian_dialect.diminutive: "Kostyk"
 
  # name_cornelius: "Cornelius"
- name_cornelius.ukrainian_dialect: "Kornylo"
+ name_cornelius.ruthenian_language: "Kornyliy"
+ name_cornelius.ruthenian_language.alternative: "Korniy"
+ name_cornelius.ruthenian_language.diminutive: "Kornylo"
+ name_cornelius.belarusian_dialect: "Karnel"
+ name_cornelius.belarusian_dialect.alternative: "Karniej"
+ name_cornelius.belarusian_dialect.diminutive: "Karniła"
+ name_cornelius.east_slavic_language: "Kornieliy"
+ name_cornelius.novgorodian_dialect: "Kornila"
 
  # name_cosmas: "Cosmas"
  name_cosmas.belarusian_dialect: "Kuźma"
  name_cosmas.ukrainian_dialect: "Kuzma"
- 
+ name_cosmas.novgorodian_dialect: "Kozma"
+
  # name_cyril: "Cyril"
  name_cyril.belarusian_dialect: "Kirył"
  name_cyril.ukrainian_dialect: "Kyrylo"
- 
+
  # name_damian: "Damian"
+ name_damian.ruthenian_language: "Demian"
  name_damian.ukrainian_dialect: "Demian"
- 
+ name_damian.belarusian_dialect: "Dziamian"
+ name_damian.east_slavic_language: "Diemian"
+
  # name_daniel: "Daniel"
  name_daniel.belarusian_dialect: "Daniła"
  name_daniel.ukrainian_dialect: "Danylo"
  name_daniel.ukrainian_dialect.diminutive: "Danylko"
- 
- # name_daria: "Daria" 
+
+ # name_daria: "Daria"
  name_daria.belarusian_dialect: "Darja"
  name_daria.belarusian_dialect.diminutive: "Adarka"
  name_daria.ukrainian_dialect: "Daria"
@@ -185,20 +205,23 @@
 
  # name_david: "David"
  name_david.ruthenian_language: "Davyd"
- 
+
  # name_demetrius: "Demetrius"
- name_demetrius.belarusian_dialect: "Źmicier"
  name_demetrius.ukrainian_dialect: "Dmytro"
  name_demetrius.ukrainian_dialect.diminutive: "Dymko"
- 
+ name_demetrius.belarusian_dialect: "Dźmitry"
+ name_demetrius.belarusian_dialect.diminutive: "Źmicier"
+ name_demetrius.east_slavic_language: "Dmitrij"
+ name_demetrius.east_slavic_language.diminutive: "Mit’ka"
+
  # name_diomedes: "Diomedes"
- name_diomedes.belarusian_dialect: "Dzemid"
+ name_diomedes.belarusian_dialect: "Dziamid"
  name_diomedes.ukrainian_dialect: "Demyd"
 
  # name_dobrynya: "Dobrynya"
  name_dobrynya.belarusian_dialect: "Dabrynia"
  name_dobrynya.ukrainian_dialect: "Dobrynia"
- 
+
  # name_dorotheos: "Dorotheus"
  name_dorotheos.belarusian_dialect: "Darafiej"
  name_dorotheos.ukrainian_dialect: "Dorofiy"
@@ -210,7 +233,7 @@
  # name_elias: "Elias"
  name_elias.belarusian_dialect: "Illa"
  name_elias.ukrainian_dialect: "Illia"
- 
+
  # name_elizabeth: "Elizabeth"
  name_elizabeth.belarusian_dialect: "Lizavieta"
  name_elizabeth.ukrainian_dialect: "Yelyzaveta"
@@ -218,7 +241,7 @@
  # name_eliseus: "Eliseus"
  name_eliseus.belarusian_dialect: "Jelisiej"
  name_eliseus.ukrainian_dialect: "Yelysei"
- 
+
  # name_emilian: "Emilian"
  name_emilian.belarusian_dialect: "Amieljan"
  name_emilian.ukrainian_dialect: "Omelian"
@@ -228,17 +251,17 @@
  name_epifanio.belarusian_dialect: "Jepifanij"
  name_epifanio.ukrainian_dialect: "Yepyfaniy"
  name_epifanio.ukrainian_dialect.diminutive: "Yepyfan"
-  
+
  # name_eudokia: "Eudokia"
  name_eudokia.belarusian_dialect: "Eŭdakija"
  name_eudokia.ukrainian_dialect: "Yevdokia"
- 
+
  # name_eugene: "Eugene"
  name_eugene.belarusian_dialect: "Jaŭhen"
  name_eugene.ukrainian_dialect: "Yevhen"
- 
+
  # name_euphemia: "Euphemia"
- name_euphemia.belarusian_dialect: "Jaŭchimija" 
+ name_euphemia.belarusian_dialect: "Jaŭchimija"
  name_euphemia.ukrainian_dialect: "Yevfymia"
 
  # name_euphrasia: "Euphrasia"
@@ -249,37 +272,54 @@
  name_euphrosyne.belarusian_dialect: "Jeŭfrasinija"
  name_euphrosyne.ukrainian_dialect: "Yevfrosynia"
 
- # name_eustathius: "Eustathius" 
+ # name_eustathius: "Eustathius"
+ name_eustathius.belarusian_dialect: "Astafij"
  name_eustathius.ruthenian_language: "Ostap"
- 
+
  # name_euthymius: "Euthymius"
- name_euthymius.belarusian_dialect: "Jafim" 
+ name_euthymius.belarusian_dialect: "Jafim"
  name_euthymius.ukrainian_dialect: "Yukhym"
+
+ # name_faith: Faith, Віра, Вєра
+ name_faith.belarusian_dialect: "Viera"
+ name_faith.east_slavic_language: "Viera"
+ name_faith.ruthenian_language: "Vira"
 
  # name_febronia: "Febronia"
  name_febronia.ruthenian_language: "Fevronia"
- 
+
  # name_gabriel: "Gabriel"
- name_gabriel.belarusian_dialect: "Haŭryła" 
+ name_gabriel.belarusian_dialect: "Haŭryła"
  name_gabriel.ukrainian_dialect: "Havrylo"
- 
+
  # name_george: "George"
  name_george.belarusian_dialect: "Juryj"
- name_george.ukrainian_dialect: "Yuriy" 
+ name_george.ukrainian_dialect: "Yuriy"
  name_george.ukrainian_dialect.diminutive: "Yurko"
+
+ # name_gerasimos: "Gerasim"; Герасим, Гєрасім, Ґєрасім
+ name_gerasimos.belarusian_dialect: "Hierasim"
+ name_gerasimos.east_slavic_language: "Gerasim"
+ name_gerasimos.ruthenian_language: "Herasym"
+ name_gerasimos.ukrainian_dialect: "Herasym"
 
  # name_gideon: "Gideon"
  name_gideon.ruthenian_language: "Hedeon"
- 
+
  # name_gleb: "Gleb"
  name_gleb.belarusian_dialect: "Hleb"
  name_gleb.ukrainian_dialect: "Hlib"
- 
+
+ # name_gordian: "Gordian"; Гордій, Гардзєй, Ґордєй
+ name_gordian.belarusian_dialect: "Hardzey"
+ name_gordian.east_slavic_language: "Gordey"
+ name_gordian.ruthenian_language: "Hordiy"
+
  # name_gregory: "Gregory"
  name_gregory.belarusian_dialect: "Ryhor"
  name_gregory.ukrainian_dialect: "Hryhoriy"
  name_gregory.ukrainian_dialect.diminutive: "Hrytsko"
- 
+
  # name_helen: "Helen"
  name_helen.belarusian_dialect: "Alena"
  name_helen.ukrainian_dialect: "Olena"
@@ -287,7 +327,14 @@
  # name_hermolaos: "Hermolaos"
  name_hermolaos.belarusian_dialect: "Jarmoła"
  name_hermolaos.ukrainian_dialect: "Yarmola"
- 
+
+ # name_hope: Hope, Надія, Надзея, Надєжда
+ name_hope.belarusian_dialect: "Nadzieja"
+ name_hope.belarusian_dialect.diminutive: "Nadzia"
+ name_hope.east_slavic_language: "Nadezhda"
+ name_hope.east_slavic_language.diminutive: "Nadia"
+ name_hope.ruthenia_language: "Nadia"
+
  # name_igor: "Igor"
  name_igor.belarusian_dialect: "Ihar"
  name_igor.ukrainian_dialect: "Ihor"
@@ -295,22 +342,22 @@
  # name_innocent: "Innocent"
  name_innocent.belarusian_dialect: "Inakienci"
  name_innocent.ukrainian_dialect: "Innokentiy"
- 
+
  # name_irene: "Irene"
  name_irene.ruthenian_language: "Iryna"
- 
+
  # name_isidore: "Isidore"
  name_isidore.belarusian_dialect: "Sidar"
  name_isidore.ukrainian_dialect: "Sydor"
 
-  # name_iziaslav: "Iziaslav"
+ # name_iziaslav: "Iziaslav"
  name_iziaslav.belarusian_dialect: "Iziasłaŭ"
  name_iziaslav.ukrainian_dialect: "Iziaslav"
- 
+
  # name_james: "James"
  name_james.belarusian_dialect: "Jakaŭ"
- name_james.ukrainian_dialect: "Yakiv" 
- 
+ name_james.ukrainian_dialect: "Yakiv"
+
  # name_jeremiah: "Jeremiah"
  name_jeremiah.belarusian_dialect: "Jaremi"
  name_jeremiah.ukrainian_dialect: "Yeremia"
@@ -319,51 +366,57 @@
  # name_joachim: "Joachim"
  name_joachim.belarusian_dialect: "Jakim"
  name_joachim.ukrainian_dialect: "Yakym"
- 
+
  # name_john: "Johan"
  name_john.belarusian_dialect: "Ivan"
  name_john.belarusian_dialect.diminutive: "Janka"
  name_john.ukrainian_dialect: "Ivan"
  name_john.ukrainian_dialect.diminutive: "Ivanko"
- 
+
  # name_joseph: "Joseph"
  name_joseph.belarusian_dialect: "Josif"
  name_joseph.ukrainian_dialect: "Yosyp"
- 
+
  # name_julianne: "Julianne"
- name_julianne.belarusian_dialect: "Ulana"
- name_julianne.ukrainian_dialect: "Uliana"
+ name_julianne.belarusian_dialect: "Juliana"
+ name_julianne.belarusian_dialect.diminutive: "Ułliana"
+ name_julianne.east_slavic_language: "Iuliania"
+ name_julianne.east_slavic_language.diminutive: "Oliana"
+ name_julianne.ruthenian_language: "Yuliana"
+ name_julianne.ruthenian_language.diminutive: "Uliana"
 
  # name_julie: "Julia"
  name_julie.belarusian_dialect: "Julia"
  name_julie.ukrainian_dialect: "Yulia"
 
  # name_justus: "Justus"
- name_justus.ukrainian_dialect: "Ustym"
- 
+ name_justus.belarusian_dialect: "Justym"
+ name_justus.belarusian_dialect.diminutive: "Ušсim"
+ name_justus.ruthenian_language: "Ustym"
+
  # name_laurence: "Laurence"
  name_laurence.belarusian_dialect: "Łaŭrenci"
  name_laurence.belarusian_dialect.diminutive: "Łaŭryn"
  name_laurence.ukrainian_dialect: "Lavrentiy"
  name_laurence.ukrainian_dialect.diminutive: "Lavryn"
- 
+
  # name_leon: "Leon"
  name_leon.belarusian_dialect: "Leŭ"
  name_leon.ukrainian_dialect: "Lev"
  name_leon.ukrainian_dialect.diminutive: "Levko"
- 
+
  # name_lucas: "Lucas"
  name_lucas.belarusian_dialect: "Łukaš"
  name_lucas.ukrainian_dialect: "Lukian"
- 
+
  # name_ludmila: "Ludmila"
- name_ludmila.belarusian_dialect: "Ludmiła"
+ name_ludmila.belarusian_dialect: "Liudmiła"
  name_ludmila.ukrainian_dialect: "Liudmyla"
 
  # name_lyubov: "Lyubov"
- name_lyubov.belarusian_dialect: "Luboŭ"
+ name_lyubov.belarusian_dialect: "Liuboŭ"
  name_lyubov.ukrainian_dialect: "Liubov"
- 
+
  # name_macarius: "Macarius"
  name_macarius.belarusian_dialect: "Makaryj"
  name_macarius.ukrainian_dialect: "Makariy"
@@ -372,27 +425,31 @@
  # name_marcelin: "Marcelin"
  name_marcelin.belarusian_dialect: "Marcin"
  name_marcelin.ukrainian_dialect: "Martyn"
- 
+
  # name_marine: "Marine"
  name_marine.ruthenian_language: "Maryna"
- 
+
  # name_mark: "Mark"
- name_mark.ukrainian_dialect: "Markian"
+ name_mark.belarusian_dialect: "Markyian"
+ name_mark.belarusian_dialect.diminutive: "Marka"
+ name_mark.east_slavic_language: "Markian"
+ name_mark.ukrainian_dialect: "Markiyan"
  name_mark.ukrainian_dialect.diminutive: "Marko"
- 
+
  # name_martin: "Martin"
- name_martin.belarusian_dialect: "Marcin"
+ name_martin.belarusian_dialect: "Marcyian"
+ name_martin.belarusian_dialect.diminutive: "Marcin"
  name_martin.ukrainian_dialect: "Martyn"
- 
+
  # name_mary: "Maria"
- name_mary.belarusian_dialect: "Maria"
+ name_mary.belarusian_dialect: "Maryja"
  name_mary.ukrainian_dialect: "Maria"
  name_mary.ukrainian_dialect.alternative: "Mariana"
- 
+
  # name_matthew: "Matthew"
- name_matthew.belarusian_dialect: "Maciej"
+ name_matthew.belarusian_dialect: "Macviej"
  name_matthew.ukrainian_dialect: "Matviy"
- 
+
  # name_maximus: "Maximus"
  name_maximus.belarusian_dialect: "Maksim"
  name_maximus.ukrainian_dialect: "Maksym"
@@ -400,14 +457,14 @@
  # name_metrophanes: "Metrophanes"
  name_metrophanes.belarusian_dialect: "Mitrafan"
  name_metrophanes.ukrainian_dialect: "Mytrofan"
- 
+
  # name_michael: "Michael"
  name_michael.belarusian_dialect: "Michaił"
  name_michael.belarusian_dialect.diminutive: "Michaś"
  name_michael.ukrainian_dialect: "Mykhailo"
  name_michael.ukrainian_dialect.diminutive: "Myshko"
- 
- # name_miron: "Miron" 
+
+ # name_miron: "Miron"
  name_miron.belarusian_dialect: "Miron"
  name_miron.ukrainian_dialect: "Myron"
 
@@ -418,19 +475,26 @@
  # name_natalia: "Natalia"
  name_natalia.ruthenian_language: "Natalia"
  name_natalia.ruthenian_language.diminutive: "Natalka"
- 
+
+ # name_naum: "Naum"; Наум, Навум
+ name_naum.belarusian_dialect: "Navum"
+ name_naum.belarusian_dialect.diminutive: "Navumchyk"
+ name_naum.east_slavic_language: "Naum"
+ name_naum.ruthenian_language: "Naum"
+ name_naum.ruthenian_language.diminutive: "Naumko"
+
  # name_nazar: "Nazar"
  name_nazar.belarusian_dialect: "Nazaryj"
  name_nazar.ukrainian_dialect: "Nazariy"
  name_nazar.ukrainian_dialect.diminutive: "Nazar"
 
  # name_nestor: "Nestor"
- name_nestor.belarusian_dialect: "Nestor"
+ name_nestor.belarusian_dialect: "Niestar"
  name_nestor.ukrainian_dialect: "Nestor"
- 
+
  # name_nicetas: "Nicetas"
- name_nicetas.belarusian_dialect: "Nikita"
- name_nicetas.ukrainian_dialect: "Mykyta" 
+ name_nicetas.belarusian_dialect: "Mikita"
+ name_nicetas.ukrainian_dialect: "Mykyta"
 
  # name_nicholas: "Nicholas"
  name_nicholas.belarusian_dialect: "Mikałaj"
@@ -440,11 +504,11 @@
  # name_nikephoros: "Nikephoros"
  name_nikephoros.belarusian_dialect: "Nikifar"
  name_nikephoros.ukrainian_dialect: "Nykyfor"
- 
+
  # name_oleg: "Oleg"
  name_oleg.belarusian_dialect: "Aleh"
  name_oleg.ukrainian_dialect: "Oleh"
- 
+
  # name_olga: "Olga"
  name_olga.belarusian_dialect: "Volha"
  name_olga.ukrainian_dialect: "Olha"
@@ -456,29 +520,30 @@
  # name_ontsifor: "Ontsifor"
  name_ontsifor.belarusian_dialect: "Ancyfar"
  name_ontsifor.ukrainian_dialect: "Ontsyfor"
- 
+
  # name_orestes: "Orestes"
+ name_orestes.belarusian_dialect: "Arest"
  name_orestes.ukrainian_dialect: "Orest"
 
  # name_paraskevi: "Paraskevi"
- name_paraskevi.belarusian_dialect: "Paraskeva"
+ name_paraskevi.belarusian_dialect: "Paraskieva"
  name_paraskevi.ukrainian_dialect: "Paraskeva"
  name_paraskevi.ukrainian_dialect.diminutive: "Paraska"
- 
+
  # name_paul: "Paul"
- name_paul.belarusian_dialect: "Pavieł"
+ name_paul.belarusian_dialect: "Pavał"
  name_paul.ukrainian_dialect: "Pavlo"
 
  # name_paulinus: "Paulinus"
  name_paulinus.belarusian_dialect: "Pavieł"
  name_paulinus.ukrainian_dialect: "Pavlo"
- 
+
  # name_peter: "Peter"
- name_peter.belarusian_dialect: "Piotr"
+ name_peter.belarusian_dialect: "Piatro"
  name_peter.ukrainian_dialect: "Petro"
 
  # name_philip: "Philip"
- name_philip.belarusian_dialect: "Filip"
+ name_philip.belarusian_dialect: "Pilip"
  name_philip.ukrainian_dialect: "Pylyp"
 
  # name_prokop: "Prokop"
@@ -525,31 +590,35 @@
  # name_salome: "Salome"
  name_salome.belarusian_dialect: "Sałameja"
  name_salome.ukrainian_dialect: "Solomia"
- 
+
  # name_samuel: "Samuel"
  name_samuel.belarusian_dialect: "Samuił"
  name_samuel.ukrainian_dialect: "Samiylo"
 
  # name_sabellus: "Savely"
- name_sabellus.belarusian_dialect: "Savieli"
+ name_sabellus.belarusian_dialect: "Savielij"
  name_sabellus.ukrainian_dialect: "Saveliy"
- 
+
  # name_sergius: "Sergius"
  name_sergius.belarusian_dialect: "Siarhiej"
- name_sergius.ukrainian_dialect: "Serhiy" 
+ name_sergius.ukrainian_dialect: "Serhiy"
 
  # name_severinus: "Severinus"
+ name_severinus.belarusian_dialect: "Seviaryn"
  name_severinus.ukrainian_dialect: "Severyn"
- 
+
  # name_simeon: "Simeon"
+ name_simeon.belarusian_dialect: "Siamion"
  name_simeon.ruthenian_language: "Symon"
 
  # name_sophia: "Sophia"
+ name_sophia.belarusian_dialect: "Safia"
  name_sophia.ruthenian_language: "Sofia"
 
  # name_stephanie: "Stephanie"
+ name_stephanie.belarusian_dialect: "Stefania"
  name_stephanie.ukrainian_dialect: "Stefania"
- 
+
  # name_stephen: "Stefan"
  name_stephen.belarusian_dialect: "Ściapan"
  name_stephen.ukrainian_dialect: "Stepan"
@@ -569,10 +638,14 @@
  # name_sviatopolk: "Sviatopolk"
  name_sviatopolk.belarusian_dialect: "Śviatapołk"
  name_sviatopolk.ukrainian_dialect: "Sviatopolk"
- 
+
  # name_svyatoslav: "Svyatoslav"
  name_svyatoslav.belarusian_dialect: "Śviatasłaŭ"
  name_svyatoslav.ukrainian_dialect: "Sviatoslav"
+
+ # name_tarasius: "Taras"
+ name_tarasius.east_slavic_language: "Taras"
+ name_tarasius.ruthenian_language: "Taras"
 
  # name_tatiana: "Tatiana"
  name_tatiana.belarusian_dialect: "Taćciana"
@@ -583,6 +656,7 @@
  name_terentius.ukrainian_dialect: "Terentiy"
 
  # name_theodora: "Theodora"
+ name_theodora.belarusian_dialect: "Fieadora"
  name_theodora.ruthenian_language: "Feodora"
 
  # name_theodore: "Theodore"
@@ -618,15 +692,19 @@
  name_vaclava.ukrainian_dialect: "Viacheslava"
 
  # name_valeria: "Valeria"
+ name_valeria.belarusian_dialect: "Valeryja"
  name_valeria.ruthenian_language: "Valeria"
- 
+
  # name_valerian: "Valerian"
+ name_valerian.belarusian_dialect: "Valiarian"
  name_valerian.ruthenian_language: "Valerian"
 
  # name_vasilisa: "Vasilisa"
+ name_vasilisa.belarusian_dialect: "Vasilina"
  name_vasilisa.ukrainian_dialect: "Vasylyna"
- 
+
  # name_victoria: "Victoria"
+ name_victoria.belarusian_dialect: "Viktoryja"
  name_victoria.ruthenian_language: "Viktoria"
 
  # name_vladislav: "Vladislav"
@@ -645,7 +723,8 @@
 
  # name_vysheslav: "Vysheslav"
  name_vysheslav.belarusian_dialect: "Usiasłáŭ"
- 
+ name_vysheslav.ruthenian_language: "Vysheslav"
+
  # name_waldemar: "Waldemar"
  name_waldemar.belarusian_dialect: "Uładzimier"
  name_waldemar.ukrainian_dialect: "Volodymyr"
@@ -654,34 +733,33 @@
  # name_wenceslas: "Wenceslas"
  name_wenceslas.belarusian_dialect: "Viačasłaŭ"
  name_wenceslas.ukrainian_dialect: "Viacheslav"
- 
+
  # name_xenia: "Xenia"
  name_xenia.ruthenian_language: "Ksenia"
-  
+
  # name_yaroslav: "Yaroslav" # Ярослав
  name_yaroslav.belarusian_dialect: "Jarasłaŭ"
  name_yaroslav.ukrainian_dialect: "Yaroslav"
  name_yaroslav.ukrainian_dialect.diminutive: "Yarosh"
 
  # name_zenaida: "Zenaida"
- name_zenaida.ruthenian_language: "Zynaida"
- 
+ name_zenaida.belarusian_dialect: "Zinaida"
+ name_zenaida.ruthenian_language: "Zynayida"
+
  # name_zechariah: "Zechariah"
  name_zechariah.belarusian_dialect: "Zacharyj"
  name_zechariah.ukrainian_dialect: "Zakhariy"
 
- # Unique names Ukrainian and Belarusian
- Herasym: "Herasym"
- Hordiy: "Hordiy"
- Naum: "Naum"
- Taras: "Taras" 
- Zynoviy: "Zynoviy"
+ # name_zenobia: "Zenobia"; Зиновія, Зяновія, Зіновія
+ name_zenobia.belarusian_dialect: "Zianovia"
+ name_zenobia.east_slavic_language: "Zinovia"
+ name_zenobia.ruthenian_language: "Zynovia"
 
- Alla: "Alla"
- Nadia: "Nadia"
- Vira: "Vira"
-
- Herasim: "Herasim"
- Hardzej: "Hardzej"
- Navum: "Navum"
- Zinovij: "Zinovij"
+ # name_zenobius: "Zenobius"; Зиновій, Зяновій, Зіновій
+ name_zenobius: "Zenobius"
+ name_zenobius.belarusian_dialect: "Zianoviy"
+ name_zenobius.belarusian_dialect.alternative: "Zianon"
+ name_zenobius.belarusian_dialect.diminutive: "Zianuś"
+ name_zenobius.east_slavic_language: "Zinoviy"
+ name_zenobius.ruthenian_language: "Zynoviy"
+ name_zenobius.ruthenian_language.alternative: "Zenon"
