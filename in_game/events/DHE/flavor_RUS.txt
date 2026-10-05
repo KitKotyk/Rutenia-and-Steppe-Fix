@@ -229,7 +229,7 @@ flavor_rus.3 = {
 			controller = root
 		}
 
-		own_entire_area = area:tambov_area
+		own_entire_area = area:volga_steppe_area
 		own_entire_area = area:bolghar_area
 		own_entire_area = area:astrakhan_area
 
@@ -486,7 +486,7 @@ flavor_rus.5 = {
 			controller = root
 		}
 
-		own_entire_area = area:tambov_area
+		own_entire_area = area:volga_steppe_area
 
 		own_entire_area = area:bolghar_area
 

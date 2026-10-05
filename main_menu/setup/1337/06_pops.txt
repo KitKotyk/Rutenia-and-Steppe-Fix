@@ -15442,8 +15442,8 @@ balti = {
 }
 hotin = {
 	define_pop = {	type = clergy	size = 0.008	culture = moldovan	religion = orthodox }
-	define_pop = {	type = peasants	size = 3.022	culture = moldovan	religion = orthodox }
-	define_pop = {	type = peasants	size = 2.080	culture = halychian_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 2.022	culture = moldovan	religion = orthodox }
+	define_pop = {	type = peasants	size = 3.080	culture = halychian_culture	religion = orthodox }
 }
 lipnic = {
 	define_pop = {	type = clergy	size = 0.008	culture = moldovan	religion = orthodox }

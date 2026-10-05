@@ -290,8 +290,17 @@ building_manager = {
 	cossacks_colony = { tag = GLH level = 1 location = bratslav }
 	cossacks_colony = { tag = GLH level = 1 location = vinnytsia }
 	cossacks_colony = { tag = GLH level = 1 location = sokilets }
+	cossacks_colony = { tag = GLH level = 1 location = buzhskyi }
+	cossacks_colony = { tag = GLH level = 1 location = pohrebyshche }
+	cossacks_colony = { tag = GLH level = 1 location = teplyk }
+	cossacks_colony = { tag = GLH level = 1 location = uman }
+	cossacks_colony = { tag = GLH level = 1 location = zavallia }
+	cossacks_colony = { tag = GLH level = 1 location = bershad }
+	cossacks_colony = { tag = GLH level = 1 location = savran }
 	cossacks_colony = { tag = GLH level = 1 location = torhovytsia }
-	cossacks_colony = { tag = GLH level = 1 location = usivka }
+	cossacks_colony = { tag = GLH level = 1 location = mala_vyska }
+	cossacks_colony = { tag = GLH level = 1 location = umanske }
+	cossacks_colony = { tag = GLH level = 1 location = petrove }
 	cossacks_colony = { tag = GLH level = 1 location = myshuryn_rih }
 	cossacks_colony = { tag = GLH level = 1 location = kodak }
 	cossacks_colony = { tag = GLH level = 1 location = tomakivka }
@@ -301,12 +310,17 @@ building_manager = {
 	cossacks_colony = { tag = GLH level = 1 location = rozdory }
 	cossacks_colony = { tag = GLH level = 1 location = kichkas }
 	cossacks_colony = { tag = GLH level = 1 location = kolomak }
+	cossacks_colony = { tag = GLH level = 1 location = karlivka }
+	cossacks_colony = { tag = GLH level = 1 location = kotelva }
+	cossacks_colony = { tag = GLH level = 1 location = okhtyrka }
 	cossacks_colony = { tag = GLH level = 1 location = berestyn }
 	cossacks_colony = { tag = GLH level = 1 location = khotmyzh }
 
 	# Cossack Training Grounds
 	cossacks_training_grounds = { tag = KIE level = 1 location = cherkasy }
 	cossacks_training_grounds = { tag = KIE level = 1 location = kremenchuk }
+	cossacks_training_grounds = { tag = KIE level = 1 location = usivka }
+	cossacks_training_grounds = { tag = HAL level = 1 location = mohyliv_podilskyi }
 
 	# Cossack Hunting Grounds
 	cossacks_hunting_grounds = { tag = KIE level = 1 location = hovtva }

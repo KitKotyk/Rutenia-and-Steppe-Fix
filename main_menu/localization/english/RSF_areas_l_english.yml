@@ -1,4 +1,12 @@
 ﻿l_english:
+
+ # Russia
+ south_novgorod_area: "South Novgorod"
+ vyazma_area: "Vyazma"
+ ladoga_area: "Ladoga"
+ merya_area: "Merya"
+ vladimir_area: "Vladimiro-Suzdal"
+
  # Siberia
  irkutsk_area: "Irkut"
  tomsk_area: "Selkup"
@@ -6,15 +14,22 @@
  kansk_area: "Khakasia"
  bratsk_area: "Evenkia"
 
- # Don and Volga
+ # Steppes
  chervleny_yar_area: "Chervleny Yar"
- tambov_area: "Ukek"
- lower_don_area: "Volga Steppe"
- astrakhan_area: "Caspian Steppe"
+ volga_steppe_area: "Volga Steppe"
+ lower_don_area: "Upper Don"
+ astrakhan_area: "Saray"
+ kalmykia_area: "Kalmyk Steppe"
  lower_yik_area: "Yik"
  mordva_area: "Mordva"
  majar_area: "Kuma"
  azov_area: "Lower Don"
+ nogay_steppe_area: "Nogay Steppe"
 
  # Ukraine
  zaporizhzhia_area: "Zaporizhia"
+ eastern_polesia_area: "Eastern Polesia"
+
+ # Other
+ baltic_area: "Livland"
+ estonia_area: "Estland"

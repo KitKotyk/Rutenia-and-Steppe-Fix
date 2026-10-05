@@ -194,7 +194,7 @@ development = {
 	#poland
 	silesia_area = 3
 	#Russia
-	tambov_area = -8
+	volga_steppe_area = -8
 	ryazan_area = -3
 	#samara_area = -8
 	pomorye_area = -10

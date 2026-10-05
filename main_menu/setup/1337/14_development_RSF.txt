@@ -10,7 +10,7 @@ development = {
 	# Areas, added to the vanilla values
 	slovakia_area = -3
 	transylvania_area = -5
-	tambov_area = 1
+	volga_steppe_area = 1
 	ryazan_area = -2
 
 	# Locations set to 0
@@ -42,21 +42,24 @@ development = {
 	chervleny_yar_area = -4
 	mordva_area = -9
 	bolghar_area = -5
-	desht_kipchak_area = -4
+	desht_kipchak_area = -3
 	crimea_area = 5
+	nogay_steppe_area = -8
+	zaporizhzhia_area = -2
 
 	# Ruthenian provinces
 	cherkasy_province = -7
 	porossia_province = -4
 	zhytomyr_province = -2
-	torgovytsia_province = -2
+	uman_province = -6
+	zvenyhorodka_province = -5
 	zviahel_province = -2
-	sumy_province = 5
+	sumy_province = 2
 	donetsk_province = 3
 	mazyr_province = -4
 	rechytsa_province = -4
 	western_podolia_province = 5
-	eastern_podolia_province = 3
+	eastern_podolia_province = 4
 	
 	# Russian provinces
 	novosil_province = -2
@@ -67,8 +70,7 @@ development = {
 	astrakhan_province = 10
 	zamyany_province = 5
 	bolkhuny_province = 5
-	beljamen_province = 6
-	pologoye_zaymishche_province = 11
+	pologoye_zaymishche_province = 6
 	beljamen_province = 3
 	kazan_province = 3
 	cafa_province = 4
@@ -111,4 +113,5 @@ development = {
 	chernihiv = -3
 	lutava = 5
 	oster = 5
+	usivka = -3
 }

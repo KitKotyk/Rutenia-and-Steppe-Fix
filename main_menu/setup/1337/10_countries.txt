@@ -4189,7 +4189,7 @@ countries = {
 			bavly abdulino sadak qashliq siberia_abalak turtas yukonda ust_ishim siletiteniz zhalauly
 			tuzdysor imakia zhelezin shish ufa askino baltas taskayevo
 			
-			usivka petrove oril adalaga berestyn kolomak
+			petrove oril adalaga berestyn kolomak
 			karlivka izium barvinkove donets_kharkiv zmiiv chuhuiv vovchansk kotelva
 
 			gura_galbenei kutarka sernur morki urzhum
@@ -4342,7 +4342,7 @@ countries = {
 			orhei
 
 			# Zaporizhia
-			kichkas rozdory hryshyne pavlohrad ternivka yelanets usivka mala_vyska umanske ingul petrove
+			kichkas rozdory hryshyne pavlohrad ternivka yelanets ingul petrove
 			karlivka berestyn samarchyk oril kodak myshuryn_rih sofiivka kryvyi_rih tomakivka mykytyn_rih
 
 			# Azov
@@ -43731,7 +43731,7 @@ countries = {
 			#Ukraine
 			kyiv dymer fastiv zdvizhen
 			bila_tserkva bohuslav kaharlyk kaniv sherbiv skvyra
-			cherkasy chyhyryn korsun lebedyn rozkishna smila zvenyhorodka
+			cherkasy chyhyryn korsun smila lebedyn rozkishna zvenyhorodka usivka
 			chornobyl belaya_soroka brahin khoiniki kholmyech
 			olevsk kopyshche viry yemilchyne
 			ovruch bilokorovychi korosten malyn narodychi stodolichi
@@ -43753,6 +43753,7 @@ countries = {
 
 		our_cores_conquered_by_others = {
 			okhtyrka krasnopillia khotmyzh kotelva kolomak
+			mala_vyska umanske			
 		}
 
 		include = "expl_eastern_europe"
