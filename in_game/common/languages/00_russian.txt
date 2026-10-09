@@ -13,12 +13,12 @@ east_slavic_language = {
 		name_dorotheos
 		name_elias name_eliseus	name_emilian name_eugene
 		name_euthymius
-		name_gabriel name_george name_gleb name_gregory
+		name_gabriel name_george name_gerasimos name_gleb name_gordian name_gregory
 		name_igor name_innocent
 		name_james name_jeremiah name_joachim name_john name_joseph
 		name_karp
 		name_laurence name_leon
-		name_macarius name_matthew name_maximus name_metrophanes
+		name_macarius name_mark name_matthew name_maximus name_metrophanes
 		name_michael
 		name_nicetas name_nicodemus name_nikephoros
 		name_oleg name_onesim name_ontsifor
@@ -27,19 +27,19 @@ east_slavic_language = {
 		name_sabellus name_sergius name_simeon name_stanislav name_stephen
 		name_svyatoslav
 		name_terentius name_theodore name_theodosius name_tryphon
-		name_valerian name_vladislav name_vsevolod		
-		name_waldemar name_wenceslas	
+		name_valerian name_vladislav name_vsevolod
+		name_waldemar name_wenceslas
 		name_yaroslav
 	}
 	female_names = {
-		name_agrippina name_alexandra name_anastasia name_anna 
+		name_agrippina name_alexandra name_anastasia name_anna
 		name_catherine
 		name_daria
-		name_euphemia name_euphrosyne name_elizabeth name_euphrasia 
-		name_febronia
-		name_helen
+		name_euphemia name_euphrosyne name_elizabeth name_euphrasia
+		name_faith name_febronia
+		name_helen name_hope
 		name_irene
-		name_julie name_julianne
+		name_julianne name_julie
 		name_lyubov name_ludmila
 		name_marine name_martha name_mary
 		name_olga
@@ -48,6 +48,7 @@ east_slavic_language = {
 		name_vasilisa
 		name_yaroslava
 		name_xenia
+		name_zenobia
 		name_zlata
 		# Unique non dynamic names
 		# Malusha
@@ -60,7 +61,7 @@ east_slavic_language = {
 		Kvashnin Lopukhin Lobanov Menshikov Milyutin Musin Naryshkin Orlov Potyomkin Pleskov
 		Pushkin Repnin Romanov Rostopchin Rostov Rumyantsev Saltykov Sheremetev Stroganov
 		Suvorov Tatishev Troekurov Uvarov Ushakov Velyaminov Vorontsov
-		
+
 		# Adjective endings
 		Baryatinskiy Miloslavskiy Obolenskiy Odoyevskiy Romodanovskiy Shuyskiy Volkonskiy
 		Vorotynskiy Vronskiy Vyazemskiy
@@ -69,26 +70,26 @@ east_slavic_language = {
 		Mishinich
 	}
 
-	lowborn = {	
+	lowborn = {
 		Andreyev Baranov Belov Bykov Chernov Dmitriyev Drozdov Egorov Fedorov Gusev Fomin Ivanov
 		Karpov Kiselev Komarov Kozlov Kruglov Kuznetsov Lebedev Lenkov Makarov Maslov Melnikov
 		Mikhailov Morozov Nikolaev Nosov Novikov Pavlov Petrov Plotnikov Popov Reznikov Sedov
 		Semenov Sidorov Smirnov Sokolov Sorokin Stepanov Tkachev Vasiliev Volkov Yakovlev Yashin
 		Zaytsev
 	}
-	
+
 	patronym_suffix_son = "patronym_suffix_russian_son"
 	patronym_suffix_daughter = "patronym_suffix_russian_daughter"
-	
+
 	location_suffix = "location_suffix_russian"
 
 	dialects = {
 		russian_dialect = { default = yes }
 
-		novgorodian_dialect = {			
+		novgorodian_dialect = {
 			patronym_suffix_son = "patronym_suffix_russian_son"
 			patronym_suffix_daughter = "patronym_suffix_russian_daughter"
-	
+
 			location_suffix = "location_suffix_russian"
 		}
 	}
@@ -106,39 +107,41 @@ ruthenian_language = {
 		name_basil name_bogdan name_boris
 		name_constantine name_cyril
 		name_damian name_daniel name_demetrius
-		name_emilian 
-		name_george name_gleb name_gregory
-		name_igor name_isidore	
+		name_emilian
+		name_george name_gerasimos name_gleb name_gordian name_gregory
+		name_igor name_isidore
 		name_john
-		name_michael 
-		name_nestor name_nicholas
-		name_paul name_peter name_philip 
+		name_michael
+		name_naum name_nestor name_nicholas
+		name_paul name_peter name_philip
 		name_roman name_rostislav
-		name_simeon name_stephen name_svyatoslav
-		name_theodore 			
-		name_waldemar name_wenceslas		
-		name_yaroslav	
+		name_severinus name_simeon name_stephen name_svyatoslav
+		name_tarasius name_theodore
+		name_waldemar name_wenceslas
+		name_yaroslav
+		name_zenobius
 	}
-    
+
 	female_names = {
 		# Most common names fallback
-		name_alexandra name_anastasia
-		name_anna
-		name_barbara				
+		name_alexandra name_alla name_anastasia name_anna
+		name_barbara
 		name_catherine name_christine
 		name_daria
 		name_elizabeth name_eudokia
-		name_helen
-		name_julie
+		name_faith
+		name_helen name_hope
+		name_julianne name_julie
 		name_lyubov name_ludmila
 		name_mary
 		name_natalia
 		name_olga
 		name_salome name_sophia name_stephanie name_svetlana
 		name_tamara name_tatiana
-		name_vasilisa name_victoria				
+		name_vasilisa name_victoria
 		name_xenia
 		name_zenaida
+		name_zenobia
 	}
 
 	dialects = {
@@ -146,41 +149,41 @@ ruthenian_language = {
 			male_names = {
 				name_adam name_alexander name_alexis name_anatoly name_andrew
 				name_anthony name_arkady name_athanasius name_basil name_bogdan
-				name_boris					
-				name_constantine name_cosmas name_cyril				
+				name_boris
+				name_constantine name_cosmas name_cyril
 				name_daniel name_david name_demetrius name_diomedes name_dorotheos
 				name_elias name_eliseus name_emilian name_eugene name_euthymius
-				name_gabriel name_george name_gideon name_gleb name_gregory		
+				name_gabriel name_george name_gerasimos name_gideon name_gleb name_gordian name_gregory
 				name_igor name_isidore
 				name_james name_jeremiah name_john name_joseph
 				name_laurence name_leon name_lucas
 				name_macarius name_mark name_martin name_matthew name_maximus
-				name_metrophanes name_michael name_miron				
-				name_nazar name_nestor name_nicetas name_nicholas name_nikephoros		
-				name_oleg						
-				name_paul name_peter name_prokop	
+				name_metrophanes name_michael name_miron
+				name_naum name_nazar name_nestor name_nicetas name_nicholas name_nikephoros
+				name_oleg
+				name_paul name_peter name_prokop
 				name_roman name_rostislav
-				name_samuel name_sabellus name_sergius name_simeon
+				name_samuel name_sabellus name_sergius name_severinus name_simeon
 				name_stephen name_svyatoslav
-				name_theodore name_thomas name_tycho
-				name_valerian name_vladislav								
+				name_tarasius name_theodore name_thomas name_tycho
+				name_valerian name_vladislav
 				name_waldemar name_wenceslas
 				name_yaroslav
-
-				#Unique non dynamic names:
-				Herasim Hardzej Navum Taras Zinovij
+				name_zenobius
 			}
 
 			female_names = {
 				name_agatha name_agrippina name_alexandra name_alina
-				name_anastasia name_anna name_antonia
-				name_barbara				
+				name_alla name_anastasia name_anna name_antonia
+				name_barbara
 				name_catherine name_christine
 				name_daria
 				name_elizabeth name_eudokia name_euphemia
+				name_faith
 				name_helen
+				name_hope
 				name_irene
-				name_julie name_julianne
+				name_julianne name_julie
 				name_lyubov name_ludmila
 				name_marine name_mary
 				name_natalia
@@ -188,12 +191,9 @@ ruthenian_language = {
 				name_paraskevi
 				name_salome name_sophia name_svetlana
 				name_tamara name_tatiana
-				name_valeria name_victoria				
+				name_valeria name_victoria
 				name_xenia
-				name_zenaida name_zlata
-
-				#Unique non dynamic names:
-				Alla
+				name_zenaida name_zenobia name_zlata
 			}
 
 			dynasty_names = {
@@ -202,23 +202,23 @@ ruthenian_language = {
 				Makarevich Masalski Niasvitski Asavitski Astrozhski Palubenski Parytski
 				Pronski Ruzhynski Sanhushka Slutski Sakolski Varanetski Vronski Zaslawski
 
-				
+
 				#Polatskian
 				Alakhnovich Alelkavich Azheshka Bahdanovich Belinovich Damejka Davojna
 				Hajka Halavach Hashtold Jakubovich Kalavur Kalinowski Korsak Kuntsevich
 				Matskevich Maniushka Mitskevich Narbut Nelubovich Radzivil Rejtan Skinder
 				Soltan Tratsiak Tyshkevich Valchkovich Vashkevich Volchak Zavisha Zianovich
-				
+
 				#Polesian
 				Bolbas Kharytonavich Khmara_bel Khodzka Khadkevich Danilavich Harnastaj Hulevich
 				Hurka Jalovich Kastsiushka Krapiva Myshko Patsej Praskura Niashevich
 				Ramankavich Ratkovich Rusin Talkachevich Tawmach Tryzna Varona Zhylich
-				
+
 				#Smolenskian
 				Butovich Bykhavets Drabyshevich Dziadovich Damont Hapanovich
 				Iskra Janushkevich Kalantaj Kasevich Katovich Kmita Laska Laza Markevich
 				Pashkevich Sapeha Siamashka Siankovich Salaninka Vaskovich Valovich Varonich
-				Volakh				
+				Volakh
 			}
 
 			lowborn = {
@@ -230,31 +230,31 @@ ruthenian_language = {
 				Papko Pisar Pazniak Prudnik Prus Rachkevich Ruban Rudyk Rybar
 				Salahub Sidarovich Sokha Sokal Sonhin Shybeka Shyla Tukala Vajda Viarenich
 				Volat Vowk Vowchyk Zanevich Zaruba Zhuk Zhukevich
-			}	
+			}
 
 			patronym_suffix_son = "patronym_suffix_belarusian_son"
-			patronym_suffix_daughter = "patronym_suffix_belarusian_daughter"	
+			patronym_suffix_daughter = "patronym_suffix_belarusian_daughter"
 			location_suffix = "location_suffix_belarusian"
 		}
 
 		ukrainian_dialect = {
-				
+
 			male_names = {
 				# Most common names fallback
 				name_alexander name_andrew
-				name_basil name_bogdan				
-				name_daniel name_demetrius				 
-				name_george					
+				name_basil name_bogdan
+				name_daniel name_demetrius
+				name_george
 				name_john
-				name_michael 
+				name_michael
 				name_nicholas
-				name_paul name_peter 
-				name_roman				
-				name_theodore 			
-				name_waldemar		
+				name_paul name_peter
+				name_roman
+				name_theodore
+				name_waldemar
 				name_yaroslav
 			}
-				
+
 			male_names = {
 				weight = {
 					value = 100
@@ -264,17 +264,17 @@ ruthenian_language = {
 				name_basil name_bogdan name_boris
 				name_constantine name_cyril
 				name_damian name_daniel name_demetrius
-				name_emilian 
+				name_emilian
 				name_george name_gleb name_gregory
-				name_igor name_isidore	
+				name_igor name_isidore
 				name_john
-				name_michael 
+				name_michael
 				name_nestor name_nicholas
-				name_paul name_peter name_philip 
+				name_paul name_peter name_philip
 				name_roman name_rostislav
 				name_simeon name_stephen name_svyatoslav
-				name_theodore 			
-				name_waldemar name_wenceslas		
+				name_theodore
+				name_waldemar name_wenceslas
 				name_yaroslav
 			}
 
@@ -289,26 +289,24 @@ ruthenian_language = {
 				name_david name_diomedes name_dorotheos
 				name_elias name_eliseus name_eugene
 				name_eustathius name_euthymius
-				name_gabriel name_gideon 	
+				name_gabriel name_gerasimos name_gideon name_gordian
 				name_james name_jeremiah name_joseph name_justus
 				name_laurence name_leon name_lucas
 				name_macarius name_mark name_martin name_matthew name_maximus
-				name_metrophanes name_miron				
-				name_nazar name_nicetas name_nikephoros
-				name_oleg name_orestes						
-				name_prokop	
+				name_metrophanes name_miron
+				name_naum name_nazar name_nicetas name_nikephoros
+				name_oleg name_orestes
+				name_prokop
 				name_samuel name_sabellus name_sergius name_severinus
-				name_thomas name_tycho
-				name_valerian name_vladislav	
-
-				#Unique non dynamic names:
-				Herasym Hordiy Naum Taras Zynoviy
+				name_tarasius name_thomas name_tycho
+				name_valerian name_vladislav
+				name_zenobius
 			}
 
 			female_names = {
 				# Most common names fallback
-				name_anna								
-				name_catherine name_christine				
+				name_anna
+				name_catherine name_christine
 				name_helen
 				name_julie
 				name_ludmila
@@ -324,12 +322,12 @@ ruthenian_language = {
 					value = 100
 				}
 				# More common names
-				name_alexandra name_anastasia name_anna 
-				name_barbara				
+				name_alexandra name_anastasia name_anna
+				name_barbara
 				name_catherine name_christine
 				name_elizabeth name_euphemia
 				name_helen
-				name_julie name_julianne
+				name_julianne name_julie
 				name_ludmila
 				name_mary
 				name_natalia
@@ -343,21 +341,20 @@ ruthenian_language = {
 					value = 40
 				}
 				# Less common names
-				name_agatha name_agrippina name_antonia
+				name_agatha name_agrippina name_alla name_antonia
 				name_daria
-				name_eudokia 
+				name_eudokia
+				name_faith
+				name_hope
 				name_irene
-				name_lyubov 
-				name_marine 
+				name_lyubov
+				name_marine
 				name_paraskevi
 				name_stephanie name_svetlana
-				name_tamara 
-				name_valeria name_vasilisa name_victoria				
+				name_tamara
+				name_valeria name_vasilisa name_victoria
 				name_xenia
-				name_zenaida name_zlata
-				
-				#Unique non dynamic names:
-				Alla Nadia Vira
+				name_zenaida name_zenobia name_zlata
 			}
 
 			dynasty_names = {
