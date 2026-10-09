@@ -4596,7 +4596,15 @@ countries = {
 			balzimachi cetatea_alba khadjibey oleshia taganrog 
 		}
 
-		starting_technology_level = 3
+		starting_technology_level = 3		
+
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "catholic_republic"
+
 		government = {
 			type = republic
 			heir_selection = oligarchic_elective
@@ -4604,11 +4612,12 @@ countries = {
 			
 			
 			centralization_vs_decentralization = -30
+			traditionalist_vs_innovative = 5
 			spiritualist_vs_humanist = 10
-			aristocracy_vs_plutocracy = 30
+			aristocracy_vs_plutocracy = 45
 			mercantilism_vs_free_trade = 40
-			offensive_vs_defensive = 30
-			land_vs_naval = 100
+			offensive_vs_defensive = 35
+			land_vs_naval = 90
 			individualism_vs_communalism = -20
 		}
 		capital = kaffa
@@ -4622,13 +4631,6 @@ countries = {
 			armenian_culture
 			crimean
 		}
-
-		include = "expl_mediterranean"
-		include = "expl_silk_road_west"
-		include = "expl_silk_road_center"
-		include = "expl_silk_road_east"
-		include = "expl_indian_trade_route"
-		include = "catholic_republic"
 	}
 
 	ENG = { # England

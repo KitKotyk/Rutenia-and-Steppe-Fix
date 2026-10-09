@@ -12,6 +12,7 @@ market_manager = {
 	add_market = perm
 	
 	# Steppes	
+	add_market = rechnoye
 	add_market = azok
 	add_market = ukek
 	add_market = yaik

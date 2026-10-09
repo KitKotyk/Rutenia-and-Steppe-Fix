@@ -121,7 +121,8 @@ road_network = {
 	lopasnya = serpukhov
 	serpukhov = przemysl_moscow	
 	
-	#Crimean Road
+	#Crimean Road (Kaffa - Oleshia)
+	tavan = oleshia
 	tavan = aslan_horod
 	aslan_horod = qalancaq
 	qalancaq = or_qapi

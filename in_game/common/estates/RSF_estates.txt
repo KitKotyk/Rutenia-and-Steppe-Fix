@@ -147,7 +147,9 @@ TRY_REPLACE:cossacks_estate = {
 	private_army_per_pop = 0.1
 
 	private_army_unit_categories = {
-		army_light_cavalry = 2.0
+		army_light_cavalry = 0.5
 		army_heavy_cavalry = 1.0
+		army_heavy_infantry = 0.5
+		army_light_infantry = 2.0
 	}
 }
