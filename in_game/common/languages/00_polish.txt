@@ -112,16 +112,19 @@
 		Aldona Michalina
 	}
 	
-	dynasty_names = {		
-		Bielinski Branicki Czarniecki Czartoryski Domanski Gosiewski Gostomski
-		Koniecpolski Krasicki Krasinski Kurnatowski Lanckoronski Leszczynski
-		Lubieniecki Lubomirski Mielzynski Oginski Opalinski Ossolinski Ostrogski
-		Poniatowski Poninski Potocki Pulaski Raczynski Rzewuski Sobieski
-		Taczanowski Tarnowski Teczynski Wisniowiecki Wodzicki Zamoyski Zolkiewski
+	dynasty_names = {
+		# Shared with Ruthenian dynasties
+		Czartoryski Czetwertynski Leszczynski Ostrogski Wisniowiecki Chodkiewicz Sapieha
+		Sanguszko Tyszkiewicz
+
+		# Polish gendered
+		Bielinski Branicki Czarniecki Domanski Gosiewski Gostomski Koniecpolski
+		Krasicki Krasinski Kurnatowski Lanckoronski Lubieniecki Lubomirski Mielzynski
+		Oginski Opalinski Ossolinski Poniatowski Poninski Potocki Pulaski Raczynski
+		Rzewuski Sobieski Taczanowski Tarnowski Teczynski Wodzicki Zamoyski Zolkiewski
 		
-		# Both genders
-		Chodkiewicz Mniszech Morsztyn ostrorog_dynasty Pac Radziwill Sapieha Sanguszko
-		Tarlo Tyszkiewicz
+		# Polish gender-neutral
+		Mniszech Morsztyn ostrorog_dynasty Pac Radziwill Tarlo 
 	}
 	
 	lowborn = {

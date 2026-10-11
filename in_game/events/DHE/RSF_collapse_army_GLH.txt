@@ -50,8 +50,7 @@ collapsing_armies.1 = { # Golden Horde Collapse
 		change_government_type = government_type:steppe_horde
 		every_unit = {
 			destroy_unit = yes
-		}
-		
+		}		
 
 		ai_chance = {
 			base = 90

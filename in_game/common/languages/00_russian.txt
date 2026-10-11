@@ -58,8 +58,8 @@ east_slavic_language = {
 		Akinfov Apraksin Buturlin Byakontov Chelyadnin Davydov Gagarin Galitzin Gantimurov
 		Golitsyn Gorchakov Dashkov Demidov Dolgorukov Khilkov Koroviev Koshkin Kurakin Kutuzov
 		Kvashnin Lopukhin Lobanov Menshikov Milyutin Musin Naryshkin Orlov Potyomkin Pleskov
-		Pushkin Repnin Romanov Rostopchin Rostov Rumyantsev Saltykov Sheremetev Stroganov
-		Suvorov Tatishev Troekurov Uvarov Ushakov Velyaminov Vorontsov
+		Pushkin Repnin Romanov Rostopchin Rostov Rumyantsev Saltykov Sheremetev Shuvalov
+		Stroganov Suvorov Tatishev Troekurov Uvarov Ushakov Velyaminov Vorontsov
 
 		# Adjective endings
 		Baryatinskiy Miloslavskiy Obolenskiy Odoyevskiy Romodanovskiy Shuyskiy Volkonskiy
@@ -74,7 +74,7 @@ east_slavic_language = {
 		Karpov Kiselev Komarov Kozlov Kruglov Kuznetsov Lebedev Lenkov Makarov Maslov Melnikov
 		Mikhailov Morozov Nikolaev Nosov Novikov Pavlov Petrov Plotnikov Popov Reznikov Sedov
 		Semenov Sidorov Smirnov Sokolov Sorokin Stepanov Tkachev Vasiliev Volkov Yakovlev Yashin
-		Zaytsev
+		Yashkin Zavidov Zaytsev Zimin Zubov
 	}
 	
 	patronym_suffix_son = "patronym_suffix_russian_son"

@@ -168,7 +168,7 @@ dialects = {
 			Badraq Barin Bucaq Burulcha
 			Cedichkul Cemboyliq Chikishke
 			Dayir
-			Geray
+			Geray geray_dynasty
 			Kuchuk
 			Mangit Mansur 
 			Orbey

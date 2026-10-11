@@ -1,10 +1,10 @@
-locations={	
+locations={
 	
 	# Balkans
-	stanimaka = { rank = town 		town_setup = balkan_town }
+	stanimaka = { rank = town 		town_setup = balkan_town } # Merged with Plovdiv
 	
 	# Poland
-	warsaw = 	{ rank = town		town_setup = polish_town }
+	warsaw = { rank = town			town_setup = polish_town }
 	wroclaw = { rank = city 		town_setup = polish_town }
 
 	# Ruthenia
@@ -24,7 +24,7 @@ locations={
 	ganyushkino = { rank = town		town_setup = central_asian_town }
 	zamyany = { rank = town			town_setup = central_asian_town }
 	rechnoye = { rank = city		town_setup = central_asian_city }
-	srednyaya_akhtuba = { rank = town	town_setup = central_asian_town }
+	srednyaya_akhtuba = { rank = town	town_setup = central_asian_town } # Gulistan
 	beljamen = { rank = town		town_setup = central_asian_town }
 	ukek = { rank = town			town_setup = central_asian_town }
 	kazan = { rank = city 			town_setup = central_asian_city }
@@ -47,7 +47,7 @@ locations={
 	# Carpathia
 	orhei = { rank = town 			town_setup = carpathian_town }
 
-	#Mongolia and Manchuria	
+	# Mongolia and Manchuria	
 	qingzhou_mongol = { rank = town 	town_setup = central_asian_town }
 	taizhou_jurchen = { rank = town 	town_setup = central_asian_town }
 	naomao = { rank = town 				town_setup = central_asian_town }
@@ -58,7 +58,7 @@ locations={
 	bulgan = { rank = town 				town_setup = central_asian_town }
 	kurchum = { rank = town 			town_setup = central_asian_town }
 
-	#Central Asia
+	# Central Asia
 	almaliq = { rank = city 		town_setup = central_asian_city }
 	akhsisek = { rank = town 		town_setup = central_asian_town }
 	khujand = { rank = town 		town_setup = central_asian_town }
@@ -66,7 +66,7 @@ locations={
 	maymana = { rank = town 		town_setup = central_asian_town }
 	andkhoy = { rank = town 		town_setup = central_asian_town }
 
-	#Levant, Caucasus and Persia	
+	# Levant, Caucasus and Persia	
 	kutaisi = { rank = town 		town_setup = christian_anatolian_town }
 	sukhumi = { rank = town 		town_setup = christian_anatolian_town }
 	yerevan = { rank = town 		town_setup = christian_anatolian_town }
@@ -83,33 +83,20 @@ locations={
 	cetatea_alba = { rank = town 	town_setup = carpathian_town }
 }
 
-# for the unique and special buildings
 building_manager = {
 
-	# Steppes
-	kurultai = { tag = GLH level = 1 location = rechnoye }
+	##### STEPPES #####
+	# Kurultais copied from vanilla – need to load after town setup to avoid error spam
 	kurultai = { tag = GLH level = 1 location = astrakhan }
-	kurultai = { tag = GLH level = 1 location = beljamen }
-	kurultai = { tag = GLH level = 1 location = ukek }
-	kurultai = { tag = GLH level = 1 location = kazan }
-	kurultai = { tag = GLH level = 1 location = bolghar }
-	kurultai = { tag = GLH level = 1 location = mokhcha }
-	kurultai = { tag = GLH level = 1 location = majar }
-	kurultai = { tag = GLH level = 1 location = azok }
-	kurultai = { tag = GLH level = 1 location = solkhat }
-	kurultai = { tag = GLH level = 1 location = sarayjuk }
-	kurultai = { tag = GLH level = 1 location = urgench }
-	kurultai = { tag = GLH level = 1 location = sighnaq }
-	kurultai = { tag = GLH level = 1 location = bozok_astana }
 	kurultai = { tag = GLH level = 1 location = chimgi_tura }
-	
+	kurultai = { tag = GLH level = 1 location = kazan }
+	kurultai = { tag = GLH level = 1 location = majar }
+	kurultai = { tag = GLH level = 1 location = sarayjuk }
+
 	kurultai = { tag = CHG level = 1 location = almaliq }
 	kurultai = { tag = CHG level = 1 location = almaty }
 	kurultai = { tag = CHG level = 1 location = balasagun }
-	kurultai = { tag = CHG level = 1 location = otrar }
-	kurultai = { tag = CHG level = 1 location = chach }
-	kurultai = { tag = CHG level = 1 location = sawran }
-	
+
 	kurultai = { tag = GRG level = 1 location = gorgan }
 	kurultai = { tag = JKR level = 1 location = nishapur }
 	kurultai = { tag = HLG level = 1 location = basra }
@@ -139,7 +126,24 @@ building_manager = {
 	kurultai = { tag = OTC level = 1 location = taizhou_jurchen }
 	kurultai = { tag = QAS level = 1 location = boorj }
 	kurultai = { tag = OGE level = 1 location = kurchum }
-	
+
+	# Kurultais added to important towns
+	kurultai = { tag = GLH level = 1 location = rechnoye }
+	kurultai = { tag = GLH level = 1 location = beljamen }
+	kurultai = { tag = GLH level = 1 location = ukek }
+	kurultai = { tag = GLH level = 1 location = bolghar }
+	kurultai = { tag = GLH level = 1 location = mokhcha }
+	kurultai = { tag = GLH level = 1 location = azok }
+	kurultai = { tag = GLH level = 1 location = solkhat }
+	kurultai = { tag = GLH level = 1 location = urgench }
+	kurultai = { tag = GLH level = 1 location = sighnaq }
+	kurultai = { tag = GLH level = 1 location = bozok_astana }
+
+	kurultai = { tag = CHG level = 1 location = otrar }
+	kurultai = { tag = CHG level = 1 location = chach }
+	kurultai = { tag = CHG level = 1 location = sawran }	
+
+	# Caravanserais added to important towns
 	caravanserai = { tag = GLH level = 1 location = rechnoye }
 	caravanserai = { tag = GLH level = 1 location = urgench }
 	caravanserai = { tag = GLH level = 1 location = azok }
@@ -152,10 +156,9 @@ building_manager = {
 	caravanserai = { tag = GLH level = 1 location = dzhulat }
 	caravanserai = { tag = GLH level = 1 location = sighnaq }
 
-	caravanserai = { tag = CHG level = 1 location = almaliq }
 	caravanserai = { tag = CHG level = 1 location = otrar }
-	caravanserai = { tag = CHG level = 1 location = chach }
-	
+	caravanserai = { tag = CHG level = 1 location = chach }	
+
 	stockade = { tag = GLH level = 1 location = or_qapi }
 	stockade = { tag = GLH level = 1 location = tavan }	
 	stockade = { tag = GLH level = 1 location = tula_russia }
@@ -166,9 +169,12 @@ building_manager = {
 	stockade = { tag = GLH level = 1 location = ismail }	
 	stockade = { tag = GLH level = 1 location = kichkas }
 	stockade = { tag = GLH level = 1 location = argamakli_sarai }
-	
+		
+	stockade = { tag = NSL level = 1 location = karachev }
+	stockade = { tag = NSL level = 1 location = kozelsk }
+
 	stockade = { tag = ALN level = 1 location = koban }
-	
+
 	market_village = { tag = GLH level = 1 location = dashev }
 	market_village = { tag = GLH level = 1 location = bilyar }
 	market_village = { tag = GLH level = 1 location = tatartup }
@@ -201,11 +207,14 @@ building_manager = {
 	
 	madrasa = { tag = GLH level = 1 location = solkhat }
 
-	#Italy
+
+	##### STEPPE ITALY – GAZARIA #####
 	trade_office = { tag = VEN level = 1 location = azok }
 	trade_office = { tag = GEN level = 1 location = azok }
+	trade_office = { tag = VEN level = 1 location = rechnoye }
+	trade_office = { tag = GEN level = 1 location = rechnoye }
 	
-	marketplace	= { tag = GAZ level = 1 location = kaffa }	
+	marketplace	= { tag = GAZ level = 1 location = kaffa }
 	marketplace = { tag = GAZ level = 1 location = cetatea_alba }
 
 	market_village = { tag = GAZ level = 1 location = oleshia }
@@ -214,7 +223,14 @@ building_manager = {
 	market_village = { tag = GAZ level = 1 location = balzimachi }
 	market_village = { tag = GAZ level = 1 location = lusta }
 
-	#Poland, Lithuania
+	fishing_village = { tag = GAZ level = 1 location = oleshia }
+	fishing_village = { tag = GAZ level = 1 location = khadjibey }
+	fishing_village = { tag = GAZ level = 1 location = taganrog }
+	fishing_village = { tag = GAZ level = 1 location = balzimachi }
+	fishing_village = { tag = GAZ level = 1 location = lusta }
+
+
+	##### POLAND - LITHUANIA #####
 	castle = { tag = LIT level = 1 location = lida }
 
 	stockade = { tag = LIT level = 1 location = siauliai }
@@ -223,9 +239,11 @@ building_manager = {
 	
 	marketplace = { tag = LIT level = 1 location = vilnius }
 	marketplace = { tag = LIT level = 1 location = kaunas }
+	marketplace = { tag = LIT level = 1 location = minsk }
 	marketplace = { tag = POL level = 1 location = poznan }
 
-	#Ruthenia
+
+	##### RUTHENIA #####
 	castle = { tag = VOL level = 1 location = belz }
 
 	market_village = { tag = KIE level = 1 location = putyvl }
@@ -259,16 +277,6 @@ building_manager = {
 	tar_kiln = { tag = LIT level = 1 location = bykhaw }
 	tar_kiln = { tag = LIT level = 1 location = rakau }
 
-	kyiv_pech_lavra = { tag = KIE level = 1 location = kyiv } #Kyiv-Pechersk Lavra unique
-	
-	#Caucasus
-	missionary_building = { tag = PAP level = 1 location = costa }
-
-	#Stockades on Tribal and bordering Tribal/Hordes
-	stockade = { tag = NSL level = 1 location = karachev }
-	stockade = { tag = NSL level = 1 location = kozelsk }
-	
-	# Stockade = { tag = BUL level = 1 location = constanta }
 	stockade = { tag = HTN level = 1 location = hotin }
 	stockade = { tag = HAL level = 1 location = kamianets_podilskyi }
 	stockade = { tag = VOL level = 1 location = kremenets }
@@ -286,7 +294,15 @@ building_manager = {
 	stockade = { tag = DRU level = 1 location = drutsk }
 	stockade = { tag = VBK level = 1 location = vitebsk }
 
-	# Cossack Colonies
+	kyiv_pech_lavra = { tag = KIE level = 1 location = kyiv } #Kyiv-Pechersk Lavra unique
+	
+
+	##### CAUCASUS #####
+	missionary_building = { tag = PAP level = 1 location = costa }
+
+
+	##### COSSACK ESTATE #####
+	# Cossack Colonies in the Steppes
 	cossacks_colony = { tag = GLH level = 1 location = bratslav }
 	cossacks_colony = { tag = GLH level = 1 location = vinnytsia }
 	cossacks_colony = { tag = GLH level = 1 location = sokilets }
