@@ -22,7 +22,7 @@ male_names = {
 	Gazi
 	Halim Hamza Hasan
 	Ibrahim Ilnur Ilshat Ilyas Ismail 
-	Mambet Marat Mehmed Mirbek Muhtar Musa Mustafay
+	name_moses name_muhammad name_mustafa Mambet Marat Mirbek Muhtar
 	Nail Nurbek Nurlan Nurzat
 	Oljas Omar
 	Qasim Qurban
@@ -56,12 +56,12 @@ dynasty_names = {
 	Geray
 	Janibek
 	Kerei Kuchum
-	Manggyt Mansur
+	Mangyt Mansur
 	Naiman Nogaybek
 	Orbey
 	Qanly Qarluq Qipchaq Qoja Qonyrat Qypshaq
 	Saruhan Serasker Shaibani Shiban Sunaq Suindik
-	Tabyn Tobyqty Tore Tugay Tuqay_Timur
+	Tabyn Tobyqty Tore Tugay Tuqa_Timur
 	Uisin Urys
 }
 
@@ -79,7 +79,7 @@ dialects = {
 			Farit
 			Hamza Hasan
 			Ibrahim Ilnur Ilshat Ilyas Ismail
-			Mambet Marat Mirbek Muhtar Musa
+			name_moses name_muhammad name_mustafa Mambet Marat Mirbek Muhtar
 			Nail Nurbek Nurlan Nurzat
 			Oljas Omar
 			Qasim Qurban
@@ -111,11 +111,11 @@ dialects = {
 			Dulat
 			Janibek
 			Kerei Kuchum
-			Manggyt Mansur
+			Mangyt Mansur
 			Naiman Nogaybek
 			Qanly Qarluq Qoja Qonyrat Qypshaq
 			Shaibani Shiban Sunaq Suindik
-			Tabyn Taybuga Tobyqty Tore Tuqay_Timur
+			Tabyn Taybuga Tobyqty Tore Tuqa_Timur
 			Uisin Urys
 		}
 		
@@ -135,7 +135,7 @@ dialects = {
 			Haci Halim Hidir
 			Ibraim Ilhan Ismail Izzet
 			Lenur
-			Mengli Mehmed Memet Mesud Mustafay
+			name_moses name_muhammad name_mustafa Mengli Memet Mesud
 			Nazim Noman
 			Qamal Qasim Qurban
 			Redvan Refat Reshid Rustem
@@ -170,7 +170,7 @@ dialects = {
 			Dayir
 			Geray geray_dynasty
 			Kuchuk
-			Mangit Mansur 
+			Mangyt Mansur 
 			Orbey
 			Qipchaq Qirq Qiyat Qongrat
 			Saruhan Secevut Serasker Sheyhun Shirin Shucun

@@ -1,4 +1,4 @@
-﻿# Kyiv commented out - Kotyk
+﻿# Kyiv and Polotsk commented out - Kotyk
 
 # FLAG_DEFINITION_LIST = {		# countries search for a list with the same name as their tag, the DEFAULT list is always included, if no flag definition is applicable for a country then its tag is used a COA_KEY
 # 	includes = ANOTHER_LIST		# includes another list in this list, can be repeated
@@ -6382,6 +6382,13 @@ SAR = { # Sardinia
 	flag_definition = {
 		coa = SAR
 		priority = 1
+	}
+	flag_definition = {
+		coa = SAR_arborea
+		priority = 10
+		trigger = {
+			coa_def_SAR_arborea_trigger = yes
+		}
 	}
 	flag_definition = {
 		coa = SAR_piedmont

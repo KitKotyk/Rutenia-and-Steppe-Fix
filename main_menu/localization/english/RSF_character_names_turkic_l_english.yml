@@ -30,19 +30,42 @@
  character_title_nobility_bey_female: "Hanım"
 
  character_title_nobility_mirza: "Mırza"
- character_title_nobility_mirza_female: ""
+ character_title_nobility_mirza_female: "Hanım"
 
  character_title_nobility_bek: "Bek"
  character_title_nobility_bek_female: "Hanum"
 
  character_title_nobility_murza: "Murza"
- character_title_nobility_murza_female: ""
+ character_title_nobility_murza_female: "Hanum"
 
  character_title_nobility_aga: "Ağa"
  character_title_nobility_aga_female: "Hatun"
 
  CHARACTER_NAME_ORDER_KIPCHAK: "$NAME$ $PREFIX$ $NUMBER$ $LASTNAME$ $NICKNAME$ $SUFFIX$"
 
+
+ ##### DYNAMIC NAMES AND DYNASTIES #####
+ # name_muhammad: "Muhammad"
+ name_muhammad.eastern_kipchak_dialect: "Mūhammed"
+ name_muhammad.western_kipchak_dialect: "Mehmed"
+
+ 
+ # name_moses: "Moses"
+ name_moses.kipchak_language: "Musa"
+
+ # name_mustafa: "Mushtafa"
+ name_mustafa.kipchak_language: "Mustafa"
+ 
+ Mangyt: "Mangyt" # Nogai ruling dynasty
+ Mangyt.eastern_kipchak_dialect: "Mañğyt"
+ Mangyt.western_kipchak_dialect: "Manğıt"
+
+ Tuqa_Timur: "Tuqa-Timur" # Kazan ruling dynasty
+ Tuqa_Timur.eastern_kipchak_dialect: "Tuqa-Temür"
+ Tuqa_Timur.western_kipchak_dialect: "Toqa-Temir"
+
+
+ ##### UNIQUE #####
  # Unique names Eastern Kipchak male
  Adil: "Ädıl"
  Aibek: "Aibek"
@@ -75,7 +98,6 @@
  Marat: "Marat"
  Mirbek: "Mirbek"
  Muhtar: "Mūhtar"
- Musa: "Musa"
  Nail: "Nail"
  Nurbek: "Nurbek"
  Nurlan: "Nurlan"
@@ -146,7 +168,6 @@
  Janibek: "Jänıbek"
  Kerei: "Kerei"
  Kuchum: "Küçüm"
- Manggyt: "Mañğyt"
  Mansur: "Mansur"
  Naiman: "Naiman"
  Nogaybek: "Nogaybek"
@@ -163,7 +184,6 @@
  Taybuga: "Taybuğa"
  Tobyqty: "Tobyqty"
  Tore: "Töre"
- Tuqay_Timur: "Tuqay Timür"
  Uisin: "Üisın"
  Urys: "Ūrys"
 
@@ -202,10 +222,8 @@
  Izzet: "Izzet" 
  Lenur: "Lenur" 
  Mengli: "Meñli"
- Mehmed: "Mehmed"
  Memet: "Memet"
  Mesud: "Mesud"
- Mustafay: "Mustafay" 
  Nazim: "Nazım"
  Noman: "Noman" 
  Qamal: "Qamal"
@@ -289,7 +307,6 @@
  Dayir: "Dayır"
  Geray: "Geray"
  Kuchuk: "Küçüq"
- Mangit: "Manğıt"
  Orbey: "Orbey"
  Qipchaq: "Qıpçaq"
  Qirq: "Qırq"

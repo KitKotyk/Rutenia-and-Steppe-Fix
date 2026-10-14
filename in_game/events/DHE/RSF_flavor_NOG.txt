@@ -1,0 +1,73 @@
+﻿namespace = RSF_flavor_NOG
+
+# Create Geray dynasty and mate Haci Geray the ruler immediately after formation
+RSF_flavor_NOG.1 = {
+	hide_portraits = yes
+	type = country_event
+	title = RSF_flavor_NOG.1.title
+	desc = RSF_flavor_NOG.1.desc
+	outcome = neutral
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = NOG
+		from = 1337.4.4
+		to = 1399.12.12
+		monthly_chance = 100
+	}
+
+	illustration_tags = {
+    	10 = regular
+		10 = interior
+	}
+
+	trigger = {
+		at_war = no
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		capital = {
+			save_scope_as = target_location
+		}
+		if = {
+			limit = {
+				NOT = { exists = dynasty:Mangyt }
+			}
+			create_named_dynasty = Mangyt
+		}
+		create_character = {
+			first_name = name_moses
+			dynasty = dynasty:Mangyt
+			adm = { 50 90 } 
+            dip = { 50 90 }
+            mil = { 50 90 }			
+			birth_location = scope:target_location
+			culture = culture:nogai
+            religion = religion:sunni
+			save_scope_as = target_character
+		}
+	}
+
+	option = {
+		name = RSF_flavor_NOG.1.a
+		historical_option = yes
+
+		scope:target_location = {
+			change_control = control_ultimate_bonus
+			change_development = development_severe_bonus
+            change_prosperity = prosperity_severe_bonus
+		}
+
+		every_owned_location = {
+			change_control = control_severe_bonus
+		}
+
+		hidden_effect = {
+			c:NOG = {
+				set_new_ruler = scope:target_character
+			}
+		}
+	}
+}

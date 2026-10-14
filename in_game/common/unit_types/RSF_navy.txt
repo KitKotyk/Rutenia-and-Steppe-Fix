@@ -14,4 +14,5 @@ n_chaika = {
 	
 	maintenance_demand = chaika_4_maintenance
 	construction_demand = chaika_4_construction
+	repair_demand = transport_4_repair
 }

@@ -16696,6 +16696,20 @@ character_db={
 		tag = ALE
 	}
 
+	cas_blanca_lacerda_lara = {
+		first_name = { name = name_blanche }
+		culture = castilian
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1311.1.1
+		birth = ciudad_real
+		father = cas_fernando_lacerda_jr
+		mother = cas_juana_nunez_lara
+		dynasty = burgundy_castile_dynasty
+		tag = CAS
+	}
+
 	# Grandfather of the King of Castile & Former King
 	cas_sancho_iv_burgundy = {	
 		first_name = { name = name_sancho }
@@ -16950,11 +16964,54 @@ character_db={
 		birth = puebla_de_montalban # Escalona
 		#father = sto_manuel_burgundy
 		#mother = cas_beatrice_savoie
+		spouse = cas_blanca_lacerda_lara
 		dynasty = manuel_dynasty
 		tag = CAS
-		artist = writer
-		artist_trait = prominent
-		artist_skill = 0.8
+	}
+
+	cas_constanza_manuel = {
+		first_name = { name = name_constance }
+		culture = castilian
+		religion = catholic
+		estate = nobles_estate
+		female = yes
+		birth_date = 1318.1.1
+		birth = puebla_de_montalban
+		father = cas_juan_manuel
+		spouse = por_pedro_i_portugal
+		dynasty = manuel_dynasty
+		tag = CAS
+	}
+
+	cas_fernando_manuel = {
+		first_name = { name = name_ferdinand }
+		culture = castilian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1332.1.1
+		birth = puebla_de_montalban
+		father = cas_juan_manuel
+		mother = cas_blanca_lacerda_lara
+		dynasty = manuel_dynasty
+		tag = CAS
+	}
+
+	cas_sancho_manuel = {
+		first_name = { name = name_sancho }
+		culture = castilian
+		religion = catholic
+		estate = nobles_estate
+		birth_date = 1320.1.1
+		birth = puebla_de_montalban
+		father = cas_juan_manuel
+		dynasty = manuel_dynasty
+		tag = CAS
+		timed_modifier = {
+			modifier = "bastard"
+			start_date = 1320.1.1
+			date = 9999.1.1
+			size = 1
+		}
 	}
 
 	# Line of the Counts of Aumale
@@ -50461,6 +50518,12 @@ character_db={
 		#spouse = cas_alfonso_xi_burgundy #Mistress
 		dynasty = guzman_dynasty
 		tag = CAS
+		timed_modifier = {
+			modifier = "royal_mistress"
+			start_date = 1330.1.1
+			date = 9999.1.1
+			size = 1
+		}
 	}
 
 	# HOUSE ÍÑIGA OR ARISTA (Former Kings of Navarra)
@@ -104891,7 +104954,7 @@ character_db={
 	}
 
 	cas_juan_nunez_de_prado = {
-		first_name = { name = name_juan }
+		first_name = { name = name_john }
 		last_name = { name = name_nuno }
 		has_patronym = yes
 		culture = castilian
@@ -104935,6 +104998,18 @@ character_db={
 		adm = 70 dip = 55 mil = 70
 		birth_date = 1290.1.1
 		birth = tomar
+		tag = POR
+	}
+
+	por_goncalo_vasques = {
+		first_name = { name = name_gonzalo }
+		last_name = { name = name_vasco }
+		has_patronym = yes
+		culture = portuguese
+		religion = catholic
+		adm = 60 dip = 55 mil = 70
+		birth_date = 1295.1.1
+		birth = avis
 		tag = POR
 	}
 

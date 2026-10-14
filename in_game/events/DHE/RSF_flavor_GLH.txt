@@ -1,10 +1,12 @@
-﻿namespace = collapsing_armies
+﻿
+namespace = RSF_flavor_glh
 
-collapsing_armies.1 = { # Golden Horde Collapse
+# Golden Horde Collapse
+RSF_flavor_glh.1000 = {
 	hide_portraits = yes
 	type = country_event
-	title = collapsing_armies.1.title
-	desc = collapsing_armies.1.desc
+	title = RSF_flavor_glh.1000.title
+	desc = RSF_flavor_glh.1000.desc
 	outcome = neutral
 
 	fire_only_once = yes
@@ -15,6 +17,13 @@ collapsing_armies.1 = { # Golden Horde Collapse
 		to = 1537.1.1
 		monthly_chance = 25
 	}
+
+	# dynamic_historical_event = {
+	# 	tag = GLH
+	# 	from = 1337.6.6
+	# 	to = 1537.1.1
+	# 	monthly_chance = 100
+	# }
 
 	illustration_tags = {
         10 = exterior
@@ -29,7 +38,7 @@ collapsing_armies.1 = { # Golden Horde Collapse
 			AND = {
 				has_ruler = yes				
 				ruler ?= {
-					total_abilities <= 120
+					total_abilities <= 120 # 120
 				}
 			}
 			AND = {
@@ -44,13 +53,13 @@ collapsing_armies.1 = { # Golden Horde Collapse
 	}
 
 	option = { # Collapse
-		name = collapsing_armies.1.a
+		name = RSF_flavor_glh.1000.a
 		historical_option = yes
 		change_country_type = army
 		change_government_type = government_type:steppe_horde
 		every_unit = {
 			destroy_unit = yes
-		}		
+		}
 
 		ai_chance = {
 			base = 90
@@ -58,7 +67,7 @@ collapsing_armies.1 = { # Golden Horde Collapse
 	}
 
 	option = { # Don't Collapse
-		name = collapsing_armies.1.b
+		name = RSF_flavor_glh.1000.b
 
 		ai_chance = {
 			base = 10

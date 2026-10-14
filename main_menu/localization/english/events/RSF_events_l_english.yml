@@ -1,0 +1,22 @@
+﻿l_english:
+
+ RSF_flavor_glh.1000.title: "Collapsing Horde Armies"
+ RSF_flavor_glh.1000.desc: "A crown of glass, a broken oath. The iron bond that once held the horde has snapped, undone by a ruler’s wavering hand and the rot of internal strife. Loyalty has withered into apathy; the thundering tide is now a silent retreat as warriors vanish like smoke into the desert winds, leaving behind only empty tents and a fading legacy."
+ RSF_flavor_glh.1000.entry: "Our army is collapsing..."
+ RSF_flavor_glh.1000.a: "This is the end..."
+ RSF_flavor_glh.1000.b: "As it turns out, it was all just talk."
+
+ RSF_flavor_CRI.1.title: "New Dynast Takes Power"
+ RSF_flavor_CRI.1.desc: "With the decline of the Golden Horde, Hacı I Giray established an independent Crimean Khanate, laying the foundations for a new dynasty. After years of struggle for power, he secured his rule over Crimea, seeking to unite the peninsula's Tatar clans under his authority."
+ RSF_flavor_CRI.1.entry: "New dynasty takes power."
+ RSF_flavor_CRI.1.a: "Long live the khan!"
+
+ RSF_flavor_KZN.1.title: "New Dynasty Takes Power"
+ RSF_flavor_KZN.1.desc: "As the Golden Horde descended into dynastic strife, Muhammad Toqa-Temir emerged as a contender for power in the Middle Volga region. Building upon the legacy of the Jochid dynasty, he established a new khanate centred on Kazan, laying the foundations for a Tatar state that would control the vital trade routes of the Volga."
+ RSF_flavor_KZN.1.entry: "New dynasty takes power."
+ RSF_flavor_KZN.1.a: "Long live the khan!"
+
+ RSF_flavor_NOG.1.title: "New Dynasty Takes Power"
+ RSF_flavor_NOG.1.desc: "As the Golden Horde fragmented, Musa of the Mangyt clan rose to prominence among the Nogai nobility. His growing influence helped lay the foundations for the Nogai Horde, a confederation of nomadic peoples that would emerge as an independent power on the Pontic and Caspian steppes."
+ RSF_flavor_NOG.1.entry: "New dynasty takes power."
+ RSF_flavor_NOG.1.a: "Long live the khan!"

@@ -12394,8 +12394,6 @@ countries = {
 			type = republic
 			heir_selection = podesta_elective
 
-			ruler_term = { character = gor_john_henry_iv_gorizia start_date = 1332.12.1 end_date = 1333.12.1 regnal_number = 0 }
-
 			reforms = {
 				signoria_reform
 			}
@@ -34945,6 +34943,7 @@ countries = {
 		capital = bursa
 		ai_advance_preference_tags = {
 			warfare = 1
+			land = 1
 		}
 		country_rank = rank_duchy
 
