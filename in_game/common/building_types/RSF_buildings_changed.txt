@@ -4,7 +4,7 @@ TRY_INJECT:kurultai = {
 	rural_settlement = no				# Changed to urban
 	
 	modifier = {
-		local_proximity_source = 30		# Added proximity source
+		local_proximity_source = 50		# Added proximity source
 	}
 }
 

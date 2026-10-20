@@ -312,15 +312,15 @@ czechslovak_language = {
 				Plansky Podebradsky Radecky Skalicky Spanovsky Svihovsky Tovacovsky	
 		
 				# Nouns 1 no conjuccation
-				Cernin Hrabisic Kaplir Kolovrat Krajir Lobkowicz Petras Zampach Zejdlic
+				Bavor Cernin Hrabisic Kaplir Kolovrat Krajir Lobkowicz Petras Zampach Zejdlic
 
 				# Nouns 2 with conjugation
 				Borita Kostka Mladota Prazma Slavata
 		
 				# From somewhere
 				Chotek Cimburk Duba Harrach Kunstat Landstejn Lichtenburk Lichtenstejn Lemberk
-				Lipa Martinic Nostic Pernstejn Pirkstejn Podebrady Ronov Rozmberk Sternberk Valdstejn
-				Zerotin
+				Lipa Martinic Nostic Pernstejn Pirkstejn Podebrady Ronov Rozmberk Sternberk
+				Valdstejn Zerotin
 			}
 
 			lowborn = {	
@@ -344,14 +344,15 @@ czechslovak_language = {
 		slovak_dialect = {
 			dynasty_names = {
 				# Adjectives
-				Belansky Belopotocky Benicky Brezovicky Bulovsky Cermansky Diviacky Filicky
-				Frivaldsky Hrusovsky Jesensky Klobusicky Kvaciansky Lomnicky Mednansky Ostrolucky
-				Podmanicky Podturnansky Prilesky Pruzinsky Radvansky Rakovsky Scitovsky Slopniansky
-				Smreciansky Szalavsky Svatojansky Trenciansky Trstensky Zaborsky Zapolsky Zaturecky
+				Belansky Belopotocky Benicky Brezovicky Briestensky Bulovsky Cermansky Diviacky
+				Filicky Frivaldsky Hrusovsky Jesensky Klobusicky Kvaciansky Lomnicky Mednansky
+				Ostrolucky Podmanicky Podturnansky Prilesky Pruzinsky Radvansky Rakovsky Scitovsky
+				Slopniansky Smreciansky Szalavsky Svatojansky Trenciansky Trstensky Zaborsky
+				Zapolsky Zaturecky
 
 				# Nouns 1 no conjuccation
-				Batan Bebek Bernolak Bockaj Bohus Bosniak Cak Caplovic Hadik Hamuljak Pongrac
-				Turzo Zmeskal
+				Batan Bebek Bernolak Bockaj Bohus Bosniak Cak Caplovic Hadik Hamuljak Kollar Kosut
+				Platy Pongrac Turzo Zmeskal
 
 				# Nouns 2 with conjugation
 				Balasa Ivanka Jedlicka
@@ -365,7 +366,7 @@ czechslovak_language = {
 				# Nouns 1 no conjuccation
 				Balaz Bartos Bednar_sk Bednarik_sk Cesnak Debnar Gajdos Galcik Havran Horak
 				Hrnciar Husak_sk Ilcik Javor Jurik Kacmar Kamenik Kocian Kocur Kolar_sk Kolarik
-				Kollar Kovac Kovacik Krajcir Kralik Liptak Minarik Molnar Mraz Novak Pekar
+				Kovac Kovacik Krajcir Kralik Liptak Minarik Molnar Mraz Novak Pekar
 				Pekarik Petras Rybar_sk Sevcik Slovak Stefanik Svec Tesar_sk Turcan Urban Vozar
 
 				# Nouns 2 with conjugation

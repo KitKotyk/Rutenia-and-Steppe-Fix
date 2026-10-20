@@ -3743,6 +3743,18 @@ JAP = { # Japan
 		priority = 110
 		trigger = {
 			coa_def_monarchy_trigger = yes
+			exists = dynasty:yamato_dynasty
+			OR = {
+				AND = {
+					has_ruler = yes
+					ruler.dynasty ?= dynasty:yamato_dynasty
+				}
+				AND = {
+					has_ruler = no
+					has_heir = yes
+					heir.dynasty ?= dynasty:yamato_dynasty
+				}
+			}
 		}
 	}
 }

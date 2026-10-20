@@ -4267,7 +4267,6 @@ countries = {
 				dhimmi_abrahamic_communities
 				dhimmi_military_service
 				dhimmi_traditions
-				dhimmi_administrative_posts
 
 				# Cossacks
 				cossacks_land_rights
@@ -4287,7 +4286,7 @@ countries = {
 		religious_school = hanafi_school
 		government = { mysticism_vs_jurisprudence = -15 }
 		
-		court_language = mongolian_language
+		# court_language = mongolian_language
 
 
 		accepted_cultures = {
@@ -14918,6 +14917,7 @@ countries = {
 				clergy_military_orders
 				#Commoners
 				cas_caballeros_villanos
+				ayuntamientos
 			}
 
 			laws = {
@@ -15225,7 +15225,14 @@ countries = {
 				jewish_physician_exemption
 				dhimmi_pact_of_umar
 				al_caid
+				andalusi_elite
 				treasury_rights
+			}
+			privilege = {
+				has_dlc = "d009_across_the_pillars"
+				gra_visirate
+				gra_ulema_council
+				gra_volunteers_of_faith
 			}
 			parliament = {
 				has_dlc = "d009_across_the_pillars"
@@ -15540,6 +15547,20 @@ countries = {
 			provins
 			peyrusse entraigues st_affrique
 			allegre chalancon peyre chateauneuf_de_randon florac st_ambroix
+
+			#C. de Champagne
+			chateau_thierry broyes vertus nogent_sur_seine bar_sur_aube
+			chaumont vaucouleurs vitry_en_pertois troyes epernay menehould
+			rosnay choiseul
+
+			#Too small/unimportant appanages
+			guise hirson
+
+			#Too small/unimportant vassals (fiefs movants)
+			coucy marle #S. Coucy
+			brienne #C. Brienne
+			joinville #S. Joinville
+			grandpre #C. Grandpre
 		}
 		own_control_integrated = {
 			#Appanages
@@ -15550,19 +15571,10 @@ countries = {
 			talmont beauvoir mauleon_poitou
 
 			#C. de Champagne
-			chateau_thierry broyes vertus nogent_sur_seine bar_sur_aube
-			chaumont vaucouleurs vitry_en_pertois troyes epernay menehould
-			rosnay villemaur choiseul
-
-			#Too small/unimportant appanages
-			guise hirson
+			villemaur
 
 			#Too small/unimportant vassals (fiefs movants)
-			coucy marle #S. Coucy
 			saint_gaudens #Vic. des Quatre Valles
-			brienne #C. Brienne
-			joinville #S. Joinville
-			grandpre #C. Grandpre
 		}
 
 		own_control_conquered = {
@@ -15686,14 +15698,17 @@ countries = {
 			}
 		}
 
+		accepted_cultures = {
+			picard
+			champenais
+		}
+
 		tolerated_cultures = {
 			arpitan
 			languedocien
-			picard
 			gascon
 			burgundian
 			auvergnat
-			champenais
 			limousin
 			poitevin
 			saintongeais
@@ -19848,6 +19863,13 @@ countries = {
 			privilege = {
 				has_dlc = "d009_across_the_pillars"
 				mor_andalusian_refugees
+				mor_makhzen_caids
+				mor_marabout_patronage
+				mor_gharb_war_tribes
+			}
+			reforms = {
+				has_dlc = "d009_across_the_pillars"
+				mor_marinid_zenata_confederation_reform
 			}
 			laws = {
 				amazigh_familial_connections = reliance_on_local_tribes
@@ -22242,6 +22264,9 @@ countries = {
 			laws = {
 				sharia_law = maliki_policy
 			}
+			bureaucracies = {
+				{ type = bayt_al_mal_bureaucracy date = 1250.1.1 entrenchment = 50 }
+			}
 		}
 
 		tolerated_cultures = {
@@ -22724,6 +22749,9 @@ countries = {
 			laws = {
 				sharia_law = shafii_policy
 			}
+			bureaucracies = {
+				{ type = bayt_al_mal_bureaucracy date = 1250.1.1 entrenchment = 50 }
+			}
 		}
 		religious_school = shafii_school
 		government = { mysticism_vs_jurisprudence = 20 }
@@ -23008,6 +23036,9 @@ countries = {
 			laws = {
 				sharia_law = shafii_policy
 			}
+			bureaucracies = {
+				{ type = bayt_al_mal_bureaucracy date = 1250.1.1 entrenchment = 50 }
+			}
 		}
 		religious_school = shafii_school
 		government = { mysticism_vs_jurisprudence = 20 }
@@ -23280,6 +23311,9 @@ countries = {
 			laws = {
 				sharia_law = shafii_policy
 			}
+			bureaucracies = {
+				{ type = bayt_al_mal_bureaucracy date = 1250.1.1 entrenchment = 50 }
+			}
 		}
 		religious_school = shafii_school
 		government = { mysticism_vs_jurisprudence = 20 }
@@ -23548,7 +23582,7 @@ countries = {
 				iqta_law = lenient_taxation
 			}
 			bureaucracies = {
-				{ type = bayt_al_mal_bureaucracy date = 1250.1.1 entrenchment = 75s }
+				{ type = bayt_al_mal_bureaucracy date = 1250.1.1 entrenchment = 75 }
 				# Baybars I refined the Mamluk barid into a sophisticated relay-and-intelligence network.
 				{ type = barid_bureaucracy date = 1261.1.1 entrenchment = 75 }
 			}
@@ -33889,6 +33923,9 @@ countries = {
 
 				trunk_road_to_erzurum_privilege
 			}
+			bureaucracies = {
+				{ type = bayt_al_mal_bureaucracy date = 1300.1.1 entrenchment = 40 }
+			}
 		}
 
 		country_rank = rank_duchy
@@ -34929,6 +34966,9 @@ countries = {
 				slave_conversion = allow_slave_religion
 				sharia_law = hanafi_policy
 				harem_law = secluded_harem_policy
+			}
+			bureaucracies = {
+				{ type = bayt_al_mal_bureaucracy date = 1300.1.1 entrenchment = 40 }
 			}
 		}
 
@@ -58899,6 +58939,9 @@ countries = {
 
 			ruler = krt_mu_izz_uddin_husayn_ibn_ghiyath_uddin
 
+			bureaucracies = {
+				{ type = bayt_al_mal_bureaucracy date = 1200.1.1 entrenchment = 75 }
+			}
 		}
 
 		tolerated_cultures = {

@@ -20,7 +20,7 @@
 	}
 
 	laws = {
-		iqta_law = land_acquisition
+		iqta_law = lenient_taxation
 		censorship = limited_censorship
 		tribal_legal_basis_law = yassa_decree_policy
 		tribal_organization_law = steppe_warbands_policy
@@ -45,6 +45,7 @@
 		noble_serfdom_rights
 		nobility_council
 		noble_leaders_only
+        noble_fortification_licenses
 
 		# Clergy
 		freedom_of_interpretation

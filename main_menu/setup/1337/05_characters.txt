@@ -13499,6 +13499,12 @@ character_db={
 			date = 9999.1.1
 			size = 1
 		}
+		timed_modifier = {
+			modifier = "taken_the_vows"
+			start_date = 1317.1.1
+			date = 9999.1.1
+			size = 1
+		}
 	}
 
 	# Son & Heir of the King of Hungary & Croatia

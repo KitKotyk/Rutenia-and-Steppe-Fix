@@ -3638,8 +3638,6 @@ building_manager = {
 	#madrasa = { tag = TUR level = 1 location = iznik }
 	madrasa = { tag = KAR level = 1 location = konya } #https://en.wikipedia.org/wiki/Sahib_Ata_Complex
 	madrasa = { tag = ERE level = 1 location = sivas } #https://en.wikipedia.org/wiki/G%C3%B6k_Medrese,_Sivas
-	seljuk_mint = { tag = KAR level = 1 location = konya }
-	seljuk_mint = { tag = ERE level = 1 location = sivas }
 	
 	#middle east
 	tar_kiln = { tag = SUT level = 4 location = sirnak } 
@@ -3827,7 +3825,6 @@ building_manager = {
 	cloth_guild = { tag = MOR level = 5 location = fez }
 	castle = { tag = TFL level = 1 location = ouarzazate } #https://en.wikipedia.org/wiki/A%C3%AFt_Benhaddou
 	qalat_al_mashwar = { tag = TLE level = 1 location = tlemcen } #https://en.wikipedia.org/wiki/El_Mechouar_Palace
-	local_governor = { tag = MOR level = 1 location = marrakesh }
 	wharf = { tag = SLE level = 1 location = sale }
 	dock = { tag = SLE level = 1 location = sale }
 
