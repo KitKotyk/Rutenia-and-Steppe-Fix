@@ -1,0 +1,13 @@
+﻿# I add this since horde rebellions are way too annoying and broken
+
+glh_golden_age_advance = {
+	age = age_1_traditions
+	icon = cultural_acceptance_advance
+	potential = {
+		has_or_had_tag = GLH
+	}
+	requires = horse_riding_advance
+	
+	nobles_estate_target_satisfaction = medium_permanent_target_satisfaction
+	global_estate_target_satisfaction = large_permanent_target_satisfaction
+}

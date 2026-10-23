@@ -581,6 +581,20 @@ ANJ = { # Anjou
 	}
 }
 
+ANR = {
+	flag_definition = {
+		coa = ANR
+		priority = 1
+	}
+	flag_definition = {
+		coa = ANR_quarterly
+		priority = 10
+		trigger = {
+			coa_def_revolutions_age_6_trigger = yes
+		}
+	}
+}
+
 AQN = { # Aquitaine
 	# AQN - GO lion passant guardant
 	# AQN_capetian - Qtly w/ france modern (same principle as Berry-Aquitaine)
@@ -9071,7 +9085,6 @@ SPA = { # Spain
 		trigger = {
 			coa_def_revolutions_age_6_trigger = yes
 			coa_def_republic_trigger = no
-			coa_def_absolute_monarchy_trigger = no
 		}
 	}
 

@@ -90675,7 +90675,7 @@ character_db={
 	}
 	mrs_friedrich_i_moers = { #Brother of Ruler
 		first_name = { name = name_frederick }
-		culture = westphalian
+		culture = low_franconian
 		religion = catholic
 		birth_date = 1292.1.1
 		birth = mors

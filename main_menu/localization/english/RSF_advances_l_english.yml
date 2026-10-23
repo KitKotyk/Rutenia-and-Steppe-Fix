@@ -55,6 +55,11 @@
  lith_wilderness_desc: "The dense forests and trackless marshes of Lithuania have long been its greatest shield. Invading armies struggle through the untamed wilderness, while local warriors strike from terrain they know by heart."
 
 
+ # Golden Horde
+ glh_golden_age_advance: "Horde Golden Age"
+ glh_golden_age_advance_desc: "The Golden Horde’s golden age brought prosperity to its subjects, as flourishing trade, secure pastures and the Khan’s favour filled the realm with gold – and its people with contentment."
+
+
  # Crimea
  syvash_salt: "Syvash Salt"
  syvash_salt_desc: "The shallow lagoons of the Syvash have yielded prized salt since antiquity. Harvested beneath the southern sun and carried by merchants across the steppe and the Black Sea, Crimean salt became an essential commodity, enriching the khanate and provisioning distant lands."
