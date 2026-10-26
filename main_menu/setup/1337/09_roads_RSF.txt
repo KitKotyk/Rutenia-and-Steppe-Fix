@@ -43,8 +43,13 @@ road_network = {
 	
 	iasi = targu_lapusnei
 	targu_lapusnei = chisinau
-	chisinau = tighina
-	tighina = cetatea_alba
+	chisinau = iagorlic
+	iagorlic = cetatea_alba
+	iagorlic = orhei
+
+	cetatea_alba = sarata
+	sarata = chilia
+	chilia = ismail
 	
 	# Steppes
 	# Northern Silk Road
@@ -62,7 +67,8 @@ road_network = {
 	sarayjuk = ryn
 	ryn = ganyushkino
 	ganyushkino = krasny_yar
-	krasny_yar = astrakhan	
+	krasny_yar = astrakhan
+	astrakhan = zamyany
 	krasny_yar = khosheutovo
 	khosheutovo = rechnoye
 	rechnoye = mikhaylovka_pontic
@@ -102,8 +108,29 @@ road_network = {
 	cherdakly = staraya_mayna
 	staraya_mayna = bolghar
 	bolghar = kazan
+
+	# Caravan road to Italian Black and Azov Sea ports
+	srednyaya_akhtuba = sarai_al_jadid
+	sarai_al_jadid = aksay
+	aksay = nagavskaya
+	nagavskaya = ust_tsimla
+	ust_tsimla = konstantinovsk
+	konstantinovsk = shakhty
+	shakhty = tana
+	tana = azok
+	azok = shcherbinovka
+	shcherbinovka = balzimachi
+
+	tana = taganrog
+	taganrog = shyrokyne
+	shyrokyne = domakha
+	domakha = berdiansk
+	berdiansk = melitopol
+	melitopol = kyrylivka	
+	kyrylivka = enice
+	enice = qalancaq
 	
-	# Orda Road to Moscow along the Don
+	# Orda road to Moscow along the Don
 	beljamen = ilovlya
 	ilovlya = zimnyatsky
 	zimnyatsky = kumylzhenskaya
@@ -121,17 +148,31 @@ road_network = {
 	lopasnya = serpukhov
 	serpukhov = przemysl_moscow	
 	
-	#Crimean Road (Kaffa - Oleshia)
-	tavan = oleshia
+	# Crimean Black Sea road
+	cetatea_alba = khadjibey
+	khadjibey = teligol
+	teligol = balikley
+	balikley = dashev
+	dashev = vithold_hammami
+	vithold_hammami = oleshia
+	oleshia = tavan
 	tavan = aslan_horod
 	aslan_horod = qalancaq
 	qalancaq = or_qapi
 	or_qapi = kalay
 	kalay = seyitler
 	seyitler = solkhat
-	solkhat = kaffa	
+	solkhat = kaffa
+
+	kaffa = vosporo
+	kaffa = soldaia
+	soldaia = lusta
+
+	solkhat = qarasuvbazar
+	qarasuvbazar = qirq_yer
+	qirq_yer = theodoro
 	
-	# Georgian Road (Yerevan to Majar)
+	# Georgian road (Yerevan to Astrakhan)
 	amberd = artashavan
 	artashavan = spitak
 	spitak = lori
@@ -146,6 +187,10 @@ road_network = {
 	dzhulat = novopavlovsk
 	novopavlovsk = zelenokumsk
 	zelenokumsk = majar
+	majar = levokumskoye
+	levokumskoye = mekletin
+	mekletin = ikryanoye
+	ikryanoye = astrakhan
 	
 	# Ottomans
 	izmit = iznik

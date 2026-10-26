@@ -213,6 +213,8 @@ polatskian_culture = {
 		novgorodian = positive
 		crimean = negative
 		mongolian_culture = enemy
+		aukstaitian = positive
+		samogitian = positive
 	}
 
 	culture_groups = {

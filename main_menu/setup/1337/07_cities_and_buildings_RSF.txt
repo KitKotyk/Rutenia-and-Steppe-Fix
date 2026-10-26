@@ -38,6 +38,7 @@ locations={
 	sozak = { rank = town			town_setup = central_asian_town }
 	jand = { rank = town			town_setup = central_asian_town }
 	bozok_astana = { rank = town	town_setup = central_asian_town }
+	qashliq = { rank = town			town_setup = central_asian_town }
 
 	# Chagatai
 	sawran = { rank = town			town_setup = central_asian_town }
@@ -70,6 +71,8 @@ locations={
 	kutaisi = { rank = town 		town_setup = christian_anatolian_town }
 	sukhumi = { rank = town 		town_setup = christian_anatolian_town }
 	yerevan = { rank = town 		town_setup = christian_anatolian_town }
+	baku = { rank = town 			town_setup = levant_town }
+	derbent = { rank = town 		town_setup = levant_town }
 	
 	deh_kundi = { rank = town 		town_setup = levant_town }
 	darab = { rank = town 			town_setup = levant_town }
@@ -130,11 +133,14 @@ building_manager = {
 	# Kurultais added to important towns
 	kurultai = { tag = GLH level = 1 location = rechnoye }
 	kurultai = { tag = GLH level = 1 location = beljamen }
+	kurultai = { tag = GLH level = 1 location = orhei }
+	kurultai = { tag = GLH level = 1 location = ismail }
 	kurultai = { tag = GLH level = 1 location = ukek }
 	kurultai = { tag = GLH level = 1 location = bolghar }
 	kurultai = { tag = GLH level = 1 location = mokhcha }
 	kurultai = { tag = GLH level = 1 location = azok }
 	kurultai = { tag = GLH level = 1 location = solkhat }
+	kurultai = { tag = GLH level = 1 location = dzhulat }
 	kurultai = { tag = GLH level = 1 location = urgench }
 	kurultai = { tag = GLH level = 1 location = sighnaq }
 	kurultai = { tag = GLH level = 1 location = bozok_astana }
@@ -165,8 +171,7 @@ building_manager = {
 	stockade = { tag = GLH level = 1 location = simbirsk }
 	stockade = { tag = GLH level = 1 location = kupiansk }
 	stockade = { tag = GLH level = 1 location = kursk }
-	stockade = { tag = GLH level = 1 location = kodak }
-	stockade = { tag = GLH level = 1 location = ismail }	
+	stockade = { tag = GLH level = 1 location = kodak }	
 	stockade = { tag = GLH level = 1 location = kichkas }
 	stockade = { tag = GLH level = 1 location = argamakli_sarai }
 		
@@ -182,7 +187,6 @@ building_manager = {
 	market_village = { tag = GLH level = 1 location = donets_kharkiv }
 	market_village = { tag = GLH level = 1 location = kursk }
 	market_village = { tag = GLH level = 1 location = kupiansk }
-	market_village = { tag = GLH level = 1 location = ismail }
 	market_village = { tag = GLH level = 1 location = simbirsk }
 	market_village = { tag = GLH level = 1 location = balikley }
 	market_village = { tag = GLH level = 1 location = torhovytsia }

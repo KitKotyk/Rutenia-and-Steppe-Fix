@@ -1,13 +1,15 @@
 ﻿
 # ----- LITHUANIA -----
 
-tolerant_rule_advance = { 				# Lithuanian culture capacity
+tolerant_rule_advance = { 				# Lithuanian need some real starting buff
 	age = age_1_traditions	
 	icon = cultural_acceptance_advance
 	potential = {
 		has_or_had_tag = LIT
 	}	
 	cultures_capacity = 2
+	global_estate_target_satisfaction = medium_permanent_target_satisfaction
+	subject_loyalty = 5
 
 	requires = feudalism_advance
 }

@@ -55549,8 +55549,11 @@ miass = {
 	define_pop = {	type = slaves	size = 2.247	culture = chiyalik_culture	religion = tengri }
 }
 qashliq = {
-	define_pop = {	type = clergy	size = 0.010	culture = mongolian_culture	religion = tengri }
-	define_pop = {	type = slaves	size = 1.228	culture = khanty_culture	religion = obian_paganism }
+	define_pop = {	type = clergy	size = 0.010	culture = mongolian_culture	religion = tengri }	
+	define_pop = {	type = peasants	size = 5.014	culture = yerle_qaliq_culture	religion = tengri }
+	define_pop = {	type = peasants	size = 2.014	culture = yerle_qaliq_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 1.689	culture = khanty_culture	religion = obian_paganism }
+	define_pop = {	type = tribesmen	size = 2.019	culture = yerle_qaliq_culture	religion = tengri }
 }
 siberia_abalak = {
 	define_pop = {	type = clergy	size = 0.010	culture = mongolian_culture	religion = tengri }

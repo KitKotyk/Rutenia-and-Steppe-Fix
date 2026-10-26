@@ -440,6 +440,8 @@
  uyskoye.kipchak_language: "Uy"
 
  # Siberia
+ siberia_abalak.kipchak_language: "Abalaq"
+ qashliq.kipchak_language: "Qaşliıq"
  almenevo.kipchak_language: "Almen"
  shchuchye.kipchak_language: "Çumlyaq"
  kurtamysh.kipchak_language: "Qurtamış"
@@ -929,3 +931,5 @@
  azeevo.kipchak_language: "Azey"
  ardatov.kipchak_language: "Ardat"
  kasimov.kipchak_language: "Qasım"
+
+ ###

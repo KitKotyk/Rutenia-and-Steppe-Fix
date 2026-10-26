@@ -1422,12 +1422,12 @@
 			left_bank_ukraine_area = {
 				romen_province = { hadiach romen lypova_dolyna opishnya }
 				lubny_province = { lubny horodyshche horoshino myrhorod }
-				pereiaslav_province = { pereiaslav boryspil yaroslavka zolotonosha }
+				pereiaslav_province = { not_eligible_for_dynamic_country_name = yes pereiaslav boryspil yaroslavka zolotonosha }
 				pryluky_province = { pryluky yahotyn pyriatyn chornukhy ichnia }
 				poltava_province = { poltava kremenchuk velyki_sorochyntsi hovtva kolomak }
 				oster_province = { oster kozelets lutava }
 			}
-			podolia_area = {
+			podolia_area = { not_eligible_for_dynamic_country_name = yes 
 				bratslav_province = { bratslav drahushiv mohyliv_podilskyi ushytsia }
 				eastern_podolia_province = { khmilnyk letychiv mezhybozhe rov }
 				savran_province = { savran balta bershad karabul zavallia }
@@ -1559,7 +1559,7 @@
 			}
 			matrega_area = {
 				taman_province = { taman mapa shanjir copa }
-				circassia_province = { khadyzhi kuzhyb maykop moschevo siba_circassia }
+				circassia_province = { not_eligible_for_dynamic_country_name = yes khadyzhi kuzhyb maykop moschevo siba_circassia }
 				akhtar_province = { akhtar kalininskaya bryukhovetskaya bzhedygu_kal ust_labinsk }
 				labinsk_province = { chatyun armavir shkhancheriekhabl belorechensk }
 				kuban_province = { pavlovskaya tbilisskaya romanovsky_khutor belaya_glina novo_alexandrovskoye }
@@ -1578,11 +1578,11 @@
 				great_meadow_province = { sofiivka kryvyi_rih tomakivka mykytyn_rih velyka_oleksandrivka }
 				torets_province = { barvinkove sloviansk adalaga }
 			}
-			kursk_area = {
-				kursk_province = { kursk opalkova manturovo_kursk troitskoye_na_shchigrakh }
+			kursk_area = { not_eligible_for_dynamic_country_name = yes 
+				kursk_province = { not_eligible_for_dynamic_country_name = yes kursk opalkova manturovo_kursk troitskoye_na_shchigrakh }
 				oboyan_province = { oboyan muzhech rakitnoye sudzha }
 				terbuny_province = { terbuny kastornoye semidesyatnoye zemlyansk }
-				rylsk_province = { rylsk kosozhichi olgov dmitriyev fatezh }
+				rylsk_province = { not_eligible_for_dynamic_country_name = yes rylsk kosozhichi olgov dmitriyev fatezh }
 				yelets_province = { yelets gogol talitsa_yelets }
 				kolpny_province = { kolpny mikhailovka ust_livny }
 			}			
@@ -3485,8 +3485,8 @@ asia = {
 				nadym_province = { nadym pravaya_khetta levaya_khetta nyurum_yegan }
 				dudinka_province = { dudinka khantayskoye turukhansk messoyakha makovskoye siberian_lakes_3 siberian_wasteland_12 siberian_wasteland_13 siberian_tundra_1 }
 			}
-			tomsk_area = {
-				tomsk_province = { tomsk melnikovo molchanovo ket pervomayskoye }
+			tomsk_area = { not_eligible_for_dynamic_country_name = yes 
+				tomsk_province = { not_eligible_for_dynamic_country_name = yes tomsk melnikovo molchanovo ket pervomayskoye }
 				bolshoy_uluy_province = { bolshoy_uluy itatsky tyukhtet makovskoe kazachinskoye }
 				komsa_province = { komsa siberia_bor bakhtinsky verkhneimbatsk inbatskoye }
 				yeniseysk_province = { yeniseysk nazimovo ust_ozernoye selo_yartsevo siberian_wasteland_15 }

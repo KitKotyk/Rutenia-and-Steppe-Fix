@@ -4154,7 +4154,7 @@ countries = {
 			koshki kamyshla bolshoy_cheremshan staryi_amanak
 			samara shigony morkvash			
 			
-			ukek
+			ukek qashliq
 			
 			zainsk menzelinsk chalninsky_pochinok 
 			ulukulevo davlekanovo bizhbulyak turkmenevo sterlibashevo
@@ -4186,7 +4186,7 @@ countries = {
 			anna_russia semidesyatnoye zemlyansk borisoglebsk sadovoye bolshaya_gribanovka balashov turki
 			burayevo oli_baraza yaransk kiknur kabachischi yoshkar_ola tabynsky beloretsk buguruslan
 			chebarkul miass krasnaya_gorka belekes syun verkhneyarkeyevo lower_aktanyshbash chekmagush chishmy
-			bavly abdulino sadak qashliq siberia_abalak turtas yukonda ust_ishim siletiteniz zhalauly
+			bavly abdulino sadak siberia_abalak turtas yukonda ust_ishim siletiteniz zhalauly
 			tuzdysor imakia zhelezin shish ufa askino baltas taskayevo
 			
 			petrove oril adalaga berestyn kolomak
@@ -4300,10 +4300,10 @@ countries = {
 			bashkir
 			yerle_qaliq_culture
 			turkmen_culture
+			khorezmian_culture
 		}
 
 		tolerated_cultures = {
-			khorezmian_culture
 			alan_culture
 			mari_culture
 			moksha_culture

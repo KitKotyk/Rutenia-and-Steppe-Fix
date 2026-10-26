@@ -1,0 +1,65 @@
+﻿# Tune down Crusades against Steppe Hordes
+
+TRY_REPLACE:is_valid_target_for_crusade = {
+	exists = yes
+	country_exists = this
+	save_temporary_scope_as = this_country
+	is_rebel_country = no
+	NOT = { religion.group = religion_group:christian }
+	OR = {
+		country_rank = country_rank:rank_kingdom
+		country_rank = country_rank:rank_empire
+	}
+	trigger_if = {
+		limit = { 
+			country_exists = c:PAP
+		}
+		capital = {
+			is_discovered_by = c:PAP
+		}
+		not = { is_subject_of = c:PAP }
+		c:PAP = {
+			not = { is_subject_of = scope:this_country }
+		}
+	}
+	OR = {
+		scope:this_country = {
+			any_owned_location = {
+				OR = {
+					dominant_religion.group = religion_group:christian
+					sub_continent = sub_continent:western_europe
+					region = region:balkan_region
+					region = region:carpathia_region
+					region = region:scandinavian_region
+					region = region:baltic_region
+					region = region:russian_region
+					region = region:ruthenia_region
+				}
+			}
+		}
+		religion:catholic = {
+			any_holy_site_in_religion = {
+				location = {
+					owner = scope:this_country
+				}
+			}
+		}
+	}
+	OR = {
+		scope:this_country = {
+			any_owned_location = {
+				any_neighbor_location = {
+					exists = owner
+					owner = { religion = religion:catholic }
+				}
+			}
+		}
+		scope:this_country = {
+			any_owned_location = {
+				any_neighbor_location = {
+					is_in_scripted_geography = scripted_geography:mediterranean_sea_geography
+				}
+			}
+		}
+	}
+}

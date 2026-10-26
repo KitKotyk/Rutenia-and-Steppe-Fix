@@ -1,5 +1,7 @@
 ﻿l_english: 
  # West Siberia
+ siberia_abalak.nenets_language: "Abalak"
+ qashliq.nenets_language: "Kashlyk"
  almenevo.nenets_language: "Almen"
  shchuchye.nenets_language: "Chumlyak"
  kargapolye.nenets_language: "Chashy"

@@ -383,7 +383,7 @@ locations={
 
 	# Ruthenia
 	chernihiv = { rank = town 	town_setup = ruthenian_town }
-	# ismail = { rank = town town_setup = ruthenian_town }
+	ismail = { rank = town 		town_setup = carpathian_town }
 	kyiv = { rank = town 		town_setup = ruthenian_town }	
 	lviv = { rank = town 		town_setup = ruthenian_town }
 	polotsk = { rank = town 	town_setup = ruthenian_town }	
@@ -2079,7 +2079,7 @@ building_manager = {
 	trade_office = { tag = VEN level = 1 location = dubrovnik }
 	trade_office = { tag = VEN level = 1 location = smyrna }
 	trade_office = { tag = VEN level = 1 location = constantinople }
-	# trade_office = { tag = VEN level = 1 location = ismail }
+	trade_office = { tag = VEN level = 1 location = ismail }
 	trade_office = { tag = VEN level = 1 location = tana }	
 	trade_office = { tag = VEN level = 1 location = antioch }
 	trade_office = { tag = VEN level = 1 location = acre }
@@ -2101,7 +2101,7 @@ building_manager = {
 	trade_office = { tag = GEN level = 1 location = naples }
 	trade_office = { tag = GEN level = 1 location = smyrna }
 	trade_office = { tag = GEN level = 1 location = constantinople }
-	# trade_office = { tag = GEN level = 1 location = ismail }
+	trade_office = { tag = GEN level = 1 location = ismail }
 	trade_office = { tag = GEN level = 1 location = tana }	
 	trade_office = { tag = GEN level = 1 location = trebizond }
 	trade_office = { tag = GEN level = 1 location = antioch }
@@ -4052,7 +4052,7 @@ building_manager = {
 	stockade = { tag = BLD level = 1 location = cahul }
 	stockade = { tag = HSC level = 1 location = chisinau }
 	stockade = { tag = SRC level = 1 location = soroca }
-	stockade = { tag = SRC level = 1 location = orhei }
+	# stockade = { tag = SRC level = 1 location = orhei }
 	stockade = { tag = JOL level = 1 location = linguere }
 	stockade = { tag = JOL level = 1 location = ndar }
 	stockade = { tag = JOL level = 1 location = ndiaganiao }

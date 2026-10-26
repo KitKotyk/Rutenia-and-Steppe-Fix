@@ -149,6 +149,7 @@ mishar = {
 		nogai = positive
 		bolghar_culture = positive
 		uzbek_culture = positive
+		khorezmian_culture = positive
 		yerle_qaliq_culture = positive
 		bashkir = positive
 		turkmen_culture = positive

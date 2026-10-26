@@ -9,7 +9,9 @@ TRY_INJECT:steppe_horde = { # No downgrade, +Morale, –Research&Institution, -A
 		cultural_influence_modifier = -0.90
 		cultures_capacity = 2
 
-		local_pop_join_rebel_threshold = -0.2		# To lower rebel spam
+		local_pop_join_rebel_threshold = -0.2			# To lower rebel spam
+		tolerance_heathen = 4							# To lower rebel spam
+		tolerance_heretic = 2							# To lower rebel spam
 	}
 }
 

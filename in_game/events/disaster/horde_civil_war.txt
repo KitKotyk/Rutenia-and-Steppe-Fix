@@ -1,0 +1,998 @@
+﻿namespace = horde_civil_war
+
+scripted_trigger horde_character_valid_pretender_trigger = {
+	is_alive = yes
+	is_ruler = no
+	owner = ROOT
+	is_adult = yes
+	is_female = no
+	is_artist = no
+	has_estate = estate_type:nobles_estate
+}
+
+scripted_effect horde_create_pretender_rebellion = {
+	if = {
+		limit = {
+			OR = {
+				NOT = { has_variable = horde_civil_war_pretender_variable }
+				NOT = { exists = var:horde_civil_war_pretender_variable }
+			}
+		}
+		create_rebel = {
+			category = pretender
+			name = horde_civil_war_pretender
+			save_scope_as = horde_civil_war_pretender_scope
+			add_rebel_modifier = {
+				modifier = rise_of_the_horde
+				mode = add_and_extend
+			}
+		}
+		set_variable = {
+			name = total_num_prov_variable
+			value = 0
+		}
+		every_province = {
+			limit = {
+				OR = {
+					province_average_control < 0.25		# RSF changed from 0.5
+					province_food_percentage < 0.25		# RSF changed from 0.5
+					province_satisfaction < 0.25		# RSF changed from 0.5
+				}
+				any_location_in_province = { is_capital = no }
+			}
+			add_to_list = revolt_provinces_list
+			owner = {
+				change_variable = {
+					name = total_num_prov_variable
+					add = 1
+				}
+			}
+		}
+		if = {
+			limit = { list_size = { name = revolt_provinces_list value > 0 } }
+			ordered_in_list = {
+				list = revolt_provinces_list
+				order_by = population
+				max = {
+					value = var:total_num_prov_variable
+					divide = 4
+					ceiling = yes
+				}
+				every_location_in_province = {
+					every_pop = {
+						limit = {
+							owner = root
+						}
+						add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+						change_pop_allegiance = scope:horde_civil_war_pretender_scope
+					}
+				}
+			}
+		}
+		set_variable = {
+			name = horde_civil_war_pretender_variable
+			value = scope:horde_civil_war_pretender_scope
+		}
+	}
+	else = {
+		var:horde_civil_war_pretender_variable = {
+			save_scope_as = horde_civil_war_pretender_scope
+		}
+	}
+}
+scripted_effect horde_assign_pretender_leader_character = {
+	if = {
+		limit = {
+			has_ruler = yes
+			ruler = { has_dynasty = yes }
+		}
+		root.ruler.dynasty = {
+			ordered_character_in_dynasty = {
+				order_by = total_abilities
+				limit = { horde_character_valid_pretender_trigger = yes }
+				max = 1
+				save_scope_as = scope_pretender
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = { exists = scope:scope_pretender }
+		}
+		ordered_character = {
+			order_by = total_abilities
+			limit = { horde_character_valid_pretender_trigger = yes }
+			max = 1
+			save_scope_as = scope_pretender
+		}
+	}
+	if = {
+		limit = { NOT = { exists = scope:scope_pretender } }
+		create_character = {
+			religion = root.religion
+			culture = root.culture
+			estate = estate_type:nobles_estate
+			age = 30
+			save_scope_as = scope_pretender
+		}
+	}
+	scope:scope_pretender = {
+		move_country = root
+		set_variable = {
+			name = scope_horde_pretender_var
+			value = scope:target_country
+		}
+		if = {
+			limit = { exists = scope:horde_civil_war_pretender_scope }
+			change_character_allegiance = scope:horde_civil_war_pretender_scope
+		}
+		add_character_modifier = {
+			modifier = plotting_rebellion_modifier
+			years = -1
+			mode = add_and_extend
+		}
+	}
+	set_variable = {
+		name = pretender_rebel_character
+		value = scope:scope_pretender
+	}
+	create_gui_variable = {
+		type = pretender_rebel_character
+		target = scope:scope_pretender
+	}
+}
+
+scripted_effect horde_get_rebel_scopes = {
+	if = {
+		limit = { has_variable = pretender_rebel_character }
+		var:pretender_rebel_character ?= {
+			save_scope_as = target_character
+		}
+	}
+	if = {
+		limit = {
+			has_variable = horde_civil_war_pretender_variable
+			var:horde_civil_war_pretender_variable ?= { exists = this }
+		}
+		var:horde_civil_war_pretender_variable ?= {
+			save_scope_as = target_rebel
+		}
+	}
+}
+
+scripted_effect horde_clr_variables = {
+	remove_variable = horde_civil_war_pretender_variable
+	remove_variable = pretender_rebel_character
+}
+
+scripted_effect horde_break_fiefdom_or_kill_ruler = {
+	if = {
+		limit = {
+			# Do not execute a target who is a victorious pretender who has already ascended the throne
+			NOT = { $killer$ ?= $target$ }
+		}
+		if = {
+			limit = {
+				not = { exists = union }
+				trigger_if = {
+					limit = { is_subject = yes }
+					overlord.ruler ?= {
+						this != $target$
+					}
+				}
+			}
+			kill_character = {
+				target = $target$
+				reason = $reason$
+				killer = $killer$
+			}
+		}
+		else = {
+			create_character = {
+				religion = root.religion
+				culture = root.culture
+				estate = estate_type:crown_estate
+				age = 25
+				save_scope_as = target_character
+			}
+			set_new_ruler = scope:target_character
+		}
+	}
+}
+
+#Horde Civil War Start
+horde_civil_war.1 = {
+	type = country_event
+	category = disaster_event
+	title = horde_civil_war.1.title
+	desc = horde_civil_war.1.desc
+	outcome = neutral
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	immediate = {
+		save_scope_as = target_country
+		ruler_or_regent ?= { save_scope_as = target_character }
+		horde_create_pretender_rebellion = yes
+		horde_assign_pretender_leader_character = yes
+	}
+	option = {
+		name = horde_civil_war.1.a
+		custom_tooltip = horde_civil_war.1.tt
+		add_stability = stability_extreme_penalty
+	}
+	after = {
+		remove_variable = total_num_prov_variable
+	}
+}
+
+#On action events
+# A New [target_country.GetGovernment.GetRulerTitle] Emerges! (on_ruler_death)
+horde_civil_war.2 = {
+	type = country_event
+	category = disaster_event
+	title = horde_civil_war.2.title
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { scope:target_character = scope:target_ruler } }
+				desc = horde_civil_war.2.desc.normal_succession
+			}
+			triggered_desc = {
+				trigger = { scope:target_character = scope:target_ruler }
+				desc = horde_civil_war.2.desc.pretender_ruler
+			}
+		}
+	}
+	outcome = neutral
+	trigger = {
+		has_any_active_disaster = yes
+		any_active_disaster = { disaster_type = disaster_type:horde_civil_war }
+		has_variable = pretender_rebel_character
+	}
+	immediate = {
+		save_scope_as = target_country
+		var:pretender_rebel_character ?= { save_scope_as = target_character }
+		horde_create_pretender_rebellion = yes
+		if = {
+			limit = {
+				OR = {
+					NOT = { exists = scope:target_character }
+					scope:target_character = { is_alive = no }
+				}
+			}
+			horde_assign_pretender_leader_character = yes
+			var:pretender_rebel_character ?= { save_scope_as = target_character }
+		}
+		if = {
+			limit = { exists = scope:old_ruler }
+			scope:old_ruler = { save_scope_as = dead_ruler }
+		}
+		ruler_or_heir_if_regent ?= { save_scope_as = target_ruler }
+		if = {
+			limit = { NOT = { exists = scope:target_ruler } }
+			regent ?= {
+				save_scope_as = target_ruler
+			}
+		}
+		if = {
+			limit = {
+				exists = scope:target_ruler
+				exists = scope:target_country
+				scope:target_character = scope:target_ruler
+			}
+			horde_assign_pretender_leader_character = yes
+		}
+	}
+	option = {
+		name = horde_civil_war.2.a
+		trigger = { NOT = { scope:target_character = scope:target_ruler } }
+		scope:horde_civil_war_pretender_scope = {
+			start_civil_war = {}
+		}
+		add_horde_unity = horde_unity_mild_bonus
+		if = {
+			limit = {
+				has_regent = yes
+				has_heir = no
+				scope:target_ruler = { is_female = no }
+			}
+			set_new_ruler = scope:target_ruler
+		}
+	}
+	option = {
+		name = horde_civil_war.2.b
+		trigger = {
+			NOT = { scope:target_character = scope:target_ruler }
+			scope:target_character = { is_alive = yes is_female = no }
+		}
+		if = {
+			limit = {
+				in_civil_war = yes
+				civil_war_opponent = {
+					has_ruler = yes
+					ruler ?= scope:target_character
+				}
+			}
+			scope:target_character = { move_country = scope:target_country }
+			civil_war_opponent = {
+				scope:target_country = { annex_country = { country = prev } }
+			}
+		}
+		set_new_ruler = scope:target_character
+		scope:target_character = {
+			remove_character_modifier = plotting_rebellion_modifier
+			remove_variable = scope_horde_pretender_var
+			remove_character_allegiance = yes
+		}
+		horde_break_fiefdom_or_kill_ruler = {
+			target = scope:target_ruler
+			reason = execution
+			killer = scope:target_character
+		}
+		hidden_effect = {
+			horde_create_pretender_rebellion = yes
+			horde_assign_pretender_leader_character = yes
+		}
+	}
+	option = {
+		name = horde_civil_war.2.c
+		trigger = { scope:target_character = scope:target_ruler }
+		add_horde_unity = horde_unity_mild_bonus
+	}
+}
+
+# Rise of a New Warlord (on_character_death)
+horde_civil_war.3 = {
+	type = country_event
+	category = disaster_event
+	title = horde_civil_war.3.title
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	desc = horde_civil_war.3.desc
+	outcome = neutral
+	immediate = {
+		save_scope_as = target_country
+		horde_assign_pretender_leader_character = yes
+		if = {
+			limit = { scope:target = { owner ?= { is_rebel_country = yes } } }
+			scope:target = {
+				owner = {
+					save_scope_as = rebel_country
+				}
+			}
+		}
+		else = {
+			horde_create_pretender_rebellion = yes
+		}
+	}
+	option = {
+		name = horde_civil_war.3.a
+		add_horde_unity = horde_unity_weak_bonus
+		if = {
+			limit = {
+				exists = scope:rebel_country
+				exists = scope:scope_pretender
+			}
+			scope:rebel_country = { set_new_ruler = scope:scope_pretender }
+		}
+		else_if = {
+			limit = {
+				exists = scope:scope_pretender
+				exists = scope:horde_civil_war_pretender_scope
+			}
+			scope:scope_pretender = {
+				change_character_allegiance = scope:horde_civil_war_pretender_scope
+			}
+		}
+	}
+}
+
+# Victory of the [target_country.GetGovernment.GetRulerTitle]! (on_civil_war_won)
+horde_civil_war.4 = {
+	type = country_event
+	category = disaster_event
+	title = horde_civil_war.4.title
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { has_variable = horde_civil_war_can_end }
+				desc = horde_civil_war.4.desc.end
+			}
+			triggered_desc = {
+				trigger = { always = yes }
+				desc = horde_civil_war.4.desc.new
+			}
+		}
+	}
+	outcome = neutral
+	trigger = {
+		has_any_active_disaster = yes
+		any_active_disaster = { disaster_type = disaster_type:horde_civil_war }
+		has_variable = pretender_rebel_character
+	}
+	immediate = {
+		save_scope_as = target_country
+		var:pretender_rebel_character = { save_scope_as = target_character }
+		if = {
+			limit = {
+				stability > HORDE_CIVIL_WAR_PRE_END_STABILITY
+				horde_unity > HORDE_CIVIL_WAR_PRE_END_HORDE_UNITY
+				has_ruler = yes
+			}
+			set_variable = horde_civil_war_can_end
+		}
+		else = {
+			horde_clr_variables = yes
+			horde_create_pretender_rebellion = yes
+			horde_assign_pretender_leader_character = yes
+		}
+		ruler_or_regent ?= { save_scope_as = target_ruler }
+	}
+	option = {
+		name = horde_civil_war.4.a
+		trigger = { NOT = { has_variable = horde_civil_war_can_end } }
+		add_horde_unity = horde_unity_extreme_bonus
+		add_stability = stability_mild_bonus
+		horde_break_fiefdom_or_kill_ruler = {
+			target = scope:target_character
+			reason = execution
+			killer = ruler
+		}
+	}
+	option = {
+		name = horde_civil_war.4.b
+		trigger = { has_variable = horde_civil_war_can_end }
+		add_horde_unity = horde_unity_extreme_bonus
+		add_stability = stability_severe_bonus
+		add_prestige = prestige_mild_bonus
+		horde_break_fiefdom_or_kill_ruler = {
+			target = scope:target_character
+			reason = execution
+			killer = ruler
+		}
+	}
+	after = {
+		remove_variable = horde_civil_war_can_end
+	}
+}
+
+# (on_civil_war_lost)
+horde_civil_war.5 = {
+	type = country_event
+	category = disaster_event
+	title = horde_civil_war.5.title
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	desc = horde_civil_war.5.desc
+	outcome = neutral
+	trigger = {
+		any_active_disaster = {
+			disaster_type = disaster_type:horde_civil_war
+		}
+	}
+	immediate = {
+		save_scope_as = target_country
+		ruler_or_regent ?= { save_scope_as = target_ruler }
+		var:pretender_rebel_character ?= { save_scope_as = target_character }
+	}
+	option = {
+		name = horde_civil_war.5.a
+		high_risk_option = yes
+		trigger = { is_human = yes }
+		change_player = scope:winner
+	}
+	option = {
+		name = horde_civil_war.5.b
+		custom_tooltip = civil_war_game_over
+	}
+	after = {
+		scope:winner = {
+			trigger_event_silently = horde_civil_war.6
+		}
+	}
+}
+
+horde_civil_war.6 = {
+	type = country_event
+	category = disaster_event
+	title = horde_civil_war.6.title
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	desc = horde_civil_war.6.desc
+	outcome = neutral
+	immediate = {
+		save_scope_as = target_country
+	}
+	option = {
+		name = horde_civil_war.6.a
+		add_horde_unity = horde_unity_ultimate_penalty
+		add_stability = stability_extreme_penalty
+		horde_break_fiefdom_or_kill_ruler = {
+			target = scope:target_ruler
+			reason = execution
+			killer = ruler
+		}
+	}
+}
+
+#Monthly events
+#The [target_province.GetName] Rebellion
+horde_civil_war.7 = {
+	type = country_event
+	category = disaster_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { exists = scope:target_province }
+				desc = horde_civil_war.7.title
+			}
+			triggered_desc = {
+				trigger = { NOT = { exists = scope:target_province } }
+				desc = horde_civil_war.7.title.generic
+			}
+		}
+	}
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	desc = horde_civil_war.7.desc
+	trigger = {
+		any_owned_location = {
+            OR = {
+                # has_any_disease_present = yes		# RSF
+                prosperity < 0
+                # province = { is_starving = yes }	# RSF
+				any_pop = {
+					pop_satisfaction < 0.25			# RSF changed from 0.5
+				}
+            }
+		}
+	}
+	outcome = neutral
+	immediate = {
+		save_scope_as = target_country
+		ruler_or_regent ?= { save_scope_as = target_ruler }
+		random_owned_location = {
+			limit = {
+				OR = {
+					# has_any_disease_present = yes		# RSF
+					prosperity < 0
+					# province = { is_starving = yes }	# RSF
+					any_pop = {
+						pop_satisfaction < 0.25			# RSF changed from 0.5
+					}
+				}
+			}
+			province = { save_scope_as = target_province }
+		}
+		horde_get_rebel_scopes = yes
+		if = {
+			limit = { in_civil_war = yes }
+			civil_war_opponent ?= { save_scope_as = civil_war_country }
+		}
+	}
+	option = {
+		name = horde_civil_war.7.a
+		add_horde_unity = horde_unity_weak_bonus
+		if = {
+			limit = {
+				in_civil_war = no
+				exists = scope:target_rebel
+			}
+			custom_tooltip = {
+				text = horde_civil_war.7.a.tt
+				scope:target_province = {
+					every_location_in_province = {
+						every_pop = {
+							change_pop_allegiance = scope:target_rebel
+						}
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = { exists = scope:civil_war_country }
+				scope:target_province = {
+					every_location_in_province = {
+						change_location_owner = scope:civil_war_country
+					}
+				}
+				scope:civil_war_country = {
+					if = {
+						limit = { root.monthly_manpower > 0 }
+						add_manpower = { value = root.monthly_manpower multiply = 2 }		# RSF change from 4 to 2
+					}
+					else = {
+						add_manpower = 0.1
+					}
+				}
+			}
+			else = {
+				scope:target_province = {
+					every_location_in_province = {
+						every_pop = {
+							limit = {
+								owner = root
+							}
+							add_pop_satisfaction = pop_satisfaction_extreme_penalty
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = horde_civil_war.7.b
+		add_horde_unity = horde_unity_mild_penalty
+		change_societal_value = {
+			type = centralization_vs_decentralization
+			value = societal_value_minor_move_to_right
+		}
+		scope:target_province = {
+			every_location_in_province = {
+				change_control = control_severe_penalty
+			}
+		}
+	}
+}
+#The Murder of [target_ruler.GetName]
+horde_civil_war.8 = {
+	type = country_event
+	category = disaster_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { exists = scope:target_ruler }
+				desc = horde_civil_war.8.title
+			}
+			triggered_desc = {
+				trigger = { NOT = { exists = scope:target_ruler } }
+				desc = horde_civil_war.8.title.generic
+			}
+		}
+	}
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	desc = horde_civil_war.8.desc
+	outcome = neutral
+	trigger = {
+		not = { exists = union }
+		trigger_if = {
+			limit = { is_subject = yes }
+			overlord.ruler ?= {
+				this != root.ruler
+			}
+		}
+	}
+	immediate = {
+		save_scope_as = target_country
+		if = {
+			limit = { has_ruler = yes }
+			ruler ?= { save_scope_as = target_ruler }
+		}
+		else_if = {
+			limit = { has_heir = yes }
+			heir ?= { save_scope_as = target_ruler }
+		}
+		else = {
+			regent ?= { save_scope_as = target_ruler }
+		}
+		horde_get_rebel_scopes = yes
+	}
+	option = {
+		name = horde_civil_war.8.a
+		horde_break_fiefdom_or_kill_ruler = {
+			target = scope:target_ruler
+			reason = assassination
+			killer = scope:target_character
+		}
+		add_stability = stability_weak_penalty
+	}
+}
+#Trade Collapse
+horde_civil_war.9 = {
+	type = country_event
+	category = disaster_event
+	title = horde_civil_war.9.title
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	desc = horde_civil_war.9.desc
+	outcome = neutral
+	immediate = {
+		save_scope_as = target_country
+		ruler_or_regent ?= { save_scope_as = target_ruler }
+		horde_get_rebel_scopes = yes
+	}
+	option = {
+		name = horde_civil_war.9.a
+		change_gold_effect = { scale = -4 }
+		add_stability = stability_mild_bonus
+	}
+	option = {
+		name = horde_civil_war.9.b
+		add_stability = stability_mild_penalty
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_weak_penalty }
+	}
+}
+#Loyalty of the Warriors
+horde_civil_war.10 = {
+	type = country_event
+	category = disaster_event
+	title = horde_civil_war.10.title
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	desc = horde_civil_war.10.desc
+	outcome = neutral
+	trigger = {
+		in_civil_war = yes
+		ruler_or_regent ?= {
+			NOT = { has_character_modifier = horde_inspiring_speech }
+			NOT = { has_character_modifier = horde_show_of_strength }
+			NOT = { has_character_modifier = horde_battle_plans }
+		}
+	}
+	immediate = {
+		save_scope_as = target_country
+		ruler_or_regent ?= { save_scope_as = target_ruler }
+		horde_get_rebel_scopes = yes
+		capital = {
+			save_scope_as = target_location
+		}
+	}
+	option = {
+		name = horde_civil_war.10.a
+		add_stability = stability_mild_bonus
+		scope:target_ruler = {
+			add_character_modifier = {
+				modifier = horde_inspiring_speech
+				years = 5
+				mode = add_and_extend
+			}
+		}
+	}
+	option = {
+		name = horde_civil_war.10.b
+		add_horde_unity = horde_unity_mild_bonus
+		scope:target_ruler = {
+			add_character_modifier = {
+				modifier = horde_show_of_strength
+				years = 5
+				mode = add_and_extend
+			}
+		}
+	}
+	option = {
+		name = horde_civil_war.10.c
+		add_army_tradition = army_tradition_mild_bonus
+		scope:target_ruler = {
+			add_character_modifier = {
+				modifier = horde_battle_plans
+				years = 5
+				mode = add_and_extend
+			}
+		}
+	}
+}
+
+#Regency on the throne
+horde_civil_war.11 = {
+	type = country_event
+	category = disaster_event
+	title = horde_civil_war.11.title
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	desc = horde_civil_war.11.desc
+	outcome = neutral
+	trigger = {
+		has_regent = yes
+		has_heir = no
+	}
+	immediate = {
+		create_character = {
+			religion = root.religion
+			culture = root.culture
+			estate = estate_type:crown_estate
+			age = 25
+			save_scope_as = target_character
+		}
+		ruler_or_regent ?= {
+			save_scope_as = target_ruler
+		}
+	}
+	option = {
+		name = horde_civil_war.11.a
+		set_new_ruler = scope:target_character
+		if = {
+			limit = { exists = scope:target_ruler }
+			horde_break_fiefdom_or_kill_ruler = {
+				target = scope:target_ruler
+				reason = execution
+				killer = scope:target_character
+			}
+		}
+	}
+}
+
+#Event chains
+#Unsecured Borders
+horde_civil_war.1000 = {
+	type = country_event
+	category = disaster_event
+	title = horde_civil_war.1000.title
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	desc = horde_civil_war.1000.desc
+	outcome = neutral
+	trigger = {
+		NOT = { has_variable = horde_civil_war_had_unsecured_border_event }
+	}
+	immediate = {
+		save_scope_as = from_country
+		horde_get_rebel_scopes = yes
+		set_variable = {
+			name = horde_civil_war_had_unsecured_border_event
+			value = yes
+			days = 3650
+		}
+	}
+	option = {
+		name = horde_civil_war.1000.a
+		add_manpower = { value = root.monthly_manpower multiply = -12 }
+		change_gold_effect = { scale = -3 }
+	}
+	option = {
+		name = horde_civil_war.1000.b
+		add_horde_unity = horde_unity_mild_penalty
+		add_prestige = prestige_mild_penalty
+		custom_tooltip = {
+			text = horde_civil_war.1000.b.tt
+			every_neighbor_country = {
+				limit = {
+					NOT = { is_allied_with = { target = root } }
+					NOT = { is_subject_of = root }
+					NOT = { is_at_war_with = root }
+					NOT = { is_fighting_war_together_with = root }
+					can_declare_war_on = root
+				}
+				if = {
+					limit = { government_type = government_type:steppe_horde }
+					trigger_event_silently = horde_civil_war.1001
+				}
+				else = {
+					trigger_event_silently = horde_civil_war.1002
+				}
+			}
+		}
+	}
+}
+#Weakness of [from_country.GetNameWithNoTooltip]
+horde_civil_war.1001 = {
+	hide_portraits = yes
+	type = country_event
+	category = disaster_event
+	title = horde_civil_war.1001.title
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	desc = horde_civil_war.1001.desc
+	outcome = neutral
+	immediate = {
+		save_scope_as = target_country
+		clear_saved_scope = target_character
+		random_owned_location = {
+			limit = { is_neighbor_of = scope:from_country }
+			random_neighbor_location = {
+				limit = { owner ?= scope:from_country }
+				save_scope_as = target
+			}
+		}
+	}
+	option = {
+		name = horde_civil_war.1001.a
+		custom_tooltip = {
+			text = horde_civil_war.1001.a.tt
+			every_owned_location = {
+				limit = { is_neighbor_of = scope:from_country }
+				every_neighbor_location = {
+					limit = { owner ?= scope:from_country }
+					horde_raid_location = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = horde_civil_war.1001.b
+		trigger = { can_declare_war_on = scope:from_country }
+		if = {
+			limit = {
+				can_declare_legal_war_on = { target = scope:from_country }
+			}
+			declare_war_with_cb = {
+				target = scope:from_country
+				type = casus_belli:cb_tribal_feud
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					scope:from_country = { government_type = government_type:tribe }
+					is_neighbor_of = scope:from_country
+					NOT = {
+						is_member_of_international_organization_of_type = { type = high_kingship }
+					}
+				}
+				add_casus_belli = {
+					target = scope:from_country
+					type = casus_belli:cb_tribal_feud
+				}
+			}
+		}
+	}
+}
+#The Internal Struggles of [from_country.GetName]
+horde_civil_war.1002 = {
+	type = country_event
+	category = disaster_event
+	title = horde_civil_war.1002.title
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	desc = horde_civil_war.1002.desc
+	outcome = neutral
+	immediate = {
+		save_scope_as = target_country
+		clear_saved_scope = target_character
+		random_owned_location = {
+			limit = { is_neighbor_of = scope:from_country }
+			random_neighbor_location = {
+				limit = { owner ?= scope:from_country }
+				province = { save_scope_as = target_province }
+			}
+		}
+	}
+	option = {
+		name = horde_civil_war.1002.a
+		trigger = { can_declare_war_on = scope:from_country }
+		add_casus_belli = {
+			type = casus_belli:cb_conquer_province
+			province = scope:target_province
+			target = scope:from_country
+		}
+	}
+	option = {
+		name = horde_civil_war.1002.b
+		custom_tooltip = {
+			text = horde_civil_war.1002.b.tt
+			every_owned_location = {
+				limit = { is_neighbor_of = scope:from_country }
+				add_location_modifier = {
+					modifier = recovering_from_raids
+					months = 48
+					mode = add
+				}
+			}
+		}
+	}
+}
+
+#Horde Stabilized
+horde_civil_war.100 = {
+	type = country_event
+	category = disaster_event
+	title = horde_civil_war.100.title
+	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { government_type = government_type:steppe_horde } }
+				desc = horde_civil_war.100.desc.no_horde
+			}
+			triggered_desc = {
+				trigger = { always = yes }
+				desc = horde_civil_war.100.desc
+			}
+		}
+	}
+	outcome = neutral
+	immediate = {
+		save_scope_as = target_country
+		ruler_or_regent ?= { save_scope_as = target_ruler }
+	}
+	option = {
+		name = horde_civil_war.100.a
+		custom_tooltip = horde_civil_war.100.a.tt
+		add_stability = {
+			value = "estate_power(estate_type:crown_estate)"
+			add = 5
+			min = 15
+		}
+	}
+}

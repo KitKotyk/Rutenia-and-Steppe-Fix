@@ -144,6 +144,7 @@ khorezmian_culture = {
 
 	opinions = {
 		mongolian_culture = kindred
+		mishar = positive
 		kyrgyz_culture = positive
 		uzbek_culture = positive
 		uyghur_culture = positive

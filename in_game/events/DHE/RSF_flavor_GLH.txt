@@ -18,9 +18,9 @@ RSF_flavor_glh.1000 = {
 		monthly_chance = 25
 	}
 
-	# dynamic_historical_event = {
+	# dynamic_historical_event = { # For testing
 	# 	tag = GLH
-	# 	from = 1337.6.6
+	# 	from = 1337.5.5
 	# 	to = 1537.1.1
 	# 	monthly_chance = 100
 	# }
@@ -49,6 +49,7 @@ RSF_flavor_glh.1000 = {
 			has_regent = yes
 			stability <= -20
 			government_power <= 15
+			prestige <= 15
 		}
 	}
 
