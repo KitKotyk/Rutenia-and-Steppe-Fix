@@ -45,36 +45,119 @@
 
 
  ##### DYNAMIC NAMES AND DYNASTIES #####
- # name_muhammad: "Muhammad"
- name_muhammad.eastern_kipchak_dialect: "Mūhammed"
- name_muhammad.western_kipchak_dialect: "Mehmed"
+ # Abu'l-Hayr, founder of the Uzbek Horde
+ name_abu.name_khayr.kipchak_language: "Abū'l-Hayır"
 
+ # name_abraham: "Abraham"
+ name_abraham.eastern_kipchak_dialect: "İbrahim"
+ name_abraham.western_kipchak_dialect: "İbraim"
+
+ # name_ahmad: "Ahmed"
+ name_ahmad.eastern_kipchak_dialect: "Ahmet"
+ name_ahmad.western_kipchak_dialect: "Amet"
  
+ # name_alikhan: "Alikhan"
+ name_alikhan.kipchak_language: "Älimhan"
+
+ # name_alim: "Alim"
+ name_alim.eastern_kipchak_dialect: "Alim"
+ name_alim.western_kipchak_dialect: "Halim"
+
+ # name_amin: "Amin"
+ name_amin.eastern_kipchak_dialect: "Ämin"
+ name_amin.western_kipchak_dialect: "Emin"
+
+ # name_amir: "Amir"
+ name_amir.kipchak_language: "Ämir"
+ 
+ # name_anwar: "Anwar"
+ name_anwar.eastern_kipchak_dialect: "Anvar"
+ name_anwar.western_kipchak_dialect: "Enver"
+
+ # name_arslan: "Arslan"
+ name_arslan.eastern_kipchak_dialect: "Aslan"
+ name_arslan.western_kipchak_dialect: "Arslan"
+
+ # name_genghis: "Genghis"
+ name_genghis.eastern_kipchak_dialect: "Çyñgyz"
+ name_genghis.western_kipchak_dialect: "Cengiz"
+
+ # name_hasan: "Hasan"
+ name_hasan.eastern_kipchak_dialect: "Husayn"
+ name_hasan.western_kipchak_dialect: "Üsein"
+
+ # name_ishmael: "Ishmael"
+ name_ishmael.kipchak_language: "İsmail"
+
+ # name_jalal: "Jalal"
+ name_jalal.kipchak_language: "Celâl"
+
+ # name_jamal: "Jamal"
+ name_jamal.kipchak_language: "Cemal"
+
+ # name_masud: "Masud"
+ name_masud.kipchak_language: "Mesud"
+
  # name_moses: "Moses"
  name_moses.kipchak_language: "Musa"
+
+ # name_muhammad: "Muhammad"
+ name_muhammad.eastern_kipchak_dialect: "Mūhammed"
+ name_muhammad.eastern_kipchak_dialect.alternative: "Mambet"
+ name_muhammad.western_kipchak_dialect: "Mehmed"
+ name_muhammad.western_kipchak_dialect.alternative: "Memet"
+ 
+ # name_mukhtar: "Mukhtar"
+ name_mukhtar.kipchak_language: "Mūhtar"
+
+ # name_murad: "Murad"
+ name_murad.kipchak_language: "Marat"
 
  # name_mustafa: "Mushtafa"
  name_mustafa.kipchak_language: "Mustafa"
  
+ # name_omar: "Omar"
+ name_omar.eastern_kipchak_dialect: "Umar"
+ name_omar.western_kipchak_dialect: "Ümer"
+
+ # name_qasim: "Qasim"
+ name_qasim.kipchak_language: "Qasım"
+
+ # name_rostam: "Rustam"
+ name_rostam.eastern_kipchak_dialect: "Röstäm"
+ name_rostam.western_kipchak_dialect: "Rüstem"
+
+ # name_said: "Said"
+ name_said.kipchak_language: "Seyit"
+
+ # name_salim: "Salim"
+ name_salim.eastern_kipchak_dialect: "Sälim"
+ name_salim.western_kipchak_dialect: "Selim"
+
+ # name_salomon: "Salomon"
+ name_salomon.eastern_kipchak_dialect: "Süleimen"
+ name_salomon.western_kipchak_dialect: "Süleiman"
+
+ # name_timur: "Timur"
+ name_timur.kipchak_language: "Temir"
+
+
+
+ ##### KIPCHAK DYNASTIES #####
  Mangyt: "Mangyt" # Nogai ruling dynasty
  Mangyt.eastern_kipchak_dialect: "Mañğyt"
  Mangyt.western_kipchak_dialect: "Manğıt"
 
  Tuqa_Timur: "Tuqa-Timur" # Kazan ruling dynasty
- Tuqa_Timur.eastern_kipchak_dialect: "Tuqa-Temür"
- Tuqa_Timur.western_kipchak_dialect: "Toqa-Temir"
+ Tuqa_Timur.kipchak_language: "Toqa-Temir"
 
 
  ##### UNIQUE #####
  # Unique names Eastern Kipchak male
  Adil: "Ädıl"
  Aibek: "Aibek"
- Alikhan: "Älihan"
  Almaz: "Almaz"
- Amir: "Ämir"
  Amirkhan: "Ämırhan"
- Anvar: "Anvar"
- Aslan: "Aslan"
  Ayrat: "Ayrat"
  Azamat: "Azamat"
  Azat: "Azat"
@@ -85,36 +168,24 @@
  Bekzat: "Bekzat"
  Bilal: "Bilal"
  Bolat: "Bolat"
- Chingiz: "Çyñgyz"
  Ermek: "Ermek"
  Farit: "Färit"
  Hamza: "Hamza"
- Hasan: "Hasan"
- Ibrahim: "İbrahim"
  Ilnur: "İlnur"
  Ilshat: "İlşat"
- Ilyas: "İlyas"
- Mambet: "Mambet"
- Marat: "Marat"
  Mirbek: "Mirbek"
- Muhtar: "Mūhtar"
  Nail: "Nail"
  Nurbek: "Nurbek"
  Nurlan: "Nurlan"
  Nurzat: "Nurzat"
  Oljas: "Oljas"
- Omar: "Omar"
  Ramil: "Ramil"
  Rashit: "Räşit"
- Rostam: "Röstäm"
  Salamat: "Salamat"
  Samat: "Samat"
  Serik: "Serık"
- Suleimen: "Süleimen"
  Talgat: "Talğat"
- Temir: "Temır"
  Ulan: "Ūlan"
- Umar: "Umar"
  Zamir: "Zamir"
 
  # Unique names Eastern Kipchak female
@@ -189,9 +260,6 @@
 
  # Unique names Western Kipchak male
  Ahtem: "Ahtem"
- Amet: "Amet"
- Alim: "Alim"
- Arslan: "Arslan"
  Ayder: "Ayder"
  Ayhan: "Ayhan" 
  Barlas: "Barlas"
@@ -199,57 +267,39 @@
  Beqtash: "Beqtaş"
  Beqtur: "Beqtur"
  Berke: "Berke"
- Burulday: "Burulday" 
+ Burulday: "Burulday"
  Cafer: "Cafer"
  Camolidin: "Camolidin"
- Celal: "Celâl"
- Cemal: "Cemal"
- Cengiz: "Cengiz"
  Cihan: "Cihan" 
  Davut: "Davut"
  Demir: "Demir"
- Devlet: "Devlet" 
- Emin: "Emin"
- Enver: "Enver"
+ Devlet: "Devlet"
  Erdem: "Erdem" 
  Gazi: "Ğazı"
- Halim: "Halim"
  Haci: "Hacı"
  Hidir: "Hıdır" 
- Ibraim: "İbraim"
  Ilhan: "İlhan"
- Ismail: "İsmail"
  Izzet: "Izzet" 
  Lenur: "Lenur" 
  Mengli: "Meñli"
- Memet: "Memet"
- Mesud: "Mesud"
  Nazim: "Nazım"
  Noman: "Noman" 
  Qamal: "Qamal"
- Qasim: "Qasım"
  Qurban: "Qurban" 
  Redvan: "Redvan"
  Refat: "Refat"
  Reshid: "Reşid"
- Rustem: "Rüstem" 
  Saadet: "Saadet"
- Sahib: "Sahib"
  Selamet: "Selâmet"
- Selim: "Selim"
  Seyran: "Seyran"
- Seit: "Seit"
  Shahin: "Şahin" 
  Teyfuq: "Teyfuq"
  Toqta: "Toqta"
  Tugay: "Tugay"
  Tuman: "Tuman" 
- Umer: "Ümer"
- Usein: "Üsein"
  Uzeir: "Üzeir" 
  Yagya: "Yağya"
  Yavuz: "Yavuz"
- Yusuf: "Yusuf"
 
  # Unique names Western Kipchak female
  Adilye: "Adilye"
@@ -321,7 +371,7 @@
  Yashlav: "Yaşlav"
  Yedisan: "Yedisanlı"
 
- # Unique names Oghutic male 
+ # Unique names Oghuric male 
  Ahtimer: "Ahtimĕr"
  Ahtirek: "Ahtirek"
  Akhtiyar: "Ahtiyar"

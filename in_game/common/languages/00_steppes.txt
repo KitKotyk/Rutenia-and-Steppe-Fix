@@ -14,23 +14,34 @@ location_suffix = "location_suffix_kipchak"
 character_name_order = "CHARACTER_NAME_ORDER_KIPCHAK"
 
 male_names = {
-	Adil Aibek Alikhan Alim Almaz Amir Amirkhan Anvar Aslan Ayder Ayrat Azamat Azat Aziz
+	name_abraham name_ahmad name_alikhan name_alim name_amin name_amir name_anwar name_arslan
+	name_elias
+	name_genghis
+	name_hasan
+	name_ishmael
+	name_joseph
+	name_masud name_moses name_muhammad name_mukhtar name_murad name_mustafa
+	name_omar
+	name_qasim
+	name_rostam
+	name_said name_salomon
+	name_timur
+
+	Adil Aibek Almaz Amirkhan Ayder Ayrat Azamat Azat Aziz
 	Baqtiyar Bakyt Bekjan Bekzat Berke Bilal Bolat
-	Chingiz
-	Emin Ermek
+	Ermek
 	Farit
 	Gazi
-	Halim Hamza Hasan
-	Ibrahim Ilnur Ilshat Ilyas Ismail 
-	name_moses name_muhammad name_mustafa Mambet Marat Mirbek Muhtar
+	Hamza
+	Ilnur Ilshat 
+	Mirbek
 	Nail Nurbek Nurlan Nurzat
-	Oljas Omar
-	Qasim Qurban
-	Ramil Rashit Rostam
-	Salamat Samat Serik Suleimen
-	Talgat Temir Toqta 
-	Ulan Umar Usein
-	Yusuf
+	Oljas
+	Qurban
+	Ramil Rashit
+	Salamat Samat Serik
+	Talgat Toqta
+	Ulan
 	Zamir
 }	
 female_names = {
@@ -71,22 +82,34 @@ lowborn = {
 dialects = {	
 	eastern_kipchak_dialect = { # Kazani, Mishar, Nogai, Kyrgyz, Uzbek
 		male_names = {
-			Adil Aibek Alikhan Almaz Amir Amirkhan Anvar
-			Aslan Ayrat Azamat Azat Aziz
+			name_abraham name_ahmad name_alikhan name_alim name_amin name_amir name_anwar name_arslan
+			name_elias
+			name_genghis
+			name_hasan
+			name_ishmael
+			name_joseph
+			name_moses name_muhammad name_mukhtar name_murad name_mustafa
+			name_omar
+			name_qasim
+			name_rostam
+			name_said name_salomon
+			name_timur
+			
+			Adil Aibek Almaz Amirkhan Anvar
+			Ayrat Azamat Azat Aziz
 			Baqtiyar Bakyt Bekjan Bekzat Bilal Bolat
-			Chingiz
 			Ermek
 			Farit
-			Hamza Hasan
-			Ibrahim Ilnur Ilshat Ilyas Ismail
-			name_moses name_muhammad name_mustafa Mambet Marat Mirbek Muhtar
+			Hamza
+			Ilnur Ilshat
+			Mirbek
 			Nail Nurbek Nurlan Nurzat
-			Oljas Omar
-			Qasim Qurban
-			Ramil Rashit Rostam
-			Salamat Samat Serik Suleimen
-			Talgat Temir
-			Ulan Umar
+			Oljas
+			Qurban
+			Ramil Rashit
+			Salamat Samat Serik
+			Talgat
+			Ulan
 			Zamir
 		}
 
@@ -124,25 +147,36 @@ dialects = {
 	}
 		
 	western_kipchak_dialect = {	# Crimean, Astrakhani, Karachay, Balkar, Kumyk, Karaite		
-
 		male_names = {
-			Ahtem Amet Alim Arslan Ayder Ayhan 
+			name_abraham name_ahmad name_alim name_amin name_amir name_anwar name_arslan
+			name_genghis
+			name_hasan
+			name_ishmael
+			name_jalal name_jamal name_joseph
+			name_masud name_moses name_muhammad name_mustafa
+			name_omar
+			name_qasim
+			name_rostam
+			name_sahib name_said name_salim name_salomon
+			name_timur
+
+			Ahtem Ayder Ayhan 
 			Barlas Bekir Beqtash Beqtur Berke Burulday
-			Cafer Camolidin Celal Cemal Cengiz Cihan
+			Cafer Camolidin Cihan
 			Davut Demir Devlet
-			Emin Enver Erdem
-			Gazi
-			Haci Halim Hidir
-			Ibraim Ilhan Ismail Izzet
+			Erdem
+			Gazi			
+			Haci Hidir
+			Ilhan Izzet
 			Lenur
-			name_moses name_muhammad name_mustafa Mengli Memet Mesud
-			Nazim Noman
-			Qamal Qasim Qurban
-			Redvan Refat Reshid Rustem
-			Saadet Sahib Selamet Selim Seyran Seit Shahin
+			Mengli
+			Nazim Noman			
+			Qamal Qurban
+			Redvan Refat Reshid
+			Saadet Selamet Seyran Shahin
 			Teyfuq Toqta Tuman
-			Umer Usein Uzeir
-			Yagya Yavuz Yusuf				
+			Uzeir
+			Yagya Yavuz				
 		}
 
 		female_names = {

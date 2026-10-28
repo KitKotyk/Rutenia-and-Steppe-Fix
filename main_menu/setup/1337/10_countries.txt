@@ -4154,7 +4154,7 @@ countries = {
 			koshki kamyshla bolshoy_cheremshan staryi_amanak
 			samara shigony morkvash			
 			
-			ukek qashliq
+			ukek qashliq orhei
 			
 			zainsk menzelinsk chalninsky_pochinok 
 			ulukulevo davlekanovo bizhbulyak turkmenevo sterlibashevo
@@ -4180,7 +4180,7 @@ countries = {
 		}
 		own_control_integrated = {
 			#mokhcha			
-			orhei palada
+			palada
 			okhtyrka krasnopillia khotmyzh
 
 			anna_russia semidesyatnoye zemlyansk borisoglebsk sadovoye bolshaya_gribanovka balashov turki
@@ -4286,8 +4286,7 @@ countries = {
 		religious_school = hanafi_school
 		government = { mysticism_vs_jurisprudence = -15 }
 		
-		# court_language = mongolian_language
-
+		court_language = mongolian_language
 
 		accepted_cultures = {
 			crimean
@@ -4503,7 +4502,7 @@ countries = {
 			atkarsk lysye_gory yekaterinovka balanda rtishchevo balashov turki arkadak ukek sosnovy_ostrov malykovka novye_burasy tereshka petrovsk
 			tambov staroyuryevo sasovo rasskazovo bondari morsha mordovo zherdevka uvarovo kirsanov
 			lipetsk donkov usman ust_stanovykh_ryas izberdey teshevka kozlov
-			penza gorodishche mokshan lunino nikolskoye malaya_serdoba shemysheyka chembar serdobinskaya russky_kameshkir
+			penza gorodishche mokshan malaya_serdoba shemysheyka chembar serdobinskaya russky_kameshkir
 
 			# Kursk and Sloboda
 			bielska_sloboda bilovodsk novopskov kalnivka nyzhnia_duvanka konstantinovka kreminna izium adalaga kupiansk vovchansk
@@ -4511,8 +4510,8 @@ countries = {
 			voronezh anna_russia novaya_pokrovka semidesyatnoye ostrogozhsk rossosh alexeyevka rovenki valuyki chernyanka kastornoye
 
 			# Samara and Ryazan
-			troitskoye_kuroedovo bazarny_syzgan staraya_kulatka solovtsovo karsun
-			mokhcha nizhny_lomov zemetchino insar tarbeevka zubova_polyana
+			staraya_kulatka solovtsovo 
+			mokhcha nizhny_lomov zemetchino insar tarbeevka zubova_polyana			
 		}
 		starting_technology_level = 3
 		include = "expl_mongols"

@@ -37,10 +37,13 @@ countries = {
 			sarov bolshoye_boldino temnikov krasnoslobodsk lukoyanov shatki arzamas pavlovo ruzayevka
 			mokhcha nizhny_lomov insar tarbeevka zubova_polyana
 			penza gorodishche mokshan lunino nikolskoye shemysheyka russky_kameshkir
-			sosnovy_ostrov malykovka novye_burasy 
+			sosnovy_ostrov malykovka novye_burasy lunino nikolskoye
 
 			# Lower Yik
 			mechetnaya perelyub ivanteyevka balakovo dukhovnitskoye
+
+			# Samara and Ryazan
+			troitskoye_kuroedovo bazarny_syzgan karsun
 		}
 		
 		capital = kazan
@@ -174,11 +177,14 @@ countries = {
 
 		accepted_cultures = {			
 			yerle_qaliq_culture
+			khorezmian_culture
 			chelkans_culture
 		}
 		
 		tolerated_cultures = {
 			selkup_culture
+			khanty_culture
+			mansi_culture
 		}
 		
 		currency_data = {

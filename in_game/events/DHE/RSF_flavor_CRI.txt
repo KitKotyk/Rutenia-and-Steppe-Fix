@@ -13,7 +13,7 @@ RSF_flavor_CRI.1 = {
 	dynamic_historical_event = {
 		tag = CRI
 		from = 1337.4.4
-		to = 1399.12.12
+		to = 1537.1.1
 		monthly_chance = 100
 	}
 

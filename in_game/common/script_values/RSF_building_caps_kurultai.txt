@@ -1,0 +1,13 @@
+﻿# Kurultai set to max level 1
+
+TRY_REPLACE:kurultai_max_level = {
+	add = {
+		desc = "BUILDING_LEVEL_BASE"
+		value = 1
+	}
+	add = {
+		desc = "BUILDING_LEVEL_POPULATION"
+		value = population
+		multiply = 0
+	}
+}

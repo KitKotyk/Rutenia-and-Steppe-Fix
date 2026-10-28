@@ -28915,19 +28915,19 @@ ayrkol_lake = {
 }
 mavliberda = {
 	define_pop = {	type = peasants	size = 0.471	culture = nogai	religion = sunni }
-	define_pop = {	type = slaves	size = 2.674	culture = nogai	religion = tengri }
+	define_pop = {	type = tribesmen	size = 2.674	culture = nogai	religion = tengri }
 }
 kiyl = {
 	define_pop = {	type = peasants	size = 0.096	culture = nogai	religion = sunni }
-	define_pop = {	type = slaves	size = 1.839	culture = nogai	religion = tengri }
+	define_pop = {	type = tribesmen	size = 1.839	culture = nogai	religion = tengri }
 }
 koptam = {
 	define_pop = {	type = peasants	size = 0.103	culture = nogai	religion = sunni }
-	define_pop = {	type = slaves	size = 1.962	culture = nogai	religion = tengri }
+	define_pop = {	type = tribesmen	size = 1.962	culture = nogai	religion = tengri }
 }
 uil = {
 	define_pop = {	type = peasants	size = 0.095	culture = nogai	religion = sunni }
-	define_pop = {	type = slaves	size = 1.818	culture = nogai	religion = tengri }
+	define_pop = {	type = tribesmen	size = 1.818	culture = nogai	religion = tengri }
 }
 orda_bazar = {
 	define_pop = {	type = peasants	size = 0.836	culture = uzbek_culture	religion = tengri }
@@ -28951,23 +28951,23 @@ ulytau = {
 }
 emba = {
 	define_pop = {	type = peasants	size = 0.072	culture = nogai	religion = sunni }
-	define_pop = {	type = slaves	size = 3.395	culture = nogai	religion = tengri }
+	define_pop = {	type = tribesmen	size = 3.395	culture = nogai	religion = tengri }
 }
 atzhaksy = {
 	define_pop = {	type = peasants	size = 0.085	culture = nogai	religion = sunni }
-	define_pop = {	type = slaves	size = 1.631	culture = nogai	religion = tengri }
+	define_pop = {	type = tribesmen	size = 1.631	culture = nogai	religion = tengri }
 }
 shatyrlysay = {
 	define_pop = {	type = peasants	size = 0.099	culture = nogai	religion = sunni }
-	define_pop = {	type = slaves	size = 1.886	culture = nogai	religion = tengri }
+	define_pop = {	type = tribesmen	size = 1.886	culture = nogai	religion = tengri }
 }
 temir = {
 	define_pop = {	type = peasants	size = 0.103	culture = nogai	religion = sunni }
-	define_pop = {	type = slaves	size = 2.987	culture = nogai	religion = tengri }
+	define_pop = {	type = tribesmen	size = 2.987	culture = nogai	religion = tengri }
 }
 namjan = {
 	define_pop = {	type = peasants	size = 0.157	culture = bashkir	religion = sunni }
-	define_pop = {	type = peasants	size = 0.755	culture = bashkir	religion = tengri }
+	define_pop = {	type = peasants	size = 0.755	culture = uzbek_culture	religion = tengri }
 	define_pop = {	type = tribesmen	size = 0.198	culture = bashkir	religion = sunni }
 	define_pop = {	type = tribesmen	size = 1.018	culture = bashkir	religion = tengri }
 }
@@ -28978,8 +28978,8 @@ atach = {
 	define_pop = {	type = tribesmen	size = 2.711	culture = bashkir	religion = tengri }
 }
 or_aktobe = {
-	define_pop = {	type = peasants	size = 0.672	culture = nogai	religion = sunni }
-	define_pop = {	type = slaves	size = 1.831	culture = nogai	religion = tengri }
+	define_pop = {	type = peasants	size = 0.672	culture = uzbek_culture	religion = sunni }
+	define_pop = {	type = tribesmen	size = 1.831	culture = nogai	religion = tengri }
 }
 ishkul = {
 	define_pop = {	type = peasants	size = 0.209	culture = bashkir	religion = sunni }
@@ -28988,8 +28988,8 @@ ishkul = {
 	define_pop = {	type = tribesmen	size = 2.669	culture = bashkir	religion = tengri }
 }
 kumak = {
-	define_pop = {	type = peasants	size = 0.207	culture = bashkir	religion = sunni }
-	define_pop = {	type = peasants	size = 0.487	culture = bashkir	religion = tengri }
+	define_pop = {	type = peasants	size = 0.207	culture = uzbek_culture	religion = sunni }
+	define_pop = {	type = peasants	size = 0.487	culture = uzbek_culture	religion = tengri }
 	define_pop = {	type = tribesmen	size = 0.305	culture = bashkir	religion = sunni }
 	define_pop = {	type = tribesmen	size = 1.270	culture = bashkir	religion = tengri }
 }
@@ -56191,13 +56191,13 @@ zhetykol = {
 	define_pop = {	type = peasants	size = 0.070	culture = bashkir	religion = sunni }
 	define_pop = {	type = peasants	size = 0.802	culture = bashkir	religion = tengri }
 	define_pop = {	type = tribesmen	size = 0.159	culture = bashkir	religion = sunni }
-	define_pop = {	type = tribesmen	size = 2.077	culture = bashkir	religion = tengri }
+	define_pop = {	type = tribesmen	size = 2.077	culture = uzbek_culture	religion = tengri }
 }
 shoptikol = {
 	define_pop = {	type = peasants	size = 0.091	culture = bashkir	religion = sunni }
 	define_pop = {	type = peasants	size = 1.222	culture = bashkir	religion = tengri }
 	define_pop = {	type = tribesmen	size = 0.158	culture = bashkir	religion = sunni }
-	define_pop = {	type = tribesmen	size = 1.754	culture = bashkir	religion = tengri }
+	define_pop = {	type = tribesmen	size = 1.754	culture = uzbek_culture	religion = tengri }
 }
 siberia_tenteksor = {
 	define_pop = {	type = peasants	size = 1.476	culture = uzbek_culture	religion = tengri }

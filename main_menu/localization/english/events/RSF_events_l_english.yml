@@ -20,3 +20,8 @@
  RSF_flavor_NOG.1.desc: "As the Golden Horde fragmented, Musa of the Mangyt clan rose to prominence among the Nogai nobility. His growing influence helped lay the foundations for the Nogai Horde, a confederation of nomadic peoples that would emerge as an independent power on the Pontic and Caspian steppes."
  RSF_flavor_NOG.1.entry: "New dynasty takes power."
  RSF_flavor_NOG.1.a: "Long live the khan!"
+
+ RSF_flavor_UZB.1.title: "New Dynasty Takes Power"
+ RSF_flavor_UZB.1.desc: "As the Golden Horde fragmented, Abu'l-Hayir Khan rose to prominence among the Uzbek nobility. His growing influence helped lay the foundations for the Siberian Khanate, a confederation of nomadic peoples that would emerge as an independent power in SIberia and Desht-i-Kipchak."
+ RSF_flavor_UZB.1.entry: "New dynasty takes power."
+ RSF_flavor_UZB.1.a: "Long live the khan!"
