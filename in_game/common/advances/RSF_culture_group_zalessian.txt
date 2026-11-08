@@ -3,12 +3,14 @@
 ############################
 russian_resiliance = {
 	age = age_1_traditions
+	requires = legalism_advance
 	icon = russian_resiliance
+	
 	potential = {
 		culture = { has_culture_group = culture_group:zalessian_group }
 	}
+
 	global_manpower_modifier = 0.1
-	requires = legalism_advance
 }
 
 
@@ -18,10 +20,13 @@ russian_resiliance = {
 the_mestnichestvo_advance = {
 	age = age_2_renaissance
 	icon = the_mestnichestvo_advance
+
 	potential = {
 		culture = { has_culture_group = culture_group:zalessian_group }
 	}
+
 	unlock_government_reform = the_mestnichestvo
+
 	ai_weight = { add = 100 }
 }
 
@@ -31,15 +36,18 @@ the_mestnichestvo_advance = {
 ############################
 siberian_frontier = {
 	age = age_3_discovery
+	requires = colonial_charters
 	icon = siberian_frontier
+
 	potential = {
 		culture = { has_culture_group = culture_group:zalessian_group }
 	}
+
 	global_population_growth = 0.0002
 	num_ostrogs = 3
 	unlock_building = pomor_outpost
+
 	ai_weight = { add = 100 }
-	requires = colonial_charters	
 }
 
 
@@ -48,14 +56,17 @@ siberian_frontier = {
 ############################
 russian_artillery_yard = {
 	age = age_4_reformation
+	requires = recruitment_improvements_reformation
 	icon = russian_artillery_yard
+
 	potential = {
 		culture = { has_culture_group = culture_group:zalessian_group }
 	}
+
 	army_artillery_build_cost_modifier = -0.1
 	army_artillery_power = 0.1
+
 	ai_weight = { add = 100 }
-	requires = recruitment_improvements_reformation
 }
 
 
@@ -65,11 +76,14 @@ russian_artillery_yard = {
 table_of_ranks = {
 	age = age_5_absolutism
 	icon = table_of_ranks
+
 	potential = {
 		culture = { has_culture_group = culture_group:zalessian_group }
 	}
+
 	monthly_army_tradition = 0.03
 	num_ostrogs = 3
+
 	ai_weight = { add = 100 }
 }
 
@@ -80,13 +94,16 @@ table_of_ranks = {
 russian_legitimization = {
 	age = age_6_revolutions
 	icon = russian_legitimization
+
 	potential = {
 		culture = { has_culture_group = culture_group:zalessian_group }
 	}
+
 	monthly_legitimacy = 0.1
 	monthly_republican_tradition = 0.1
 	monthly_devotion = 0.1
 	monthly_horde_unity = 0.1
 	monthly_tribal_cohesion = 0.1
+
 	ai_weight = { add = 10 }
 }

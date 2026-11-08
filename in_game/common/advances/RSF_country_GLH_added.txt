@@ -2,12 +2,13 @@
 
 glh_golden_age_advance = {
 	age = age_1_traditions
+	requires = horse_riding_advance
 	icon = cultural_acceptance_advance
+
 	potential = {
 		has_or_had_tag = GLH
 	}
-	requires = horse_riding_advance
 	
 	nobles_estate_target_satisfaction = medium_permanent_target_satisfaction
-	global_estate_target_satisfaction = large_permanent_target_satisfaction
+	global_estate_target_satisfaction = medium_permanent_target_satisfaction
 }

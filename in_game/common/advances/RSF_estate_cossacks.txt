@@ -6,36 +6,42 @@
 ############################
 cossacks_exploration_advance = {
 	age = age_3_discovery
-	content_priority = 100
+	requires = explorer_commisions_advance
+
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
+
 	unlock_estate_privilege = cossacks_explorers
 
-	requires = explorer_commisions_advance
+	content_priority = 100
 }
 
 cossacks_colonization_advance = {
 	age = age_3_discovery
-	content_priority = 200
+	requires = native_policy_advance
+
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
+
 	unlock_estate_privilege = cossacks_colonization
 
-	requires = native_policy_advance
+	content_priority = 200
 }
 
 cossacks_military_society = {
 	age = age_3_discovery
-	content_priority = 500
-	ai_weight = { add = 10 }
+	requires = correct_box_advance_discovery
+
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
+
 	monthly_army_tradition = 0.05
 
-	requires = correct_box_advance_discovery
+	content_priority = 500
+	ai_weight = { add = 10 }
 }
 
 
@@ -44,42 +50,48 @@ cossacks_military_society = {
 ############################
 cossacks_recruitment = {
 	age = age_4_reformation
-	content_priority = 1000
-	ai_weight = { add = 10 }
+	requires = correct_box_advance_reformation
+
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
+
 	army_light_infantry_power = 0.15
 	unlock_estate_privilege = cossacks_military_service
 
-	requires = correct_box_advance_reformation
+	content_priority = 1000
+	ai_weight = { add = 10 }
 }
 
 cossack_administration = {
 	age = age_4_reformation
-	content_priority = 1100
-	ai_weight = { add = 10 }
+	requires = confessional_court
+
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
+
 	discipline = 0.05
 	global_manpower_modifier = 0.1
 	unlock_estate_privilege = cossacks_government_positions
 
-	requires = confessional_court
+	content_priority = 1100
+	ai_weight = { add = 10 }
 }
 
 cossack_raids = {
 	age = age_4_reformation
-	content_priority = 400
-	ai_weight = { add = 1 }
+	requires = unlock_pistoleers_advance
+
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
+
 	amount_looted_modifier = 0.25
 	navy_light_ship_power = 0.1
 
-	requires = unlock_pistoleers_advance
+	content_priority = 400
+	ai_weight = { add = 1 }
 }
 
 
@@ -88,23 +100,26 @@ cossack_raids = {
 ############################
 cossacks_registered = {
 	age = age_5_absolutism
-	content_priority = 500
-	ai_weight = { add = 10 }
+	requires = correct_box_advance_absolutism
+
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
+
 	unlock_estate_privilege = cossacks_register
 
-	requires = correct_box_advance_absolutism
+	content_priority = 500
+	ai_weight = { add = 10 }
 }
 
 cossacks_hetmanate = {
 	age = age_5_absolutism
-	content_priority = 300
-	ai_weight = { add = 1 }
+	requires = absolute_rulership
+
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
+
 	monthly_legitimacy = 0.05
 	monthly_republican_tradition = 0.05
 	monthly_devotion = 0.05
@@ -112,7 +127,8 @@ cossacks_hetmanate = {
 	monthly_tribal_cohesion = 0.05
 	unlock_estate_privilege = cossacks_rada_autonomy
 
-	requires = absolute_rulership
+	content_priority = 300
+	ai_weight = { add = 1 }
 }
 
 
@@ -121,25 +137,29 @@ cossacks_hetmanate = {
 ############################
 cossack_reputation = {
 	age = age_6_revolutions
-	content_priority = 700
-	ai_weight = { add = 1 }
+	requires = correct_box_advance_revolutions
+
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
+
 	army_light_cavalry_power = 0.1
 
-	requires = correct_box_advance_revolutions
+	content_priority = 700
+	ai_weight = { add = 1 }
 }
 
 steppe_riders = {
 	age = age_6_revolutions
-	content_priority = 600
-	ai_weight = { add = 10 }
+	requires = unlock_light_dragoons_advance
+
 	potential = {
 		country_has_estate = estate_type:cossacks_estate
 	}
+	
 	land_unit_attrition = -0.1
 	global_horses_output_modifier = 0.2
 
-	requires = unlock_light_dragoons_advance
+	content_priority = 600
+	ai_weight = { add = 10 }
 }

@@ -1,62 +1,65 @@
 ﻿# GENERIC COSSACK UNITS 
 # Infantry
 a_discovery_cossacks_advance = {
-	content_priority = 1000
-	ai_weight = { add = 20 }
 	age = age_3_discovery
+	requires = unlock_early_arquebusiers_advance
 
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
 
 	unlock_unit = a_discovery_cossacks
-	requires = unlock_early_arquebusiers_advance
+
+	content_priority = 1000
+	ai_weight = { add = 20 }
 }
 
 a_reformation_cossacks_advance = {
-	content_priority = 1000
-	ai_weight = { add = 20 }
 	age = age_4_reformation
+	requires = unlock_arquebusiers_advance
 
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
 
 	unlock_unit = a_reformation_cossacks
-	requires = unlock_arquebusiers_advance
+
+	content_priority = 1000
+	ai_weight = { add = 20 }
 }
 
 a_absolutism_cossacks_advance = {
-	content_priority = 1000
-	ai_weight = { add = 20 }
 	age = age_5_absolutism
+	requires = unlock_musketeers_advance
 
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
 
 	unlock_unit = a_absolutism_cossacks
-	requires = unlock_musketeers_advance
+
+	content_priority = 1000
+	ai_weight = { add = 20 }
 }
 
 a_revolutions_cossacks_advance = {
-	content_priority = 1000
-	ai_weight = { add = 20 }
 	age = age_6_revolutions
+	requires = unlock_fusiliers_advance
 
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
 
 	unlock_unit = a_revolutions_cossacks
-	requires = unlock_fusiliers_advance
+
+	content_priority = 1000
+	ai_weight = { add = 20 }
 }
 
 # Cavalry
 a_cossack_raiders_advance = {
-	content_priority = 1000
-	ai_weight = { add = 20 }
 	age = age_3_discovery
+	requires = unlock_light_lancers_advance
 
 	potential = {			# Ukrainian steppe cultures
 		OR = {
@@ -70,29 +73,31 @@ a_cossack_raiders_advance = {
 	}
 
 	unlock_unit = a_cossack_raiders
-	requires = unlock_light_lancers_advance
+
+	content_priority = 1000
+	ai_weight = { add = 20 }
 }
 
 a_cossack_cavalry_advance = {
-	content_priority = 1000
-	ai_weight = { add = 20 }
 	age = age_4_reformation
+	requires = unlock_pistoleers_advance
 
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
 
 	unlock_unit = a_cossack_cavalry
-	requires = unlock_pistoleers_advance
+
+	content_priority = 1000
+	ai_weight = { add = 20 }
 }
 
 
 # HISTORICAL UNITS
 # Infantry
 a_opryshky_advance = {
-	content_priority = 1000
-	ai_weight = { add = 20 }
 	age = age_4_reformation
+	requires = unlock_arquebusiers_advance
 
 	potential = {			# Ukrainian Carpathian cultures
 		OR = {
@@ -104,13 +109,14 @@ a_opryshky_advance = {
 	}
 
 	unlock_unit = a_opryshky
-	requires = unlock_arquebusiers_advance
+
+	content_priority = 1000
+	ai_weight = { add = 20 }
 }
 
 a_registered_cossacks_advance = {
-	content_priority = 1000
-	ai_weight = { add = 20 }
 	age = age_4_reformation
+	requires = unlock_pikemen_advance
 
 	potential = {
 		OR = {
@@ -120,30 +126,32 @@ a_registered_cossacks_advance = {
 	}
 
 	unlock_unit = a_registered_cossacks
-	requires = unlock_pikemen_advance
+
+	content_priority = 1000
+	ai_weight = { add = 20 }
 }
 
 a_serdiuks_advance = {
-	content_priority = 1000
-	ai_weight = { add = 20 }
 	age = age_4_reformation
+	requires = unlock_pikemen_advance
 
 	potential = {
 		OR = {
-			has_or_had_tag = HTM		# Hetmanate
-			has_or_had_tag = ZAZ		# Zaporizhian host
+			has_or_had_tag = HTM			# Hetmanate
+			has_or_had_tag = ZAZ			# Zaporizhian host
 		}
 	}
 
 	unlock_unit = a_serdiuks
-	requires = unlock_pikemen_advance
+	
+	content_priority = 1000
+	ai_weight = { add = 20 }
 }
 
 # Cavalry
 a_panzer_boyars_advance = {
-	content_priority = 1000
-	ai_weight = { add = 20 }
 	age = age_4_reformation
+	requires = unlock_heavy_lancers_advance
 
 	potential = {			# Belarusian + Volhynian cultures
 		OR = {
@@ -157,13 +165,14 @@ a_panzer_boyars_advance = {
 	}
 
 	unlock_unit = a_panzer_boyars
-	requires = unlock_heavy_lancers_advance
+
+	content_priority = 1000
+	ai_weight = { add = 20 }
 }
 
 a_kompaniytsi_advance = {
-	content_priority = 1000
-	ai_weight = { add = 20 }
 	age = age_5_absolutism
+	requires = unlock_hussars_advance
 
 	potential = {
 		OR = {
@@ -173,18 +182,21 @@ a_kompaniytsi_advance = {
 	}
 
 	unlock_unit = a_kompaniytsi
-	requires = unlock_hussars_advance
+
+	content_priority = 1000
+	ai_weight = { add = 20 }
 }
 
 a_ukrainian_hussars_advance = {
-	content_priority = 1000
-	ai_weight = { add = 20 }
 	age = age_6_revolutions
+	requires = unlock_light_dragoons_advance
 
 	potential = {
 		has_or_had_tag = UKR			# Ruthenia
 	}
 
 	unlock_unit = a_ukrainian_hussars
-	requires = unlock_light_dragoons_advance
+
+	content_priority = 1000
+	ai_weight = { add = 20 }
 }

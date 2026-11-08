@@ -18,34 +18,38 @@
 ############################
 ambush_tactics_advance = {
 	age = age_4_reformation
+	requires = confessional_court
 	icon = ruthenian_state_advance
-	content_priority = 700
-	ai_weight = { add = 10 }
+
 	potential = {
 		OR = {
 			has_or_had_tag = HTM
 			has_or_had_tag = ZAZ
 		}
 	}
+
 	army_initiative = 0.2
 
-	requires = confessional_court
+	content_priority = 700
+	ai_weight = { add = 10 }
 }
 
 cossacks_serf_autonomy = {
 	age = age_4_reformation
-	content_priority = 500
-	ai_weight = { add = 10 }
+	requires = pop_promotion_speed_age_4
+
 	potential = {
 		OR = {
 			has_or_had_tag = HTM
 			has_or_had_tag = ZAZ
 		}
 	}
+
 	global_separatism = -0.1
 	monthly_republican_tradition = 0.1
 
-	requires = pop_promotion_speed_age_4
+	content_priority = 500
+	ai_weight = { add = 10 }
 }
 
 
@@ -54,33 +58,37 @@ cossacks_serf_autonomy = {
 ############################
 dnieper_secured_advance = {
 	age = age_5_absolutism
+	requires = the_constitution
 	icon = river_trade
-	content_priority = 700
-	ai_weight = { add = 10 }
+
 	potential = {
 		OR = {
 			has_or_had_tag = HTM
 			has_or_had_tag = ZAZ
 		}
 	}
+
 	merchant_maintenance_efficiency = 0.2
 
-	requires = the_constitution
+	content_priority = 700
+	ai_weight = { add = 10 }
 }
 
 cossacks_escaped_serfs = {
 	age = age_5_absolutism
-	content_priority = 500
-	ai_weight = { add = 10 }
+	requires = army_doctrine_law_advance
+
 	potential = {
 		OR = {
 			has_or_had_tag = HTM
 			has_or_had_tag = ZAZ
 		}
 	}
+
 	army_reinforce_efficiency = 0.1
 
-	requires = army_doctrine_law_advance
+	content_priority = 500
+	ai_weight = { add = 10 }
 }
 
 ############################
@@ -88,31 +96,36 @@ cossacks_escaped_serfs = {
 ############################
 orlyk_constitution_advance = {
 	age = age_6_revolutions
+	requires = separation_of_powers
 	icon = the_constitution
-	content_priority = 700
+
 	potential = {
 		OR = {
 			has_or_had_tag = HTM
 			has_or_had_tag = ZAZ
 		}
 	}
+
 	unlock_government_reform = orlyk_constitution_reform
+
+	content_priority = 700
 	ai_weight = { add = 100 }
-	requires = separation_of_powers
 }
 
 zaporozhian_army_advance = {
 	age = age_6_revolutions
+	requires = enlightened_court
 	icon = cossacks_recruitment
-	content_priority = 700
-	ai_weight = { add = 10 }
+	
 	potential = {
 		OR = {
 			has_or_had_tag = HTM
 			has_or_had_tag = ZAZ
 		}
-	}	
+	}
+
 	army_maintenance_efficiency = 0.1
 
-	requires = enlightened_court
+	content_priority = 700
+	ai_weight = { add = 10 }
 }

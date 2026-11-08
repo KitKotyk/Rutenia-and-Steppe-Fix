@@ -3,13 +3,14 @@
 ############################
 varangians_greeks = {
 	age = age_1_traditions
+	requires = road_building
 	icon = nav_adept_traders
+
 	potential = {
 		culture = { has_culture_group = culture_group:ruthene_group }
 	}
-	merchant_maintenance_efficiency = 0.10
 
-	requires = road_building
+	merchant_maintenance_efficiency = 0.10
 }
 
 
@@ -18,14 +19,17 @@ varangians_greeks = {
 ############################
 ruthenian_cochineal = {
 	age = age_2_renaissance
+	requires = patron_of_art
 	icon = a_dynamic_society
-	content_priority = 500
+	
 	potential = {
 		culture = { has_culture_group = culture_group:ruthene_group }
 	}
+
 	global_dyes_output_modifier = 0.1
+	
+	content_priority = 500
 	ai_weight = { add = 100 }
-	requires = patron_of_art
 }
 
 
@@ -34,26 +38,32 @@ ruthenian_cochineal = {
 ############################
 heritage_of_the_rus = {
 	age = age_3_discovery
+	requires = crown_power_advance_discovery
 	icon = heritage_of_the_rus
-	content_priority = 500
+
 	potential = {
 		culture = { has_culture_group = culture_group:ruthene_group }
 	}
+
 	cultural_tradition_modifier = 0.2
+	
+	content_priority = 500
 	ai_weight = { add = 100 }
-	requires = crown_power_advance_discovery
 }
 
 chynsh_advance = {
 	age = age_3_discovery
+	requires = pop_promotion_speed_age_3
 	icon = mos_skilled_tax_collectors
-	content_priority = 500
+
 	potential = {
 		culture = { has_culture_group = culture_group:ruthene_group }
 	}
+
 	unlock_estate_privilege = chynsh_privilege
+	
+	content_priority = 500
 	ai_weight = { add = 100 }
-	requires = pop_promotion_speed_age_3
 }
 
 ############################
@@ -61,14 +71,17 @@ chynsh_advance = {
 ############################
 cyrillic_printing = {
 	age = age_4_reformation
+	requires = artists_advance_reformations
 	icon = chacery_slavonic
-	content_priority = 300
+
 	potential = {
 		culture = { has_culture_group = culture_group:ruthene_group }
 	}
+	
 	cultural_influence_modifier = 0.1
+	
+	content_priority = 300
 	ai_weight = { add = 100 }
-	requires = artists_advance_reformations
 }
 
 
@@ -77,14 +90,17 @@ cyrillic_printing = {
 ############################
 ruthenian_awakening = {
 	age = age_5_absolutism
+	requires = integrate_area_advance
 	icon = international_influences
-	content_priority = 1000
+
 	potential = {
 		culture = { has_culture_group = culture_group:ruthene_group }
 	}
+
 	land_morale_modifier = 0.1
+	
+	content_priority = 1000
 	ai_weight = { add = 100 }
-	requires = integrate_area_advance
 }
 
 

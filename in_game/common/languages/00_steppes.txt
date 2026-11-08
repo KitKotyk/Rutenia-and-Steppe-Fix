@@ -15,20 +15,22 @@ character_name_order = "CHARACTER_NAME_ORDER_KIPCHAK"
 
 male_names = {
 	name_abraham name_ahmad name_alikhan name_alim name_amin name_amir name_anwar name_arslan
+	name_berke
 	name_elias
 	name_genghis
-	name_hasan
+	name_hasan name_haidar
 	name_ishmael
 	name_joseph
+	name_kamal
 	name_masud name_moses name_muhammad name_mukhtar name_murad name_mustafa
 	name_omar
 	name_qasim
 	name_rostam
 	name_said name_salomon
-	name_timur
+	name_timur name_toqta
 
-	Adil Aibek Almaz Amirkhan Ayder Ayrat Azamat Azat Aziz
-	Baqtiyar Bakyt Bekjan Bekzat Berke Bilal Bolat
+	Adil Aibek Almaz Amirkhan Ayrat Azamat Azat Aziz
+	Baqtiyar Bakyt Bekjan Bekzat Bilal Bolat
 	Ermek
 	Farit
 	Gazi
@@ -40,23 +42,26 @@ male_names = {
 	Qurban
 	Ramil Rashit
 	Salamat Samat Serik
-	Talgat Toqta
+	Talgat
 	Ulan
 	Zamir
 }	
 female_names = {
-	Aidana Aigul Aima Aisha Aiza Alfiya Aliya Amina Anargul Asel Aygerim Ayna
+	name_aisha name_amina
+	name_halima
+	name_zenobia
+
+	Aidana Aigul Aima Aiza Alfiya Aliya Anargul Asel Aygerim Ayna
 	Baljan Bibigul
 	Dilnaz
 	Emine Esma
 	Farida Fatima
 	Golshat Guldana Gulnara Gulnaz Gulzat Guzal
-	Halime
 	Janar Jazira Juldyz
 	Madina Meryem Mirgul
 	Nazgul Nazira
 	Safiya Saliha Saltanat Saule
-	Zeyneb Zifa Zuhra Zulfiya
+	Zifa Zuhra Zulfiya
 }
 
 dynasty_names = {
@@ -83,21 +88,22 @@ dialects = {
 	eastern_kipchak_dialect = { # Kazani, Mishar, Nogai, Kyrgyz, Uzbek
 		male_names = {
 			name_abraham name_ahmad name_alikhan name_alim name_amin name_amir name_anwar name_arslan
+			name_berke name_bolot
 			name_elias
 			name_genghis
-			name_hasan
+			name_hasan name_haidar
 			name_ishmael
 			name_joseph
+			name_kamal
 			name_moses name_muhammad name_mukhtar name_murad name_mustafa
 			name_omar
 			name_qasim
 			name_rostam
 			name_said name_salomon
-			name_timur
+			name_timur name_toqta
 			
-			Adil Aibek Almaz Amirkhan Anvar
-			Ayrat Azamat Azat Aziz
-			Baqtiyar Bakyt Bekjan Bekzat Bilal Bolat
+			Adil Aibek Almaz Amirkhan Anvar Ayrat Azamat Azat Aziz
+			Baqtiyar Bakyt Bekjan Bekzat Bilal
 			Ermek
 			Farit
 			Hamza
@@ -114,8 +120,11 @@ dialects = {
 		}
 
 		female_names = {
-			Aidana Aigul Aima Aisha Aiza Alfiya
-			Aliya Amina Anargul Asel Aygerim Ayna
+			name_aisha name_amina
+			name_halima
+
+			Aidana Aigul Aima Aiza Alfiya
+			Aliya Anargul Asel Aygerim Ayna
 			Baljan Bibigul
 			Dilnaz
 			Farida Fatima
@@ -149,19 +158,21 @@ dialects = {
 	western_kipchak_dialect = {	# Crimean, Astrakhani, Karachay, Balkar, Kumyk, Karaite		
 		male_names = {
 			name_abraham name_ahmad name_alim name_amin name_amir name_anwar name_arslan
+			name_berke
 			name_genghis
-			name_hasan
+			name_hasan name_haidar
 			name_ishmael
 			name_jalal name_jamal name_joseph
+			name_kamal
 			name_masud name_moses name_muhammad name_mustafa
 			name_omar
 			name_qasim
 			name_rostam
 			name_sahib name_said name_salim name_salomon
-			name_timur
+			name_timur name_toqta
 
-			Ahtem Ayder Ayhan 
-			Barlas Bekir Beqtash Beqtur Berke Burulday
+			Ahtem Ayhan 
+			Barlas Bekir Beqtash Beqtur Burulday
 			Cafer Camolidin Cihan
 			Davut Demir Devlet
 			Erdem
@@ -171,21 +182,24 @@ dialects = {
 			Lenur
 			Mengli
 			Nazim Noman			
-			Qamal Qurban
+			Qurban
 			Redvan Refat Reshid
 			Saadet Selamet Seyran Shahin
-			Teyfuq Toqta Tuman
+			Teyfuq Tuman
 			Uzeir
 			Yagya Yavuz				
 		}
 
 		female_names = {
+			name_aisha name_amina
+			name_halima
+			name_zenobia
+
 			Adilye Alie Alime Anife Aybike Aycan Aytore
 			Cemile Ceylan  
 			Ediye Elmaz Emine Esma
 			Fatime Feride Feruze
 			Gulnar Gulsum Gulten
-			Halime
 			Ilmiye				
 			Leniye
 			Mavile Medine Melie Meryem Munise
@@ -194,7 +208,7 @@ dialects = {
 			Remzie Reyhan
 			Saide Sanie Selime Sevgil
 			Yildiz
-			Zemine Zeyneb Zuhre Zulfiye
+			Zemine Zuhre Zulfiye
 		}
 
 		dynasty_names = {

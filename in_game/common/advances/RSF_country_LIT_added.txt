@@ -2,27 +2,30 @@
 # ----- LITHUANIA -----
 
 tolerant_rule_advance = { 				# Lithuanian need some real starting buff
-	age = age_1_traditions	
+	age = age_1_traditions
+	requires = feudalism_advance
 	icon = cultural_acceptance_advance
+
 	potential = {
 		has_or_had_tag = LIT
-	}	
+	}
+
 	cultures_capacity = 2
 	global_estate_target_satisfaction = medium_permanent_target_satisfaction
 	subject_loyalty = 5
-
-	requires = feudalism_advance
 }
 
 lith_wilderness = { 					# Attrition in forests and marshes	
 	age = age_1_traditions
+	requires = feudalism_advance
 	icon = alchemy_advance
-	content_priority = 950
-	ai_weight = { add = 20 }
+
 	potential = {
 		has_or_had_tag = LIT
 	}
+	
 	global_hostile_attrition = 1
 
-	requires = feudalism_advance	
+	content_priority = 950
+	ai_weight = { add = 20 }
 }

@@ -1,17 +1,21 @@
 ﻿# ----- UPDATED by Kotyk -----
 
 TRY_INJECT:land_of_many_religions = { 	# Lithuanian
-	tolerance_heretic = 2				# increased from 1 to 3
-	tolerance_heathen = 2				# increased from 1 to 3
+	tolerance_heretic = 2				# RSF changed: 1 -> 3
+	tolerance_heathen = 2				# RSF changed: 1 -> 3
 }
 
 TRY_INJECT:turco_mongol_tradition = { 	# Steppe Hordes	
-	cultures_capacity = 1				# increased from 1 to 2
+	cultures_capacity = 1				# RSF changed: 1 -> 2
+}
+
+TRY_INJECT:glh_tatar_traditions = { 	# Steppe Hordes	
+	army_light_cavalry_power = -0.1		# RSF changed: 0.2 -> 0.1
 }
 
 TRY_INJECT:yams_of_the_great_khan = { 	# Steppe Hordes
-	global_distance_from_capital_speed_propagation = 0.2	# increased from 0.1 to 0.3
-	flatland_proximity_impact = -0.5						# added
+	global_distance_from_capital_speed_propagation = 0.2	# RSF changed: 0.1 -> 0.3
+	flatland_proximity_impact = -0.5						# RSF added
 }
 
 TRY_INJECT:colonies = {					# Steppe Hordes do not colonise, Jokser
@@ -23,8 +27,9 @@ TRY_INJECT:colonies = {					# Steppe Hordes do not colonise, Jokser
 
 # Folwark was implemented in Halych and Volhynian lands
 TRY_REPLACE:folwark_system = {
-	content_priority = 600
 	age = age_2_renaissance
+	requires = renaissance_urbanisation
+
 	potential = { 
 		OR = {
 			has_or_had_tag = POL
@@ -35,15 +40,16 @@ TRY_REPLACE:folwark_system = {
 
 	expand_rgo_farming_cost_modifier = -0.25
 	global_max_rgo_size_modifier = 0.2
-
-	requires = renaissance_urbanisation
+	
+	content_priority = 600
 }
 
 # Ukrainian Farmlands moved to the Age 4 and include Zaporizhzhia area too
 # Added millet and made all 10%
 TRY_REPLACE:ukrainian_farmlands = {
-	content_priority = 400
 	age = age_4_reformation
+	requires = road_advance_1
+
 	potential = {
 		any_owned_location = {
 			OR = {
@@ -54,10 +60,10 @@ TRY_REPLACE:ukrainian_farmlands = {
 		}
 	}
 
-	requires = road_advance_1
-
 	global_wheat_output_modifier = 0.1
 	global_millet_output_modifier = 0.1
 	global_legumes_output_modifier = 0.1
 	global_fiber_crops_output_modifier = 0.1
+	
+	content_priority = 400
 }

@@ -3,13 +3,14 @@
 ############################
 ruthenian_law_tradition = {
 	age = age_1_traditions
+	requires = agriculture_advance
 	icon = chacery_slavonic
+
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}
-	legislative_efficiency = 0.1
 
-	requires = agriculture_advance
+	legislative_efficiency = 0.1
 }
 
 
@@ -18,26 +19,32 @@ ruthenian_law_tradition = {
 ############################
 hardened_cavalry = {
 	age = age_2_renaissance
+	requires = unlock_heavy_cavalry_advance
 	icon = army_country_looting_advance
-	content_priority = 900
+	
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}
+
 	army_heavy_cavalry_power = 0.1
+
+	content_priority = 900
 	ai_weight = { add = 100 }
-	requires = unlock_heavy_cavalry_advance
 }
 
 polesian_lumber = {
 	age = age_2_renaissance
+	requires = power_projection_advance_2
 	icon = lumber_improvements_discovery
-	content_priority = 500
+
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}
+
 	global_lumber_output_modifier = 0.1
+	
+	content_priority = 500
 	ai_weight = { add = 100 }
-	requires = power_projection_advance_2
 }
 
 
@@ -46,16 +53,19 @@ polesian_lumber = {
 ############################
 skaryna_printing = {
 	age = age_3_discovery
+	requires = improved_book_binding
 	icon = printing_press_advance
-	content_priority = 700
+
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}
+
 	global_nobles_max_literacy = 5
 	global_clergy_max_literacy = 5
 	global_burghers_max_literacy = 5
+	
+	content_priority = 700
 	ai_weight = { add = 100 }
-	requires = improved_book_binding
 }
 
 
@@ -64,14 +74,17 @@ skaryna_printing = {
 ############################
 volok_reform = {
 	age = age_4_reformation
+	requires = imperial_ambitions
 	icon = debt_and_loans
-	content_priority = 900
+
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}
+
 	tax_income_efficiency = small_tax_income_efficiency_bonus
+
+	content_priority = 900
 	ai_weight = { add = 100 }
-	requires = imperial_ambitions
 }
 
 ############################
@@ -79,14 +92,17 @@ volok_reform = {
 ############################
 religious_dualism = {
 	age = age_5_absolutism
+	requires = increase_control_area_advance
 	icon = a_tolerant_society
-	content_priority = 300
+
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}
+
 	tolerance_heretic = 2
+
+	content_priority = 300
 	ai_weight = { add = 10 }
-	requires = increase_control_area_advance
 }
 
 ############################
@@ -94,24 +110,30 @@ religious_dualism = {
 ############################
 polesian_amber = {
 	age = age_6_revolutions
+	requires = rgo_size_advance_revolutions
 	icon = milanese_tradition
-	content_priority = 700
+
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}
+
 	global_amber_output_modifier = 0.1
+
+	content_priority = 700
 	ai_weight = { add = 10 }
-	requires = rgo_size_advance_revolutions
 }
 
 new_bread = {
 	age = age_6_revolutions
+	requires = peasants_rights_laws_advance
 	icon = potato_production
-	content_priority = 300
+
 	potential = {
 		culture = { has_culture_group = culture_group:belarusian_group }
 	}
+
 	global_potato_output_modifier = 0.2
+
+	content_priority = 300
 	ai_weight = { add = 10 }
-	requires = peasants_rights_laws_advance
 }

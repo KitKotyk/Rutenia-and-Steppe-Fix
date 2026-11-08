@@ -1,26 +1,26 @@
-﻿# DISABLED in RSF
-
+﻿
 horde_civil_war = {
 
 	image = "gfx/interface/illustrations/disaster/horde_civil_war.dds"
 
 	monthly_spawn_chance = monthly_spawn_chance_very_high
 	can_start = {
-		# always = no											# RSF disabled
+		# always = no											# RSF testing
+		current_year < 1437										# RSF added
 
 		has_any_active_disaster = no
 		government_type = government_type:steppe_horde
 		is_rebel_country = no
 		is_subject = no
 		OR = {
-			horde_unity <= 40
+			horde_unity <= 30									# RSF changed: 40 -> 30
 			AND = {
-				horde_unity <= 75
+				horde_unity <= 50								# RSF changed: 75 -> 50
 				OR = {
 					has_regent = yes 
 					AND = {
 						has_heir = yes 
-						horde_unity <= 60
+						horde_unity <= 40						# RSF changed: 60 -> 40
 					}
 				}
 			}
@@ -69,7 +69,7 @@ horde_civil_war = {
 		discipline = -0.1
 		global_crown_estate_power = -0.2
 		global_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
-		horde_unity_hit_at_ruler_death = 35													# RSF: 50 -> 35
+		horde_unity_hit_at_ruler_death = 50
 		monthly_horde_unity = 0.05
 		subject_loyalty = -10
 	}

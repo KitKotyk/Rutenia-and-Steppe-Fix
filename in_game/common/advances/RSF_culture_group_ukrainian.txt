@@ -3,12 +3,13 @@
 ############################
 tamed_steppes = {
 	age = age_1_traditions
+	requires = agriculture_advance
+
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
-	global_monthly_food_modifier = monthly_food_productivity_weak_bonus
 
-	requires = agriculture_advance
+	global_monthly_food_modifier = monthly_food_productivity_weak_bonus
 }
 
 
@@ -17,26 +18,32 @@ tamed_steppes = {
 ############################
 east_and_west = {
 	age = age_2_renaissance
+	requires = power_projection_advance_2
 	icon = east_and_west
-	content_priority = 600
+	
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
+
 	global_merchant_power = 0.1
+
+	content_priority = 600
 	ai_weight = { add = 100 }
-	requires = power_projection_advance_2
 }
 
 steppe_outpost_advance = {
 	age = age_2_renaissance
-	content_priority = 700
+	requires = recruitment_law_advance
 	icon = tamed_steppes
+
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
-	requires = recruitment_law_advance
+
 	num_ostrogs = 3
 	unlock_building = steppe_outpost
+
+	content_priority = 700
 	ai_weight = { add = 100 }
 }
 
@@ -46,26 +53,32 @@ steppe_outpost_advance = {
 ############################
 steppe_frontier = {
 	age = age_3_discovery
+	requires = fort_limit_3_advance
 	icon = cossack_raids
-	content_priority = 1000
+
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
+
 	global_defensive = 0.1
+
+	content_priority = 1000
 	ai_weight = { add = 100 }
-	requires = fort_limit_3_advance
 }
 
 chumak_trading = {
 	age = age_3_discovery
+	requires = paved_road_advance
 	icon = exploit_the_alpine_trade
-	content_priority = 800
+
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
+
 	global_merchant_capacity_modifier = 0.1
+
+	content_priority = 800
 	ai_weight = { add = 100 }
-	requires = paved_road_advance
 }
 
 
@@ -74,27 +87,33 @@ chumak_trading = {
 ############################
 religious_brotherhoods = {
 	age = age_4_reformation
+	requires = clergy_rights_laws_advance
 	icon = byz_heart_of_orthodoxy_advance
-	content_priority = 500
+
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
+
 	monthly_religious_influence = 0.05
 	cultural_tradition_modifier = 0.2
+
+	content_priority = 500
 	ai_weight = { add = 100 }
-	requires = clergy_rights_laws_advance
 }
 
 gunpowder_boom = {
 	age = age_4_reformation
+	requires = guns_workshop_advance
 	icon = artillery_institution_advance
-	content_priority = 400
+
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
+
 	global_saltpeter_output_modifier = 0.1
+
+	content_priority = 400
 	ai_weight = { add = 10 }
-	requires = guns_workshop_advance
 }
 
 ############################
@@ -102,14 +121,17 @@ gunpowder_boom = {
 ############################
 fiery_army = {
 	age = age_5_absolutism
+	requires = artillery_vs_fort_age_5_absolutism
 	icon = pike_and_shot_advance
-	content_priority = 1000
+
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
+
 	siege_ability = 0.1
+
+	content_priority = 1000
 	ai_weight = { add = 100 }
-	requires = artillery_vs_fort_age_5_absolutism
 }
 
 ############################
@@ -118,13 +140,15 @@ fiery_army = {
 
 de_libertate_advance = {
 	age = age_6_revolutions
+	requires = enlightened_court
 	icon = global_clergy_max_literacy_advance
-	content_priority = 500
-	ai_weight = { add = 10 }
+
 	potential = {
 		culture = { has_culture_group = culture_group:ukrainian_group }
 	}
+
 	global_estate_target_satisfaction = small_permanent_target_satisfaction
 
-	requires = enlightened_court
+	content_priority = 500
+	ai_weight = { add = 10 }
 }

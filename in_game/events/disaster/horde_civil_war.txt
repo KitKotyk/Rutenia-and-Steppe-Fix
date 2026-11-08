@@ -34,9 +34,9 @@ scripted_effect horde_create_pretender_rebellion = {
 		every_province = {
 			limit = {
 				OR = {
-					province_average_control < 0.25		# RSF changed from 0.5
-					province_food_percentage < 0.25		# RSF changed from 0.5
-					province_satisfaction < 0.25		# RSF changed from 0.5
+					province_average_control < 0.2		# RSF changed: 0.5 -> 0.2
+					# province_food_percentage < 0.25	# RSF changed: due to food changes
+					province_satisfaction < 0.2			# RSF changed: 0.5 -> 0.2
 				}
 				any_location_in_province = { is_capital = no }
 			}
@@ -63,7 +63,7 @@ scripted_effect horde_create_pretender_rebellion = {
 						limit = {
 							owner = root
 						}
-						add_pop_satisfaction = pop_satisfaction_ultimate_penalty
+						# add_pop_satisfaction = pop_satisfaction_ultimate_penalty		# RSF changed: harsh satisfaction penalty on already dissatisfied provinces
 						change_pop_allegiance = scope:horde_civil_war_pretender_scope
 					}
 				}
@@ -535,11 +535,11 @@ horde_civil_war.7 = {
 	trigger = {
 		any_owned_location = {
             OR = {
-                # has_any_disease_present = yes		# RSF
-                prosperity < 0
-                # province = { is_starving = yes }	# RSF
+                # has_any_disease_present = yes		# RSF changed
+            	prosperity < 0
+                # province = { is_starving = yes }	# RSF changed
 				any_pop = {
-					pop_satisfaction < 0.25			# RSF changed from 0.5
+					pop_satisfaction < 0.2			# RSF changed: 0.5 -> 0.2
 				}
             }
 		}
@@ -551,11 +551,11 @@ horde_civil_war.7 = {
 		random_owned_location = {
 			limit = {
 				OR = {
-					# has_any_disease_present = yes		# RSF
+					# has_any_disease_present = yes		# RSF changed
 					prosperity < 0
-					# province = { is_starving = yes }	# RSF
+					# province = { is_starving = yes }	# RSF changed
 					any_pop = {
-						pop_satisfaction < 0.25			# RSF changed from 0.5
+						pop_satisfaction < 0.2			# RSF changed: 0.5 -> 0.2
 					}
 				}
 			}
@@ -597,7 +597,7 @@ horde_civil_war.7 = {
 				scope:civil_war_country = {
 					if = {
 						limit = { root.monthly_manpower > 0 }
-						add_manpower = { value = root.monthly_manpower multiply = 2 }		# RSF change from 4 to 2
+						add_manpower = { value = root.monthly_manpower multiply = 2 }		# RSF change: 4 -> 2
 					}
 					else = {
 						add_manpower = 0.1

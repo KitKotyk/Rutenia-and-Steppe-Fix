@@ -1,0 +1,216 @@
+﻿# Change food yield and added new climate
+
+TRY_REPLACE:horses = { #War Horses
+	method = farming
+	category = raw_material
+	color = goods_horses
+
+	food = 1.0								# RSF changed: 2 -> 1
+	default_market_price = 3
+	transport_cost = 2
+
+	location_potential = {
+		NOR = {
+			vegetation = jungle
+			vegetation = forest
+		}
+		OR = {
+			topography = plateau
+			topography = flatland
+			topography = hills
+		}
+		OR = {
+			climate = cold_arid
+			climate = cold_semi_arid		# RSF added: cold_semi_arid
+			climate = arid
+			climate = mediterranean
+			climate = oceanic
+			climate = continental
+			climate = subtropical
+		}
+	}
+
+	demand_add = {
+		nobles =  0.25
+	}
+
+	origin_in_old_world = yes
+	custom_tags = { old_world_goods }
+
+}
+
+TRY_REPLACE:livestock = {
+	method = farming
+	category = raw_material
+	color = goods_livestock
+	
+	food = 4								# RSF changed: 8 -> 4
+	default_market_price = 1.5
+	ai_rgo_size_importance = 1.5 # ai preference to avoid building a city on this rgo
+	
+	location_potential = {
+		NOR = {
+			vegetation = jungle
+			vegetation = forest
+			vegetation = woods
+		}
+		OR = {
+			topography = plateau
+			topography = flatland
+			topography = hills
+		}
+		NOR = {
+			climate = arctic
+		}
+	}
+
+	demand_add = {
+		all = 0.001
+		soldiers = 0.003
+		laborers = 0.001
+	}
+	demand_multiply = {
+		nobles = 30
+		clergy = 10
+		burghers = 10
+		slaves = 0
+		tribesmen = 0
+	}
+	
+	wealth_impact_threshold = {
+		peasants = 1.1
+		laborers = 1.1
+		soldiers = 1.1
+	}
+
+	
+	origin_in_old_world = yes
+	custom_tags = { old_world_goods }
+}
+
+TRY_REPLACE:wild_game = {
+	method = hunting
+	category = raw_material
+	color = goods_wild_game
+
+	food = 2								# RSF changed: 3.5 -> 2
+
+	default_market_price = 1
+	transport_cost = 0.5
+	demand_add = {
+		all =  0.0004
+	}
+	demand_multiply = {
+		nobles = 20
+		clergy = 5
+		burghers = 5
+		tribesmen = 0
+	}
+
+	no_demand_if_no_market_availability = yes
+}
+
+
+
+# Added timy indirect food production to certain goods
+
+TRY_REPLACE:lumber  = {
+	method = forestry
+	category = raw_material
+	color = goods_lumber
+	
+	food = 0.5								# RSF added
+
+	default_market_price = 1.5
+	base_production = 0.005
+
+	transport_cost = 1
+
+	ai_rgo_size_importance = 3 # ai preference to avoid building a city on this rgo
+
+	ai_rgo_expansion_priority = 0.025
+
+	demand_add = {
+		all = 0.00025
+	}
+
+	demand_multiply = {
+		upper = 5
+		tribesmen = 0
+	}
+
+	winter_demand_modifier = {
+		none = 0.1
+		mild = 0.5
+		normal = 1
+		severe = 2
+	}
+	topography_demand_modifier = {
+		mountains = 1.2
+	}
+
+	location_potential = {
+		OR = {
+			vegetation = woods
+			vegetation = forest
+			vegetation = jungle
+		}
+	}
+}
+
+TRY_REPLACE:salt = {
+	method = gathering
+	category = raw_material
+	color = goods_salt
+	default_market_price = 4
+	
+	food = 0.5								# RSF added
+
+	demand_add = {
+		nobles = 0.05
+		burghers = 0.02
+		clergy = 0.02
+	}
+
+
+	wealth_impact_threshold = {
+		all = 0.7
+	}
+
+	winter_demand_modifier = {
+		none = 0.75
+		mild = 1
+		normal = 1.2
+		severe = 2
+	}
+}
+
+TRY_REPLACE:medicaments = { #Medicinal plants, Pills, Opium, Mummy Powder, etc
+	method = gathering
+	category = raw_material
+	color = goods_medicaments
+	default_market_price = 1
+	transport_cost = 0.5
+	
+	food = 0.5								# RSF added
+
+	demand_add = {
+		all = 0.0004
+	}
+
+	demand_multiply = {
+		nobles = 5
+		clergy = 2.5
+		burghers = 1.5
+		slaves = 0.1
+		tribesmen = 0
+	}
+
+
+	wealth_impact_threshold = {
+		all = 1.1
+	}
+
+	disease_demand_modifier = 2
+
+}

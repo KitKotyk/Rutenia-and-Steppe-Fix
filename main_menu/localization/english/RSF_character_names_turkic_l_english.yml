@@ -55,6 +55,10 @@
  # name_ahmad: "Ahmed"
  name_ahmad.eastern_kipchak_dialect: "Ahmet"
  name_ahmad.western_kipchak_dialect: "Amet"
+
+ # name_aisha: "Aisha"
+ name_aisha.eastern_kipchak_dialect: "Aişa"
+ name_aisha.western_kipchak_dialect: "Ayşe"
  
  # name_alikhan: "Alikhan"
  name_alikhan.kipchak_language: "Älimhan"
@@ -67,6 +71,10 @@
  name_amin.eastern_kipchak_dialect: "Ämin"
  name_amin.western_kipchak_dialect: "Emin"
 
+ # name_amina: "Amina"
+ name_amina.eastern_kipchak_dialect: "Ämina"
+ name_amina.western_kipchak_dialect: "Emine"
+
  # name_amir: "Amir"
  name_amir.kipchak_language: "Ämir"
  
@@ -78,13 +86,24 @@
  name_arslan.eastern_kipchak_dialect: "Aslan"
  name_arslan.western_kipchak_dialect: "Arslan"
 
+ # name_bolot: "Bolot"
+ name_bolot.kipchak_language: "Bolat"
+
  # name_genghis: "Genghis"
  name_genghis.eastern_kipchak_dialect: "Çyñgyz"
  name_genghis.western_kipchak_dialect: "Cengiz"
 
+ # name_halima: "Halima"
+ name_halima.eastern_kipchak_dialect: "Halima"
+ name_halima.western_kipchak_dialect: "Halime"
+
  # name_hasan: "Hasan"
  name_hasan.eastern_kipchak_dialect: "Husayn"
  name_hasan.western_kipchak_dialect: "Üsein"
+
+ # name_haidar: "Haydar"
+ name_haidar.eastern_kipchak_dialect: "Aidar"
+ name_haidar.western_kipchak_dialect: "Ayder"
 
  # name_ishmael: "Ishmael"
  name_ishmael.kipchak_language: "İsmail"
@@ -94,6 +113,9 @@
 
  # name_jamal: "Jamal"
  name_jamal.kipchak_language: "Cemal"
+
+ # name_kamal: "Kamal"
+ name_kamal.kipchak_language: "Qamal"
 
  # name_masud: "Masud"
  name_masud.kipchak_language: "Mesud"
@@ -141,6 +163,8 @@
  # name_timur: "Timur"
  name_timur.kipchak_language: "Temir"
 
+ # name_zenobia: "Zenobia"
+ name_zenobia.kipchak_language: "Zeyneb"
 
 
  ##### KIPCHAK DYNASTIES #####
@@ -167,7 +191,6 @@
  Bekjan: "Bekjan"
  Bekzat: "Bekzat"
  Bilal: "Bilal"
- Bolat: "Bolat"
  Ermek: "Ermek"
  Farit: "Färit"
  Hamza: "Hamza"
@@ -192,11 +215,9 @@
  Aidana: "Aidana"
  Aigul: "Aigül"
  Aima: "Aima"
- Aisha: "Aişa"
  Aiza: "Aiza"
  Alfiya: "Alfiya"
  Aliya: "Äliya"
- Amina: "Ämina"
  Anargul: "Anargül"
  Asel: "Äsel"
  Aygerim: "Aygerim"
@@ -260,13 +281,11 @@
 
  # Unique names Western Kipchak male
  Ahtem: "Ahtem"
- Ayder: "Ayder"
  Ayhan: "Ayhan" 
  Barlas: "Barlas"
  Bekir: "Bekir"
  Beqtash: "Beqtaş"
  Beqtur: "Beqtur"
- Berke: "Berke"
  Burulday: "Burulday"
  Cafer: "Cafer"
  Camolidin: "Camolidin"
@@ -283,8 +302,7 @@
  Lenur: "Lenur" 
  Mengli: "Meñli"
  Nazim: "Nazım"
- Noman: "Noman" 
- Qamal: "Qamal"
+ Noman: "Noman"
  Qurban: "Qurban" 
  Redvan: "Redvan"
  Refat: "Refat"
@@ -294,7 +312,6 @@
  Seyran: "Seyran"
  Shahin: "Şahin" 
  Teyfuq: "Teyfuq"
- Toqta: "Toqta"
  Tugay: "Tugay"
  Tuman: "Tuman" 
  Uzeir: "Üzeir" 
@@ -304,7 +321,6 @@
  # Unique names Western Kipchak female
  Adilye: "Adilye"
  Alie: "Alie"
- Alime: "Alime"
  Anife: "Anife"
  Aybike: "Aybike"
  Aycan: "Aycan"
@@ -321,7 +337,6 @@
  Gulnar: "Gülnar"
  Gulsum: "Gülsüm"
  Gulten: "Gülten"
- Halime: "Halime"
  Ilmiye: "İlmiye"
  Leniye: "Leniye"
  Mavile: "Mavile"
@@ -339,7 +354,6 @@
  Sevgil: "Sevgil"
  Yildiz: "Yıldız"
  Zemine: "Zemine"
- Zeyneb: "Zeyneb"
  Zuhre: "Zühre"
  Zulfiye: "Zulfiye"
 
