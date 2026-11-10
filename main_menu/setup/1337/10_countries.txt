@@ -12487,7 +12487,7 @@ countries = {
 	VEN = {
 		own_control_core = {
 			venice chioggia
-			pola rovinj pag zadar split brac
+			pola rovinj pag zadar split brac sibenik
 		}
 
 		own_control_integrated = {
@@ -14190,11 +14190,11 @@ countries = {
 
 	CRO = {
 		own_control_core = {
-			sibenik kaseg knin novigrad crikvenica senj
+			kaseg knin novigrad crikvenica senj
 			bihac krk srb sinj otocac
 		}
 		our_cores_conquered_by_others = {
-			zadar split
+			zadar split sibenik
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
@@ -19163,7 +19163,7 @@ countries = {
 		court_language = church_slavonic_language
 
 		country_rank = rank_duchy
-		capital = targoviste
+		capital = arges
 	}
 
 	BIA = {	#Baia
