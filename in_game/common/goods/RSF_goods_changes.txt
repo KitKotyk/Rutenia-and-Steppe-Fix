@@ -44,7 +44,7 @@ TRY_REPLACE:livestock = {
 	category = raw_material
 	color = goods_livestock
 	
-	food = 4								# RSF changed: 8 -> 4
+	food = 6								# RSF changed: 8 -> 6
 	default_market_price = 1.5
 	ai_rgo_size_importance = 1.5 # ai preference to avoid building a city on this rgo
 	
@@ -119,7 +119,7 @@ TRY_REPLACE:lumber  = {
 	category = raw_material
 	color = goods_lumber
 	
-	food = 0.5								# RSF added
+	food = 0.5								# RSF added (foods from forests)
 
 	default_market_price = 1.5
 	base_production = 0.005
@@ -164,7 +164,7 @@ TRY_REPLACE:salt = {
 	color = goods_salt
 	default_market_price = 4
 	
-	food = 0.5								# RSF added
+	food = 0.5								# RSF added (better preservation)
 
 	demand_add = {
 		nobles = 0.05
@@ -213,4 +213,173 @@ TRY_REPLACE:medicaments = { #Medicinal plants, Pills, Opium, Mummy Powder, etc
 
 	disease_demand_modifier = 2
 
+}
+
+TRY_REPLACE:wine = {
+	method = farming
+	category = raw_material
+	color = goods_wine
+	default_market_price = 2
+	
+	food = 1								# RSF added
+
+	location_potential = {
+		NOR = {
+			vegetation = jungle
+			vegetation = forest
+		}
+		OR = {
+			topography = plateau
+			topography = flatland
+			topography = hills
+			topography = mountains
+		}
+		OR = {
+			climate = cold_arid
+			climate = cold_semi_arid		# RSF added
+			climate = mediterranean
+			climate = oceanic
+			climate = continental
+		}
+		NOR = {
+			region = region:great_plains_region
+			region = region:caribbean_region
+		}
+	}
+
+	demand_add = {
+		all = 0.0004
+	}
+	demand_multiply = {
+		upper = 10
+		nobles = 1.5
+
+		slaves = 0
+		tribesmen = 0
+	}
+
+	wealth_impact_threshold = {
+		all = 1.0
+	}
+
+	origin_in_old_world = yes
+	custom_tags = { old_world_goods }
+	region_demand_modifier = {
+		iberia_region = 2
+		italy_region = 2
+		balkan_region = 2
+	}
+	sub_continent_demand_modifier = {
+		south_asia = 0.6
+	}
+}
+
+TRY_REPLACE:pearls = {
+	method = gathering
+	category = raw_material
+	color = goods_pearls
+	default_market_price = 4
+	
+	food = 0.5								# RSF added (seafood and fish)
+
+	demand_add = {
+		nobles = 0.05
+		burghers = 0.0025
+	}
+
+	development_threshold = 20
+
+	wealth_impact_threshold = {
+		nobles = 1.0
+		burghers = 1.5
+	}
+
+	sub_continent_demand_modifier = {
+		south_asia = 2
+	}
+}
+
+TRY_REPLACE:cocoa = {
+	method = farming
+	category = raw_material
+	color = goods_cocoa
+	default_market_price = 4
+	ai_rgo_size_importance = 5
+	
+	food = 0.5								# RSF added (food product)
+
+	location_potential = {
+		NOR = {
+			vegetation = desert
+			vegetation = sparse
+			vegetation = grasslands
+		}
+		area = {
+			is_area_sea = no
+		}
+		NOR = {
+			topography = atoll
+			topography = wetlands
+		}
+		OR = {
+			climate = tropical
+			climate = subtropical
+			climate = mediterranean
+		}
+		NOR = {
+			region = region:bengal_region
+			region = region:western_india_region
+			area = area:mozambique_area
+			area = area:ruvuma_lurio_area
+			area = area:gondwana_area
+			area = area:andhra_area
+			area = area:telingana_area
+			area = area:vidarbha_area
+			area = area:maharashtra_area
+			area = area:konkan_area
+			area = area:lower_mekong_area
+			area = area:northern_tai_highland_area
+			area = area:champa_area
+			area = area:arakhan_area
+			area = area:irrawady_area
+			area = area:shan_highland_area
+			area = area:kachin_area
+			area = area:mayaab_area
+			area = area:puuk_area
+			area = area:chactemal_area
+		}
+	}
+	demand_add = {
+		nobles = 0.1
+		burghers = 0.01
+		clergy = 0.01
+	}
+
+	wealth_impact_threshold = {
+		all = 0.75
+	}
+
+	origin_in_new_world = yes
+	custom_tags = { new_world_goods }
+
+}
+
+TRY_REPLACE:tea = {
+	method = farming
+	category = raw_material
+	color = goods_tea
+	default_market_price = 3
+	
+	food = 0.5								# RSF added (food product)
+	
+	demand_add = {
+		nobles = 0.2
+		burghers = 0.01
+		clergy = 0.01
+	}
+		
+	wealth_impact_threshold = {
+		all = 0.75
+	}
+	
 }

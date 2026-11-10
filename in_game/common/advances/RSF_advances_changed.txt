@@ -1,23 +1,6 @@
 ﻿# ----- UPDATED by Kotyk -----
 
-TRY_INJECT:land_of_many_religions = { 	# Lithuanian
-	tolerance_heretic = 2				# RSF changed: 1 -> 3
-	tolerance_heathen = 2				# RSF changed: 1 -> 3
-}
-
-TRY_INJECT:turco_mongol_tradition = { 	# Steppe Hordes	
-	cultures_capacity = 1				# RSF changed: 1 -> 2
-}
-
-TRY_INJECT:glh_tatar_traditions = { 	# Steppe Hordes	
-	army_light_cavalry_power = -0.1		# RSF changed: 0.2 -> 0.1
-}
-
-TRY_INJECT:yams_of_the_great_khan = { 	# Steppe Hordes
-	global_distance_from_capital_speed_propagation = 0.2	# RSF changed: 0.1 -> 0.3
-	flatland_proximity_impact = -0.5						# RSF added
-}
-
+##### GENERIC #####
 TRY_INJECT:colonies = {					# Steppe Hordes do not colonise, Jokser
     potential = {
         NOT = { government_type = government_type:steppe_horde }
@@ -25,6 +8,48 @@ TRY_INJECT:colonies = {					# Steppe Hordes do not colonise, Jokser
 }
 
 
+##### STEPPE HORDES #####
+TRY_INJECT:horse_lords = {
+	army_light_cavalry_reinforce_cost_modifier = 0.03		# RSF changed: -0.33 -> -0.3
+	army_light_cavalry_maintenance_cost_modifier = 0.03		# RSF changed: -0.33 -> -0.3
+}
+
+#TRY_INJECT:kurultai_advance = {
+#	levy_maintenance_modifier = 0.2							# RSF changed: -0.5 -> -0.3
+#}
+
+TRY_INJECT:turco_mongol_tradition = {
+	cultures_capacity = 1									# RSF changed: 1 -> 2
+}
+
+TRY_INJECT:yams_of_the_great_khan = {
+	global_distance_from_capital_speed_propagation = 0.2	# RSF changed: 0.1 -> 0.3
+	flatland_proximity_impact = -0.5						# RSF added
+}
+
+TRY_INJECT:there_shall_be_no_grass = {
+	food_consumption_modifier = 0.20						# RSF changed: -0.2 -> 0
+}
+
+#TRY_INJECT:trampling_horde = {
+#	army_light_cavalry_power = -0.05						# RSF changed: 0.1 -> 0.05
+#}
+
+
+##### GOLDEN HORDE #####
+TRY_INJECT:glh_tatar_traditions = {
+	army_light_cavalry_power = -0.1							# RSF changed: 0.2 -> 0.1
+}
+
+
+##### LITHUANIA #####
+TRY_INJECT:land_of_many_religions = {
+	tolerance_heretic = 2									# RSF changed: 1 -> 3
+	tolerance_heathen = 2									# RSF changed: 1 -> 3
+}
+
+
+##### POLAND #####
 # Folwark was implemented in Halych and Volhynian lands
 TRY_REPLACE:folwark_system = {
 	age = age_2_renaissance
@@ -44,6 +69,8 @@ TRY_REPLACE:folwark_system = {
 	content_priority = 600
 }
 
+
+##### UKRAINE REGION #####
 # Ukrainian Farmlands moved to the Age 4 and include Zaporizhzhia area too
 # Added millet and made all 10%
 TRY_REPLACE:ukrainian_farmlands = {

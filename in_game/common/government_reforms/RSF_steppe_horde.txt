@@ -1,6 +1,6 @@
 ﻿# ----- UPDATED by Kotyk -----
 
-TRY_REPLACE:legacy_of_genghis = {	# Reworked for the Tatars and added control
+TRY_REPLACE:legacy_of_genghis = {			# Reworked for the Tatars and added control
 	age = age_1_traditions
 	government = steppe_horde
 	major = yes
@@ -45,7 +45,7 @@ TRY_REPLACE:legacy_of_genghis = {	# Reworked for the Tatars and added control
 
 # ----- ADDED by Kotyk -----
 
-nomadic_societies_reform = {	# Higher CC, lowed DC
+nomadic_societies_reform = {				# Higher CC, lowed DC
 	age = age_1_traditions
 	government = steppe_horde
 	icon = haixi_jurchen_reform
@@ -76,6 +76,7 @@ nomadic_societies_reform = {	# Higher CC, lowed DC
 	country_modifier = {
 		cultures_capacity_modifier = 0.3
 		diplomatic_capacity_modifier = -0.3
+		global_population_capacity_modifier = -0.75
 		global_levy_size_modifier = 0.2
 	}
 

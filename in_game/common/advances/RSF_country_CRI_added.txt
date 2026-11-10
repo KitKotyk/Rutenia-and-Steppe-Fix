@@ -9,7 +9,7 @@ cosmopolitan_crimea_advance = { 				# To compensate the penalty for hordes
 		has_or_had_tag = CRI
 	}
 
-	research_speed_modifier = 0.15
+	research_speed_modifier = 0.25
 }
 
 syvash_salt_advance = { 						# Historical salt production
@@ -24,10 +24,10 @@ syvash_salt_advance = { 						# Historical salt production
 	global_salt_output_modifier = 0.2
 
 	content_priority = 700
-	ai_weight = { add = 200 }
+	ai_weight = { add = 100 }
 }
 
-control_over_the_shores_advance = { 				# To make Crimea more stable
+control_over_the_shores_advance = { 			# To make Crimea more stable
 	age = age_3_discovery	
 	requires = crown_power_advance_discovery
 	icon = mge_improved_yam_system
@@ -41,5 +41,5 @@ control_over_the_shores_advance = { 				# To make Crimea more stable
 	global_max_control = 0.05
 
 	content_priority = 1100
-	ai_weight = { add = 100 }
+	ai_weight = { add = 300 }
 }

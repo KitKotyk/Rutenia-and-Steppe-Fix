@@ -28,7 +28,7 @@ horde_civil_war = {
 		in_civil_war = no
 		OR = {
 			at_war = no
-			capital.province = {	#Capital province is at least unoccupied
+			capital.province = {								# Capital province is at least unoccupied
 				any_location_in_province = {
 					OR = {
 						NOT = { owner = root }
@@ -71,7 +71,7 @@ horde_civil_war = {
 		global_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
 		horde_unity_hit_at_ruler_death = 50
 		monthly_horde_unity = 0.05
-		subject_loyalty = -10
+		# subject_loyalty = -10
 	}
 	
 	on_start = {
