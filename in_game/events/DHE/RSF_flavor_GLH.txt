@@ -53,25 +53,55 @@ RSF_flavor_glh.1000 = {
 		}
 	}
 
-	option = { # Collapse
+	immediate = {							# RSF note: Simulate Temur destruction
+		area:astrakhan_area = {
+			every_location_in_area = {
+				change_development = development_extreme_penalty
+				change_prosperity = prosperity_extreme_penalty
+				every_pop = {
+					add_pop_size = {
+						value = pop_size
+						multiply = -0.25
+					}
+				}
+			}
+		}									# RSF note: Simulate Temur destruction
+		area:kalmykia_area = {
+			every_location_in_area = {
+				change_development = development_severe_penalty
+				change_prosperity = prosperity_severe_penalty
+				every_pop = {
+					add_pop_size = {
+						value = pop_size
+						multiply = -0.15
+					}
+				}
+			}
+		}
+	}
+
+	option = {								# Collapse
 		name = RSF_flavor_glh.1000.a
 		historical_option = yes
 		change_country_type = army
 		change_government_type = government_type:steppe_horde
+
 		every_unit = {
 			destroy_unit = yes
 		}
 
 		ai_chance = {
 			base = 90
+			# base = 100
 		}
 	}
 
-	option = { # Don't Collapse
+	option = { 								# Don't Collapse
 		name = RSF_flavor_glh.1000.b
 
 		ai_chance = {
 			base = 10
+			# base = 0
 		}
 	}
 }

@@ -3,7 +3,9 @@ colors = {
 	# VANILLA
 	
 	map_SMO = rgb { 211 26 0 }
-	map_NSL = hsv360 { 323 67 54 }
+	map_NSL = hsv360 { 323 67 54 }	
+	# map_ottomans = rgb { 0 128 0 }
+	# map_saruhanids = rgb { 180 45 47 }
 	
 	map_ruthenian = rgb { 50 150 200 }
 	map_cossack = rgb { 124 12 65 }

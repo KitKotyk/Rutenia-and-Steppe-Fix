@@ -70,14 +70,18 @@ nomadic_societies_reform = {				# Higher CC, lowed DC
 			ruler ?= { dynasty ?= dynasty:borjigin_dynasty }
 		}
 		country_type = army
-		current_year < 1500
+		current_year < 1637
 	}
 	
 	country_modifier = {
-		cultures_capacity_modifier = 0.3
+		cultures_capacity_modifier = 0.5
 		diplomatic_capacity_modifier = -0.3
+		global_levy_size_modifier = 0.1
 		global_population_capacity_modifier = -0.75
-		global_levy_size_modifier = 0.2
+		town_upgrade_cost_modifier = 1
+		city_upgrade_cost_modifier = 1
+		megalopolis_upgrade_cost_modifier = 1
+    	building_upkeep_efficiency = -0.10
 	}
 
 	years = 2
