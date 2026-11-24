@@ -77953,15 +77953,41 @@ character_db={
 		tag = JAL
 	}
 	
+	jal_amir_husayn = {
+		first_name = { name = name_husayn }
+		culture = mongolian_culture
+		religion = sunni
+		birth_date = 1255.1.1 #Unknown
+		death_date = 1322.1.1 #Unknown
+		birth = yerevan
+		dynasty = jalayirids_dynasty
+		tag = JAL
+	}
+
+	jal_oljetei_khatun = {
+		first_name = { name = name_oljetei }
+		culture = mongolian_culture
+		religion = sunni
+		female = yes
+		birth_date = 1285.1.1 #Unknown
+		death_date = 1325.1.1 #Unknown
+		birth = yerevan
+		dynasty = borjigin_dynasty
+		spouse = jal_amir_husayn
+		tag = JAL
+	}
+
 	#Ruler
 	jal_hasan_buzurg = {
 		first_name = { name = name_hasan }
 		nickname = { name = Buzurg }
 		dynasty = jalayirids_dynasty
 		birth = yerevan
-		birth_date = 1281.1.1
+		birth_date = 1305.1.1 #Unknown
 		culture = mongolian_culture
 		religion = sunni
+		father = jal_amir_husayn
+		mother = jal_oljetei_khatun
 		tag = JAL
 	}
 
@@ -99803,6 +99829,18 @@ character_db={
 	}
 
 	#Muzaffarids
+	mzf_sharaf_al_din_muzaffar = {
+		first_name = { name = name_sharaf.name_al_din }
+		nickname = { name = name_muzaffar }
+		culture = farsi_culture
+		religion = sunni
+		birth_date = 1275.1.1 #Unknown
+		death_date = 1314.1.1 #Unknown
+		birth = yazd
+		dynasty = muzaffarid_dynasty
+		tag = MZF
+	}
+
 	mzf_mubariz_al_din_muhammad = { #Ruler
 		first_name = { name = name_mubariz.name_al_din }
 		nickname = { name = name_muhammad }
@@ -99811,6 +99849,7 @@ character_db={
 		adm = 25 dip = 52 mil = 86
 		birth_date = 1301.1.1 #Unknown
 		birth = yazd
+		father = mzf_sharaf_al_din_muzaffar
 		dynasty = muzaffarid_dynasty
 		tag = MZF
 	}
@@ -100599,6 +100638,18 @@ character_db={
 	}
 
 	#Hazaraspids
+	hzp_nusrat_al_din_ahmad = {
+		first_name = { name = name_nusrat.name_al_din }
+		nickname = { name = name_ahmad }
+		culture = lur_culture
+		religion = sunni
+		birth_date = 1245.1.1 #Unknown
+		death_date = 1330.1.1 #Unknown
+		birth = izeh
+		dynasty = hazaraspid_dynasty
+		tag = HZP
+	}
+
 	hzp_rukn_al_din_yusuf_shah = {
 		first_name = { name = name_rukn.name_al_din }
 		nickname = { name = nick_yusuf_shah }
@@ -100606,6 +100657,7 @@ character_db={
 		religion = sunni
 		birth_date = 1270.1.1 #Unknown
 		birth = izeh
+		father = hzp_nusrat_al_din_ahmad
 		dynasty = hazaraspid_dynasty
 		tag = HZP
 	}
@@ -100701,12 +100753,24 @@ character_db={
 	}
 
 	#Shirvan
+	srv_farrukhzad_ii = {
+		first_name = { name = Farrukhzad }
+		culture = adhari_culture
+		religion = sunni
+		birth_date = 1245.1.1 #Unknown
+		death_date = 1282.1.1 #Unknown
+		birth = baku
+		dynasty = kasranid_dynasty
+		tag = SRV
+	}
+
 	srv_keykubad = {
 		first_name = { name = name_keyqobad }
 		culture = adhari_culture
 		religion = sunni
 		birth_date = 1275.1.1 #Unknown
 		birth = baku
+		father = srv_farrukhzad_ii
 		dynasty = kasranid_dynasty
 		tag = SRV
 	}

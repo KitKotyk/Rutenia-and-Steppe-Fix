@@ -1453,7 +1453,7 @@ CAS = { # Castile
 		priority = 20
 		
 		trigger = {
-			scope:actor = {
+			scope:actor ?= {
 				any_overlord_or_above = { has_or_had_tag = LON }
 			}
 		}

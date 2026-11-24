@@ -1,6 +1,6 @@
 ﻿namespace = cossack_estate_events
 
-scripted_trigger is_steppe_location = {
+scripted_trigger is_steppe_location = {								# RSF changed
 	is_ownable = yes	
 	location_rank = location_rank:rural_settlement
 	OR = {
